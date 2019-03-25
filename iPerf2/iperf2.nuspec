@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iperf2</id>
-    <version>2.0.14a.0</version>
+    <version>2.0.14.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iPerf2</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
     <authors>Mark Gates,Alex Warshavsky,Ajay Tirumala,Jim Ferguson,Jon Dugan,Feng Qin,Kevin Gibbs,John Estabrook,Andrew Gallatin,Stephen Hemminger,Nathan Jones,Gerrit Renker,Robert J. McMahon,Tim Auckland</authors>
     <projectUrl>https://sourceforge.net/projects/iperf2/</projectUrl>
     <licenseUrl>https://sourceforge.net/p/iperf2/code/ci/master/tree/doc/ui_license.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/p/iperf2/code/ci/master/tree/</projectSourceUrl>
     <tags>iperf2</tags>
     <summary>A tool for measuring TCP and UDP network performance, based from 2.0.5</summary>
@@ -153,7 +153,8 @@ o Obsolete the need for include/slim_headers.h
 o Update man page to have some example usages
 
 2.0.14a change set (as of January 30th, 2019)
-o Fix the case when -P value is set on the server such that Summing output is displayed.  While -P isn't really needed on the server, some existing systems use it.  A latent defect to this seemed to have been introduced around the 2.0.8 release.</releaseNotes>
+o Fix the case when -P value is set on the server such that Summing output is displayed.  While -P isn't really needed on the server, some existing systems use it.  
+A latent defect to this seemed to have been introduced around the 2.0.8 release.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
