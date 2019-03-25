@@ -1,13 +1,15 @@
 ﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file. If you are the software author, you can change this
-mention you are the author of the software.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
 VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-<Include details of how to verify checksum contents>
-<If software vendor, explain that here - checksum verification instructions are optional>
+1. Download the following .exe-
+https://sourceforge.net/projects/iperf2/files/iperf-2.0.14a-win.exe/download
+
+2. Use checksum utility of your choice to get checksum of the .exe
+
+3. Check that the checksum matches-
+	MD5: 43355059836ce11fec1458a978293f00
+	SHA-1: 196ca63b404b5091f0035c415d6a24426917733d
+	SHA-256: fc0c508dc46b885b502dc1623baa55ef9d6af440a7bac227a41156695f2e61f4
+	SHA-512: 4030963ef74b9f3f203eaaed36f6b8e54ebdacce4526a30e1663b0d8968fd8b7646f4a93e622b1ad766bf3de2e202045c949cedef092b2102934e42675257692
