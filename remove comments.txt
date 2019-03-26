@@ -1,2 +1,0 @@
-$f='D:\Josiahs\Documents\_Programming\Github\chocolatey-packages\WinBtrfs\tools\*.ps1'
-gc $f | ? {$_ -notmatch "^\s*#"} | % {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
