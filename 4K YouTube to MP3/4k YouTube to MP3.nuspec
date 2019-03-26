@@ -2,9 +2,9 @@
 
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>4k-video-downloader</id>
-    <version>4.5.0</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4K%20Video%20Downloader</packageSourceUrl>
+    <id>4k-youtube-to-mp3</id>
+    <version>3.4.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K Video Downloader (Install)</title>
     <authors>OpenMedia LLC</authors>
