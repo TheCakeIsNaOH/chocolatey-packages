@@ -1,13 +1,9 @@
-﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file. If you are the software author, you can change this
-mention you are the author of the software.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-<Include details of how to verify checksum contents>
-<If software vendor, explain that here - checksum verification instructions are optional>
+1. Download  https://get.openlp.org/2.4.6/OpenLP-2.4.6-setup.exe
+
+2. Get sha256 checksum with utility of choice
+
+3. Verify that it matches 954326ec4d9bd8ce060003889934879cb3c93a7965840a7e9464e87a4cb5f74c

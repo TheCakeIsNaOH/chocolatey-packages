@@ -4,54 +4,34 @@
   <metadata>
     <id>openlp</id>
     <version>2.4.6</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
-    <!-- ============================== -->
-
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <!-- This section is about the software itself -->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/OpenLP</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
     <title>OpenLP (Install)</title>
     <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
-    <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/openlp.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>openlp SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->      
-
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
-
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    <projectUrl>https://openlp.org/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/ad4f1e95a54b2c8eecc806685d4e1d495f14511b/Icons/OpenLP_0000.png</iconUrl>
+    <copyright>2017 OpenLP developers</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://launchpad.net/openlp</projectSourceUrl>
+    <docsUrl>https://manual.openlp.org/introduction.html</docsUrl>
+    <mailingListUrl>https://lists.openlp.io/mailman/listinfo/openlp-dev</mailingListUrl>
+    <bugTrackerUrl>https://bugs.launchpad.net/openlp</bugTrackerUrl>
+    <tags>openlp</tags>
+    <summary>Empower Your Church</summary>
+    <description>Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. Fast, flexible and easy to use, you will have your service up and running in a few minutes. These features and a whole lot more at a price that can't be beat.</description>
+    <releaseNotes>OpenLP 2.4.6 bugfixes
+	Fixed a bug where the author type upgrade was being ignored because it was looking at the wrong table
+	Fixed a bug where the songs_songbooks table was not being created because the if expression was the wrong way round
+	Changed the songs_songbooks migration SQL slightly to take into account a bug that has (hopefully) been fixed
+	Sometimes the timer goes off as OpenLP is shutting down, and the application has already been deleted
+	Fixed opening the data folder (KDE thought the old way was an SMB share)
+	Fixed a problem with the new QMediaPlayer not controlling the playlist anymore
+	Added importing of author types to the OpenLP 2 song importer
+	Fixed a problem with loading Qt's translation files
+	Disabled the controls in the shortcut dialog unless a shortcut is actually selected</releaseNotes>
   </metadata>
-  <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <files>  
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
