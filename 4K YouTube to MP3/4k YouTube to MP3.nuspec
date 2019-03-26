@@ -4,18 +4,18 @@
   <metadata>
     <id>4k-youtube-to-mp3</id>
     <version>3.4.0</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4K%20YouTube%20to%20MP3</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>4K Video Downloader (Install)</title>
+    <title>4K YouTube to MP3 (Install)</title>
     <authors>OpenMedia LLC</authors>
-    <projectUrl>https://www.4kdownload.com/products/product-videodownloader</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/c68902d6237e4e4664b0f5922ce9c192642e5cf6/Icons/4kvideodownloader_0000.png</iconUrl>
+    <projectUrl>https://www.4kdownload.com/products/product-youtubetomp3</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/e7a6150a155a065274d48242ea5689367f523bbf/Icons/4kyoutubetomp3_0000.png</iconUrl>
     <copyright>2019 OpenMedia LLC</copyright>
-    <licenseUrl>https://www.4kdownload.com/agreement/videodownloader</licenseUrl>
+    <licenseUrl>https://www.4kdownload.com/agreement/youtubetomp3</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <tags>4k video downloader</tags>
-    <summary>Free video downloader trusted by millions</summary>
-    <description>4K Video Downloader allows downloading videos, playlists, channels and subtitles from YouTube, Facebook, Vimeo and other video sites in high quality.</description>
+    <tags>4k-youtube-to-mp3 4k YouTube MP3</tags>
+    <summary>Turn YouTube videos into MP3 files, fast and easy</summary>
+    <description>4K YouTube to MP3 was specifically created for audio extraction from YouTube, VEVO, SoundCloud and Facebook in MP3, M4A, OGG. Get started for free!</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
