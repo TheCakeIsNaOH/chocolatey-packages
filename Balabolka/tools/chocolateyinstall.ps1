@@ -10,21 +10,29 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 # Internal packages (organizations) or software that has redistribution rights (community repo)
 # - Use `Install-ChocolateyInstallPackage` instead of `Install-ChocolateyPackage`
 #   and put the binaries directly into the tools folder (we call it embedding)
-#$fileLocation = Join-Path $toolsDir 'NAME_OF_EMBEDDED_INSTALLER_FILE'
+$fileLocation = Join-Path $toolsDir 'setup.exe'
+
 # If embedding binaries increase total nupkg size to over 1GB, use share location or download from urls
 #$fileLocation = '\\SHARE_LOCATION\to\INSTALLER_FILE'
 # Community Repo: Use official urls for non-redist binaries or redist where total package size is over 200MB
 # Internal/Organization: Download from internal location (internet sources are unreliable)
-$url        = '' # download url, HTTPS preferred
-$url64      = '' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
+ # download url, HTTPS preferred
+#$url64      = '' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
 
+$zipPackageArgs = @{
+packageName   = $env:ChocolateyPackageName
+checksum = '2ce055259511af6e64081d7ffa7e90e491ed79e8ccc5ccac456d6af9f1f4fffb'
+checksumType = 'sha256'
+url        = 'http://balabolka.site/balabolka.zip'
+unzipLocation = $toolsDir
+}
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE_MSI_OR_MSU' #only one of these: exe, msi, msu
-  url           = $url
-  url64bit      = $url64
-  #file         = $fileLocation
+  fileType      = 'EXE' #only one of these: exe, msi, msu
+  #url           = $url
+  #url64bit      = $url64
+  file         = $fileLocation
 
   softwareName  = 'Balabolka*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 
@@ -32,14 +40,14 @@ $packageArgs = @{
   # To determine checksums, you can get that from the original site if provided. 
   # You can also use checksum.exe (choco install checksum) and use it 
   # e.g. checksum -t sha256 -f path\to\file
-  checksum      = ''
+  checksum      = 'f78c301c6a9f4f12f45d8f4acc400eb687402f4b29b74657f84a114eb7ac6f3f'
   checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
-  checksum64    = ''
-  checksumType64= 'sha256' #default is checksumType
+  #checksum64    = ''
+  #checksumType64= 'sha256' #default is checksumType
 
   # MSI
-  silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
-  validExitCodes= @(0, 3010, 1641)
+  #silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
+  #validExitCodes= @(0, 3010, 1641)
   # OTHERS
   # Uncomment matching EXE type (sorted by most to least common)
   #silentArgs   = '/S'           # NSIS
@@ -48,7 +56,7 @@ $packageArgs = @{
   #silentArgs   = '/s /v"/qn"'   # InstallShield with MSI
   #silentArgs   = '/s'           # Wise InstallMaster
   #silentArgs   = '-s'           # Squirrel
-  #silentArgs   = '-q'           # Install4j
+  silentArgs   = '-silent'           # Install4j
   #silentArgs   = '-s'           # Ghost
   # Note that some installers, in addition to the silentArgs above, may also need assistance of AHK to achieve silence.
   #silentArgs   = ''             # none; make silent with input macro script like AutoHotKey (AHK)
@@ -56,6 +64,7 @@ $packageArgs = @{
   #validExitCodes= @(0) #please insert other valid exit codes here
 }
 
+Install-ChocolateyZipPackage @zipPackageArgs
 Install-ChocolateyPackage @packageArgs # https://chocolatey.org/docs/helpers-install-chocolatey-package
 #Install-ChocolateyZipPackage @packageArgs # https://chocolatey.org/docs/helpers-install-chocolatey-zip-package
 ## If you are making your own internal packages (organizations), you can embed the installer or 
