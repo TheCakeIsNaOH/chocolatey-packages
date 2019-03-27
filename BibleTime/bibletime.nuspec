@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bibletime</id>
@@ -16,7 +15,7 @@
     <projectSourceUrl>https://github.com/bibletime/bibletime</projectSourceUrl>
     <docsUrl>https://github.com/bibletime/bibletime/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/bibletime/bibletime/issues</bugTrackerUrl>
-    <tags>bibletime SPACE_SEPARATED</tags>
+    <tags>bibletime</tags>
     <summary>BibleTime is a powerful cross platform Bible study tool.</summary>
     <description>BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. 
 	BibleTime contains over 200 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society via the SWORD programming library. 
@@ -30,9 +29,9 @@
 	Fixed Bookshelf Wizard buttons not being translated (bug #131)
 	Fixed application icon directory to match the FreeDesktop standard
 	Fixed bug which prevented installing of works (bug #124)</releaseNotes>
-	<dependencies>
-		<dependency id="vcredist2015" />
-	</dependencies>
+    <dependencies>
+      <dependency id="vcredist2015" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

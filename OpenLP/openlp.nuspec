@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openlp</id>
@@ -31,7 +30,7 @@
 	Fixed a problem with loading Qt's translation files
 	Disabled the controls in the shortcut dialog unless a shortcut is actually selected</releaseNotes>
   </metadata>
-  <files>  
+  <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>

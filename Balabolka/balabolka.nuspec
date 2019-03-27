@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balabolka</id>
@@ -86,7 +85,6 @@ BALABOLKA :: History
 [*] Updated the text extracting for PPT files.
 [*] Updated the text import settings: the built-in converter is always used for text extracting.
 [*] Resources for Bulgarian, Hungarian and Spanish languages were updated (thanks to Kostadin Kolev, Zoltan Magyar and Fernando Gregoire).</releaseNotes>
-
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
