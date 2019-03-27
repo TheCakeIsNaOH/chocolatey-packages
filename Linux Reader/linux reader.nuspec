@@ -3,54 +3,30 @@
   <metadata>
     <id>linux-reader</id>
     <version>3.4</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
-    <!-- ============================== -->
-
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <!-- This section is about the software itself -->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Linux%20Reader</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
     <title>Linux Reader (Install)</title>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
-    <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/linux reader.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>linux reader SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->      
+    <authors>DiskInternals</authors>
+    <projectUrl>https://www.diskinternals.com/linux-reader</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/8a8042da4bdde88fadd4ce409feb142595b75b14/Icons/LinuxReader_0000.png</iconUrl>
+    <copyright>2019 DiskInternals</copyright>
+    <tags>linux reader</tags>
+    <summary>Ext 2/3/4, UFS2, HFS and ReiserFS/4 for Windows</summary>
+    <description>EULA not available online, see license.txt in Program files (x86)\DiskInternals\Linux Reader
+	
+How to get safe and quick access to alternative file systems? DiskInternals Linux Reader is a new easy way to do this. This program plays the role of a bridge between your Windows and Ext2/Ext3/Ext4, HFS and ReiserFS file systems.
 
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
+ This easy-to-use tool runs under Windows and allows you to browse Ext2/3/4, HFS and ReiserFS file systems
+There are a number of evident merits of the program, which you should know. First of all, DiskInternals Linux Reader is absolutely free. Secondly, the program provides for read-only access and does not allow you to make records in file system partitions. This guarantees that the interference in an alterative file system will not affect the work of Linux later. Apart from this, it is necessary to note, that it gives you an opportunity to use common Windows Explorer for extracting data. A preview option for pictures is one more pleasant point, which is worth mentioning.
 
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+How to get safe and quick access to any file systems? DiskInternals Linux Reader is an easy and short way to solve the problem!
+
+While saving, it ignores file security policies. It means that it is possible to access absolutely any file on a Linux disk from Windows. The program can create and open disk images.
+
+Linux Reader is 100% FREE. Try it now.</description>
+    
   </metadata>
-  <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <files>    
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
