@@ -1,13 +1,9 @@
-﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file. If you are the software author, you can change this
-mention you are the author of the software.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-<Include details of how to verify checksum contents>
-<If software vendor, explain that here - checksum verification instructions are optional>
+1. Download  https://github.com/bibletime/bibletime/releases/download/v2.11.2/BibleTime-2.11.2-win32.exe
+
+2. Get sha256 checksum with utility of choice
+
+3. Check that it matches ccb2018f0e892bc57397f3056cde6ed950790cf31ad1adafaee102c26b1d0212

@@ -4,54 +4,37 @@
   <metadata>
     <id>bibletime</id>
     <version>2.11.2</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
-    <!-- ============================== -->
-
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <!-- This section is about the software itself -->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/BibleTime</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
     <title>BibleTime (Install)</title>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
-    <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/bibletime.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <authors>BibleTime team</authors>
+    <projectUrl>http://bibletime.info/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/69fd7fe70b9c3069df16c2c3bd6effca6e2a12ba/Icons/bibletime_0000.png</iconUrl>
+    <copyright>2018 BibleTime team</copyright>
+    <licenseUrl>https://github.com/bibletime/bibletime</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/bibletime/bibletime</projectSourceUrl>
+    <docsUrl>https://github.com/bibletime/bibletime/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/bibletime/bibletime/issues</bugTrackerUrl>
     <tags>bibletime SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->      
-
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
-
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    <summary>BibleTime is a powerful cross platform Bible study tool.</summary>
+    <description>BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. 
+	BibleTime contains over 200 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society via the SWORD programming library. 
+	BibleTime is written in C++ and uses the Qt GUI toolkit.</description>
+    <releaseNotes>2.11.2:
+	Updated translations.
+	Improved compatibility with Qt 5.11 (including bug #140)
+	Fixed crash when clicking on "full syntax" (bug #134)
+	Fixed Mag not always working with Hebrew / Strongs (bug #132)
+	Fixed BibleTime startup on some versions of Windows (bug #119)
+	Fixed Bookshelf Wizard buttons not being translated (bug #131)
+	Fixed application icon directory to match the FreeDesktop standard
+	Fixed bug which prevented installing of works (bug #124)</releaseNotes>
+	<dependencies>
+		<dependency id="vcredist2015" />
+	</dependencies>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
