@@ -2,6 +2,10 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'btrfs-1.1.zip'
+$driverFile = Join-Path $toolsDir 'btrfs.cat'
+$outputFile = Join-Path $toolsDir 'MarkHarmstone.cer'
+$exportType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -11,6 +15,10 @@ Get-ChocolateyUnzip $fileLocation $toolsDir
 
 Write-Host "Removing bundled debug files"
 Remove-Item -Recurse -Path $toolsDir\Debug
+
+Write-Host "Extracting cert from driver"
+$cert = (Get-AuthenticodeSignature $driverFile).SignerCertificate;
+[System.IO.File]::WriteAllBytes($outputFile, $cert.Export($exportType));
 
 Write-Host "Adding cert to trusted store"
 certutil -addstore -f "TrustedPublisher" $toolsDir\MarkHarmstone.cer
