@@ -24,22 +24,3 @@ Install-ChocolateyPackage @packageArgs
 
 Write-Host "removing " $shortcut
 Remove-item $shortcut
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
