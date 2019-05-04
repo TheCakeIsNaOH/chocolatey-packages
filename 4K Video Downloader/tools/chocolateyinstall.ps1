@@ -1,8 +1,8 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://dl.4kdownload.com/app/4kvideodownloader_4.7.0.msi?source=chocolatey'
-$url64      = 'https://dl.4kdownload.com/app/4kvideodownloader_4.7.0_x64.msi?source=chocolatey'
+$url        = 'https://dl.4kdownload.com/app/4kvideodownloader_4.7.1.msi?source=chocolatey'
+$url64      = 'https://dl.4kdownload.com/app/4kvideodownloader_4.7.1_x64.msi?source=chocolatey'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +13,9 @@ $packageArgs = @{
 
   softwareName  = '4K Video Downloader*'
 
-  checksum      = 'a0a6b44fdb079918c5e9e2fc7be9aeacd7d3cefcb380422cb677f39131fdf75e'
+  checksum      = '816e73be4ef40f09a8683bff0d9f5f998748276602bdeee77529dcad212c1f73'
   checksumType  = 'sha256'
-  checksum64    = '9d61d62424a523f4c20d709ed19a5eecf5fdd4485060242b036c113562700e3d'
+  checksum64    = '7fc31c3fe398404f27a0898e4d195d0c0fd759c5f60c46c4eb9f2742457ff4c7'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
