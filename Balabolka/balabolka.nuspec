@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balabolka</id>
-    <version>2.15.0.693</version>
+    <version>2.15.0.698</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Balabolka</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Balabolka (Install)</title>
@@ -13,8 +13,6 @@
     <tags>balabolka</tags>
     <summary>Text-To-Speech (TTS) program</summary>
     <description>
-	Neither the Balabolka website or installer have a license file, so there is not a license url available.
-	
 	Balabolka is a Text-To-Speech (TTS) program. All computer voices installed on your system are available to Balabolka. 
 	The on-screen text can be saved as a WAV, MP3, MP4, OGG or WMA file. The program can read the clipboard content, view text from documents, customize font and background colour, control reading from the system tray or by the global hotkeys. 
 	Balabolka supports text file formats: AZW, AZW3, CHM, DjVu, DOC, DOCX, EML, EPUB, FB2, FB3, HTML, LIT, MOBI, ODP, ODS, ODT, PDB, PRC, PDF, PPT, PPTX, RTF, TCR, WPD, XLS, XLSX. 	
@@ -24,67 +22,7 @@
 
 	Balabolka can save the synchronized text in external LRC files or in MP3 tags inside the audio files. 
 	When an audio file is played with players on a computer or on modern digital audio players, the text is displayed synchronously (at the same way, as lyrics for songs)</description>
-    <releaseNotes>
-BALABOLKA :: History
-
-[+] New option
-[-] Fixed error
-[*] Changes
-~~~~~~~~~~~~~~~
-
-
-24.03.2019     v2.15.0.693
-[*] The compability with screen readers was improved.
-[*] Resources for Bulgarian and Spanish languages were updated (thanks to Kostadin Kolev and Fernando Gregoire).
-
-
-22.03.2019     v2.15.0.692
-[+] Added the button "Change language" for online TTS services.
-[*] Updated the text extracting for DOCX, CHM, EPUB, HTML, ODP, ODT and PPTX files.
-[-] Fixed the text extracting for CHM files.
-[*] Resources for Bulgarian, Chinese (Simplified), French, German, Hungarian, Slovenian and Spanish languages were updated (thanks to Kostadin Kolev, Anan, Michel Such, Regine Müller, Zoltan Magyar, Jožef Gregorc and Fernando Gregoire).
-
-
-10.03.2019     v2.15.0.691
-[+] Added the using of Baidu Translate.
-[+] Added the setting "Minimal Block Size" for text splitting. The value must be set as a number of characters (not as a number of kilobytes).
-[+] Small improvements.
-[*] Resources for Polish and Slovenian languages were updated (thanks to Fresta and Jožef Gregorc).
-
-
-03.03.2019     v2.15.0.690
-[-] Fixed small bugs.
-[*] Resources for Bulgarian, Korean and Spanish languages were updated (thanks to Kostadin Kolev, Park Sung-Wan and Fernando Gregoire).
-
-
-02.03.2019     v2.15.0.689
-[+] Added the batch converting of text files to audio files by using of online TTS services.
-[*] The LAME encoder was updated.
-[-] Fixed small bugs.
-[*] Resources for Bulgarian and Chinese (Simplified) languages were updated (thanks to Kostadin Kolev and Anan).
-
-
-23.02.2019     v2.15.0.688
-[+] Added the setting "Launch Balabolka on Windows logon".
-[+] Added the settings to ignore text in brackets.
-[+] Added the setting to add a period if there is no punctuation at the end of the paragraph.
-[*] Resources for Bulgarian and Spanish languages were updated (thanks to Kostadin Kolev and Fernando Gregoire).
-
-
-16.02.2019     v2.15.0.687
-[+] Added the using of Baidu Text-To-Speech and Bing Text-To-Speech (for testing purposes only).
-[+] Added the using of Microsoft Translator and Yandex.Translate.
-[+] Added the settings for alternation of original and translated text.
-[*] Resources for Bulgarian, German, Korean and Slovenian languages were updated (thanks to Kostadin Kolev, Regine Müller, Park Sung-Wan and Jožef Gregorc).
-
-
-09.02.2019     v2.15.0.686
-[+] Added support of the native format *.BXZ (ZIP-compressed Balabolka documents).
-[+] Added the text extracting for ODP files (OpenDocument Presentations).
-[+] Small improvements.
-[*] Updated the text extracting for PPT files.
-[*] Updated the text import settings: the built-in converter is always used for text extracting.
-[*] Resources for Bulgarian, Hungarian and Spanish languages were updated (thanks to Kostadin Kolev, Zoltan Magyar and Fernando Gregoire).</releaseNotes>
+    <releaseNotes>http://www.cross-plus-a.com/changelog.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,0 +1,11 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+1. Download http://balabolka.site/balabolka.zip
+
+2. Extract zip
+
+2. Get sha256 checksum of setup.exe with utility of choice
+
+3. Check that it matches 72f6cffce383d335a2589a48f4fdb8c74b4c5a30b981fec3f90f56ef990884b8

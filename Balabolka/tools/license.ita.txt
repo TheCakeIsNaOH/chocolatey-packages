@@ -1,0 +1,49 @@
+Balabolka
+
+
+Autore: Ilya Morozov
+WWW: http://balabolka.site/it/
+E-mail: crossa@list.ru
+
+Nota: questa applicazione è stata rilasciata inizialmente come freeware. Gli utenti con domande riguardo a questo accordo di licenza EULA o riguardo all'applicazione in generale, dovrebbe sentirsi libero di chiedere all'Autore. Rispondo a tutti i messaggi nel più breve tempo possibile.
+
+
+LICENZA PER L'UTENTE FINALE (EULA) PER QUESTO SOFTWARE
+Importante - leggere con attenzione:
+
+Questo contratto di licenza con l'utente finale ("EULA") è un accordo legale tra l'utente (una persona fisica o giuridica) e l'Autore citato di questo Software per il prodotto software sopra indicato, che include il software per computer e può includere supporti associati, materiale stampato e "online" o documentazione elettronica ("PRODOTTO SOFTWARE"). Installando, copiando od in altro modo utilizzando il PRODOTTO SOFTWARE, l'utente accetta di essere vincolato dalle condizioni del presente Contratto. Se non si accettano i termini del presente Contratto, non installare od utilizzare il PRODOTTO SOFTWARE.
+
+LICENZA DEL PRODOTTO SOFTWARE
+
+Il prodotto SOFTWARE è protetto dalle leggi sul copyright e dai trattati internazionali sul copyright, così come altre leggi e trattati sulla proprietà intellettuale. Il prodotto SOFTWARE è concesso in licenza, non venduto.
+
+1. CONCESSIONE DI LICENZA: Il presente Contratto EULA concede all'utente i seguenti diritti: 
+Installazione ed Utilizzo. Si può installare ed utilizzare un numero illimitato di copie del PRODOTTO SOFTWARE.
+
+Riproduzione e Distribuzione: è possibile riprodurre e distribuire un numero illimitato di copie del PRODOTTO SOFTWARE a condizione che, ogni copia, sia pedissequa all'originale, tra cui le note di copyright ed i marchi e dev'essere accompagnata da una copia del presente Contratto. Le copie del PRODOTTO SOFTWARE possono essere distribuite come prodotto a sé stante od in dotazione al proprio prodotto.
+
+2. DESCRIZIONE DI ALTRI DIRITTI E LIMITAZIONI: restrizioni sulla Reingegnerizzazione, Decompilazione e Disassemblaggio. L'utente non può reingegnerizzare, decompilare o disassemblare il PRODOTTO SOFTWARE, ad eccezione e solo nella misura in cui tale attività sia espressamente consentita dalla legge applicabile, nonostante questa limitazione.
+
+Separazione dei Componenti:
+Il PRODOTTO SOFTWARE è concesso in licenza come prodotto singolo. Le sue parti componenti non possono essere separate per l'utilizzo su più di un computer, senza aver prima ottenuto il permesso da parte dell'Autore.
+
+Trasferimento del Software:
+Si possono trasferire definitivamente tutti i diritti concessi dal presente Contratto EULA, a condizione che il destinatario ne accetti i termini.
+
+Risoluzione del Contratto.
+Fatto salvo ogni altro diritto, l'Autore di questo Software può risolvere il presente contratto qualora non ne vengano rispettati i termini e le condizioni. In tal caso, deve distruggere tutte le copie del prodotto SOFTWARE e tutte le sue parti componenti.
+
+Distribuzione:
+Il PRODOTTO SOFTWARE non può essere venduto od essere incluso in un prodotto od in un pacchetto, onde ricevere benefici attraverso l'inclusione del PRODOTTO SOFTWARE stesso, senza prima aver ottenuto il permesso dell'Autore. Il PRODOTTO SOFTWARE, può essere incluso in qualsiasi pacchetto o prodotto gratuito, non-profit, a condizione che la distribuzione sia conforme ai termini ed alle condizioni del presente Contratto EULA.
+
+3. DIRITTI D'AUTORE:
+Tutti i titoli ed i diritti d'autore nel e per il software prodotto (inclusi, ma non limitati a qualsiasi immagine, animazione, audio, testo ed applet integrati nel PRODOTTO SOFTWARE), il materiale stampato accluso e qualsiasi copia del PRODOTTO SOFTWARE sono di proprietà dell'Autore di questo software. Il PRODOTTO SOFTWARE è protetto dalle leggi sul copyright e dalle disposizioni dei trattati internazionali. Pertanto, è necessario trattare il PRODOTTO SOFTWARE come qualsiasi altro materiale protetto da copyright ad esclusione della possibilità d'installare il PRODOTTO SOFTWARE su un unico computer ed a condizione, che si conservi la copia originale, esclusivamente per scopi di backup od archiviazione.
+
+4. VARIE ED EVENTUALI
+Qualora si desideri porre una qualsiasi domanda riguardante il presente contratto o si desideri contattare l'Autore di questo Software per qualsiasi motivo, vi preghiamo di contattarlo all'indirizzo e-mail indicato nella parte superiore del presente contratto EULA.
+
+5. GARANZIA LIMITATA:
+NESSUNA GARANZIA: l'Autore di questo Software declina espressamente qualsiasi garanzia per il PRODOTTO SOFTWARE. Il PRODOTTO SOFTWARE e tutta la documentazione relativa vengono forniti "allo stato in cui sono" senza garanzie di alcun tipo, espresse od implicite, incluse, senza limitazioni, le garanzie implicite di commerciabilità, idoneità per uno scopo particolare o non violazione. Il rischio integrale derivante dall'uso o dalle prestazioni del PRODOTTO SOFTWARE rimane a vostro carico.
+
+6. RESPONSABILITÀ PER DANNI:
+In nessun caso, l'Autore di questo Software, sarà responsabile per eventuali danni di qualsiasi natura (compresi, senza limitazioni, danni per perdita di guadagno, interruzione dell'attività, perdita di informazioni aziendali od altre perdite economiche) derivanti dall'uso o dall'impossibilità di utilizzare il prodotto, anche qualora sia stato informato l'autore di questo software della possibilità che tali danni possano verificarsi. Poiché alcune Nazioni/Giurisdizioni non consentono l'esclusione o la limitazione di responsabilità per danni consequenziali od incidentali, la limitazione di cui sopra potrebbe non essere a voi applicabile.
