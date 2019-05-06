@@ -2,12 +2,12 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-1. Download https://github.com/maharmstone/btrfs/releases/download/v1.1/btrfs-1.1.zip
+1. Download https://github.com/maharmstone/btrfs/releases/download/v1.2/btrfs-1.2.zip
 
 2. Use checksum utility of preference to get checksum of zip
 
 3. Check that it matches below
-	MD5: 50ddb9f834a471619bfdcf5078195ee7
-	SHA-1: 9024b823aaac6924d1346876274862c9e526d169
-	SHA-256: dcd685313f0bd8c223bff6b331eeca853adbe19a1324c0942b8c3f3ffc1cc733
-	SHA-512: 58871206c35f0e7a6ab77b31d8e6cd904a3ab90758eec7f9241f56f6e5a110e61ff1496cadebda26ae7b2c913f077202e86777ec4f2ec881608e4748f3903817
+	MD5: 5a6be9ac1529c88641950aca7ba128d5
+	SHA-1: e7c78fcca0776977c1a2526c6cef264d2e45284c
+	SHA-256: 7faeffae4585b10a5dfff7213391e9d4245acea58d5f5f8b2e390e62e054955b
+	SHA-512: d912cd479177b87ba4d16af3f40a203710efee91bb962407d466a851c9fa02b1650f63360ab9c229f9199f44b43378a4983bf3ef5bffefddf142be00b41e9c18

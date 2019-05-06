@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winbtrfs</id>
-    <version>1.1</version>
+    <version>1.2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>WinBtrfs (Install)</title>
@@ -27,7 +27,17 @@ However, having said that, it ought to be suitable for day-to-day use.
 Everything here is released under the GNU Lesser General Public Licence (LGPL); see the file LICENCE for more info. 
 You are encouraged to play about with the source code as you will, and I'd appreciate a note (mark@harmstone.com) if you come up with anything nifty. 
 On top of that, I'm open to relicensing the code if you've a burning desire to use it on a GPL or commercial project, or what have you - drop me a line and we'll talk.</description>
-    <releaseNotes>v1.1 (2018-12-15):
+    <releaseNotes>
+v1.2 (2019-05-05):
+
+Dramatic speed increase when opening many small files, such as with a Git repository
+Fixed crash on surprise removals of removable devices
+Added ability to change drive letters easily
+No longer creates free-space cache for very small chunks, so as not to confuse the Linux driver
+Fixed corruption when very large file created and then immediately deleted
+Minor bug fixes
+	
+v1.1 (2018-12-15):
 Support for Zstd compression
 Passthrough of Linux metadata to LXSS
 Refactored shell extension

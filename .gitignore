@@ -2,3 +2,5 @@
 *.nupkg
 OpenLP/tools/OpenLP-2.4.6-setup.exe
 Balabolka/tools/setup.exe
+WinBtrfs/tools/btrfs-1.2.zip
+WinBtrfs/tools/btrfs-1.1.zip

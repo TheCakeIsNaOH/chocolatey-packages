@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'btrfs-1.1.zip'
+$fileLocation = Join-Path $toolsDir 'btrfs-1.2.zip'
 $driverFile = Join-Path $toolsDir 'btrfs.cat'
 $outputFile = Join-Path $toolsDir 'MarkHarmstone.cer'
 $exportType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
