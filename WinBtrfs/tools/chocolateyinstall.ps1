@@ -1,5 +1,4 @@
-﻿
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'btrfs-1.2.zip'
 $driverFile = Join-Path $toolsDir 'btrfs.cat'
@@ -33,23 +32,3 @@ if (Get-OSArchitectureWidth 64) {
 	Write-Host "Removing x64 files"
 	Remove-Item -Recurse -Path $toolsDir\x64
 }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-

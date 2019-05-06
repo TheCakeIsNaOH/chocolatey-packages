@@ -14,5 +14,3 @@ foreach($InfName in $btrfsDrivers)
 	Write-Host "Removing btrfs driver" $btrfsDrivers.InfName
 	pnputil -f -d $btrfsDrivers.InfName
 }
-
-

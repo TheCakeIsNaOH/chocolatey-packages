@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winbtrfs</id>
-    <version>1.2</version>
+    <version>1.2.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>WinBtrfs (Install)</title>
@@ -28,6 +28,10 @@ Everything here is released under the GNU Lesser General Public Licence (LGPL); 
 You are encouraged to play about with the source code as you will, and I'd appreciate a note (mark@harmstone.com) if you come up with anything nifty. 
 On top of that, I'm open to relicensing the code if you've a burning desire to use it on a GPL or commercial project, or what have you - drop me a line and we'll talk.</description>
     <releaseNotes>
+v1.2.1 (2019-05-06):
+
+Reverted commit affecting the creation of streams
+	
 v1.2 (2019-05-05):
 
 Dramatic speed increase when opening many small files, such as with a Git repository
