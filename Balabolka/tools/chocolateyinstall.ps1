@@ -18,7 +18,7 @@ $packageArgs = @{
   silentArgs   = '-silent'
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
 
 
 
