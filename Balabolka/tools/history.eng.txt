@@ -6,6 +6,11 @@
 ~~~~~~~~~~~~~~~
 
 
+12.05.2019     v2.15.0.699
+[-] Fixed the audio file saving if the audio output device is absent.
+[*] Resources for Bulgarian, German, Slovenian and Spanish languages were updated (thanks to Kostadin Kolev, Regine Müller, Jožef Gregorc and Fernando Gregoire).
+
+
 20.04.2019     v2.15.0.698
 [+] Added the setting for pauses between sentences in the Spritz-Reader.
 [-] Removed the setting "Minimal Block Size" from text splitting.
