@@ -6,6 +6,10 @@
 ~~~~~~~~~~~~~~~
 
 
+15.05.2019     v2.15.0.700
+[+] Added the using of Youdao Text-To-Speech (for testing purposes only).
+
+
 12.05.2019     v2.15.0.699
 [-] Fixed the audio file saving if the audio output device is absent.
 [*] Resources for Bulgarian, German, Slovenian and Spanish languages were updated (thanks to Kostadin Kolev, Regine Müller, Jožef Gregorc and Fernando Gregoire).
