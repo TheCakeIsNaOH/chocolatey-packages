@@ -6,6 +6,11 @@
 ~~~~~~~~~~~~~~~
 
 
+25.05.2019     v2.15.0.701
+[+] Small improvements.
+[*] Resources for Chinese (Simplified), Czech, French and Korean languages were updated (thanks to Anan, Jiří Fenz, Michel Such and Park Sung-Wan).
+
+
 15.05.2019     v2.15.0.700
 [+] Added the using of Youdao Text-To-Speech (for testing purposes only).
 
