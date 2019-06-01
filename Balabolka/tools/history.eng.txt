@@ -6,6 +6,13 @@
 ~~~~~~~~~~~~~~~
 
 
+01.06.2019     v2.15.0.702
+[+] Added the option "Press once to start reading then once to pause" for the global hotkey "Read Clipboard Aloud".
+[+] Added the main menu item "Delete".
+[-] Fixed small bugs.
+[*] Resources for Bulgarian and Turkish languages were updated (thanks to Kostadin Kolev and Çağrı Doğan).
+
+
 25.05.2019     v2.15.0.701
 [+] Small improvements.
 [*] Resources for Chinese (Simplified), Czech, French and Korean languages were updated (thanks to Anan, Jiří Fenz, Michel Such and Park Sung-Wan).
