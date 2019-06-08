@@ -6,6 +6,11 @@
 ~~~~~~~~~~~~~~~
 
 
+08.06.2019     v2.15.0.703
+[-] Reduced the memory usage.
+[*] Resources for Chinese (Simplified) language were updated (thanks to Anan).
+
+
 01.06.2019     v2.15.0.702
 [+] Added the option "Press once to start reading then once to pause" for the global hotkey "Read Clipboard Aloud".
 [+] Added the main menu item "Delete".

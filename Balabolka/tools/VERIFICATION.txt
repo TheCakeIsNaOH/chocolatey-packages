@@ -8,4 +8,4 @@ in verifying that this package's contents are trustworthy.
 
 2. Get sha256 checksum of setup.exe with utility of choice
 
-3. Check that it matches f8aa970a682f41f6eee5aa518e0482d7b6b20ea1e67b2215bdd842055f12c44b
+3. Check that it matches bd57abaff30262827dbb0da90ce39dbf373c71050346a8bfc573e486021b2242
