@@ -7,7 +7,4 @@ in verifying that this package's contents are trustworthy.
 2. Use checksum utility of preference to get checksum of zip
 
 3. Check that it matches below
-	MD5: 98dcf426dfc6b788deaba814a30ffe63
-	SHA-1: d1091b2fbda6619e3a3c649e0f02caa7593730f3
-	SHA-256: 57412af037ccd15070e37c13ad0681377823dc2cca390f354020a1b8d15c9b09
-	SHA-512: 6e720c72a27b98a4b29b06c59d53ed731da4aafb89bcdc9003f9a644eae58259d87f22378a231036eec7ede5dae49c257b6373ba3688df267351c1974dc2fc9a
+	Sha256 - ebb48be823ff19d6aa211706c2c3eb554ff69ec3fa6b7a7b148b60312e59a1d8
