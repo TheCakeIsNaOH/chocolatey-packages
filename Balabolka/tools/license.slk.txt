@@ -1,0 +1,54 @@
+Balabolka
+
+
+Autor: Ilya Morozov
+WWW: http://balabolka.site
+E-mail: crossa@list.ru
+
+Poznámka: Táto aplikácia je vydaná ako verzia freeware. Pouívatelia sa môu s dotazmi tıkajúcimi sa tejto zmluvy EULA alebo všeobecne tejto aplikácie obráti na „autora“. „Autor“ sa pokúsi na všetky dotazy odpoveda najrıchlejšie, ako to pôjde.
+
+
+LICENÈNÁ ZMLUVA S KONCOVİM POUÍVATE¼OM PRE TENTO SOFTVÉR
+Dôleité – èítajte pozorne!
+
+Táto licenèná zmluva s koncovım pouívate¾om („EULA“) predstavuje právnu dohodu medzi vami (ako fyzickou alebo právnickou osobou) a vyššie uvedenım „autorom“ tohto „softvéru“. Dohoda sa tıka vyššie zmieneného softvérového produktu, ktorı zahàòa vlastnı poèítaèovı softvér a môe zahàòa aj súvisiace médiá, tlaèené materiály a online alebo elektronickú dokumentáciu (ïalej len „SOFTVÉROVİ PRODUKT“). Inštaláciou, kopírovaním alebo inım pouitím SOFTVÉROVÉHO PRODUKTU súhlasíte s podmienkami tejto zmluvy EULA. Pokia¾ s podmienkami tejto zmluvy EULA nesúhlasíte, nemôete si SOFTVÉROVİ PRODUKT nainštalova ani ho pouíva.
+
+LICENCIA K SOFTVÉROVÉMU PRODUKTU
+
+SOFTVÉROVİ PRODUKT je chránenı autorskım právom, medzinárodnımi dohodami o autorskıch právach a ïalšími právnymi predpismi a dohodami tıkajúcimi sa ochrany duševného vlastníctva. SOFTVÉROVİ PRODUKT je vám poskytovanı na základe licencie (nie predávanı).
+
+1. UDELENIE LICENCIE:
+Táto zmluva EULA vám ude¾uje nasledujúce práva: 
+
+Právo inštalácie a pouívania. Môete nainštalova a pouíva neobmedzenı poèet kópií SOFTVÉROVÉHO PRODUKTU.
+
+Právo reprodukcie a distribúcie: SOFTVÉROVİ PRODUKT smiete reprodukova a distribuova v neobmedzenom poète kópií, a to za predpokladu, e kadá kópia je úplná a pravá a zahàòa všetky autorské práva a ochranné známky, vrátane priloenej kópie tejto zmluvy EULA. Kópie SOFTVÉROVÉHO PRODUKTU môete distribuova ako samostatnı produkt alebo ako súèas svojho vlastného produktu.
+
+2. INFORMÁCIE O ÏALŠÍCH PRÁVACH A OBMEDZENIACH:
+Obmedzenia vzahujúce sa na reverzné ininierstvo, dekompiláciu a dekódovanie:
+Nemáte dovolené vykonáva spätnú analızu, dekompiláciu alebo dekódovanie SOFTVÉROVÉHO PRODUKTU. Bez oh¾adu na toto obmedzenie môete také èinnosti vykonáva, pokia¾ sú vıslovne povolené príslušnımi platnımi právnymi predpismi a to len v rozsahu, v akom sa povo¾ujú.
+
+Separácia komponentov:
+SOFTVÉROVİ PRODUKT je vám poskytovanı na základe licencie ako jedinı produkt. Jeho jednotlivé komponenty nemono oddelene pouíva na viac ne jednom poèítaèi bez predchádzajúceho povolenia od „autora“.
+
+Prevod softvéru:
+Všetky svoje práva vyplıvajúce z tejto zmluvy EULA môete trvale previes na nového nadobúdate¾a, pokia¾ tento súhlasí s podmienkami tejto zmluvy EULA.
+
+Ukonèenie zmluvy:
+Pokia¾ porušíte niektorú z podmienok stanovenıch touto zmluvou EULA, má „autor“ tohto „softvéru“ právo ukonèi platnos tejto zmluvy EULA bez toho, aby tım boli dotknuté akéko¾vek iné práva. V takom prípade musíte znièi všetky kópie SOFTVÉROVÉHO PRODUKTU a všetkıch jeho komponentov.
+
+Distribúcia:
+SOFTVÉROVİ PRODUKT nesmie by predanı ako súèas iného produktu alebo balenia alebo k nim by pripojenı, pokia¾ by úèelom zaèlenenia SOFTVÉROVÉHO PRODUKTU bolo zvıhodnenie iného produktu, bez predchádzajúceho vıslovného povolenia „autora“. SOFTVÉROVİ PRODUKT môe by súèasou akéhoko¾vek balenia distribuovaného zadarmo alebo neziskovou formou v súlade s podmienkami tejto zmluvy EULA.
+
+3. AUTORSKÉ PRÁVO:
+Všetky vlastnícke a autorské práva vzahujúce sa k SOFTVÉROVÉMU PRODUKTU (vrátane akıchko¾vek obrázkov, animácií, audia, textov a „apletov“ obsiahnutıch v SOFTVÉROVOM PRODUKTE), k sprievodnım tlaèenım materiálom a k akımko¾vek kópiám SOFTVÉROVÉHO PRODUKTU sú majetkom „autora“ tohto „softvéru“. SOFTVÉROVİ PRODUKT je chránenı autorskım právom a medzinárodnımi dohodami. So SOFTVÉROVİM PRODUKTOM je teda treba zachádza ako s akımko¾vek inım materiálom chránenım autorskım právom a je moné ho inštalova do jediného poèítaèa s tım, e si originál môete uchova vıluène pre úèely zálohovania alebo archivácie.
+
+4. RÔZNE USTANOVENIA:
+V prípade akıchko¾vek dotazov tıkajúcich sa tejto zmluvy EULA alebo v prípade potreby kontaktova „autora“ tohto „softvéru“ z akéhoko¾vek dôvodu pouite e-mailovú adresu „autora“ uvedenú na zaèiatku tejto zmluvy EULA.
+
+5. OBMEDZENÁ ZÁRUKA:
+ODMIETNUTIE ZÁRUKY: „Autor“ tohto „softvéru“ vıslovne odmieta akúko¾vek záruku na tento SOFTVÉROVİ PRODUKT. SOFTVÉROVİ PRODUKT a všetky súvisiace dokumentácie sú poskytované „tak, ako sú,“ a bez záruky akéhoko¾vek druhu, nech u vıslovne vyjadrenej, alebo predpokladanej, okrem iného vrátane odvodenıch záruk vzahujúcich sa k predajnosti a vhodnosti pre urèitı úèel alebo záruk neporušenia práv tretích strán. Za všetky riziká vyplıvajúce z pouívania alebo funkènosti SOFTVÉROVÉHO PRODUKTU nesie zodpovednos pouívate¾.
+
+6. OBMEDZENIE ZODPOVEDNOSTI ZA ŠKODY:
+„Autor“ tohto „softvéru“ nenesie v iadnom prípade zodpovednos za akéko¾vek škody (vrátane zodpovednosti za ušlı zisk, prerušenie obchodnej èinnosti, straty obchodnıch príleitostí alebo akejko¾vek inej finanènej straty) vyplıvajúce z pouitia alebo nemonosti pouitia tohto produktu, a to i v prípade, e bol „autor“ tohto „softvéru“ na monos vzniku takıch škôd upozornenı. Vzh¾adom k tomu, e niektoré štáty a jurisdikcie neumoòujú vylúèenie alebo obmedzenie zodpovednosti, vyššie uvedené obmedzenia sa na vás nemusia vzahova.
+

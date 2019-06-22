@@ -1,6 +1,6 @@
-Balabolka – verze 2.15.0.703
-Copyright (c) 2006–2019 Ilya Morozov
-Všechna práva vyhrazena.
+Balabolka - verze 2.15.0.704
+Copyright (c) 2006-2019 Ilya Morozov
+Všechna práva vyhrazena
 
 WWW: http://balabolka.site
 E-mail: crossa@list.ru
@@ -14,12 +14,11 @@ Microsoft Speech Platform: v11.0
 
 *** Instalace ***
 
-    Pokud jste tuto verzi Balabolky získali jako soubor ZIP
-    (napø. BALABOLKA.ZIP), nainstalujete ji následovnì:
+    Pokud jste tuto verzi Balabolky získali jako soubor ZIP (napø BALABOLKA.ZIP), nainstalujete ji následovnì:
 
     1. Rozbalte soubor do doèasné složky.
     2. V nabídce start zvolte položku 'Spustit'.
-    3. Do pole 'Spustit' zadejte plnou cestu k souboru (napø. C:\TEMP\SETUP.EXE).
+    3. Do pole 'Spustit' zadejte plnou cestu k souboru (napø C:\TEMP\SETUP.EXE).
     4. Stisknìte klávesu Enter a øiïte se pokyny prùvodce instalací.
 
     Pro instalaci programu v tichém režimu bez dialogù mùžete použít tichou instalaci.
@@ -48,11 +47,11 @@ Microsoft Speech Platform: v11.0
     Pøi instalaci Microsoft Speech Platform postupujte následovnì:
 
     1. Odinstalujte z vašeho poèítaèe všechny pøedchozí verze rozhraní Microsoft Speech Platform.
-    2. Zjistìte, zda používáte 32bitovou, nebo 64bitovou verzi operaèního systému.
+    2. Zjistìte zda používáte 32 nebo 64 bitovou verzi operaèního systému.
     3. Stáhnìte a nainstalujte Speech Platform, odpovídající bitové verzi vašeho operaèního systému.
     4. Stáhnìte a nainstalujte jazykové balíèky rozhraní Speech Platform.
 
-    Balabolka je 32bitová aplikace. Aby v ní byly hlasy rozhraní Microsoft SPEECH PLATFORM použitelné, je potøeba nainstalovat 32bitové verze pøíslušných balíèkù.
+    Balabolka je 32 bitová aplikace. Aby v ní byly hlasy rozhraní Microsoft SPEECH PLATFORM použitelné, je potøeba nainstalovat 32 bitové verze pøíslušných balíèkù.
 
 
 
@@ -62,7 +61,7 @@ Microsoft Speech Platform: v11.0
 
     http://www.cross-plus-a.com
 
-    Dokud budou lidé platit za program Cross+A, Balabolka zùstane volnì šiøitelnou aplikací.
+    Dokud lidé budou platit za program Cross+A, Balabolka zùstane volnì šiøitelnou aplikací.
 
     Mnohokrát dìkuji!  
 

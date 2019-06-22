@@ -1,4 +1,4 @@
-Balabolka, versione 2.15.0.703
+Balabolka, versione 2.15.0.704
 Copyright (c) 2006-2019 Ilya Morozov
 Tutti i diritti riservati
 

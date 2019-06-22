@@ -6,6 +6,13 @@
 ~~~~~~~~~~~~~~~
 
 
+22.06.2019     v2.15.0.704
+[+] Added the option "Hide tab area with filenames" for the full screen mode.
+[+] Added the using of IBM Watson Text-To-Speech (for testing purposes only).
+[+] Added resources for Slovak language (thanks to Jiří Fenz).
+[*] Resources for Czech and German languages were updated (thanks to Jiří Fenz and Regine Müller).
+
+
 08.06.2019     v2.15.0.703
 [-] Reduced the memory usage.
 [*] Resources for Chinese (Simplified) language were updated (thanks to Anan).

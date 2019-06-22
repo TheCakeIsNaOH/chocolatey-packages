@@ -11,7 +11,7 @@ $packageArgs = @{
 
   softwareName  = 'Balabolka*'
 
-  checksum      = 'bd57abaff30262827dbb0da90ce39dbf373c71050346a8bfc573e486021b2242'
+  checksum      = '0154F669827BFCC2C8A1D0F043DDE2283F8CDEE038671ED71BBB9723ADD97FE8'
   checksumType  = 'sha256'
 
   silentArgs   = '-silent'
