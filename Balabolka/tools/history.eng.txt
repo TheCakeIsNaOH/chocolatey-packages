@@ -6,6 +6,12 @@
 ~~~~~~~~~~~~~~~
 
 
+06.07.2019     v2.15.0.705
+[*] The LAME encoder was updated.
+[-] The using of Baidu Translate service was disabled (v1 was turned off by Baidu).
+[*] Resources for Bulgarian, Hungarian and Slovenian languages were updated (thanks to Kostadin Kolev, Zoltan Magyar and Jožef Gregorc).
+
+
 22.06.2019     v2.15.0.704
 [+] Added the option "Hide tab area with filenames" for the full screen mode.
 [+] Added the using of IBM Watson Text-To-Speech (for testing purposes only).
