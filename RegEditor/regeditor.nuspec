@@ -4,7 +4,7 @@
   <metadata>
     <id>regeditor</id>
     <version>12.0.2172</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/RegEditor</packageSourceUrl>
 	<owners>TheCakeIsNaOH</owners>
     <title>O&amp;O RegEditor</title>
     <authors>O&amp;OSoftware</authors>
