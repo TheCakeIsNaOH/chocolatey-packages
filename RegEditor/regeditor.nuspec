@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>regeditor</id>
+    <version>12.0.2172</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+	<owners>TheCakeIsNaOH</owners>
+    <title>O&amp;O RegEditor</title>
+    <authors>O&amp;OSoftware</authors>
+    <projectUrl>https://www.oo-software.com/en/ooregeditor</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/regeditor.png</iconUrl>-->
+    <copyright>2019 O&amp;OSoftware</copyright>
+    <licenseUrl>https://www.oo-software.com/en/ooregeditor/eula</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>regeditor regedit registry O&amp;O</tags>
+    <summary>Freeware for editing the Windows Registry</summary>
+    <description>Whether we’re talking about the adept home-user or an administrator, O&O RegEditor makes the job easier and quicker. 
+	It comes with an eminently user-friendly application, but it is really its portability that makes the life of an administrator much easier.
+
+No installation is needed and all settings are saved in the Profile data, so that O&O RegEditor can easily be used on other computers. 
+Special versions in 32 and 64-Bit are available, meaning certain registry entries can be edited on 64-Bit systems that are normally hidden from 32-Bit users.</description>
+    <releaseNotes>https://www.oo-software.com/en/ooregeditor</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
