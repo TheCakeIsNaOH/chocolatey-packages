@@ -6,6 +6,14 @@
 ~~~~~~~~~~~~~~~
 
 
+20.07.2019     v2.15.0.706
+[+] Baidu Translate is available again (v2 is used now).
+[+] Added the support of an API-key for Yandex.Translate.
+[-] The using of Microsoft Translator and Bing TTS was disabled (free service was turned off by Microsoft).
+[+] Small improvements.
+[*] Resources for Spanish language were updated (thanks to Fernando Gregoire).
+
+
 06.07.2019     v2.15.0.705
 [*] The LAME encoder was updated.
 [-] The using of Baidu Translate service was disabled (v1 was turned off by Baidu).
