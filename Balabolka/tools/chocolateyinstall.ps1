@@ -8,12 +8,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'EXE'
   file         = $fileLocation
-
   softwareName  = 'Balabolka*'
-
-  checksum      = 'C0CFBAB69EEE1EE65DD293308B1263543EC7A01E4EDD6C56688875221B9E118C'
-  checksumType  = 'sha256'
-
   silentArgs   = '-silent'
 }
 

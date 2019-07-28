@@ -6,6 +6,13 @@
 ~~~~~~~~~~~~~~~
 
 
+27.07.2019     v2.15.0.707
+[+] Added the main menu item "Split and Convert (Not Show Window)".
+[*] The LAME encoder was updated.
+[+] Small improvements.
+[*] Resources for German language were updated (thanks to Regine Müller).
+
+
 20.07.2019     v2.15.0.706
 [+] Baidu Translate is available again (v2 is used now).
 [+] Added the support of an API-key for Yandex.Translate.
