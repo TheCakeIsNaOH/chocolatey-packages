@@ -6,6 +6,12 @@
 ~~~~~~~~~~~~~~~
 
 
+02.08.2019     v2.15.0.708
+[+] Microsoft Translator is available again (v3 is used now).
+[+] Small improvements.
+[*] Resources for Bulgarian, Chinese (Simplified), Hungarian, Portuguese and Spanish languages were updated (thanks to Kostadin Kolev, Anan, Zoltan Magyar, Miguel Simões and Fernando Gregoire).
+
+
 27.07.2019     v2.15.0.707
 [+] Added the main menu item "Split and Convert (Not Show Window)".
 [*] The LAME encoder was updated.
