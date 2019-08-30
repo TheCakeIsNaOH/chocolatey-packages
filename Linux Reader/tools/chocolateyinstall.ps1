@@ -13,7 +13,7 @@ $packageArgs = @{
 
   softwareName  = 'Linux Reader*'
 
-  checksum      = 'b2b9ce715a0f50edc10afcc6446f3ff1bb9f6117a2c38f628a3c6deedc26de31'
+  checksum      = '50B7F186CFD960E4F08F2B325BA75663EA759FCC6FA13E8488849C2F7CCC0BA9'
   checksumType  = 'sha256'
 
   silentArgs   = '/S'
