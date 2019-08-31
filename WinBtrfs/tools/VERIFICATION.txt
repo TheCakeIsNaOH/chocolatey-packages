@@ -2,8 +2,8 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-1. Download https://github.com/maharmstone/btrfs/releases/download/v1.2.1/btrfs-1.2.1.zip
+1. Download the release zip from https://github.com/maharmstone/btrfs/releases
 
 2. Use checksum utility of preference to get checksum of zip
 
-3. Check that it matches checksum of btrfs.zip
+3. Check that it matches checksum with btrfs.zip included in tools directory
