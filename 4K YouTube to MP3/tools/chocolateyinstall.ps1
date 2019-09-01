@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.7.1.msi?source=chocolatey'
-$url64      = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.7.1_x64.msi?source=chocolatey'
+$url        = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.0.msi?source=chocolatey'
+$url64      = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.0_x64.msi?source=chocolatey'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -12,9 +12,9 @@ $packageArgs = @{
 
   softwareName  = '4K Youtube to MP3*'
 
-  checksum      = '7534C9743E76233F3AB340E4843D49F72CD196155D70F3325A0B4DB3A8DEF80Fs'
+  checksum      = '8d17d790dd75d1b909af9aa554e2805de48ccd87e01da1310364178b526c0720'
   checksumType  = 'sha256'
-  checksum64    = 'FD825D04C798612A11AD60C319E51E1F2831A3462F216D7FD11475B497CF3566'
+  checksum64    = '1ca73eafba9382b2ac65a80b85d610617d9f03805adc5319ff539ad3c066c928'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
