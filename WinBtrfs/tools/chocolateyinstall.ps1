@@ -5,11 +5,6 @@ $driverFile = Join-Path $toolsDir 'btrfs.cat'
 $outputFile = Join-Path $toolsDir 'MarkHarmstone.cer'
 $exportType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
 
-
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-}
-
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
 Write-Host "Removing bundled debug files"
