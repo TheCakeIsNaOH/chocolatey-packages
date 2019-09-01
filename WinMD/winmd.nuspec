@@ -1,60 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winmd</id>
-    <!-- version should MATCH as closely as possible with the underlying software -->
-    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
-    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>__REPLACE__</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
-    <!-- ============================== -->
+    <version>0.1</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinMD</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>WinMD</title>
+    <authors>Mark Harmstone</authors>
+    <projectUrl>https://github.com/maharmstone/winmd</projectUrl>
+    <copyright>2019 Mark Harmstone</copyright>
+    <licenseUrl>https://github.com/maharmstone/winmd/blob/master/LICENCE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>https://github.com/maharmstone/winmd/issues</bugTrackerUrl>
+    <tags>winmd driver MD raid</tags>
+    <summary>WinMD is a driver allowing Windows to access MD RAID devices</summary>
+    <description>WinMD is a driver allowing Windows to access MD RAID devices - software RAID volumes created by mdadm on Linux. Bear in mind that you will still need a filesystem driver: see, for instance, WinBtrfs and Ext2fsd.
 
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <!-- This section is about the software itself -->
-    <title>WinMD (Install)</title>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
-    <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/winmd.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>winmd SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->      
+Everything here is released under the GNU Lesser General Public Licence (LGPL); see the file LICENCE for more info. You are encouraged to play about with the source code as you will, and I'd appreciate a note (mark@harmstone.com) if you come up with anything nifty.
 
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
+Features
+RAID 0
+RAID 1
+RAID 4
+RAID 5
+RAID 6
+RAID 10 (near, far, offset)
+Linear
+Recognizes version 1 superblocks (1.0, 1.1, 1.2)
+Nested sets
+Todo
+whole-disk RAID (i.e. recognizing partitions on MD device)
+reshaping
+rebuilding
+checking
+degraded mounts
+adding and removing devices
+creating new sets from Windows
+RAID4/5/6 journal
+write-intent bitmaps
+version 0.9 superblocks
+Installation
+To install the driver, download and extract the latest release, right-click winmd.inf, and choose Install. The driver is signed, so should work out of the box on modern versions of Windows.
 
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+For the very latest versions of Windows 10, Microsoft introduced more onerous requirements for signing, which are only available to corporations and not individuals. If this affects you (i.e. you get a signing error when trying to install the driver), try disabling Secure Boot in your BIOS settings.
+
+Uninstalling
+From an elevated command prompt, run:
+
+RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultUninstall 132 winmd.inf
+
+You will probably need to give the full path to winmd.inf. Next time you reboot, Windows will remove the driver from your system.
+
+You can also disable it by opening regedit and setting the value of HKLM\SYSTEM\CurrentControlSet\services\winmd\Start to 4.</description>
+    <releaseNotes>
+v0.1 (2019-07-31):
+Initial release
+</releaseNotes>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
