@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>libdvdcss-2</id>
+    <version>1.4.2</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/libdvdcss-2</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>libdvdcss-2</title>
+    <authors>VideoLAN</authors>
+    <projectUrl>https://github.com/allienx/libdvdcss-dll</projectUrl>
+    <copyright>2018 VideoLAN</copyright>
+    <licenseUrl>https://github.com/allienx/libdvdcss-dll/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://code.videolan.org/videolan/libdvdcss</projectSourceUrl>
+    <docsUrl>https://www.videolan.org/developers/libdvdcss/doc/html/</docsUrl>
+    <bugTrackerUrl>https://code.videolan.org/videolan/libdvdcss/issues</bugTrackerUrl>
+    <tags>libdvdcss DVD DRM HandBrake Ripping</tags>
+    <summary>A simple library designed for accessing DVDs like a block device without having to bother about the decryption.</summary>
+    <description>
+Libdvdcss-2 releases compiled for windows by allienx 
+	</description>
+    <releaseNotes>https://code.videolan.org/videolan/libdvdcss/blob/master/NEWS</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

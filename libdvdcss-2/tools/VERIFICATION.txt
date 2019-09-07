@@ -1,0 +1,7 @@
+﻿1. Download dll release zip from here- https://github.com/allienx/libdvdcss-dll/releases
+
+2. Unzip the file
+
+3. Get checksums of dll in 32 and 64 bit folders
+
+4. Check that the checksums match the included dlls
