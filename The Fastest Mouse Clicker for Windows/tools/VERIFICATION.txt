@@ -1,0 +1,5 @@
+﻿1. Download release from https://sourceforge.net/projects/fast-mouse-clicker-pro/files/
+
+2. Get checksum of .exe
+
+3. Check that it matches checksum of included .exe

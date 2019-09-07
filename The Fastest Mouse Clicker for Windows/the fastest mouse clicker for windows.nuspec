@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+   <id>fastest-mouse-clicker</id>
+    <version>2.1.5.2</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>TheCakeIsNaOH</owners>
+    <title>The Fastest Mouse Clicker for Windows</title>
+    <authors>windows-2048</authors>
+    <projectUrl>https://sourceforge.net/projects/fast-mouse-clicker-pro/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/the fastest mouse clicker for windows.png</iconUrl>-->
+    <copyright>2019 windows-2048</copyright>
+    <licenseUrl>https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <projectSourceUrl>https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows</projectSourceUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/fast-mouse-clicker-pro/tickets/</bugTrackerUrl>
+    <tags>the fastest mouse clicker for windows</tags>
+    <summary>The world's fastest auto clicker. Command line. Parameters auto-save</summary>
+    <description>Free open source mouse auto clicker emulates Windows mouse clicks EXTREMELY QUICKLY, at hardware speed limit, using modern arrayed SendInput() Win32 API. Supports command line arguments, clicking parameters auto-save and RANDOM CLICKING. The only program utilizes fine tricks in Sleep()/SendInput() with arrays of 100-1000 mouse events, making up to 100000 clicks per second.
+
+NEW Button "Batch folder" has been added to open a directory with *.bat files quickly; it simplifies command line usage a lot.
+NEW Random clicking has been implemented. Just click the "Batch folder" button and see remarks in the *.bat files reside there in order how to use command line arguments and to enable random clicking.
+NEW Different trigger keys in toggle mode (arbitrary selected  and Ctrl+) have been added.
+NEW Window Always Top checkbox to keep the app's window topmost has been added.
+NEW Different, INDEPENDENT trigger keys to begin/end the clicking in toggle mode.
+	
+	</description>
+    <releaseNotes>Version 2.1.5.2: Help text fixed to match new independent hotkeys.
+
+Version 2.1.5.1: completely different independent hotkeys for toggle mode clicking.
+
+Version 2.1.4.0: the Window Always Top checkbox has been added.
+
+Random clicking has been implemented since version 2.0.0.0.</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
