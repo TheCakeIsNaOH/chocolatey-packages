@@ -6,6 +6,10 @@
 ~~~~~~~~~~~~~~~
 
 
+07.09.2019     v2.15.0.711
+[*] The using of Yandex Speechkit was updated.
+
+
 01.09.2019     v2.15.0.710
 [*] The using of IBM Watson Text-To-Speech was updated.
 [+] Small improvements.
