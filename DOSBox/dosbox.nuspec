@@ -4,12 +4,12 @@
   <metadata>
     <id>dosbox</id>
     <version>0.74.3.0</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/DOSBox</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>DOSBox</title>
     <authors>DOSBox</authors>
     <projectUrl>https://www.dosbox.com/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/dosbox.png</iconUrl>-->
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/9ad6c557/Icons/DOSBox_0000.png</iconUrl>
     <copyright>2019 DOSBox</copyright>
     <licenseUrl>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
