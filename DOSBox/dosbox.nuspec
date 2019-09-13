@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dosbox</id>
+    <version>0.74.3.0</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>TheCakeIsNaOH</owners>
+    <title>DOSBox</title>
+    <authors>DOSBox</authors>
+    <projectUrl>https://www.dosbox.com/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/dosbox.png</iconUrl>-->
+    <copyright>2019 DOSBox</copyright>
+    <licenseUrl>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/COPYING</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/</projectSourceUrl>
+    <docsUrl>https://www.dosbox.com/DOSBoxManual.html</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/dosbox/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/dosbox/bugs/</bugTrackerUrl>
+    <tags>dosbox dos emulator</tags>
+    <summary>An Open Source DOS emulator to run old DOS games</summary>
+    <description>DOSBox emulates a full x86 pc with sound and DOS. Its main use is to run old DOS games on platforms which don't have DOS 
+	
+	This is the command line version. If you would like a GUI to manage dosbox, take a look at- https://chocolatey.org/packages/dbgl
+	</description>
+    <releaseNotes>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/ChangeLog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
