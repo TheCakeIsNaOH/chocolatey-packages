@@ -18,7 +18,20 @@
     <tags>libdvdcss DVD DRM HandBrake Ripping</tags>
     <summary>A simple library designed for accessing DVDs like a block device without having to bother about the decryption.</summary>
     <description>
-Libdvdcss-2 releases compiled for windows by allienx 
+Libdvdcss-2 releases compiled for HandBrake for Windows by allienx 
+
+By default tries to copy to handbrake install directories, but you can also specify your own directory to copy to.
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/CopyDir64:` - Optional extra directory to place the 64 bit lib
+ * `/CopyDir32:` - Optional extra directory to place the 32 bit lib
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
 	</description>
     <releaseNotes>https://code.videolan.org/videolan/libdvdcss/blob/master/NEWS</releaseNotes>
   </metadata>

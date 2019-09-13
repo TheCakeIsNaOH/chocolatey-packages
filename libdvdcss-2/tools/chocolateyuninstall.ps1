@@ -1,6 +1,17 @@
 ﻿$ErrorActionPreference = 'Stop';
-$sys32 = [System.Environment]::SystemDirectory
-$dll = Join-Path $sys32 'libdvdcss-2.dll'
+$toolsDir   		   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$copyLog			   = join-path $toolsDir 'List_of_paths_copied_to.txt'
+$copyPaths			   = Get-Content -Path $copyLog
 
-Write-Host -ForegroundColor green 'Removing libdvdcss-2.dll from system32'
-Remove-Item -Path $dll
+foreach ($path in $copyPaths) {
+	$dllPath = join-path $path 'libdvdcss-2.dll' 
+	if (test-path $dllpath) {
+		Write-Host -ForegroundColor green 'Removing libdvdcss-2.dll from ' $path
+		Remove-Item -Path $dllPath
+	} else {
+		Write-Host -ForegroundColor yellow 'Did not find libdvdcss-2.dll in ' $path
+		Write-Host -ForegroundColor yellow 'Must have already been removed'
+	}
+}
+
+Remove-Item -Path $copyLog
