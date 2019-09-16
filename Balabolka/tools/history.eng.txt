@@ -6,6 +6,10 @@
 ~~~~~~~~~~~~~~~
 
 
+16.09.2019     v2.15.0.712
+[-] Fixed the text extracting for EPUB, HTML and MHT files.
+
+
 07.09.2019     v2.15.0.711
 [*] The using of Yandex Speechkit was updated.
 
