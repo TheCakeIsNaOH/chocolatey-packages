@@ -1,4 +1,4 @@
-﻿$pp = Get-PackageParameters
+﻿$pp 				   = Get-PackageParameters
 $ErrorActionPreference = 'Stop';
 $toolsDir   		   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $dllPath64			   = join-path $toolsDir 'x64\libdvdcss-2.dll'
@@ -40,15 +40,19 @@ if ($pp['CopyDir32']) {
 	}
 }
 
-if (Get-OSArchitectureWidth 64) { 
-	if ($env:ChocolateyForceX86) {
-		Copy-Dll $handbrakeDirPortable $dllPath32
-		Copy-Dll $handbrakeDir32 $dllPath32
-	} else {
-		Copy-Dll $handbrakeDirPortable $dllPath64
-		Copy-Dll $handbrakeDir $dllPath64
-	}
+if ($pp['NoHandbrakeCopy']) {
+	Write-Host -ForegroundColor green 'Copying to HandBrake install directories disabled by user parameter'
 } else {
-	Copy-Dll $handbrakeDirPortable $dllPath32
-	Copy-Dll $handbrakeDir $dllPath32
+	if (Get-OSArchitectureWidth 64) { 
+		if ($env:ChocolateyForceX86) {
+			Copy-Dll $handbrakeDirPortable $dllPath32
+			Copy-Dll $handbrakeDir32 $dllPath32
+		} else {
+			Copy-Dll $handbrakeDirPortable $dllPath64
+			Copy-Dll $handbrakeDir $dllPath64
+		}
+	} else {
+		Copy-Dll $handbrakeDirPortable $dllPath32
+		Copy-Dll $handbrakeDir $dllPath32
+	}
 }
