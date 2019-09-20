@@ -5,7 +5,7 @@
     <version>1.4.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>WinBtrfs (Install)</title>
+    <title>WinBtrfs</title>
     <authors>maharmstone</authors>
     <projectUrl>https://github.com/maharmstone/btrfs</projectUrl>
     <licenseUrl>https://github.com/maharmstone/btrfs/blob/master/LICENCE</licenseUrl>

@@ -5,7 +5,7 @@
     <version>2.15.0.712</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Balabolka</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>Balabolka (Install)</title>
+    <title>Balabolka</title>
     <authors>Ilya Morozov</authors>
     <projectUrl>http://www.cross-plus-a.com/balabolka.htm</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/6f509ff0a271ac69356650aa956d6a9c35f85080/Icons/balabolka_0000.png</iconUrl>

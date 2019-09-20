@@ -5,7 +5,7 @@
     <version>2.11.2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/BibleTime</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>BibleTime (Install)</title>
+    <title>BibleTime</title>
     <authors>BibleTime team</authors>
     <projectUrl>http://bibletime.info/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/69fd7fe70b9c3069df16c2c3bd6effca6e2a12ba/Icons/bibletime_0000.png</iconUrl>

@@ -5,7 +5,7 @@
     <version>3.5</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Linux%20Reader</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>Linux Reader (Install)</title>
+    <title>Linux Reader</title>
     <authors>DiskInternals</authors>
     <projectUrl>https://www.diskinternals.com/linux-reader</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/8a8042da4bdde88fadd4ce409feb142595b75b14/Icons/LinuxReader_0000.png</iconUrl>
