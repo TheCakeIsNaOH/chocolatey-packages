@@ -6,6 +6,12 @@
 ~~~~~~~~~~~~~~~
 
 
+21.09.2019     v2.15.0.713
+[+] Added the option "Use a custom folder to store temporary audio files".
+[+] Added the main menu item "Delete All".
+[*] Resources for German language were updated (thanks to Regine Müller).
+
+
 16.09.2019     v2.15.0.712
 [-] Fixed the text extracting for EPUB, HTML and MHT files.
 
