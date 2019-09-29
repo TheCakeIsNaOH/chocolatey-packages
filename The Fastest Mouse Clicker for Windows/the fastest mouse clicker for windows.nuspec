@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>fastest-mouse-clicker</id>
-    <version>2.1.5.2</version>
+    <version>2.1.5.2-te</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/The%20Fastest%20Mouse%20Clicker%20for%20Windows</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>The Fastest Mouse Clicker for Windows</title>
@@ -25,6 +25,14 @@ NEW Different trigger keys in toggle mode (arbitrary selected  and Ctrl+) have b
 NEW Window Always Top checkbox to keep the app's window topmost has been added.
 NEW Different, INDEPENDENT trigger keys to begin/end the clicking in toggle mode.
 	
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
     <releaseNotes>Version 2.1.5.2: Help text fixed to match new independent hotkeys.
 
