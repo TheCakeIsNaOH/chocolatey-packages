@@ -1,7 +1,10 @@
-﻿
-$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$ErrorActionPreference = 'Stop';
+$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $Url = 'https://get.openlp.org/2.4.6/OpenLP-2.4.6-setup.exe'
+$pp                    = Get-PackageParameters
+$shortcutName          = 'OpenLP.lnk'
+$shortcut              = Join-Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) $shortcutName
+
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -15,3 +18,12 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+if ($pp['noicon']) {
+	if (Test-Path $shortcut) {
+		Remove-Item $shortcut
+		Write-Host -ForegroundColor green 'Removed ' $shortcut
+	} else {
+		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
+	}
+}

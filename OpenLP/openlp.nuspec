@@ -28,7 +28,16 @@
 	Fixed a problem with the new QMediaPlayer not controlling the playlist anymore
 	Added importing of author types to the OpenLP 2 song importer
 	Fixed a problem with loading Qt's translation files
-	Disabled the controls in the shortcut dialog unless a shortcut is actually selected</releaseNotes>
+	Disabled the controls in the shortcut dialog unless a shortcut is actually selected
+	
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
