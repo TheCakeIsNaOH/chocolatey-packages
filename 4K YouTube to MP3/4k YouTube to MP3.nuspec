@@ -14,7 +14,16 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>4k-youtube-to-mp3 4k YouTube MP3</tags>
     <summary>Turn YouTube videos into MP3 files, fast and easy</summary>
-    <description>4K YouTube to MP3 was specifically created for audio extraction from YouTube, VEVO, SoundCloud and Facebook in MP3, M4A, OGG. Get started for free!</description>
+    <description>4K YouTube to MP3 was specifically created for audio extraction from YouTube, VEVO, SoundCloud and Facebook in MP3, M4A, OGG. Get started for free!
+	
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

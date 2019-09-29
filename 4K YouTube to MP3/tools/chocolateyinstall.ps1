@@ -1,7 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2.msi?source=chocolatey'
-$url64      = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2_x64.msi?source=chocolatey'
+$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url                   = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2_x64.msi?source=chocolatey'
+$pp                    = Get-PackageParameters
+$shortcutName          = '4K YouTube to MP3.lnk'
+$shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -22,3 +25,12 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+if ($pp['noicon']) {
+	if (Test-Path $shortcut) {
+		Remove-Item $shortcut
+		Write-Host -ForegroundColor green 'Removed ' $shortcut
+	} else {
+		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
+	}
+}
