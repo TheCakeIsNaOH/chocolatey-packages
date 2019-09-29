@@ -25,7 +25,16 @@ How to get safe and quick access to any file systems? DiskInternals Linux Reader
 
 While saving, it ignores file security policies. It means that it is possible to access absolutely any file on a Linux disk from Windows. The program can create and open disk images.
 
-Linux Reader is 100% FREE. Try it now.</description>
+Linux Reader is 100% FREE. Try it now.
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
     
   </metadata>
   <files>    
