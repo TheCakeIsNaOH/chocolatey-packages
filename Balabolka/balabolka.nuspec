@@ -23,8 +23,8 @@
 	Balabolka can save the synchronized text in external LRC files or in MP3 tags inside the audio files. 
 	When an audio file is played with players on a computer or on modern digital audio players, the text is displayed synchronously (at the same way, as lyrics for songs)
 	
-	### Package Specific
-    #### Package Parameters
+### Package Specific
+#### Package Parameters
 The following package parameters can be set:
 
  * `/NOICON` - Remove the Balabolka desktop icon
