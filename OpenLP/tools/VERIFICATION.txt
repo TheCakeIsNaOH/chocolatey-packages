@@ -1,0 +1,5 @@
+﻿1. Download installer from here- https://get.openlp.org/2.4.6/OpenLP-2.4.6-setup.exe
+
+2. Get checksums of both the downloaded file and the included .exe
+
+3. Check that the checksums match

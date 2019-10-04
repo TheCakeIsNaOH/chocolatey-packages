@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openlp</id>
-    <version>2.4.6</version>
+    <version>2.4.6.20191001</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/OpenLP</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>OpenLP (Install)</title>
@@ -12,13 +12,17 @@
     <copyright>2017 OpenLP developers</copyright>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://launchpad.net/openlp</projectSourceUrl>
+    <projectSourceUrl>https://gitlab.com/openlp/openlp</projectSourceUrl>
     <docsUrl>https://manual.openlp.org/introduction.html</docsUrl>
     <mailingListUrl>https://lists.openlp.io/mailman/listinfo/openlp-dev</mailingListUrl>
-    <bugTrackerUrl>https://bugs.launchpad.net/openlp</bugTrackerUrl>
+    <bugTrackerUrl>https://gitlab.com/openlp/openlp/issues</bugTrackerUrl>
     <tags>openlp</tags>
     <summary>Empower Your Church</summary>
-    <description>Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. Fast, flexible and easy to use, you will have your service up and running in a few minutes. These features and a whole lot more at a price that can't be beat.</description>
+    <description> 2019-10-01 version- Added icon removal parameter and included binary.
+	
+	Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. 
+	Fast, flexible and easy to use, you will have your service up and running in a few minutes. 
+	These features and a whole lot more at a price that can't be beat.</description>
     <releaseNotes>OpenLP 2.4.6 bugfixes
 	Fixed a bug where the author type upgrade was being ignored because it was looking at the wrong table
 	Fixed a bug where the songs_songbooks table was not being created because the if expression was the wrong way round
