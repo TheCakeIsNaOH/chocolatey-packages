@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balabolka</id>
-    <version>2.15.0.713</version>
+    <version>2.15.0.714</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Balabolka</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Balabolka</title>
@@ -23,7 +23,6 @@
 	Balabolka can save the synchronized text in external LRC files or in MP3 tags inside the audio files. 
 	When an audio file is played with players on a computer or on modern digital audio players, the text is displayed synchronously (at the same way, as lyrics for songs)
 	
-### Package Specific
 #### Package Parameters
 The following package parameters can be set:
 
