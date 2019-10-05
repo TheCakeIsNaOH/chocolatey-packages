@@ -20,9 +20,18 @@
     <summary>Empower Your Church</summary>
     <description> 2019-10-01 version- Added icon removal parameter and included binary.
 	
-	Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. 
-	Fast, flexible and easy to use, you will have your service up and running in a few minutes. 
-	These features and a whole lot more at a price that can't be beat.</description>
+Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. 
+Fast, flexible and easy to use, you will have your service up and running in a few minutes. 
+These features and a whole lot more at a price that can't be beat.
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
     <releaseNotes>OpenLP 2.4.6 bugfixes
 	Fixed a bug where the author type upgrade was being ignored because it was looking at the wrong table
 	Fixed a bug where the songs_songbooks table was not being created because the if expression was the wrong way round
@@ -33,15 +42,7 @@
 	Added importing of author types to the OpenLP 2 song importer
 	Fixed a problem with loading Qt's translation files
 	Disabled the controls in the shortcut dialog unless a shortcut is actually selected
-	
-### Package Specific
-#### Package Parameters
-The following package parameters can be set:
-
- * `/NOICON` - Remove the desktop icon
-
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</releaseNotes>
+	</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
