@@ -6,6 +6,11 @@
 ~~~~~~~~~~~~~~~
 
 
+2019-10-10     v2.15.0.715
+[-] Fixed small bugs.
+[*] Resources for Bulgarian and Chinese (Simplified) languages were updated (thanks to Kostadin Kolev and Anan).
+
+
 2019-10-05     v2.15.0.714
 [-] Fixed the "Undo" operation in the main window.
 [*] The LAME encoder was updated.
