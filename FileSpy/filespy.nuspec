@@ -4,12 +4,12 @@
   <metadata>
     <id>filespy</id>
     <version>4.1.0.522</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/FileSpy</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>FileSpy</title>
     <authors>Ladislav Zezula</authors>
     <projectUrl>http://www.zezula.net/en/fstools/filespy.html</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/filespy.png</iconUrl>-->
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/2376f252/Icons/FileSpy.png</iconUrl>
     <copyright>2008 Ladislav Zezula</copyright>
     <tags>filespy SPACE_SEPARATED</tags>
     <summary>Filemon for FSD and filter developers</summary>
@@ -30,7 +30,16 @@
 - FileSpy can be executed even by normal authenticated user, if the kernel mode service is already running
 - User can choose driver (legacy FS filter FSpy.sys, minifilter MSpy.sys or minifilter FileTrace.sys)
 - Filespy can be executed before user logon.
-- Filespy can log changes to the NTFS volume using USN Journal. </description>
+- Filespy can log changes to the NTFS volume using USN Journal. 
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOSTART` - Do not add a start menu item
+ * `/DesktopIcon` - Add a desktop shorcut
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. </description>
     <releaseNotes> Version 4.1.0.520/1.2.6000.429/1.2.6000.104
 
  - Fixed crash
