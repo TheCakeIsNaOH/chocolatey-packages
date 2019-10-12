@@ -11,13 +11,13 @@
     <projectUrl>http://www.zezula.net/en/fstools/filespy.html</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/2376f252/Icons/FileSpy.png</iconUrl>
     <copyright>2008 Ladislav Zezula</copyright>
-    <tags>filespy SPACE_SEPARATED</tags>
+    <tags>filespy</tags>
     <summary>Filemon for FSD and filter developers</summary>
     <description>The FileSpy is a GUI application for the FSpy.sys or MSpy.sys, a monitoring filter driver shipped with the WDK. 
 	Its functionality is similar to the famous Filemon tool from Mark Russinovich (http://www.sysinternals.com). 
 	FileSpy is an aplication written as support to the developers, who need to monitor file system activity. 
 	
-	Comparing to Filemon, it contains some more functions:
+Comparing to Filemon, it contains some more functions:
 	
 - Extended logging of IRP and Fast I/O requests
 - Advanced filtering by path, process, IRP code, Fast I/O code or operation result
