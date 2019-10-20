@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                   = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2.msi?source=chocolatey'
 $url64                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_3.8.2_x64.msi?source=chocolatey'
 $checksum32            = '9fb5f9355f660140d175cfa38f45c113e521c37ca6593170e856cfd2cc7e978b'
 $checksum64            = '4e34f428f83a76bf79c8121a40e377ddbd58d26187fce705af32427c93f6d359'
