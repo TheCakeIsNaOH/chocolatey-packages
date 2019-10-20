@@ -8,8 +8,8 @@
     <owners>TheCakeIsNaOH, Sasha_Chernykh</owners>
     <licenseUrl>https://www.4kdownload.com/agreement/freeware</licenseUrl>
     <projectUrl>https://www.4kdownload.com/products/product-stogram</projectUrl>
-    <iconUrl>FIXME</iconUrl>
-    <packageSourceUrl>FIXME</packageSourceUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/55d73a82/Icons/4KStogram.png</iconUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-stogram</packageSourceUrl>
     <docsUrl>https://www.4kdownload.com/howto/howto-download-instagram-photos</docsUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <summary>4K Stogram — program for quick download Instagram photos and videos.</summary>
