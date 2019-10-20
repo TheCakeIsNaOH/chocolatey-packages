@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>4k-slideshow-maker</id>
+    <version>1.7.1</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-slideshow-maker</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>4k Slideshow Maker (Install)</title>
+    <authors>OpenMedia LLC</authors>
+    <projectUrl>https://www.4kdownload.com/products/product-slideshowmaker</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/77ec8853/Icons/4kslideshowmaker.png</iconUrl>
+    <copyright>2019 OpenMedia LLC</copyright>
+    <licenseUrl>https://www.4kdownload.com/agreement/freeware</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.4kdownload.com/howto/howto-make-slideshow</docsUrl>
+    <tags>4k download slideshow pictures</tags>
+    <summary>Create impressive slideshows, save your memories</summary>
+    <description>4K Slideshow Maker is an extremely easy-to-use app to create slideshows. Just add your favourite photos from Instagram or from your own computer, select the music and then apply gorgeous effects and transitions. Get started for free!
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
