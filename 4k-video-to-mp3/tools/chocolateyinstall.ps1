@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kvideotomp3_1.7.1.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4kvideotomp3_1.7.1_x64.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4kvideotomp3_2.6.1.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kvideotomp3_2.6.1_x64.msi?source=chocolatey'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Video to MP3.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
