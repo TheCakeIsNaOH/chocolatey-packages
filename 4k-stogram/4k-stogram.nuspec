@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>4k-stogram</id>
+    <version>2.7.3</version>
+    <title>4K Stogram</title>
+    <authors>OpenMedia LLC</authors>
+    <owners>TheCakeIsNaOH, Sasha_Chernykh</owners>
+    <licenseUrl>https://www.4kdownload.com/agreement/freeware</licenseUrl>
+    <projectUrl>https://www.4kdownload.com/products/product-stogram</projectUrl>
+    <iconUrl>FIXME</iconUrl>
+    <packageSourceUrl>FIXME</packageSourceUrl>
+    <docsUrl>https://www.4kdownload.com/howto/howto-download-instagram-photos</docsUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <summary>4K Stogram — program for quick download Instagram photos and videos.</summary>
+    <description>4K Stogram is an Instagram Viewer and Downloader for PC, macOS and Linux. 
+	Download photos, videos and stories from your friends’ public and private Instagram accounts, backup your Instagram profile and import your list of Instagram subscriptions. 
+	Get started for free!
+	
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+    <copyright>2019 OpenMedia LLC</copyright>
+    <tags>4k-stogram instagram downloader</tags>
+  </metadata>
+    <files>
+          <file src="tools\**" target="tools" />
+    </files>
+</package>

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-video-downloader</id>
-    <version>4.9.1</version>
+    <version>4.9.2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-video-downloader</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K Video Downloader (Install)</title>
@@ -13,6 +13,7 @@
     <copyright>2019 OpenMedia LLC</copyright>
     <licenseUrl>https://www.4kdownload.com/agreement/videodownloader</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+	<docsUrl>https://www.4kdownload.com/help#howto</docsUrl>
     <tags>4k video downloader</tags>
     <summary>Free video downloader trusted by millions</summary>
     <description>4K Video Downloader allows downloading videos, playlists, channels and subtitles from YouTube, Facebook, Vimeo and other video sites in high quality.
