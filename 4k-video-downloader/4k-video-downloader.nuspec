@@ -4,7 +4,7 @@
   <metadata>
     <id>4k-video-downloader</id>
     <version>4.9.1</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4K%20Video%20Downloader</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-video-downloader</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K Video Downloader (Install)</title>
     <authors>OpenMedia LLC</authors>
