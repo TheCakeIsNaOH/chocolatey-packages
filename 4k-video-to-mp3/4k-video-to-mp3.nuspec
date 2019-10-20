@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>4k-video-to-mp3</id>
+    <version>2.6.1</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-video-to-mp3</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>4k Video to MP3 (Install)</title>
+    <authors>OpenMedia LLC</authors>
+    <projectUrl>https://www.4kdownload.com/products/product-videotomp3</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ade38d35/Icons/4kvideotomp3.png</iconUrl>
+    <copyright>2019 OpenMedia LLC</copyright>
+    <licenseUrl>https://www.4kdownload.com/agreement/freeware</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.4kdownload.com/howto</docsUrl>
+    <tags>4k download mp3 audio extract</tags>
+    <summary>Convert any video to MP3 in one click</summary>
+    <description> 
+4K Video to MP3 extracts audio from any video. No annoying and complicated settings to deal with, just a clean, simple and functional interface. 
+Add the video and get the MP3! Just click 'Add Video' and choose a video file. Then close your eyes and enjoy high-quality MP3 audio!
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
