@@ -3,7 +3,7 @@
   <metadata>
     <id>balabolka</id>
     <version>2.15.0.715</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Balabolka</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/balabolka</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Balabolka</title>
     <authors>Ilya Morozov</authors>

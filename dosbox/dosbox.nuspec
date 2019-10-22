@@ -4,7 +4,7 @@
   <metadata>
     <id>dosbox</id>
     <version>0.74.3.0</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/DOSBox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/dosbox</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>DOSBox</title>
     <authors>DOSBox</authors>

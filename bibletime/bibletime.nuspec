@@ -3,7 +3,7 @@
   <metadata>
     <id>bibletime</id>
     <version>2.11.2</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/BibleTime</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/bibletime</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>BibleTime</title>
     <authors>BibleTime team</authors>
