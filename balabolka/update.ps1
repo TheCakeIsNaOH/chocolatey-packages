@@ -1,29 +1,18 @@
 ﻿Import-Module AU
 
-function global:au_SearchReplace {
-    @{
-        "tools\chocolateyInstall.ps1" = @{
-			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"          
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"          
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-		}
-	}
-}
-
-
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/download -UseBasicParsing
+	$version_page = (Invoke-WebRequest -Uri http://balabolka.site/changelog.txt -UseBasicParsing).content
 	
-	$regex64       = '4kvideodownloader_.*_x64.msi'
-	$regex32       = '4kvideodownloader_.*\.msi'
-    $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
-	$url32         = $download_page.links | ? href -match $regex32 | select -First 1 -expand href 
+	$version_string = ($test.Tostring() -split "[\s]" | sls "(v)(?<ver>\d*\.)" | Select-Object -First 1)
 	
-	$version       = $url64 -split '[_]' | select -Last 1 -Skip 1
+	$version_number = $version_string.ToString().substring(1)
 	
+	$url32 = 'http://balabolka.site/balabolka.zip'
 	
-	return @{ Version = $version; URL32 = $modurl32; URL64 = $modurl64 }
+	return @{ Version = $version_number; URL32 = $url32 }
 }
 
-update
+
+#update -ChecksumFor none
+
+#Get-RemoteFiles -Purge -NoSuffix 
