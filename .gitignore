@@ -3,9 +3,14 @@
 *.zip
 *.msi
 *.dll
+
 update_vars.ps1
 Update-AUPackages.md
 Update-History.md
 Update-Force-Test*
 update_info.xml
 api_key
+
+balabolka/tools/history.*.txt
+balabolka/tools/readme.*.txt
+balabolka/tools/license.*.txt
