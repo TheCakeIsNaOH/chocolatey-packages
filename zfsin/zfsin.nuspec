@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zfsin</id>
+    <version>0.20-forvinask</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/zfsin</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>ZFSin</title>
+    <authors>Jorgen Lundman</authors>
+    <projectUrl>https://openzfsonwindows.org/</projectUrl>
+    <copyright>2019 Jorgen Lundman</copyright>
+    <licenseUrl>https://github.com/openzfsonwindows/ZFSin/blob/master/OPENSOLARIS.LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/openzfsonwindows/ZFSin</projectSourceUrl>
+    <docsUrl>https://openzfsonosx.org/wiki/Windows</docsUrl>
+    <mailingListUrl>https://openzfsonosx.org/forum/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/openzfsonwindows/ZFSin/issues</bugTrackerUrl>
+    <tags>ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
+    <summary>OpenZFS on Windows port</summary>
+    <description>
+# Beta Software
+## Do not use for production systems!
+
+Currently signed by a non-EV certificate. Due to this, secure boot needs to be off for the driver to load.
+
+See https://github.com/openzfsonwindows/ZFSin/blob/master/README.md for details on usage.</description>
+    <releaseNotes>https://github.com/openzfsonwindows/ZFSin/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

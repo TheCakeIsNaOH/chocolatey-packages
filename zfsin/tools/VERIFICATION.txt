@@ -1,0 +1,7 @@
+﻿1. Download release from https://github.com/openzfsonwindows/ZFSin/releases
+
+2. Get checksum both of downloaded release executeable and included release execuable then check if they match.
+
+3. Extract the installer with Inno extract- https://constexpr.org/innoextract/
+
+4. Check that the included zfsin.cer matches the one extracted from the installer. 
