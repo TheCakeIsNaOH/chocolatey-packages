@@ -95,6 +95,9 @@ build_script:
     }
 
     ./update_all.ps1 -ForcedPackages $forced
+    
+    write-host (Get-ChildItem -Recurse -Filter *.nupkg)
+    
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
