@@ -24,7 +24,7 @@ function global:au_BeforeUpdate() {
 
 	Get-RemoteFiles -Purge -NoSuffix 
 
-	7z e -yo"tools" ".\tools\balabolka.zip"
+	Expand-Archive -Path ".\tools\balabolka.zip" -DestinationPath "tools" -Force
 
 	Remove-Item "tools\balabolka.zip"
 }
