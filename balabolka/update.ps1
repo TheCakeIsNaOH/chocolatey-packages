@@ -3,7 +3,7 @@
 function global:au_GetLatest {
 	$version_page = (Invoke-WebRequest -Uri http://balabolka.site/changelog.txt -UseBasicParsing).content
 	
-	$version_string = ($test.Tostring() -split "[\s]" | sls "(v)(?<ver>\d*\.)" | Select-Object -First 1)
+	$version_string = ($version_page.Tostring() -split "[\s]" | sls "(v)(?<ver>\d*\.)" | Select-Object -First 1)
 	
 	$version_number = $version_string.ToString().substring(1)
 	
@@ -12,7 +12,14 @@ function global:au_GetLatest {
 	return @{ Version = $version_number; URL32 = $url32 }
 }
 
+function global:au_BeforeUpdate() {
 
-#update -ChecksumFor none
+	Get-RemoteFiles -Purge -NoSuffix 
 
-#Get-RemoteFiles -Purge -NoSuffix 
+	7z e -yo"tools" ".\tools\balabolka.zip"
+
+	Remove-Item "tools\balabolka.zip"
+}
+
+update-package  -ChecksumFor none -nocheckchocoversion
+
