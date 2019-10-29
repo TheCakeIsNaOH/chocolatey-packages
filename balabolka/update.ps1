@@ -12,6 +12,13 @@ function global:au_GetLatest {
 	return @{ Version = $version_number; URL32 = $url32 }
 }
 
+function global:au_SearchReplace {
+    @{
+        "tools\chocolateyInstall.ps1" = @{
+        }
+    }
+}
+
 function global:au_BeforeUpdate() {
 
 	Get-RemoteFiles -Purge -NoSuffix 
