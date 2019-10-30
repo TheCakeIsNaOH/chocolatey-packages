@@ -1,5 +1,0 @@
-﻿VERIFICATION
-
-1. Download http://www.zezula.net/download/filespy.zip
-
-2. Check that it matches checksum of included zip file

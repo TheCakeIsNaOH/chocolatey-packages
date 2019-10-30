@@ -2,14 +2,17 @@
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'FileSpy.lnk'
+$url                   = 'http://www.zezula.net/download/filespy.zip'
 
 $packageArgs = @{
-  FileFullPath = (Join-Path $toolsDir 'filespy-4.1.0.522.zip')
-  Destination  = $toolsDir
-  PackageName  = 'FileSpy'
+  Url           = $url
+  Checksum      = '039e377cbf689f49f3641306001236c09128fb10eef671513b37aa7e8d5b024c'
+  ChecksumType  = 'sha256'
+  UnzipLocation = $toolsDir
+  PackageName   = 'FileSpy'
 }
 
-Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyZipPackage @packageArgs
 
 if (Get-OSArchitectureWidth 64) {
 	Write-Host "Removing x32 files"
