@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = Join-Path $toolsDir 'Setup_TheFastestMouseClicker.exe'
+$fileLocation          = Join-Path $toolsDir 'Install_TheFastestMouseClicker.exe'
 $pp                    = Get-PackageParameters
 $shortcutName          = 'The Fastest Mouse Clicker for Windows.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
