@@ -34,16 +34,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
-    <releaseNotes>
-Version 2.1.5.3: This is a bug-fix release. Update as soon as possible.
-	
-Version 2.1.5.2: Help text fixed to match new independent hotkeys.
-
-Version 2.1.5.1: completely different independent hotkeys for toggle mode clicking.
-
-Version 2.1.4.0: the Window Always Top checkbox has been added.
-
-Random clicking has been implemented since version 2.0.0.0.</releaseNotes>
+    <releaseNotes>https://sourceforge.net/projects/fast-mouse-clicker-pro/files/readme.txt/download</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
