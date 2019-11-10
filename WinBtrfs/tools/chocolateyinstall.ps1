@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'btrfs.zip'
-$driverFile = Join-Path $toolsDir 'btrfs.cat'
-$outputFile = Join-Path $toolsDir 'MarkHarmstone.cer'
-$exportType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.zip").FullName
+$driverFile            = Join-Path $toolsDir 'btrfs.cat'
+$outputFile            = Join-Path $toolsDir 'MarkHarmstone.cer'
+$exportType            = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
 
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
