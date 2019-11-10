@@ -7,9 +7,6 @@ $exportType            = [System.Security.Cryptography.X509Certificates.X509Cont
 
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
-Write-Host "Removing bundled debug files"
-Remove-Item -Recurse -Path $toolsDir\Debug
-
 Write-Host "Extracting cert from driver"
 $cert = (Get-AuthenticodeSignature $driverFile).SignerCertificate;
 [System.IO.File]::WriteAllBytes($outputFile, $cert.Export($exportType));
