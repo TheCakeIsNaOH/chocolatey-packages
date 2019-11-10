@@ -53,10 +53,7 @@ RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultUninstall 132 winmd.inf
 You will probably need to give the full path to winmd.inf. Next time you reboot, Windows will remove the driver from your system.
 
 You can also disable it by opening regedit and setting the value of HKLM\SYSTEM\CurrentControlSet\services\winmd\Start to 4.</description>
-    <releaseNotes>
-v0.1 (2019-07-31):
-Initial release
-</releaseNotes>
+    <releaseNotes>https://github.com/maharmstone/winmd/blob/master/README.md</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
