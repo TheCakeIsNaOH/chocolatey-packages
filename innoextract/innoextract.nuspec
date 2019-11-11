@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/dscharrer/innoextract</projectSourceUrl>
     <docsUrl>https://constexpr.org/innoextract/doc/index.html</docsUrl>
-    <bugTrackerUrl></bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/dscharrer/innoextract/issues</bugTrackerUrl>
     <tags>innosetup extract unpacker cli</tags>
     <summary>A tool to unpack installers created by Inno Setup</summary>
     <description>Inno Setup is a tool to create installers for Microsoft Windows applications. innoextract allows to extract such installers under non-windows systems without running the actual installer using Wine. innoextract currently supports installers created by Inno Setup 1.2.10 to 6.0.3.</description>
