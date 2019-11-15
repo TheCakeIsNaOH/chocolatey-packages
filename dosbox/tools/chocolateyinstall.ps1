@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = Join-Path $toolsDir 'DOSBox-win32-installer.exe'
+$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
