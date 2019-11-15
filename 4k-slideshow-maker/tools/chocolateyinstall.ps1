@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kslideshowmaker_1.7.1.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4kslideshowmaker_1.7.1_x64.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4kslideshowmaker_1.8.1.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kslideshowmaker_1.8.1_x64.msi?source=chocolatey'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Slideshow Maker.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
-$checksum32            =  '3ec5b57eb15f9faf24e302249e4ad1c97e008dea0f2399819f4c54ddd077d0c8'
-$checksum64            =  'd1848ce05ea5e04849797bde93da843db446f8358f3a8208ca88a0aa1900cc79'
+$checksum32            =  'f61cb1adf76a45d1cde2d7ab307d08acbddd630d4d8f14962a4fc7f5d8b6ae6b'
+$checksum64            =  '9127ccf7a5145df36c84920bbe2779915dfdaf35c014c5c9952e0d831dbcb2f4'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
