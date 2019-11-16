@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balabolka</id>
-    <version>2.15.0.719</version>
+    <version>2.15.0.720</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/balabolka</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Balabolka</title>
