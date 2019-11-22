@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>reflect-free</id>
+		<title>Macrium Reflect Installer</title>
+		<version>6.3.1734</version>
+		<authors>Macrium</authors>
+		<owners>Redsandro,chocolatey</owners>
+    <tags>admin disk drive image partition clone hdd installer</tags>
+    <projectUrl>http://www.macrium.com/reflectfree.aspx</projectUrl>
+		<licenseUrl>http://www.macrium.com/pages/legal.aspx</licenseUrl>
+    <iconUrl>http://i.imgur.com/yrUDEg0.png</iconUrl>
+    <packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/reflect-free</packageSourceUrl>
+    <copyright />
+		<summary>A complete disaster recovery solution for your home system.</summary>
+		<description>
+A disaster recovery solution for your home computer.
+
+__Protect__ your personal files. __Clone your harddisk__ and __create disk images__ in the safe knowledge that everything is __securely saved__ in an __easily recovered__ backup.
+
+###This package will download the installer.
+
+The installer has become increasingly tamper-proof. Now it is simply impossible to automate.
+
+Deprecating this package is not making anyone happy. As a compromise, this package will download the installer and put a shortcut on your desktop. Not ideal, but at least this way you can somewhat automate the installation of multiple packages. You won't have to google for the installer. It will be there on your desktop.
+
+###Ninja maintainer wanted.
+
+Someone with absolute ninja-skills in AutoIT or AutoHotkey can probably automate the download of the installer, and then automate the execution of the installer.
+
+__I am not that ninja.__
+		</description>
+		<releaseNotes></releaseNotes>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<dependencies></dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>
