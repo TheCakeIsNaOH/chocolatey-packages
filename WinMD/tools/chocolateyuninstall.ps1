@@ -5,12 +5,12 @@ $packageArgs = @{
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-write-host	"Listing drivers"
+write-host -ForegroundColor green	"Listing drivers"
 $winmdDrivers = Get-WmiObject win32_pnpsigneddriver | where {$_.DeviceName -like "*winmd*" -and $_.InfName -like
  "*oem*"}
 
 foreach($InfName in $winmdDrivers)
 {
-	Write-Host "Removing WinMD driver" $winmdDrivers.InfName
+	Write-Host -ForegroundColor green "Removing WinMD driver" $winmdDrivers.InfName
 	pnputil -f -d $winmdDrivers.InfName
 }
