@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-	<metadata>
-		<id>reflect-free</id>
-		<title>Macrium Reflect Installer</title>
-		<version>6.3.1734</version>
-		<authors>Macrium</authors>
-		<owners>Redsandro,chocolatey</owners>
-    <tags>admin disk drive image partition clone hdd installer</tags>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>reflect-free</id>
+    <title>Macrium Reflect Free</title>
+    <version>7.2.4539</version>
+    <authors>Macrium</authors>
+    <owners>TheCakeIsNaOH,Redsandro,chocolatey</owners>
+    <tags>disk drive image partition clone hdd backup</tags>
     <projectUrl>http://www.macrium.com/reflectfree.aspx</projectUrl>
-		<licenseUrl>http://www.macrium.com/pages/legal.aspx</licenseUrl>
-    <iconUrl>http://i.imgur.com/yrUDEg0.png</iconUrl>
-    <packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/reflect-free</packageSourceUrl>
-    <copyright />
-		<summary>A complete disaster recovery solution for your home system.</summary>
-		<description>
-A disaster recovery solution for your home computer.
+    <licenseUrl>https://www.macrium.com/eula</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/6bcde255fc9d27f1d56ea4abf1dafc1adc3d20bc/Icons/reflec-free.png</iconUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/reflect-free</packageSourceUrl>
+	<docsUrl>https://knowledgebase.macrium.com/</docsUrl>
+    <copyright>2019 Paramount Software UK Limited</copyright>
+    <summary>The trusted endpoint backup solution for commercial and personal use.</summary>
+    <description>
+Free backup, disk imaging and cloning solution for commercial and personal use.
 
-__Protect__ your personal files. __Clone your harddisk__ and __create disk images__ in the safe knowledge that everything is __securely saved__ in an __easily recovered__ backup.
+Protect your data, upgrade your hard disk or try new operating systems in the safe knowledge that everything is securely saved in an easily recovered backup file. Macrium Reflect supports backup to local, network and USB drives.
 
-###This package will download the installer.
+Macrium Reflect 7 Free Edition is ready to download now and has a number of additional features not available in version 6. It is now licensed for both home and business use.
+	
+## Important infomation
+Macrium Reflect Free will not install on Windows Server.
 
-The installer has become increasingly tamper-proof. Now it is simply impossible to automate.
+The download of the installer is automated with AutoHotKey, it may still have bugs. Please let me know if you find any.
+If you are internalizing this package, AutoHotKey is not needed as the installer has silent options available. 
 
-Deprecating this package is not making anyone happy. As a compromise, this package will download the installer and put a shortcut on your desktop. Not ideal, but at least this way you can somewhat automate the installation of multiple packages. You won't have to google for the installer. It will be there on your desktop.
 
-###Ninja maintainer wanted.
-
-Someone with absolute ninja-skills in AutoIT or AutoHotkey can probably automate the download of the installer, and then automate the execution of the installer.
-
-__I am not that ninja.__
-		</description>
-		<releaseNotes></releaseNotes>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<dependencies></dependencies>
-	</metadata>
-	<files>
-		<file src="tools\**" target="tools" />
-		<!--<file src="content\**" target="content" />-->
-	</files>
+	</description>
+    <releaseNotes>http://updates.macrium.com/reflect/v7/v7.2.4539/details7.2.4539.htm</releaseNotes>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
