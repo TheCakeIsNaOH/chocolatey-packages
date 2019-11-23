@@ -28,6 +28,8 @@ Macrium Reflect Free will not install on Windows Server.
 The download of the installer is automated with AutoHotKey, it may still have bugs. Please let me know if you find any.
 If you are internalizing this package, AutoHotKey is not needed as the installer has silent options available. 
 
+Thanks to Miodrag Milić for install scripts that is package is based on.
+
 #### Package Parameters
 The following package parameters can be set:
 

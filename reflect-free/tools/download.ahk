@@ -1,6 +1,3 @@
-;exe_path   = exepath
-;setup_dir  = path
-
 exe_path   = %1%
 setup_dir  = %2%
 
