@@ -33,7 +33,7 @@ Thanks to Miodrag Milić for install scripts that is package is based on.
 #### Package Parameters
 The following package parameters can be set:
 
-      * `/DesktopIcon` - Add a desktop shorcut
+ * `/DesktopIcon` - Add a desktop shorcut
 	  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
