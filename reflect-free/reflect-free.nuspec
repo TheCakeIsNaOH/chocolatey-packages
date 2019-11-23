@@ -38,7 +38,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
-    <releaseNotes>http://updates.macrium.com/reflect/v7/v7.2.4539/details7.2.4539.htm</releaseNotes>
+    <releaseNotes>http://updates.macrium.com/reflect/v7/latest_release_notes.asp</releaseNotes>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.30" />

@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
-$url                   = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe'
+$url32                 = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe'
 $agentfileName         = $url -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
-$checksum              = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
+$checksum32            = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
 	Write-Host -ForegroundColor red "Non compatible Windows Server OS detected"
@@ -16,9 +16,9 @@ Remove-Item $downloadDir -Recurse -ea 0
 $downloadArgs = @{
 	packageName   = 'reflect-free'
 	FileFullPath  = (Join-Path $downloadDir $agentfileName)
-	url           = $url
+	url           = $url32
 	checksumType  = 'sha256'
-	checksum      = $checksum
+	checksum      = $checksum32
 }
 
 Get-ChocolateyWebFile @downloadArgs
