@@ -22,4 +22,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $modurl; PackageName = 'bibletime'}
 }
 
-update  -ChecksumFor none
+Update-Package -ChecksumFor none

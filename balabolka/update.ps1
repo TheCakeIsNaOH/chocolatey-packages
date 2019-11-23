@@ -29,5 +29,5 @@ function global:au_BeforeUpdate() {
 	Remove-Item "tools\balabolka.zip"
 }
 
-update-package  -ChecksumFor none
+Update-Package -ChecksumFor none
 

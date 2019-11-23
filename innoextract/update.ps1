@@ -22,4 +22,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $url; PackageName = 'innoextract'}
 }
 
-update  -ChecksumFor none
+Update-Package  -ChecksumFor none

@@ -28,4 +28,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $modurl32; URL64 = $modurl64 }
 }
 
-update
+Update-Package
