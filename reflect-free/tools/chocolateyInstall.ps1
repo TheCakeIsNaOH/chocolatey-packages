@@ -3,7 +3,8 @@ $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $url                   = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe'
 $agentfileName         = $url -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
-
+$pp                    = Get-PackageParameters
+$checksum              = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
 	Write-Host -ForegroundColor red "Non compatible Windows Server OS detected"
@@ -16,7 +17,8 @@ $downloadArgs = @{
 	packageName   = 'reflect-free'
 	FileFullPath  = (Join-Path $downloadDir $agentfileName)
 	url           = $url
-	forceDownload = $true
+	checksumType  = 'sha256'
+	checksum      = $checksum
 }
 
 Get-ChocolateyWebFile @downloadArgs
@@ -30,14 +32,20 @@ if (!$installer) {
 	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please run manually $downloadDir\$agentfileName" 
 }
 else {
+
 	$packageArgs = @{
 		packageName    = 'reflect-free'
 		fileType       = 'exe'
 		file           = $installer
 		validExitCodes = @(0)
-		silentArgs     = "/qn /norestart"
+		silentArgs     = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES"
 	}
 
+	if (!$pp['desktopicon']) {
+		Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
+		$packageArgs['silentArgs'] = "$($packageArgs['silentArgs']) NODESKTOPSHORTCUT=YES"
+	}
+	
 	Write-Host -ForegroundColor green "Running $installer"
 	Install-ChocolateyInstallPackage @packageArgs
 

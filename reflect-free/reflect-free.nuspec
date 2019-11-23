@@ -28,7 +28,13 @@ Macrium Reflect Free will not install on Windows Server.
 The download of the installer is automated with AutoHotKey, it may still have bugs. Please let me know if you find any.
 If you are internalizing this package, AutoHotKey is not needed as the installer has silent options available. 
 
+#### Package Parameters
+The following package parameters can be set:
 
+      * `/DesktopIcon` - Add a desktop shorcut
+	  
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
     <releaseNotes>http://updates.macrium.com/reflect/v7/v7.2.4539/details7.2.4539.htm</releaseNotes>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
