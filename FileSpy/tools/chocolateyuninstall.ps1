@@ -15,5 +15,5 @@ if (Test-Path $starticon) {
 	Remove-Item $starticon
 	Write-Host -ForegroundColor green 'Removed ' $starticon
 } else {
-	Write-Host -ForegroundColor yellow 'Did not find ' $starticon
+	Write-Host -ForegroundColor yellow 'Did not find ' $starticon ' to remove'
 }
