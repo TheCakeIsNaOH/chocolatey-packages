@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $url32                 = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe'
-$agentfileName         = $url -split '/' | select -Last 1
+$agentfileName         = $url32 -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
 $checksum32            = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
