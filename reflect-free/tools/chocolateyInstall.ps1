@@ -5,6 +5,7 @@ $agentfileName         = $url32 -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
 $checksum32            = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
+$macriumReg            = 'HKLM:\SOFTWARE\Macrium\Reflect\v7'
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
 	Write-Host -ForegroundColor red "Non compatible Windows Server OS detected"
@@ -29,26 +30,33 @@ Autohotkey.exe $toolsDir\download.ahk "$downloadDir\$agentfileName" $downloadDir
 $installer = Get-Item $downloadDir\Macrium\*.exe -ea 0
 
 if (!$installer) { 
-	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please run manually $downloadDir\$agentfileName" 
+	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please manually run $downloadDir\$agentfileName" 
 }
 else {
+	if ((Test-Path $macriumReg) -and (!$pp['ahkinstall'])) {
+		$packageArgs = @{
+			packageName    = 'reflect-free'
+			fileType       = 'exe'
+			file           = $installer
+			validExitCodes = @(0)
+			silentArgs     = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES"
+		}
 
-	$packageArgs = @{
-		packageName    = 'reflect-free'
-		fileType       = 'exe'
-		file           = $installer
-		validExitCodes = @(0)
-		silentArgs     = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES"
-	}
-
-	if (!$pp['desktopicon']) {
-		Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
-		$packageArgs['silentArgs'] = "$($packageArgs['silentArgs']) NODESKTOPSHORTCUT=YES"
-	}
+		if (!$pp['desktopicon']) {
+			Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
+			$packageArgs['silentArgs'] = "$($packageArgs['silentArgs']) NODESKTOPSHORTCUT=YES"
+		}
 	
-	Write-Host -ForegroundColor green "Running $installer"
-	Install-ChocolateyInstallPackage @packageArgs
+		Write-Host -ForegroundColor green "Running $installer"
+		Install-ChocolateyInstallPackage @packageArgs
 
-	Write-Host -ForegroundColor green "Installation completed"
-	Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
+		Write-Host -ForegroundColor green "Installation completed"
+		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
+	} else {
+		if (!$pp['desktopicon']) { $desktop_shortcut = "yes" } else { $desktop_shortcut = "no" }
+		
+		Autohotkey.exe $toolsDir\install.ahk $installer $desktop_shortcut
+		Write-Host -ForegroundColor green "Installation completed"
+		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
+	}
 }

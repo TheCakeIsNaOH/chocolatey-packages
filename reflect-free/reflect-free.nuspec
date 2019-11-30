@@ -34,6 +34,7 @@ Thanks to Miodrag Milić for install scripts that is package is based on.
 The following package parameters can be set:
 
  * `/DesktopIcon` - Add a desktop shorcut
+ * `/AHKInstall`  - Use AHK script to install instead of silent arguments
 	  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
