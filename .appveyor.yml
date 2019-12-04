@@ -24,10 +24,9 @@ environment:
 
 
   # Mail credentials - for error notifications
-  mail_user:
-    secure: +MBxx77snFqAkQ1fzdm5iNpVS6mmQC1+IyLBViM31js=
+  mail_user: thecakeisnaoh@gmail.com 
   mail_pass:
-    secure: 5SKsbRNYyPAC+0gY/k4ZAg==
+    secure: HaXA69vOmTKBeAfRtBUgBw==
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
@@ -112,5 +111,5 @@ notifications:
   on_build_failure: true
   on_build_status_changed: true
 
-#on_finish:
-#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+on_finish:
+- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
