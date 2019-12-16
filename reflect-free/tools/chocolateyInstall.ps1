@@ -33,7 +33,7 @@ if (!$installer) {
 	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please manually run $downloadDir\$agentfileName" 
 }
 else {
-	if ((Test-Path $macriumReg) -and (!$pp['ahkinstall'])) {
+	if (Test-Path $macriumReg) {
 		$packageArgs = @{
 			packageName    = 'reflect-free'
 			fileType       = 'exe'
@@ -53,10 +53,9 @@ else {
 		Write-Host -ForegroundColor green "Installation completed"
 		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
 	} else {
-		if (!$pp['desktopicon']) { $desktop_shortcut = "yes" } else { $desktop_shortcut = "no" }
-		
-		Autohotkey.exe $toolsDir\install.ahk $installer $desktop_shortcut
-		Write-Host -ForegroundColor green "Installation completed"
-		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
+		Write-Host -ForegroundColor yellow "$downloadDir\$installer needs to be run manually."
+		Write-Host -ForegroundColor yellow "This is required due to a bug or intentional limitation the free installer."
+		Write-Host -ForegroundColor yellow "The silent install option fails if reflect has not been installed previously on this computer"
+		Write-Host -ForegroundColor yellow "This is being worked on to automatite it, but it is not ready yet."
 	}
 }

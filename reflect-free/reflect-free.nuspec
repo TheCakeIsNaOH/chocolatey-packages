@@ -4,9 +4,9 @@
   <metadata>
     <id>reflect-free</id>
     <title>Macrium Reflect Free</title>
-    <version>7.2.4539</version>
+    <version>7.2.4557</version>
     <authors>Macrium</authors>
-    <owners>TheCakeIsNaOH,Redsandro,chocolatey</owners>
+    <owners>TheCakeIsNaOH,Redsandro</owners>
     <tags>disk drive image partition clone hdd backup</tags>
     <projectUrl>http://www.macrium.com/reflectfree.aspx</projectUrl>
     <licenseUrl>https://www.macrium.com/eula</licenseUrl>
@@ -25,16 +25,13 @@ Macrium Reflect 7 Free Edition is ready to download now and has a number of addi
 ## Important infomation
 Macrium Reflect Free will not install on Windows Server.
 
-The download of the installer is automated with AutoHotKey, it may still have bugs. Please let me know if you find any.
-If you are internalizing this package, AutoHotKey is not needed as the installer has silent options available. 
-
-Thanks to Miodrag Milić for install scripts that is package is based on.
+The installer will not install if run silently on a system that has not has Macrium Reflect installed previously. 
+Therefore, if you are installing for the first time, the installer needs to be run manually.
 
 #### Package Parameters
 The following package parameters can be set:
 
  * `/DesktopIcon` - Add a desktop shorcut
- * `/AHKInstall`  - Use AHK script to install instead of silent arguments
 	  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
