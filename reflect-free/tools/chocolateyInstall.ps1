@@ -53,9 +53,9 @@ else {
 		Write-Host -ForegroundColor green "Installation completed"
 		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
 	} else {
-		Write-Host -ForegroundColor yellow "$downloadDir\$installer needs to be run manually."
-		Write-Host -ForegroundColor yellow "This is required due to a bug or intentional limitation the free installer."
+		Write-Host -ForegroundColor yellow "$downloadDir\$installer needs to be run manually"
+		Write-Host -ForegroundColor yellow "This is required due to a bug or intentional limitation the free installer"
 		Write-Host -ForegroundColor yellow "The silent install option fails if reflect has not been installed previously on this computer"
-		Write-Host -ForegroundColor yellow "This is being worked on to automatite it, but it is not ready yet."
+		Write-Host -ForegroundColor yellow "It is being worked on to automate"
 	}
 }
