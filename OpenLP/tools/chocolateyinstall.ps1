@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0-x64.msi'
-$url64                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0.msi'
+$url32                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0.msi'
+$url64                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0-x64.msi'
 
 
 $packageArgs = @{
