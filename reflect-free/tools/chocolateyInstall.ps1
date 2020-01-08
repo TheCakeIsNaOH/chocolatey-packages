@@ -4,7 +4,7 @@ $url32                 = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe
 $agentfileName         = $url32 -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
-$checksum32            = '4abc1ac76f594f31e9f4fbce2e81c1d1ced2a89943d34f0605b9698d0cb6b02d'
+$checksum32            = '85391702714f9a2458d023299aadffb1e22d173f7231dfcefed46f1bdc5987e5'
 $macriumPath           = (Join-Path $env:programfiles 'macrium\reflect')
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
