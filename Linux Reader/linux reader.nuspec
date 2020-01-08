@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>linux-reader</id>
-    <version>3.5.1</version>
+    <version>4.0.15</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/Linux%20Reader</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Linux Reader</title>
@@ -12,8 +12,7 @@
     <copyright>2019 DiskInternals</copyright>
     <tags>linux reader</tags>
     <summary>Ext 2/3/4, UFS2, HFS and ReiserFS/4 for Windows</summary>
-    <description>Moved to internal package since the EULA allows distribution as long as the file is unmodified.
-	
+    <description>
 EULA not available online, see license.txt in Program files (x86)\DiskInternals\Linux Reader or in LICENSE.txt in the nupkg
 	
 How to get safe and quick access to alternative file systems? DiskInternals Linux Reader is a new easy way to do this. This program plays the role of a bridge between your Windows and Ext2/Ext3/Ext4, HFS and ReiserFS file systems.
