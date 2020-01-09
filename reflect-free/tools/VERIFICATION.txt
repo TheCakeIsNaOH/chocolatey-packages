@@ -1,0 +1,9 @@
+The MST is created by me(TheCakeIsNaOH) in Orca- https://docs.microsoft.com/en-us/windows/win32/msi/orca-exe
+
+The MSI the MST is created from can be found in C:\windows\installers\reflect_setup<version>.msi during and after install of the Macrium reflect installer
+
+The transform drops the NonInteractiveLicenseInit custom action from the InstallExecuteSequence in the macrium reflect installer. 
+This is needed to allow silent installation.
+
+The contents can be extracted by 7zip and inspected.
+To verify checksums, the file can be downloaded from https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/reflect-free/tools and checked against the version in the nupkg

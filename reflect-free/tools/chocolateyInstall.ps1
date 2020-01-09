@@ -6,6 +6,7 @@ $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
 $checksum32            = '85391702714f9a2458d023299aadffb1e22d173f7231dfcefed46f1bdc5987e5'
 $macriumPath           = (Join-Path $env:programfiles 'macrium\reflect')
+$mstPath               = (Join-Path $toolsDir 'ReflectFreeEnableSilent.mst')
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
 	Write-Host -ForegroundColor red "Non compatible Windows Server OS detected"
@@ -33,17 +34,19 @@ if (!$installer) {
 	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please manually run $downloadDir\$agentfileName" 
 }
 else {
+	$silentArgs = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES TRANSFORMS=`"$mstPath`" /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+	
+	if (!$pp['desktopicon']) {
+		Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
+		$silentArgs = $silentArgs + " NODESKTOPSHORTCUT=YES"
+	}
+
 	$packageArgs = @{
 		packageName    = 'reflect-free'
 		fileType       = 'exe'
 		file           = $installer
 		validExitCodes = @(0)
-		silentArgs     = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES"
-	}
-
-	if (!$pp['desktopicon']) {
-		Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
-		$packageArgs['silentArgs'] = "$($packageArgs['silentArgs']) NODESKTOPSHORTCUT=YES"
+		silentArgs     = $silentArgs
 	}
 	
 	Write-Host -ForegroundColor green "Running $installer"
@@ -54,8 +57,6 @@ else {
 		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
 	} else {
 		Write-Host -ForegroundColor red "$downloadDir\Macrium\$installer needs to be run manually"
-		Write-Host -ForegroundColor red "This is required due to a bug or intentional limitation the free installer"
-		Write-Host -ForegroundColor red "The silent install option fails if reflect is being installed instead of upgraded"
-		Write-Host -ForegroundColor red "It is being worked on to automate"
+		Write-Host -ForegroundColor red "The installer has a bad habit of failing without any error(ie 0 exit code)"
 	}
 }

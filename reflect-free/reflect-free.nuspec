@@ -26,8 +26,7 @@ Macrium Reflect 7 Free Edition is ready to download now and has a number of addi
 ## Important infomation
 Macrium Reflect Free will not install on Windows Server.
 
-The installer will not install if run silently on a system that has not has Macrium Reflect installed previously. 
-Therefore, if you are installing for the first time, the installer needs to be run manually.
+This package includes a MSI transform MST to fix the silent install. 
 
 #### Package Parameters
 The following package parameters can be set:
