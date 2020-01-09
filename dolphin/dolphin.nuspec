@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dolphin</id>
+    <title>Dolphin Emulator</title>
+    <version>GETME</version>
+    <authors>Dolphin Emulator Project</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
+    <description>
+Dolphin is an emulator for running GameCube, Wii, and Triforce games on Windows, Linux, OS X, and recent Android devices.
+
+It allows PC gamers to enjoy games for these two consoles in full HD (1080p) with several enhancements: compatibility with all PC controllers, turbo speed, networked multiplayer, and even more!
+	</description>
+    <packageSourceUrl>FIXME</packageSourceUrl>
+    <projectUrl>https://dolphin-emu.org/</projectUrl>
+    <projectSourceUrl>https://github.com/dolphin-emu/dolphin</projectSourceUrl>
+    <bugTrackerUrl>https://bugs.dolphin-emu.org/projects/emulator/issues</bugTrackerUrl>
+    <docsUrl>https://dolphin-emu.org/docs/guides/</docsUrl>
+    <mailingListUrl>https://forums.dolphin-emu.org/</mailingListUrl>
+    <iconUrl>FIXME</iconUrl>
+    <tags>gaming emulator wii gamecube dolphin</tags>
+    <copyright>© Dolphin Emulator Project 2020</copyright>
+    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+#### Program
+* [News](https://dolphin-emu.org/blog/)
+* [Feeds](https://dolphin-emu.org/blog/feeds/)
+* [Changelog](https://dolphin-emu.org/download/list/master/)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" version="14.16" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

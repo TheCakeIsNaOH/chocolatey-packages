@@ -1,4 +1,5 @@
-﻿setup_path       = %1%
+﻿;HASINTERNETCONN=0 use to disable registration
+setup_path       = %1%
 desktop_shortcut = %2%
 
 Run, %setup_path%
