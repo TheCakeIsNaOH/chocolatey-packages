@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = Join-Path $toolsDir 'OpenZFSOnWindows-release.exe'
+$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
 $cerLocation           = Join-Path $toolsDir 'ZFSin.cer'
 
 $packageArgs = @{
