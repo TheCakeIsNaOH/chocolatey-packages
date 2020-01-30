@@ -6,7 +6,7 @@
     <title>Advanced Installer</title>
     <version>16.7</version>
     <authors>Caphyon</authors>
-    <owners>epu</owners>
+    <owners>TheCakeIsNaOH, epu</owners>
     <summary>Your solution for application packaging and deployment.</summary>
     <description>
 Advanced Installer is a Windows installer authoring tool for installing, updating, and configuring your products safely, securely, and reliably.
@@ -14,13 +14,13 @@ Advanced Installer is a Windows installer authoring tool for installing, updatin
 30 trial with all features.
     </description>
     <projectUrl>https://www.advancedinstaller.com</projectUrl>
-    <packageSourceUrl>https://github.com/epu/epu-choco-pkg</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/advanced-installer</packageSourceUrl>
 	<docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
     <tags>advanced-installer advinst caphyon</tags>
     <copyright>2019 Caphyon</copyright>
     <licenseUrl>https://www.advancedinstaller.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.statically.io/gh/epu/epu-choco-pkg/2ab1bf07/advanced-installer/icons/advanced-installer.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/4c4207d8/Icons/advanced-installer.png</iconUrl>
     <releaseNotes>https://www.advancedinstaller.com/version-history.html</releaseNotes>
   </metadata>
   <files>
