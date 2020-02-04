@@ -17,6 +17,10 @@ certutil -addstore -f "TrustedPublisher" $toolsDir\MarkHarmstone.cer
 Write-Host -ForegroundColor green "Adding btrfs driver"
 pnputil -i -a $toolsDir\btrfs.inf 
 
+Write-Host -ForegroundColor green "Removing ARM files"
+Remove-Item -Recurse -Path $toolsDir\aarch64
+Remove-Item -Recurse -Path $toolsDir\arm
+
 if (Get-OSArchitectureWidth 64) {
 	Write-Host -ForegroundColor green "Removing x32 files"
 	Remove-Item -Recurse -Path $toolsDir\x86
