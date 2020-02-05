@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>fastest-mouse-clicker</id>
-    <version>2.1.8.0</version>
+    <version>2.1.8.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/The%20Fastest%20Mouse%20Clicker%20for%20Windows</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>The Fastest Mouse Clicker for Windows</title>
     <authors>windows-2048</authors>
     <projectUrl>https://sourceforge.net/projects/fast-mouse-clicker-pro/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/441a6778d4aff6c34b123d9c832cbf07fe5e5cf5/Icons/TheFastestMouseClicker_0000.png</iconUrl>
-    <copyright>2019 windows-2048</copyright>
+    <copyright>2020 windows-2048</copyright>
     <licenseUrl>https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows</projectSourceUrl>
