@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zfsin</id>
-    <version>0.21-lundr</version>
+    <version>0.22-Tryggr</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/zfsin</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>ZFSin</title>
     <authors>Jorgen Lundman</authors>
     <projectUrl>https://openzfsonwindows.org/</projectUrl>
-    <copyright>2019 Jorgen Lundman</copyright>
+    <copyright>2020 Jorgen Lundman</copyright>
     <licenseUrl>https://github.com/openzfsonwindows/ZFSin/blob/master/OPENSOLARIS.LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/openzfsonwindows/ZFSin</projectSourceUrl>
