@@ -9,6 +9,10 @@ function global:au_SearchReplace {
   }
 }
 
+function global:au_BeforeUpdate() {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+}
+
 function global:au_GetLatest {
   $latest_changelog  = 'http://updates.macrium.com/reflect/v7/latest_release_notes.asp'
   $download_page     = Invoke-WebRequest -Uri $latest_changelog -UseBasicParsing -Method Head
@@ -24,4 +28,4 @@ function global:au_GetLatest {
   }
 }
 
-Update-Package
+Update-Package  -ChecksumFor none -nocheckchocoversion
