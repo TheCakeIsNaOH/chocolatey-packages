@@ -11,7 +11,7 @@
     <description>
 Advanced Installer is a Windows installer authoring tool for installing, updating, and configuring your products safely, securely, and reliably.
 
-30 trial with all features.
+30 trial with all features, then reverts to free version.
     </description>
     <projectUrl>https://www.advancedinstaller.com</projectUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/advanced-installer</packageSourceUrl>
