@@ -12,7 +12,6 @@
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ecc76f94/Icons/nextcloud.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
-	<docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
 	<summary>Desktop sync client for Nextcloud</summary>
     <description>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.
 

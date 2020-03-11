@@ -1,14 +1,10 @@
 Import-Module AU
 
-$script:
 
 function global:au_SearchReplace {
     @{
         "tools\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
-		}
-		".\nextcloud-client.nuspec" = @{
-			"\<docsUrl\>.+" = "<docsUrl>$($Latest.docsUrl)</docsUrl>"
 		}
 	}
 }
@@ -19,7 +15,7 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
-	docsUrl = "https://docs.nextcloud.com/desktop/"
+	#docsUrl = "https://docs.nextcloud.com/desktop/"
 	$download_page = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/releases/Windows -UseBasicParsing
 	
 	$filename   = $download_page.links | ? href -match '.exe$'| % href | select -last 1
@@ -27,16 +23,17 @@ function global:au_GetLatest {
 	$modurl     = 'https://download.nextcloud.com/desktop/releases/Windows/' + $filename
 	
 	$partVersion = ($version -split '\.' | select -First 2) -join "."
-	$docsUrl = $docsUrl + $partVersion
+	#$docsUrl = $docsUrl + $partVersion
 	
-	return @{ Version = $version; URL32 = $modurl; PackageName = 'nextcloud-client'; docsUrl = $docsUrl }
+	return @{ Version = $version; URL32 = $modurl; PackageName = 'nextcloud-client' }
 }
 
-#Update-Package -ChecksumFor none
+Update-Package -ChecksumFor none #-nocheckchocoversion
 
 #todo
 # AU
-	# -nuspec
-	# -verification
-	# -where to downloaded
-# verification link
+# re add in docs URL
+#	<docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
+#		".\nextcloud-client.nuspec" = @{
+#			"\<docsUrl\>.+" = "<docsUrl>$($Latest.docsUrl)</docsUrl>"
+#		}
