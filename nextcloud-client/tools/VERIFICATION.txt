@@ -1,0 +1,5 @@
+1. Download binary from FIXME
+
+2. Get checksums of downloaded binary and included binary
+
+3. Check that the checksums match

@@ -1,20 +1,27 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <version>{{PackageVersion}}</version>
-    <title>Nextcloud Client</title>
+    <id>nextcloud-client</id>
+    <version>2.6.2</version>
+    <title>Nextcloud Desktop Client</title>
     <authors>Nextcloud</authors>
-    <owners>doc</owners>
-    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
-    <projectUrl>https://nextcloud.com/install/#install-clients</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/b39f4f81bf526425b8d8d06fc3f2536fafebefae/icons/nextcloud.png</iconUrl>
+    <owners>TheCakeIsNaOH, doc</owners>
+    <licenseUrl>https://github.com/nextcloud/desktop/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://nextcloud.com/clients/</projectUrl>
+    <iconUrl>FIXME</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.
+	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
+	<docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
+	<summary>Desktop sync client for Nextcloud</summary>
+    <description>FIXME
     </description>
-    <summary>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.</summary>
-    <projectSourceUrl>https://github.com/nextcloud/client_theming</projectSourceUrl>
-    <tags>nextcloud client sync desktop admin</tags>
-    <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
-    </metadata>
+    
+    <projectSourceUrl>https://github.com/nextcloud/desktop</projectSourceUrl>
+    <tags>nextcloud client sync desktop</tags>
+    <packageSourceUrl>FIXME</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

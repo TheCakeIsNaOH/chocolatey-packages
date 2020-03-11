@@ -1,13 +1,15 @@
-﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
+﻿$ErrorActionPreference = 'Stop'
+$toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
+$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
 
 $packageArgs = @{
-  packageName   = $packageName
+  packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
+  file 			= $fileLocation
   silentArgs    = '/S'
-  url           = $url
-  checksum 		= '{{checksum}}'
-  ChecksumType 	= 'sha256'
+  validExitCodes= @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item $fileLocation -ea 0
