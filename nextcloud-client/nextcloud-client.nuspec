@@ -3,23 +3,31 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nextcloud-client</id>
-    <version>2.6.2</version>
+    <version>2.6.4</version>
     <title>Nextcloud Desktop Client</title>
     <authors>Nextcloud</authors>
     <owners>TheCakeIsNaOH, doc</owners>
     <licenseUrl>https://github.com/nextcloud/desktop/blob/master/COPYING</licenseUrl>
     <projectUrl>https://nextcloud.com/clients/</projectUrl>
-    <iconUrl>FIXME</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ecc76f94/Icons/nextcloud.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
 	<docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
 	<summary>Desktop sync client for Nextcloud</summary>
-    <description>FIXME
-    </description>
-    
+    <description>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/Icon` - Add a desktop icon
+ * `/KeepUpdateCheck` - Do not disable update check in registry
+ 
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
     <projectSourceUrl>https://github.com/nextcloud/desktop</projectSourceUrl>
     <tags>nextcloud client sync desktop</tags>
-    <packageSourceUrl>FIXME</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/nextcloud-client</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

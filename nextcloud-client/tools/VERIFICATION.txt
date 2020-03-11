@@ -1,4 +1,5 @@
-1. Download binary from FIXME
+1. Download installer at 
+   x32: https://download.nextcloud.com/desktop/releases/Windows/Nextcloud-2.6.4-setup.exe'
 
 2. Get checksums of downloaded binary and included binary
 
