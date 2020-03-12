@@ -25,10 +25,16 @@ function global:au_GetLatest {
 	$partVersion = ($version -split '\.' | select -First 2) -join "."
 	#$docsUrl = $docsUrl + $partVersion
 	
-	return @{ Version = $version; URL32 = $modurl; PackageName = 'nextcloud-client'; }
+	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+	
+	return @{ 	Version = $version; 
+				URL32 = $modurl; 
+				PackageName = 'nextcloud-client';
+				Options      = @{ Headers = @{ 'User-Agent' = $useragent } }; 
+			}
 }
 
-#Update-Package -ChecksumFor none -nocheckurl #-nocheckchocoversion
+Update-Package -ChecksumFor none #-nocheckurl #-nocheckchocoversion
 
 #todo
 # AU
