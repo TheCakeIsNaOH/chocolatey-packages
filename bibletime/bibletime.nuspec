@@ -9,7 +9,7 @@
     <authors>BibleTime team</authors>
     <projectUrl>http://bibletime.info/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/69fd7fe70b9c3069df16c2c3bd6effca6e2a12ba/Icons/bibletime_0000.png</iconUrl>
-    <copyright>2018 BibleTime team</copyright>
+    <copyright>2020 BibleTime team</copyright>
     <licenseUrl>https://github.com/bibletime/bibletime/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/bibletime/bibletime</projectSourceUrl>
@@ -20,7 +20,7 @@
     <description>BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. 
 	BibleTime contains over 200 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society via the SWORD programming library. 
 	BibleTime is written in C++ and uses the Qt GUI toolkit.</description>
-    <releaseNotes>https://github.com/bibletime/bibletime/blob/v2.11.2/ChangeLog</releaseNotes>
+    <releaseNotes>https://github.com/bibletime/bibletime/blob/master/ChangeLog</releaseNotes>
     <dependencies>
       <dependency id="vcredist2015" />
     </dependencies>
