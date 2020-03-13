@@ -22,12 +22,13 @@ function global:au_GetLatest {
 	$version    = ($filename -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
 	$modurl     = 'https://download.nextcloud.com/desktop/releases/Windows/' + $filename
 	
-	$partVersion = ($version -split '\.' | select -First 2) -join "."
+	#$partVersion = ($version -split '\.' | select -First 2) -join "."
 	#$docsUrl = $docsUrl + $partVersion
 	
 	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	
-	return @{ 	Version = $version; 
+	return @{ 	
+				Version = $version; 
 				URL32 = $modurl; 
 				PackageName = 'nextcloud-client';
 				Options      = @{ Headers = @{ 'User-Agent' = $useragent } }; 
