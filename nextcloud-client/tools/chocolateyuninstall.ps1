@@ -1,4 +1,5 @@
-﻿$packageArgs = @{
+﻿$ErrorActionPreference = 'Stop'
+$packageArgs = @{
   softwareName  = 'Nextcloud'
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
