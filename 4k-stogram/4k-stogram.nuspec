@@ -25,7 +25,7 @@ The following package parameters can be set:
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
-    <copyright>2019 OpenMedia LLC</copyright>
+    <copyright>2020 OpenMedia LLC</copyright>
     <tags>4k-stogram instagram downloader</tags>
   </metadata>
   <files>

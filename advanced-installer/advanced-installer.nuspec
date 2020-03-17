@@ -17,7 +17,7 @@ Advanced Installer is a Windows installer authoring tool for installing, updatin
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/advanced-installer</packageSourceUrl>
 	<docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
     <tags>advanced-installer advinst caphyon</tags>
-    <copyright>2019 Caphyon</copyright>
+    <copyright>2020 Caphyon</copyright>
     <licenseUrl>https://www.advancedinstaller.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/4c4207d8/Icons/advanced-installer.png</iconUrl>
