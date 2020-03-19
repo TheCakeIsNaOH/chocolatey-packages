@@ -5,8 +5,8 @@ $shortcutName          = 'Dolphin Emulator.lnk'
 $extractDir            = $(Get-ToolsLocation)
 $dolphinDir            = (Join-Path $extractDir Dolphin-x64)
 $exepath               = (Join-Path $dolphinDir Dolphin.exe)
-$url64                 = 'https://dl.dolphin-emu.org/builds/9b/f2/dolphin-master-5.0-11746-x64.7z'
-$checksum64            = 'ab674b7d5053be96864df5367979e2ff517a7859a93bafab8ed85db3972ebeb4'
+$url64                 = 'https://dl.dolphin-emu.org/builds/5a/f2/dolphin-master-5.0-11784-x64.7z'
+$checksum64            = 'c0164562c3ed7d371260e9fc9162cead639c7e39ffbc2519bba95a240586e21b'
 
 $packageArgs = @{
   Url64bit       = $url64
