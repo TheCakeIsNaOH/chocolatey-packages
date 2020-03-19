@@ -4,7 +4,7 @@
   <metadata>
     <id>anydesk</id>
     <version>5.4.2</version>
-    <title>AnyDesk Exe (Portable and Install)</title>
+    <title>AnyDesk</title>
     <authors>AnyDesk Software GmbH</authors>
 	<copyright>2020 AnyDesk GmbH</copyright>
     <owners>TheCakeIsNaOH, ARCHer</owners>
@@ -14,29 +14,14 @@
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/2b487e24/Icons/anydesk.png</iconUrl>
 	<summary>Remote Desktop Software</summary>
     <description>Connect to a computer remotely, be it from the other end of the office or halfway around the world. 
-AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.
-	
-If not parameters are specified, the package is portable. 
-
-#### Package Parameters
-The following package parameters can be set:
-
- * `/INSTALL` - Install the package to "C:\Program Files (x86)\AnyDesk\"
- * `/PATH:installdirectory` - Install the package to a custom directory
- * `/NOAUTOSTART` - Do not start anydesk at bootup (Implies install) 
- * `/NOSTARTMENU` - Do not create start menu icon during install (Implies install) 
- * `/DESKTOPICON` - Create a desktop icon during install (Implies install) 
- * `/UPDATETYPE:type` - Update `manually` , `disabled` , or `auto` Defaults to disabled (Implies install)
-
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+	AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.</description>
     <releaseNotes>http://download.anydesk.com/changelog.txt</releaseNotes>
     <tags>anydesk desk viewer remote control support online desktop teamviewer rdp</tags>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <docsUrl>https://support.anydesk.com/Help_Center</docsUrl>
-	<bugTrackerUrl>https://anydesk.com/en/contact/support</bugTrackerUrl>
+	<bugTrackerURL>https://anydesk.com/en/contact/support</bugTrackerURL>
+	<dependencies>
+		<dependency id="anydesk.portable" version="5.4.2" />
+	</dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
