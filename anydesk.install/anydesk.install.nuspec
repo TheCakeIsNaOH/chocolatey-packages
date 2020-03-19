@@ -7,7 +7,7 @@
     <title>AnyDesk MSI (Install)</title>
     <authors>AnyDesk Software GmbH</authors>
 	<copyright>2020 AnyDesk GmbH</copyright>
-    <owners>TheCakeIsNaOH, ARCHer</owners>
+    <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://anydesk.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://anydesk.com/en</projectUrl>
