@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>anydesk</id>
+    <version>5.4.2</version>
+    <title>AnyDesk</title>
+    <authors>AnyDesk Software GmbH</authors>
+    <owners>TheCakeIsNaOH, ARCHer</owners>
+    <licenseUrl>https://anydesk.com/terms</licenseUrl>
+    <projectUrl>https://anydesk.com/en</projectUrl>
+    <iconUrl>FIXME</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Remote Desktop Software</description>
+    <summary>Connect to a computer remotely, be it from the other end of the office or halfway around the world. 
+	AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.
+	</summary>
+    <releaseNotes>http://download.anydesk.com/changelog.txt</releaseNotes>
+    <tags>anydesk desk viewer remote control support online desktop teamviewer rdp</tags>
+    <packageSourceUrl>FIXME</packageSourceUrl>
+    <docsUrl>http://support.anydesk.com/knowledgebase</docsUrl>
+    <mailingListUrl>http://support.anydesk.com/</mailingListUrl>
+    <bugTrackerUrl>http://download.anydesk.com/changelog.txt</bugTrackerUrl>
+  </metadata>
+</package>
