@@ -25,4 +25,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; PackageName = 'anydesk.install'; URL32 = $url32 }
 }
 
-Update-Package -ChecksumFor none -nocheckchocoversion
+Update-Package -ChecksumFor none
