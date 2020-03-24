@@ -16,11 +16,16 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
 	#docsUrl = "https://docs.nextcloud.com/desktop/"
-	$download_page = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/releases/Windows -UseBasicParsing
+	$stable_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/releases/Windows -UseBasicParsing
+	$stable_name        = $stable_page.links | ? href -match '.exe$'| % href | select -last 1
+	$stable_version     = ($stable_name -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
+	$stable_modurl      = 'https://download.nextcloud.com/desktop/releases/Windows/' + $stable_name
 	
-	$filename   = $download_page.links | ? href -match '.exe$'| % href | select -last 1
-	$version    = ($filename -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
-	$modurl     = 'https://download.nextcloud.com/desktop/releases/Windows/' + $filename
+	$pre_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/prereleases/Windows -UseBasicParsing
+	$pre_name        = $pre_page.links | ? href -match '.exe$'| % href | select -last 1
+	$pre_version     = ($pre_name -split '[-]' | select -First 2 -Skip 1) -join "-"
+	$pre_modurl      = 'https://download.nextcloud.com/desktop/prereleases/Windows/' + $pre_name
+	
 	
 	#$partVersion = ($version -split '\.' | select -First 2) -join "."
 	#$docsUrl = $docsUrl + $partVersion
@@ -28,10 +33,20 @@ function global:au_GetLatest {
 	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	
 	return @{ 	
-				Version = $version; 
-				URL32 = $modurl; 
-				PackageName = 'nextcloud-client';
-				Options      = @{ Headers = @{ 'User-Agent' = $useragent } }; 
+				Streams = [ordered] @{
+						'Stable' = @{ 
+							Version = $stable_version; 
+							URL32 = $stable_modurl; 
+							PackageName = 'nextcloud-client'; 
+							Options = @{ Headers = @{ 'User-Agent' = $useragent } }; 
+							}
+						'Pre' = @{
+							Version = $pre_version; 
+							URL32 = $pre_modurl; 
+							PackageName = 'nextcloud-client'; 
+							Options = @{ Headers = @{ 'User-Agent' = $useragent } }; 
+						}
+				}
 			}
 }
 
