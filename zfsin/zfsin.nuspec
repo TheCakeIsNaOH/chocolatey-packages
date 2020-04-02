@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zfsin</id>
-    <version>0.22-Tryggr</version>
+    <version>0.23-Hagliga</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/zfsin</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>ZFSin</title>
