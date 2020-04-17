@@ -1,5 +1,5 @@
 1. Download installer at 
-   x32: FIXME
+   x32: https://download.wsusoffline.net/wsusoffline120.zip
 
 2. Get checksums of downloaded zip and included zip
 
