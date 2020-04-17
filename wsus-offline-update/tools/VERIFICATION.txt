@@ -1,0 +1,6 @@
+1. Download installer at 
+   x32: FIXME
+
+2. Get checksums of downloaded zip and included zip
+
+3. Check that the checksums match
