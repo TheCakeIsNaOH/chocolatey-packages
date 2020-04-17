@@ -12,5 +12,3 @@ if(Test-Path $shortcutFilePathGen) {
 if(Test-Path $shortcutFilePathInst) {
     del $shortcutFilePathInst
 }
-
-Write-Host -ForegroundColor yellow "Note that if you installed the software to a custom path then it is not removed"

@@ -2,18 +2,10 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $file                  = (Get-Childitem -Filter *.zip -Path $toolsDir).fullname
-$destDir               = $toolsDir
-
-if ($pp['path']) {
-	if (!(Test-Path $pp['path'])) {
-		Throw "Invalid path specified"
-	}
-	$destDir = $pp['path']
-}
 
 $packageArgs = @{
-  FullFilePath = $file
-  Destination  = $destDir
+  FileFullPath = $file
+  Destination  = $toolsDir
   PackageName  = $env:ChocolateyPackageName
 }
 
@@ -27,8 +19,8 @@ if (!$pp['nostart']) {
 	$programs     = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 	$shortcutFilePathGen  = Join-Path $programs $linkNameGen
 	$shortcutFilePathInst = Join-Path $programs $linkNameInst
-	$targetPathGen        = [System.IO.Path]::Combine("$destdir", "wsusoffline", $fileNameGen)
-	$targetPathInst       = [System.IO.Path]::Combine("$destdir", "wsusoffline", "client", $fileNameInst)
+	$targetPathGen        = [System.IO.Path]::Combine("$toolsDir", "wsusoffline", $fileNameGen)
+	$targetPathInst       = [System.IO.Path]::Combine("$toolsDir", "wsusoffline", "client", $fileNameInst)
 	Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePathGen -targetPath $targetPathGen
 	Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePathInst -targetPath $targetPathInst
 }

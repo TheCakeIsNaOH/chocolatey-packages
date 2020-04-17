@@ -25,7 +25,6 @@ Using "WSUS Offline Update", you can update any computer running Microsoft Windo
 #### Package Parameters
 The following package parameters can be set:
 
- * `/PATH:installdirectory` - Custom path to extract software to. If this option is used, the software is not removed upon package uninstall and has to be removed manually.
  * `/NOSTART` - Do not add shortcuts to the start menu.
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
