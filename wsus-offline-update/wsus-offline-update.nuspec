@@ -13,10 +13,8 @@
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>http://www.wsusoffline.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/TheCakeIsNaOH/chocolatey-packages/Icons/wsus_offline_update.png</iconUrl>
-	<bugTrackerUrl>https://trac.wsusoffline.net/trac.fcgi/report</bugTrackerUrl>
 	<docsUrl>https://www.wsusoffline.net/docs/</docsUrl>
 	<mailingListUrl>https://forums.wsusoffline.net/</mailingListUrl>
-	<projectSourceUrl>https://trac.wsusoffline.net/browser/trunk</projectSourceUrl>
 	<releaseNotes>https://download.wsusoffline.net/</releaseNotes>
     <summary>Using "WSUS Offline Update", you can update any computer running Microsoft Windows and Office safely, quickly and without an Internet connection.</summary>
 	<description>
