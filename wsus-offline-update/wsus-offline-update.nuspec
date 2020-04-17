@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wsus-offline-update</id>
+    <version>12.0.0</version>
+    <title>WSUS Offline Update</title>
+    <authors>Torsten Wittrock</authors>
+    <owners>TheCakeIsNaOH, doc</owners>
+    <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
+    <projectUrl>http://www.wsusoffline.net/</projectUrl>
+    <iconUrl>FIXME</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<bugTrackerUrl>https://trac.wsusoffline.net/trac.fcgi/report</bugTrackerUrl>
+	<docsUrl>https://www.wsusoffline.net/docs/</docsUrl>
+	<mailingListUrl>https://forums.wsusoffline.net/</mailingListUrl>
+	<projectSourceUrl>https://trac.wsusoffline.net/browser/trunk</projectSourceUrl>
+	<releaseNotes>https://download.wsusoffline.net/</releaseNotes>
+    <summary>Using "WSUS Offline Update", you can update any computer running Microsoft Windows and Office safely, quickly and without an Internet connection.</summary>
+	<description>
+Using "WSUS Offline Update", you can update any computer running Microsoft Windows and Office safely, quickly and without an Internet connection.
+	
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/PATH:installdirectory` - FIXME
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+    <copyright />
+    <tags>windows update offline wsus office service pack</tags>
+    <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
