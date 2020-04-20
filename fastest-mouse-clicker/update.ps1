@@ -19,7 +19,14 @@ function global:au_GetLatest {
 	$exename    = $url32 -split '[/]' | select -Last 1 -Skip 1
     $version    = ($exename -split '[a-z]' | ? { $_ -match '\d'}).replace("_" , ".").trim(".")
 
-	return @{ Version = $version; URL32 = $url32; PackageName = 'fastest-mouse-clicker'; FileType = 'exe'}
+	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+	return @{ 
+		Version = $version; 
+		URL32 = $url32; 
+		PackageName = 'fastest-mouse-clicker'; 
+		FileType = 'exe';
+		Options = @{ Headers = @{ 'User-Agent' = $useragent } }
+		}
 }
 
 Update-Package -ChecksumFor none -nocheckurl
