@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>fastest-mouse-clicker</id>
-    <version>2.1.8.1</version>
+    <version>2.5.0.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/fastest-mouse-clicker</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>The Fastest Mouse Clicker for Windows</title>
