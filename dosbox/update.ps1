@@ -17,11 +17,13 @@ function global:au_GetLatest {
 	$url32         = $folder + 'DOSBox' + $version + '-win32-installer.exe/download'
 	$mod_version   = $version.replace('-','.')
 	
+	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
     return @{
-        URL32        = "$url32"
-        Version      = $mod_version
-		FileType     = 'exe'
-		PackageName  = 'dosbox'
+        URL32        = "$url32";
+        Version      = $mod_version;
+		FileType     = 'exe';
+		PackageName  = 'dosbox';
+		Options      = @{ Headers = @{ 'User-Agent' = $useragent } }
     }
 }
 
