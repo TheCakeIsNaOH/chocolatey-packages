@@ -4,21 +4,22 @@
   <metadata>
     <id>rtx-voice</id>
     <version>0.5.12.6-beta</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
-	<owners>TheCakeIsNaOH</owners>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/rtx-voice</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
     <title>Nvidia RTX Voice</title>
     <authors>Nvidia</authors>
     <projectUrl>https://www.nvidia.com/en-us/geforce/guides/nvidia-rtx-voice-setup-guide</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/rtx-voice.png</iconUrl>-->
-	<copyright>2020 Nvidia</copyright>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/RTX-Voice-Icon.png</iconUrl>
+    <copyright>2020 Nvidia</copyright>
     <bugTrackerUrl>https://docs.google.com/forms/d/e/1FAIpQLSeLVdcX_G6F0LR-W8VcCA_5v7E265AkSBlP0IYYd1_HU_cYFA/viewform</bugTrackerUrl>
     <tags>Nvidia GPU graphics sound audio RTX voice</tags>
     <summary>Nvidia background noise remover</summary>
     <description>NVIDIA RTX Voice is a new plugin that leverages NVIDIA RTX GPUs and their AI capabilities to remove distracting background noise from your broadcasts, voice chats, and remote video conferencing meetings. This allows users to "go live" or join a meeting without having to worry about unwanted sounds like loud keyboard typing or other ambient noise in noisy environments. RTX Voice also suppresses background noise from players in loud environments, making incoming audio easier to understand.
 	
-Requires an Nvidia GPU, Windows 10, and Nvidia driver 410.18 or newer.</description>
+Requires an Nvidia GPU, Windows 10, and Nvidia driver 410.18 or newer. The software will install without these requirements, but will not run.
+Only RTX cards are officially supported.</description>
   </metadata>
   <files>
-     <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
