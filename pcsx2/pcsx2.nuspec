@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pcsx2</id>
+    <version>1.6.0</version>
+    <title>PCSX2</title>
+    <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3</licenseUrl>
+    <projectUrl>http://pcsx2.net/</projectUrl>
+    #<iconUrl>http://cdn.rawgit.com/hey-red/chocolatey-packages/master/pcsx2/pcsx2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PCSX2 is a free and open-source PlayStation 2 (PS2) emulator. Its purpose is to emulate the PS2's hardware, using a combination of MIPS CPU Interpreters, Recompilers and a Virtual Machine which manages hardware states and PS2 system memory. This allows you to play PS2 games on your PC, with many additional features and benefits.</description>
+    <summary> The Playstation 2 Emulator </summary>
+    <tags>pcsx2 ps2 playstation emulator games admin</tags>
+    <projectSourceUrl>https://github.com/PCSX2/pcsx2</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <docsUrl>http://wiki.pcsx2.net/index.php/PCSX2_Documentation</docsUrl>
+    <bugTrackerUrl>https://github.com/PCSX2/pcsx2/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist2015" />
+    </dependencies>
+  </metadata>
+</package>
