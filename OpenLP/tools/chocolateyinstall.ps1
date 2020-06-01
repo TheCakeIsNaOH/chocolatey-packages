@@ -1,8 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0.msi'
-$url64                 = 'https://get.openlp.org/2.9.0/OpenLP-2.9.0-x64.msi'
-
+$url32                 = 'https://get.openlp.org/2.9.1/OpenLP-2.9.1.msi'
+$url64                 = 'https://get.openlp.org/2.9.1/OpenLP-2.9.1-x64.msi'
+$checksum32            = '02F595AB08460420B6E50443FB54B714D4586E02CCFC5E2E08BA7153BA2F9A3F'
+$checksum64            = '9E1F5BB1A4FAED0B6DD6B421000168C571F4D7745DA795388B8257543B9D165F'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,9 +11,9 @@ $packageArgs = @{
   url           = $url32
   url64bit      = $url64
   FileType      = 'MSI'
-  checksum      = '13975bec5adb4f1bf051801ac3a0ba332f270368c48e75a8d68d613b655223c9'
+  checksum      = $checksum32
   checksumType  = 'sha256' 
-  checksum64    = 'f80180ee0e0e52249e8bb12f8f88364631b5b935959e643037a64a428fa1f33d'
+  checksum64    = $checksum64
   checksumType64= 'sha256'
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
