@@ -1,4 +1,4 @@
-﻿1. Download release from https://sourceforge.net/projects/fast-mouse-clicker-pro/files/
+﻿1. Download release from https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows/-/blob/master/WindowsInstaller/Install_TheFastestMouseClicker_2.5.2.0.exe
 
 2. Get checksum of .exe
 
