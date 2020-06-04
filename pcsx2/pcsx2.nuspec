@@ -1,24 +1,41 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pcsx2</id>
     <version>1.6.0</version>
-    <title>PCSX2</title>
+    <title>PCSX2 Emulator</title>
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3</licenseUrl>
+	<copyright>2020 PCSX2 Team</copyright>
     <projectUrl>http://pcsx2.net/</projectUrl>
-    #<iconUrl>http://cdn.rawgit.com/hey-red/chocolatey-packages/master/pcsx2/pcsx2.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/pcsx2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>PCSX2 is a free and open-source PlayStation 2 (PS2) emulator. Its purpose is to emulate the PS2's hardware, using a combination of MIPS CPU Interpreters, Recompilers and a Virtual Machine which manages hardware states and PS2 system memory. This allows you to play PS2 games on your PC, with many additional features and benefits.</description>
+    <description>PCSX2 is a free and open-source PlayStation 2 (PS2) emulator. Its purpose is to emulate the PS2's hardware, using a combination of MIPS CPU Interpreters,
+Recompilers and a Virtual Machine which manages hardware states and PS2 system memory. This allows you to play PS2 games on your PC, with many additional features and benefits.
+	
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/Desktop` - Add a desktop shortcut
+ * `/NoStart` - Do not add a start menu shortcut
+ * `/
+ 
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.	</description>
     <summary> The Playstation 2 Emulator </summary>
-    <tags>pcsx2 ps2 playstation emulator games admin</tags>
+    <tags>pcsx2 ps2 playstation emulator games</tags>
     <projectSourceUrl>https://github.com/PCSX2/pcsx2</projectSourceUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <docsUrl>http://wiki.pcsx2.net/index.php/PCSX2_Documentation</docsUrl>
     <bugTrackerUrl>https://github.com/PCSX2/pcsx2/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="vcredist2015" />
+      <dependency id="vcredist140" version="14.21.27702.2"/>
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
