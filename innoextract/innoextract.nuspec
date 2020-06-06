@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>innoextract</id>
+    <id>nnoextract</id>
     <version>1.8</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/innoextract</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>innoextract</title>
+    <title>Innoextract</title>
     <authors>Daniel Scharrer</authors>
     <projectUrl>https://constexpr.org/innoextract/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/68abd73e/Icons/innoextract.png</iconUrl>

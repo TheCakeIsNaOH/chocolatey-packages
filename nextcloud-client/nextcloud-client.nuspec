@@ -6,7 +6,7 @@
     <version>2.7.0.15031-beta1</version>
     <title>Nextcloud Desktop Client</title>
     <authors>Nextcloud</authors>
-    <owners>TheCakeIsNaOH, doc</owners>
+    <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/nextcloud/desktop/blob/master/COPYING</licenseUrl>
     <projectUrl>https://nextcloud.com/clients/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ecc76f94/Icons/nextcloud.png</iconUrl>
