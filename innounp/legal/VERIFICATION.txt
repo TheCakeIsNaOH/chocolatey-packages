@@ -1,0 +1,12 @@
+
+1. Download the .rar binary package from 
+	x32: https://sourceforge.net/projects/innounp/files/innounp/innounp%200.49/innounp049.rar/download
+	
+2. Extract the .rar file, 7zip works fine
+
+3. Check that the `innounp.exe` included in the nupkg and the extracted exe file from the rar have the same checksum.
+
+----
+
+The other licenses in the legal folder come from the *src.rar located next to the binary .rar in the URL above.
+
