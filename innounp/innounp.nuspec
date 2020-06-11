@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>innounp</id>
+    <version>0.49</version>
+    <title>Inno Setup Unpacker</title>
+    <authors>2019 QuickeneR,Ariman</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://innounp.sourceforge.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Inno Setup is a popular program for making software installations. Unfortunately, there is no official unpacker - the only method of getting the files out of the self-extracting executable is to run it. One piece of software that addresses this issue is Sergei Wanin's InstallExplorer, a plug-in for the FAR Manager that unpacks several types of installations, including Inno Setup (IS). But since it is not updated in a timely fashion, and so does not support the latest IS most of the time, this program was born. The advantages over InstallExplorer are:
+
+Innounp is open source and based on IS source. Therefore, it is more likely to support future IS versions.
+It recovers portions of the installation script (.iss file), including the registry changes and the compiled Innerfuse/RemObjects Pascal Script, if available.
+If you want to report a bug, request a feature, or discuss anything else related to the program, please write to the forum.</description>
+    <summary>Unpacker for installations made by Inno Setup</summary>
+    <releaseNotes>http://innounp.sourceforge.net/#History</releaseNotes>
+    <copyright>QuickeneR,Ariman</copyright>
+    <language>en-us</language>
+    <tags>InnoSetup extract installer unpacker</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/innounp/</packageSourceUrl>
+    <dependencies>
+      <dependency id="7zip.commandline" />
+    </dependencies>
+  </metadata>
+</package>
