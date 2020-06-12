@@ -6,8 +6,8 @@ $files64               = (Get-ChildItem -Filter "*_x64.exe").FullName
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file32 		= $toolsDir\$file32
-  file64		= $toolsDir\$file64
+  file32 		= $file32
+  file64		= $file64
   silentArgs    = '/S'
   validExitCodes= @(0)
 }
