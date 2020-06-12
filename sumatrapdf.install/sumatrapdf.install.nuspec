@@ -12,10 +12,21 @@
     <projectUrl>https://www.sumatrapdfreader.org/free-pdf-reader.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/sumatrapdf.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
-	    Sumatra PDF is powerful, small, portable and starts up very fast.
-	    Simplicity of the user interface has a high priority.</description>
-    <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
+    <description>What is Sumatra PDF?
+Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
+
+Sumatra PDF is powerful, small, portable and starts up very fast.
+
+Simplicity of the user interface has a high priority.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NoDesktop` - Do not add a desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+    <summary>Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows</summary>
     <releaseNotes>http://www.sumatrapdfreader.org/news.html</releaseNotes>
     <tags>sumatrapdf pdf reader</tags>
     <projectSourceUrl>https://github.com/sumatrapdfreader/sumatrapdf</projectSourceUrl>
