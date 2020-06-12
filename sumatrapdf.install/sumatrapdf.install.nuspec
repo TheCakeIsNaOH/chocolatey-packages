@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sumatrapdf.install</id>
+    <version>3.2</version>
+    <title>Sumatra PDF (Install)</title>
+    <authors>Krzysztof Kowalczyk</authors>
+    <owners>TheCakeIsNaOH, Rob Reynolds</owners>
+	<packageSourceUrl>FIXME</packageSourceUrl>
+    <licenseUrl>https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://www.sumatrapdfreader.org/free-pdf-reader.html</projectUrl>
+    <iconUrl>FIXME</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
+	    Sumatra PDF is powerful, small, portable and starts up very fast.
+	    Simplicity of the user interface has a high priority.</description>
+    <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
+    <releaseNotes>http://www.sumatrapdfreader.org/news.html</releaseNotes>
+    <copyright>FIXME</copyright>
+    <tags>sumatrapdf pdf reader</tags>
+    <projectSourceUrl>https://github.com/sumatrapdfreader/sumatrapdf</projectSourceUrl>
+    <docsUrl>https://www.sumatrapdfreader.org/manual.html</docsUrl>
+    <bugTrackerUrl>https://github.com/sumatrapdfreader/sumatrapdf/wiki/Submitting-bug-reports</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
