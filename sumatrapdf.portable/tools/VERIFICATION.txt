@@ -1,0 +1,9 @@
+1. Download binary zips from:
+	x32: https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2.zip
+	x64: https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-64.zip
+	
+2. Extract the zip files to get executables
+
+3. Get checksums of executables included in nupkg
+
+4. Compare with checksums of downloaded executables
