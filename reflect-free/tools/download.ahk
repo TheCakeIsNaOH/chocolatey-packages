@@ -1,6 +1,6 @@
 exe_path   = %1%
 setup_dir  = %2%
-
+SetControlDelay -1
 Run, %exe_path%
 
 WinWait, Macrium Reflect Download Agent
@@ -11,21 +11,21 @@ ControlSetText, Edit2, %setup_dir%, ahk_id %hwnd%
 Sleep 500
 
 ; Do not run after download
-ControlClick, Button6, ahk_id %hwnd%
+Control, Uncheck, , Button6, ahk_id %hwnd%
 
 Sleep 3000
 
 ; Download
-ControlClick, Button10, ahk_id %hwnd%
-Sleep 100
-Send, {Enter}
+ControlClick, Button10, ahk_id %hwnd% , , , , NA
+;Sleep 100
+;Send, {Enter}
 
 ; Accept overwrite old installer if needed
 Sleep 1500
 IfWinExist,,&Yes
 {
     WinActivate
-    Send, {ENTER}
+    ControlClick, Button1, , &Yes , , , NA
 }
 
 
@@ -35,8 +35,8 @@ loop {
     IfWinExist,, Click to view log file
     {
         WinActivate
-        Send, {ENTER}
-        ControlSend,,{ESC}, ahk_id %hwnd% 
+        ControlClick, Button1, , Click to view log file , , , NA
+        ControlClick, Button11, ahk_id %hwnd% , , , , NA
         break
     }
 }
