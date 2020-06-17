@@ -1,4 +1,4 @@
-﻿From: https://gitlab.com/mashanovedad/The-Fastest-Mouse-Clicker-for-Windows/blob/master/LICENSE
+﻿From: https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows/blob/master/LICENSE
 
 LICENSE
 
