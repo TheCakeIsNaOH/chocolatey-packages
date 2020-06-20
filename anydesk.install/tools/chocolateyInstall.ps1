@@ -33,4 +33,4 @@ if ($key.Count -eq 1) {
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
 
-Install-ChocolateyPackage @packageArgs
+ Install-ChocolateyPackage @packageArgs
