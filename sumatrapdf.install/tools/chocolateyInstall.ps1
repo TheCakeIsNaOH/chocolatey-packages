@@ -5,13 +5,30 @@ $file64                = (Get-ChildItem -Path $toolsDir -Filter "*_x64.exe").Ful
 $pp                    = Get-PackageParameters
 $shortcutName          = 'SumatraPDF.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("DesktopDirectory")) $shortcutName
+$args                  = '/S '
+
+if ($pp['WithFilter']) {
+    $args = $args + ' /with-filter '
+}
+
+if ($pp['WithPreview']) {
+    $args = $args + ' /with-preview '
+}
+
+if ($pp['Path']) {
+	$path = $pp['Path']
+    if (!(Test-Path $path -IsValid)) {
+		Throw "Bad path parameter"
+	}
+	$args = $args + " /D $path"
+}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
   file          = $file32
   file64        = $file64
-  silentArgs    = '/S'
+  silentArgs    = $args
   validExitCodes= @(0)
 }
 

@@ -23,6 +23,9 @@ Simplicity of the user interface has a high priority.
 The following package parameters can be set:
 
  * `/NoDesktop` - Do not add a desktop icon
+ * `/WithFilter` - Install search filter
+ * `/WithPreview` - Install shell preview
+ * `/Path:C:\path\to\dir` - Change the install directory
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
