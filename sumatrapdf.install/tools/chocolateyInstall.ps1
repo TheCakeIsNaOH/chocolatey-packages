@@ -8,11 +8,11 @@ $shortcut              = Join-Path ([Environment]::GetFolderPath("DesktopDirecto
 $args                  = '/S '
 
 if ($pp['WithFilter']) {
-    $args = $args + ' /with-filter '
+    $args = $args + ' -with-filter '
 }
 
 if ($pp['WithPreview']) {
-    $args = $args + ' /with-preview '
+    $args = $args + ' -with-preview '
 }
 
 if ($pp['Path']) {
@@ -20,7 +20,7 @@ if ($pp['Path']) {
     if (!(Test-Path $path -IsValid)) {
 		Throw "Bad path parameter"
 	}
-	$args = $args + " /D $path"
+	$args = $args + ' -d "' + $path + '"'
 }
 
 $packageArgs = @{
