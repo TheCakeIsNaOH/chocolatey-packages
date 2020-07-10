@@ -30,7 +30,7 @@ function global:au_GetLatest {
 	#$partVersion = ($version -split '\.' | select -First 2) -join "."
 	#$docsUrl = $docsUrl + $partVersion
 	
-	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
 	
 	return @{ 	
 				Streams = [ordered] @{
