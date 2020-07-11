@@ -40,7 +40,7 @@ if (!($pp['KeepUpdateCheck'])) {
 	}
 	
 	if (Test-Path $productRegKey) {
-		$null = New-ItemProperty -Path $productRegKey -Name 'skipUpdateCheck' -Value 1 
+		$null = New-ItemProperty -Path $productRegKey -Name 'skipUpdateCheck' -Value 1 -Force
 	} else {
 		Write-Host -ForegroundColor green 'Stopping update check failed'
 	}
