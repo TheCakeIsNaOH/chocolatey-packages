@@ -21,6 +21,7 @@ function global:au_GetLatest {
 	$stable_version     = ($stable_name -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
 	$stable_modurl      = 'https://download.nextcloud.com/desktop/releases/Windows/' + $stable_name
 	
+	Start-Sleep -s 5
 	$pre_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/prereleases/Windows -UseBasicParsing
 	$pre_name        = $pre_page.links | ? href -match '.exe$'| % href | select -last 1
 	$pre_version     = ($pre_name -split '[-]' | select -First 2 -Skip 1) -join "-"

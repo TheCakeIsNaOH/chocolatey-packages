@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nextcloud-client</id>
-    <version>2.6.5.20200713</version>
+    <version>2.7.0.15628-beta3</version>
     <title>Nextcloud Desktop Client</title>
     <authors>Nextcloud</authors>
     <owners>TheCakeIsNaOH</owners>
