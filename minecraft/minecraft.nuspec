@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>minecraft</id>
+    <version>1.9</version>
+    <title>Minecraft Launcher</title>
+    <authors>Mojang</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
+    <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/thecakeisnaoh/chocolatey-packages/master/icons/minecraft.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Launcher for Minecraft Java edition</description>
+    <summary>Minecraft</summary>
+    <releaseNotes />
+    <copyright>2020 Microsoft</copyright>
+    <tags>minecraft mine craft microsoft</tags>
+    <packageSourceUrl>FIXME</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
