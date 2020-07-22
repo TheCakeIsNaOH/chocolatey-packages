@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>minecraft-launcher</id>
+    <version>1.0.0.020200722</version>
+    <title>Minecraft Launcher</title>
+    <authors>Mojang</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/minecraft.png</iconUrl>
+	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
+	<bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
+	<docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
+    <summary>Launcher for Minecraft Java edition</summary>
+	<description>The original version of Minecraft! Java Edition has cross-platform play between Windows, Linux and macOS, and also supports user-created skins and mods. Includes a decade’s worth of updates, with much more to come!
+	
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Do not add a desktop icon/shortcut 
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+    <releaseNotes>https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs</releaseNotes>
+    <copyright>2020 Microsoft</copyright>
+    <tags>minecraft mine craft microsoft mojang java</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
