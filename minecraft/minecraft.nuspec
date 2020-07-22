@@ -4,7 +4,7 @@
   <metadata>
     <id>minecraft</id>
     <version>1.16.2</version>
-    <title>Minecraft Launcher</title>
+    <title>[Deprecated] Minecraft Launcher</title>
     <authors>Mojang</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
@@ -15,12 +15,27 @@
 	<bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
 	<docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
     <summary>Launcher for Minecraft Java edition</summary>
-	<description>The original version of Minecraft! Java Edition has cross-platform play between Windows, Linux and macOS, and also supports user-created skins and mods. Includes a decade’s worth of updates, with much more to come!</description>
-    <releaseNotes>https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs</releaseNotes>
+	<description>#### New package name: **[minecraft-launcher](https://chocolatey.org/packages/minecraft-launcher)**
+
+---
+
+`minecraft` has been deprecated because the launcher now uses versioning that is decoupled from the version of the actual game. 
+The new package id `minecraft-launcher` has versioning that more closely aligns with the actual version of the launcher. 
+
+It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.</description>
+    <releaseNotes>#### New users
+* Do not install this package. Install **minecraft-launcher** package instead.
+
+#### Existing users - Updating
+* Updating this package will automatically install the most recent version of the **minecraft-launcher** chocolatey package.
+* Please update any links, dependencies, or scripts that reference this package to the new package name **minecraft-launcher**
+
+#### Existing users - Post-update Cleanup (optional)
+`choco uninstall minecraft --whatif`</releaseNotes>
     <copyright>2020 Microsoft</copyright>
     <tags>minecraft mine craft microsoft mojang java</tags>
+	<dependencies>
+      <dependency id="minecraft-launcher" />
+    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
