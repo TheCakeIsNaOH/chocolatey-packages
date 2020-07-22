@@ -3,20 +3,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>minecraft</id>
-    <version>1.9</version>
+    <version>1.16.2</version>
     <title>Minecraft Launcher</title>
     <authors>Mojang</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/thecakeisnaoh/chocolatey-packages/master/icons/minecraft.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Launcher for Minecraft Java edition</description>
-    <summary>Minecraft</summary>
-    <releaseNotes />
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/minecraft.png</iconUrl>
+	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
+	<bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
+	<docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
+    <summary>Launcher for Minecraft Java edition</summary>
+	<description>The original version of Minecraft! Java Edition has cross-platform play between Windows, Linux and macOS, and also supports user-created skins and mods. Includes a decade’s worth of updates, with much more to come!</description>
+    <releaseNotes>https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs</releaseNotes>
     <copyright>2020 Microsoft</copyright>
-    <tags>minecraft mine craft microsoft</tags>
-    <packageSourceUrl>FIXME</packageSourceUrl>
+    <tags>minecraft mine craft microsoft mojang java</tags>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
