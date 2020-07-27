@@ -17,9 +17,8 @@ function global:au_GetLatest {
 	
 	$url        = $download_page.links | ? href -match 'btrfs-\d\.\d[\d\.]*\.zip$' | % href | select -First 1
 	$version    = ($url -split '[/]' | select -Last 1 -Skip 1).substring(1)
-	$modurl     = 'https://github.com' + $url 
 
-	return @{ Version = $version; URL32 = $modurl; PackageName = 'winbtrfs'}
+	return @{ Version = $version; URL32 = $url; PackageName = 'winbtrfs'}
 }
 
 Update-Package  -ChecksumFor none
