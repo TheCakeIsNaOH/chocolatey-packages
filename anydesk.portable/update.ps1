@@ -22,7 +22,9 @@ function global:au_GetLatest {
 	
 	$version       = ($Fullversion -split '\s' | select -Last 1 -Skip 1).tostring()	
 	
-	return @{ Version = $version; PackageName = 'anydesk.portable'; URL32 = $url32 }
+	return @{ Version = $version; URL32 = $url32 }
 }
 
-Update-Package -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') {
+	Update-Package -ChecksumFor none
+}
