@@ -15,3 +15,5 @@ $packageArgs = @{
 certutil -addstore -f "TrustedPublisher" $cerLocation
 
 Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item $fileLocation -force -ea 0 

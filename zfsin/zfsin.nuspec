@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zfsin</id>
-    <version>0.23-Hagliga</version>
+    <version>0.24-eljun</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/zfsin</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>ZFSin</title>
@@ -19,7 +19,7 @@
     <tags>ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
     <summary>OpenZFS on Windows port</summary>
     <description>
-# Beta Software
+## Beta Software
 ## Do not use for production systems!
 
 Currently signed by a non-EV certificate. Due to this, secure boot needs to be off for the driver to load.
