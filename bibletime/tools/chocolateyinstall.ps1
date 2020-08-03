@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName              = (Get-ChildItem $toolsDir -Filter "*.exe").fullname
+$fileName              = (Get-ChildItem $toolsDir -Filter "*.exe")
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
