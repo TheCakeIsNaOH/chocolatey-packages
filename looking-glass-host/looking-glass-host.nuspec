@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
@@ -9,7 +9,7 @@
     <title>Looking Glass (host)</title>
     <authors>Geoffrey McRae</authors>
     <projectUrl>https://looking-glass.hostfission.com/</projectUrl>
-    <!--<iconUrl>FIXME</iconUrl>-->
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/looking-glass-host.png</iconUrl>
     <copyright>2020 Geoffrey McRae</copyright>
     <licenseUrl>https://github.com/gnif/LookingGlass/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
