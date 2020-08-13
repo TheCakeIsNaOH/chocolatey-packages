@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>looking-glass-host</id>
-    <version>0.0.0.1-Beta2-RC4</version>
+    <version>0.0.0.0-B2-RC4</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Looking Glass (host)</title>
@@ -27,10 +27,15 @@ Looking Glass is targeted at extremely low latency use requirements on the local
 Unlike network based streaming applications, Looking Glass does not use any form of compression or color space conversion, all frames are transferred to the viewer (client application) in 32-bit RGBA without any transformations or modifications. This is possible through the use of a shared memory segment which enables extremely high throughput low latency guest to host communication.
 
 ### Important note
-FIXME FIXME FIXME 
-how to pin, select version.
+This host application needs to have the same protocol version as the client to be able to work.
 
-#### Package Parameters
+On option is to pin the package version to halt updates, and unpin it when you are ready to update.
+`choco pin add -n looking-glass-host`
+`choco pin remove -n looking-glass-host`
+
+The other option is to not run `choco update all`, but only run `choco update` on specific packages.
+
+### Package Parameters
 The following package parameters can be set:
 
  * `/PATH:installdirectory` - Install Looking Glass (host) to a custom directory
