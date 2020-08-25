@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rpcs3</id>
+    <version>0.0.11-alpha10773</version>
+    <title>RPCS3</title>
+    <authors>Nekotekina, kd-11, Contributors</authors>
+    <owners>TheCakeIsNaOH, Stewart Cossey, Anthony Mastrean</owners>
+    <licenseUrl>https://raw.githubusercontent.com/RPCS3/rpcs3/master/LICENSE</licenseUrl>
+    <projectUrl>https://rpcs3.net/</projectUrl>
+    <iconUrl>https://rpcs3.net/img/icons/menu/logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux and BSD. It was founded by programmers DH and Hykem. Initially hosted on Google Code, the project was eventually migrated to GitHub later on in its development. RPCS3's first successful boots were primarily composed of small homebrew projects and hardware tests. The emulator was later publicly released in June of 2012 and gained substantial attention from both the open-source community and PlayStation enthusiasts alike. Today, RPCS3 is primarily developed by its two lead developers; Nekotekina, kd-11 and backed by flourishing team of GitHub contributors.</description>
+    <summary>An Open-source Sony PlayStation 3 Emulator for Windows and Linux</summary>
+    <copyright>GNU GPLv2 License</copyright>
+    <tags>emulator sony playstation ps3</tags>
+    <projectSourceUrl>https://github.com/RPCS3/rpcs3/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Cossey/choco</packageSourceUrl>
+    <docsUrl>https://rpcs3.net/quickstart</docsUrl>
+    <bugTrackerUrl>https://github.com/RPCS3/rpcs3/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.20.27508.1" />
+    </dependencies>
+  </metadata>
+      <files>
+      <file src="tools\**" target="tools" />
+    </files>
+</package>
