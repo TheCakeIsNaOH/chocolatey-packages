@@ -10,7 +10,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
+    Start-Sleep -s 10
 	Get-RemoteFiles -Purge -NoSuffix 
+    Start-Sleep -s 10
 }
 
 
