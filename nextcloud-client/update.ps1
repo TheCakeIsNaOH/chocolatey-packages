@@ -10,9 +10,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-    Start-Sleep -s 10
 	Get-RemoteFiles -Purge -NoSuffix 
-    Start-Sleep -s 10
 }
 
 
@@ -22,8 +20,7 @@ function global:au_GetLatest {
 	$stable_name        = $stable_page.links | ? href -match '.exe$'| % href | select -last 1
 	$stable_version     = ($stable_name -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
 	$stable_modurl      = 'https://download.nextcloud.com/desktop/releases/Windows/' + $stable_name
-	
-	Start-Sleep -s 5
+    
 	$pre_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/prereleases/Windows -UseBasicParsing
 	$pre_name        = $pre_page.links | ? href -match '.exe$'| % href | select -last 1
 	$pre_version     = ($pre_name -split '[-]' | select -First 2 -Skip 1) -join "-"
@@ -53,7 +50,7 @@ function global:au_GetLatest {
 			}
 }
 
-Update-Package -ChecksumFor none -nocheckurl #-nocheckurl #-nocheckchocoversion
+Update-Package -ChecksumFor none #-nocheckurl #-nocheckchocoversion
 
 #todo
 # AU
