@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk</id>
-    <version>6.0.7</version>
+    <version>6.0.8.0</version>
     <title>AnyDesk Exe (Portable and Install)</title>
     <authors>AnyDesk Software GmbH</authors>
 	<copyright>2020 AnyDesk GmbH</copyright>
@@ -23,7 +23,7 @@
     <docsUrl>https://support.anydesk.com/Help_Center</docsUrl>
 	<bugTrackerUrl>https://anydesk.com/en/contact/support</bugTrackerUrl>
 	<dependencies>
-		<dependency id="anydesk.portable" version="6.0.7" />
+		<dependency id="anydesk.portable" version="6.0.8.0" />
 	</dependencies>
   </metadata>
   <files>
