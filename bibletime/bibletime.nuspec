@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bibletime</id>
@@ -22,7 +23,7 @@
 	BibleTime is written in C++ and uses the Qt GUI toolkit.</description>
     <releaseNotes>https://github.com/bibletime/bibletime/blob/master/ChangeLog</releaseNotes>
     <dependencies>
-      <dependency id="vcredist2015" />
+      <dependency id="vcredist2015" version="14.0.23506.0" />
     </dependencies>
   </metadata>
   <files>

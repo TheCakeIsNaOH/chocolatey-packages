@@ -1,4 +1,4 @@
-Import-Module AU
+﻿Import-Module AU
 Import-Module "$env:ChocolateyInstall/helpers/chocolateyInstaller.psm1"
 . "..\_scripts\Update-OnETagChanged.ps1"
 

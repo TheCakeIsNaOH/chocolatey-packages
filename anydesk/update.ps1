@@ -1,4 +1,4 @@
-Import-Module AU
+﻿Import-Module AU
 #uses anydesk.portable updater
 . $PSScriptRoot\..\anydesk.portable\update.ps1
 
