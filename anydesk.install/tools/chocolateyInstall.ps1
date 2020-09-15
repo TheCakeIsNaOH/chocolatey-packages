@@ -5,7 +5,6 @@ $checksum32            = '121c70c9a762a6fd2ae806b94cd9f059a88836902dcb560c456028
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'MSI'
   url           = $url32
   softwareName  = 'AnyDesk MSI'

@@ -15,7 +15,6 @@ if (!$cert) {
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'MSI'
   url64bit      = $url64
   softwareName  = 'Elgato Game Capture HD*'

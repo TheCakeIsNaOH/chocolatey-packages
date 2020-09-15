@@ -10,18 +10,14 @@ $checksum64            = 'dcac4b38e766458a67d9184d0607c45f3e06c95f9259e7eb541134
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'MSI'
   url           = $url32
   url64bit      = $url64
-
   softwareName  = '4K Video to MP3*'
-
   checksum      = $checksum32
   checksumType  = 'sha256'
   checksum64    = $checksum64
   checksumType64= 'sha256'
-
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
 }

@@ -7,11 +7,10 @@ $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $sh
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'EXE'
-  file         = $fileLocation
+  file          = $fileLocation
   softwareName  = 'Balabolka*'
-  silentArgs   = '-silent'
+  silentArgs    = '-silent'
 }
 
 Install-ChocolateyInstallPackage @packageArgs

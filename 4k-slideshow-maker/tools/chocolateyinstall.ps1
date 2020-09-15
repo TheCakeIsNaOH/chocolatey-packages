@@ -10,18 +10,14 @@ $checksum64            =  '9127ccf7a5145df36c84920bbe2779915dfdaf35c014c5c9952e0
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'MSI'
   url           = $url32
   url64bit      = $url64
-
   softwareName  = '4K Slideshow Maker*'
-
   checksum      = $checksum32
   checksumType  = 'sha256'
   checksum64    = $checksum64
   checksumType64= 'sha256'
-
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
 }
