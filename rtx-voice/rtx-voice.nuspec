@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rtx-voice</id>
-    <version>0.5.12.6-beta</version>
+    <version>0.5.12.6-betaUpdated</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/rtx-voice</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Nvidia RTX Voice</title>
