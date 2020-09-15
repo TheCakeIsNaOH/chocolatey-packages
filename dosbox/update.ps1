@@ -1,4 +1,4 @@
-import-module au
+﻿Import-Module au
 
 function global:au_SearchReplace {
     @{
