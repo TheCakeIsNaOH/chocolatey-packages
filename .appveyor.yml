@@ -52,6 +52,7 @@ install:
 - ps: $PSVersionTable
 - git --version
 - choco --version
+- ps: 'Cinst wormies-au-helpers'
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
@@ -68,6 +69,7 @@ install:
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
+    Import-Module wormies-au-helpers
 
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
