@@ -52,7 +52,7 @@ install:
 - ps: $PSVersionTable
 - git --version
 - choco --version
-- ps: 'Cinst wormies-au-helpers'
+- ps: 'Install-Module wormies-au-helpers -Repository PSGallery -Force'
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
