@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-video-to-mp3</id>
-    <version>2.6.1</version>
+    <version>3.0.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-video-to-mp3</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4k Video to MP3 (Install)</title>
