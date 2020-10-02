@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $pp                    = Get-PackageParameters
-$silentArgs            = '/qn /norestart /l*v "$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log"'
+$silentArgs            = '/qn'
 
 if ($pp['StartMenu'] -or $pp['ClassicExplorer'] -or $pp['ClassicIE']) {
     $silentArgs = $silentArgs + ' ADDLOCAL='
