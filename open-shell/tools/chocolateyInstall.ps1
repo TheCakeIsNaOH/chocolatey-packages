@@ -1,0 +1,31 @@
+﻿$ErrorActionPreference = 'Stop'
+$toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
+$pp                    = Get-PackageParameters
+$silentArgs            = '/qn /norestart /l*v "$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log"'
+
+if ($pp['StartMenu'] -or $pp['ClassicExplorer'] -or $pp['ClassicIE']) {
+    $silentArgs = $silentArgs + ' ADDLOCAL='
+    
+    if ($pp['StartMenu']) {
+        $silentArgs = $silentArgs + 'StartMenu,'
+    }
+    if ($pp['ClassicExplorer']) {
+        $silentArgs = $silentArgs + 'ClassicExplorer,'
+    }
+    if ($pp['ClassicIE']) {
+        $silentArgs = $silentArgs + 'ClassicIE'
+    }
+}
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'EXE'
+  file           = (Get-Childitem -Path $toolsDir -Filter "*.exe").fullname
+  softwareName   = 'Open-Shell'
+  silentArgs     = $silentArgs
+  validExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item "$toolsDir\*.exe" -Force -EA SilentlyContinue | Out-Null

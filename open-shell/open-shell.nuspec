@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>open-shell</id>
+    <version>4.4.152</version>
+    <title>Open-Shell (Install)</title>
+    <authors>Ivo Beltchev</authors>
+    <owners>TheCakeIsNaOH, bcurran3</owners>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/open-shell</packageSourceUrl>
+    <copyright>2020 Ivo Beltchev</copyright>
+    <licenseUrl>https://github.com/Open-Shell/Open-Shell-Menu/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://open-shell.github.io/Open-Shell-Menu/</projectUrl>
+    <projectSourceUrl>https://github.com/Open-Shell/Open-Shell-Menu/</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Open-Shell/Open-Shell-Menu/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/open-shell.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Classic style Start Menu for Windows 7, 8, 8.1, 10</summary>
+    <tags>classic-shell open-shell shell freeware start-menu binary</tags>
+    <description>
+## Open-Shell ![Open-Shell](https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/open-shell.png)
+
+*Originally* **[Classic Shell](http://www.classicshell.net)** *by [Ivo Beltchev](https://sourceforge.net/u/ibeltchev/profile/)*
+
+### Features
+- Classic style Start Menu for Windows 7, 8, 8.1, 10
+- Toolbar for Windows Explorer
+- Classic copy UI (Windows 7 only)
+- Show file size in Explorer status bar
+- Title bar and status bar for Internet Explorer
+
+### Package specific
+
+By default, the package installs all three components, i.e. Open-Shell Menu, Classic Explorer, and Classic IE.
+If you do want all three components, you can select which components you want via package parameters, which are documented below.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/StartMenu` - Add the Open-Shell Menu component
+ * `/ClassicExplorer` - Add the Classic Explorer component
+ * `/ClassicIE` - Add the Classic IE component
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+</description>
+    <releaseNotes>https://github.com/Open-Shell/Open-Shell-Menu/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
