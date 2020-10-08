@@ -2,9 +2,11 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-1. Download installer at 
-   x32: https://looking-glass.hostfission.com/ci/host/download?id=236
+1. Download installer zip at 
+   x32: https://looking-glass.hostfission.com/ci/host/download?id=255
 
-2. Get checksums of downloaded binary and included binary
+2. Extract installer zip
 
-3. Check that the checksums match.
+3. Get checksums of downloaded binary and included binary
+
+4. Check that the checksums match.
