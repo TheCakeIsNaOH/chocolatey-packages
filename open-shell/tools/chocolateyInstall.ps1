@@ -21,7 +21,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   file           = (Get-Childitem -Path $toolsDir -Filter "*.exe").fullname
-  softwareName   = 'Open-Shell'
+  softwareName   = 'Open-Shell*'
   silentArgs     = $silentArgs
   validExitCodes = @(0)
 }
