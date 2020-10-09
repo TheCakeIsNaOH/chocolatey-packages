@@ -18,18 +18,20 @@ However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel
     <summary>A fully-free (as in freedom) fork of Mozilla Firefox ESR.</summary>
     <owners>dimqua</owners>
     <authors>GNU Project</authors>
-    <tags>foss cross-platform admin unofficial gnu icecat web browser web-browser firefox freedom privacy esr fork</tags>
+    <tags>foss cross-platform unofficial gnu icecat web browser web-browser firefox freedom privacy esr fork</tags>
     <projectUrl>https://www.gnu.org/software/gnuzilla/</projectUrl>
     <releaseNotes>[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), [Firefox ESR](https://www.mozilla.org/en-US/firefox/78.3.0/releasenotes/)</releaseNotes>
     <projectSourceUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git</projectSourceUrl>
     <licenseUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/COPYING</licenseUrl>
-    <iconUrl>https://glcdn.githack.com/dimqua/choco/raw/stable/icons/icecat.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/icecat.png</iconUrl>
     <packageSourceUrl>https://gitlab.com/dimqua/choco</packageSourceUrl>
+    <bugTrackerUrl>https://bugzilla.mozilla.org/home</bugTrackerUrl>
     <dependencies>
       <dependency id="vcredist2015" version="14.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
