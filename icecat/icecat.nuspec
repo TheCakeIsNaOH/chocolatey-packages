@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <version>78.3.0</version>
+    <id>icecat</id>
+    <title>GNU IceCat</title>
+    <description>
+GNU IceCat is the GNU version of the Firefox browser. It aim to be based on the the current official release of Firefox Extended Support Release (ESR) with removal of trademarked artwork and proprietary components. Important differences between Mozilla's Firefox and GNU IceCat is that IceCat has a focus on freedom and privacy.
+
+However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel effort that works closely with and re-bases in synchronization on the latest Firefox ESR as the upstream supplier, with patches merged upstream whenever possible; although it should be noted that additional security updates are customized to IceCat occasionally.
+
+## Notes
+
+* IceCat developers dropped support for Windows in 2016: *"Note that building binary packages for Windows and macOS currently requires non-free software, so we no longer distribute binary releases for those platforms"*.
+* This package contains an *unofficial* version of GNU IceCat installer for Windows x64 only.
+    </description>
+    <summary>A fully-free (as in freedom) fork of Mozilla Firefox ESR.</summary>
+    <owners>dimqua</owners>
+    <authors>GNU Project</authors>
+    <tags>foss cross-platform admin unofficial gnu icecat web browser web-browser firefox freedom privacy esr fork</tags>
+    <projectUrl>https://www.gnu.org/software/gnuzilla/</projectUrl>
+    <releaseNotes>[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), [Firefox ESR](https://www.mozilla.org/en-US/firefox/78.3.0/releasenotes/)</releaseNotes>
+    <projectSourceUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git</projectSourceUrl>
+    <licenseUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/COPYING</licenseUrl>
+    <iconUrl>https://glcdn.githack.com/dimqua/choco/raw/stable/icons/icecat.png</iconUrl>
+    <packageSourceUrl>https://gitlab.com/dimqua/choco</packageSourceUrl>
+    <dependencies>
+      <dependency id="vcredist2015" version="14.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
