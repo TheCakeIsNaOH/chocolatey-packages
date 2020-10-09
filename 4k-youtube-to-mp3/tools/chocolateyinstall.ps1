@@ -10,7 +10,7 @@ $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $sh
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'MSI'
+  fileType      = 'EXE'
   url           = $url32
   url64bit      = $url64
   softwareName  = '4K Youtube to MP3*'
@@ -18,7 +18,7 @@ $packageArgs = @{
   checksumType  = 'sha256'
   checksum64    = $checksum64
   checksumType64= 'sha256'
-  silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  silentArgs    = "/quiet /norestart /log `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
 }
 
