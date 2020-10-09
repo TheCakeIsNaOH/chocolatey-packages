@@ -7,7 +7,7 @@ $packageArgs = @{
   file           = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
   silentArgs     = '-ms'
   validExitCodes = @(0)
-  softwareName   = 'Icecat*' #FIXME
+  softwareName   = 'Icecat*'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
