@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a0d95a823e0b9b6aa6d7de14b1e863ead18940a4/rpcs3-v0.0.12-11033-a0d95a82_win64.7z'
-$checksum32            = 'c4252c49bc9702c4479ebda870535c59b4e043b0bd3c0ab4f3057bd6a86c697f'
+$url32                 = 'https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-6590366f8e4f0d096f6cda7535c76a96d8f45495/rpcs3-v0.0.12-11039-6590366f_win64.7z'
+$checksum32            = '97c4cf70e54da55cf542e8f9224d731975de11f5e5e16366a3d365e2497576bf'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
