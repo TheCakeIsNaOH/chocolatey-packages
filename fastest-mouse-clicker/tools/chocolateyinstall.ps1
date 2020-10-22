@@ -24,3 +24,4 @@ if ($pp['noicon']) {
 		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
 	}
 }
+
