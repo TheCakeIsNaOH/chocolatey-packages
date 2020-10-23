@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>open-shell</id>
-    <version>4.4.152</version>
+    <version>4.4.160</version>
     <title>Open-Shell (Install)</title>
     <authors>Ivo Beltchev</authors>
     <owners>TheCakeIsNaOH, bcurran3</owners>
