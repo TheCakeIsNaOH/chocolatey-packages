@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iperf2</id>
-    <version>2.0.12</version>
+    <version>2.0.14.1001-alpha20201022</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iPerf2</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
@@ -21,7 +21,11 @@
 
 Iperf 2 vs iperf 3 major differences: Iperf 2 here has timing related stats including end/end packet latency w/histograms (clocks assumed to be synced); supports multicast including SSM; supports threaded operation; supports L2 length checks. Iperf3 is a "cleaner" code base per a rewrite; supports json output; uses a test connection; is single threaded. 
 
-Iperf2 and iperf3 do not interoperate. </description>
+Iperf2 and iperf3 do not interoperate. 
+
+## Note:
+The actual version should be `2.0.14-alphaYYYYMMDD` not `2.0.14.1001-alphaYYYYMMDD`
+This is because I previously misunderstood version `2.0.14a` as `2.0.14.1` instead of what it actually is, namely `2.0.14-alpha`.</description>
     <releaseNotes>https://sourceforge.net/projects/iperf2/files/readme.txt/download</releaseNotes>
   </metadata>
   <files>
