@@ -2,7 +2,7 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <version>81.0</version>
+    <version>82.0</version>
     <id>iceweasel</id>
     <title>Debian IceWeasel</title>
     <description>Unofficial Iceweasel build of Firefox</description>
