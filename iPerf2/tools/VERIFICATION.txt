@@ -1,15 +1,14 @@
-﻿
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-1. Download the following .exe-
-https://sourceforge.net/projects/iperf2/files/iperf-2.0.14a-win.exe/download
+1. Download the following .zip-
+    https://managedway.dl.sourceforge.net/project/iperf2/iperf-2.0.8-win.zip
 
-2. Use checksum utility of your choice to get checksum of the .exe
+2. Extract the zip to get the .exe
 
-3. Check that the checksum matches-
-	MD5: 43355059836ce11fec1458a978293f00
-	SHA-1: 196ca63b404b5091f0035c415d6a24426917733d
-	SHA-256: fc0c508dc46b885b502dc1623baa55ef9d6af440a7bac227a41156695f2e61f4
-	SHA-512: 4030963ef74b9f3f203eaaed36f6b8e54ebdacce4526a30e1663b0d8968fd8b7646f4a93e622b1ad766bf3de2e202045c949cedef092b2102934e42675257692
+3. Use checksum utility of your choice to get checksum of the .exe
+
+4. Check that the checksum matches the checksum of the included exe, checksums provided below for convenience-
+    SHA-1: 6BE507E9A9785E0A5511483D596B5DD6B6E717A3
+    SHA-256: 575691CF45A3586FB3F6953F134A1A3D9EDF0D03ADE09AFF5A6EB422BD080726
