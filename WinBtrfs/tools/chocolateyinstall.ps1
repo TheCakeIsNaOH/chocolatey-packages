@@ -8,23 +8,29 @@ $exportType            = [System.Security.Cryptography.X509Certificates.X509Cont
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
 Write-Host -ForegroundColor green "Extracting cert from driver"
-$cert = (Get-AuthenticodeSignature $driverFile).SignerCertificate;
-[System.IO.File]::WriteAllBytes($outputFile, $cert.Export($exportType));
-
-Write-Host -ForegroundColor green "Adding cert to trusted store"
-certutil -addstore -f "TrustedPublisher" $toolsDir\MarkHarmstone.cer
+$cert = (Get-AuthenticodeSignature $driverFile).SignerCertificate
+$checkCert = Get-ChildItem Cert:\CurrentUser\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq $cert.Thumbprint }
+if (!($checkCert)) {
+    [System.IO.File]::WriteAllBytes($outputFile, $cert.Export($exportType))
+    Write-Host -ForegroundColor green "Cert not found, adding to trusted store"
+    certutil -addstore -f "TrustedPublisher" $toolsDir\MarkHarmstone.cer
+} else {
+    Write-Host -ForegroundColor green "Cert already trusted"
+}
 
 Write-Host -ForegroundColor green "Adding btrfs driver"
 pnputil -i -a $toolsDir\btrfs.inf 
 
-Write-Host -ForegroundColor green "Removing ARM files"
+
+
+Write-Host -ForegroundColor green "Removing files for other architectures"
 Remove-Item -Recurse -Path $toolsDir\aarch64
 Remove-Item -Recurse -Path $toolsDir\arm
 
 if (Get-OSArchitectureWidth 64) {
-	Write-Host -ForegroundColor green "Removing x32 files"
 	Remove-Item -Recurse -Path $toolsDir\x86
 } else {
-	Write-Host -ForegroundColor green "Removing x64 files"
 	Remove-Item -Recurse -Path $toolsDir\x64
 }
+
+(Get-ChildItem -Recurse -Path $toolsDir -Filter '*.exe').FullName | ForEach-Object { Out-File "$_.ignore" }
