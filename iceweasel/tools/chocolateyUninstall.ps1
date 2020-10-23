@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
-  softwareName  = 'Icecat*'
+  softwareName  = 'Debian Iceweasel*'
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
   silentArgs    = '/S'
