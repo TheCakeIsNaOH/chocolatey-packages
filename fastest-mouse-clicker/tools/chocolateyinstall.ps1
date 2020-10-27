@@ -1,6 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
 $pp                    = Get-PackageParameters
 $shortcutName          = 'The Fastest Mouse Clicker for Windows.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
@@ -8,7 +7,7 @@ $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $sh
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  file 			 = $fileLocation
+  file 			 = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
   softwareName   = 'The Fastest Mouse Clicker for Windows*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
@@ -25,3 +24,4 @@ if ($pp['noicon']) {
 	}
 }
 
+Remove-Item -Force -EA 0 -Path $toolsDir\*.exe

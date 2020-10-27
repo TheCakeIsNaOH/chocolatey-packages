@@ -23,3 +23,5 @@ if ($pp['noicon']) {
 		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
 	}
 }
+
+Remove-Item -Force -EA 0 -Path $toolsDir\*.exe

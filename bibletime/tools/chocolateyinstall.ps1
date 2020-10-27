@@ -1,11 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName              = (Get-ChildItem $toolsDir -Filter "*.exe")
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = (Join-Path $toolsDir $fileName)
+  file          = (Get-ChildItem $toolsDir -Filter "*.exe").fullname
   softwareName  = 'BibleTime*'
   silentArgs    = '/S'
   validExitCodes= @(0)
@@ -13,4 +12,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
-Remove-Item $fileName -ea 0
+Remove-Item -Force -EA 0 -Path $toolsDir\*.exe
