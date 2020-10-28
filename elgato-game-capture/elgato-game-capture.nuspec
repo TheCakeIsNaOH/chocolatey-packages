@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>elgato-game-capture</id>
-    <version>3.70.46.3046</version>
+    <version>3.70.47.3047</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/elgato-game-capture</packageSourceUrl>
     <owners>TheCakeIsNaOh</owners>
     <title>Elgato Game Capture for Windows</title>
