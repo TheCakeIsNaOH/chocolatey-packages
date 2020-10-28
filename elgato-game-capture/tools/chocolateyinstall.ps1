@@ -10,7 +10,12 @@ $gcshortcut            = Join-Path ([Environment]::GetFolderPath("CommonDesktop"
 
 $cert = Get-ChildItem Cert:\LocalMachine\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq '1C34353BB195727CD0DAAEFAA7B1DA3DE5CDFA5E' }
 if (!$cert) {
+    Write-Host "Installing certificate"
     Start-ChocolateyProcessAsAdmin "certutil -addstore -f 'TrustedPublisher' $toolsDir\Elgato.cer"
+}
+$cert = Get-ChildItem Cert:\LocalMachine\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq '1C34353BB195727CD0DAAEFAA7B1DA3DE5CDFA5E' }
+if (!$cert) {
+    Throw "Cert failed to install"
 }
 
 $packageArgs = @{
