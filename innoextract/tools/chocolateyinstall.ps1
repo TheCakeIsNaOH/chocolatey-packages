@@ -4,3 +4,4 @@ $fileLocation          = (Get-ChildItem $toolsDir -Filter "*.zip").FullName
 
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
+Remove-Item -Force -EA 0 -Path $toolsDir\*.zip
