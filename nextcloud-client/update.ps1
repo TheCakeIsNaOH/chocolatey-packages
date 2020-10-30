@@ -42,7 +42,7 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package -ChecksumFor none -nocheckchocoversion #-nocheckurl 
+Update-Package -ChecksumFor none #-nocheckchocoversion #-nocheckurl 
 
 #todo
 # AU
