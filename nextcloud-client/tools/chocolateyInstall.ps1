@@ -26,7 +26,7 @@ $packageArgs = @{
   file64        = Get-Item $toolsDir\*_x64.msi
   silentArgs    = $silentArgs
   validExitCodes= @(0, 3010, 1641)
-  softwareName  = 'Nextcloud Desktop*'
+  softwareName  = 'Nextcloud*'
 }
 
 Install-ChocolateyInstallPackage @packageArgs

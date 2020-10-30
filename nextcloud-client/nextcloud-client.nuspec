@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nextcloud-client</id>
-    <version>3.0.2</version>
+    <version>3.0.3</version>
     <title>Nextcloud Desktop Client</title>
     <authors>Nextcloud</authors>
     <owners>TheCakeIsNaOH</owners>
@@ -13,8 +13,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<copyright>2017-2020 Nextcloud GmbH, 2012-2018 ownCloud GmbH</copyright>
 	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
-	<releaseNotes>https://github.com/nextcloud/desktop/releases</releaseNotes>\
-    <docsUrl></docsUrl>
+	<releaseNotes>https://github.com/nextcloud/desktop/releases</releaseNotes>
+    <docsUrl>https://docs.nextcloud.com/desktop/3.0</docsUrl>
 	<summary>Desktop sync client for Nextcloud</summary>
     <description>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.
 
@@ -32,6 +32,9 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
     <projectSourceUrl>https://github.com/nextcloud/desktop</projectSourceUrl>
     <tags>nextcloud client sync desktop</tags>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/nextcloud-client</packageSourceUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.0.23026.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
