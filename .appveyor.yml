@@ -10,6 +10,8 @@ branches:
 #build:
 #  verbosity: minimal
 
+image: Visual Studio 2019
+
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
