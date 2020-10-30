@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $pp                    = Get-PackageParameters
-$silentArgs            = "/qn /norestart REBOOT=ReallySuppress "
+$silentArgs            = "/qn /norestart REBOOT=ReallySuppress /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 
 if (!($pp['icon'])) {
     $silentArgs += 'NO_DESKTOP_SHORTCUT="1" '
