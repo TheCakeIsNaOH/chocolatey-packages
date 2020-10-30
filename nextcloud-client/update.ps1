@@ -4,58 +4,50 @@
 function global:au_SearchReplace {
     @{
         "tools\VERIFICATION.txt" = @{
-			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
-		}
-	}
+          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
+          "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
+          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+          "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+        }
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<docsUrl\>).*?(\</docsUrl\>)" = "`${1}$($Latest.docsUrl)`$2"
+        }        
+    }
 }
 
 function global:au_BeforeUpdate() {
-	Get-RemoteFiles -Purge -NoSuffix 
+    Get-RemoteFiles -Purge
 }
 
 
 function global:au_GetLatest {
-	#docsUrl = "https://docs.nextcloud.com/desktop/"
-	$stable_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/releases/Windows -UseBasicParsing
-	$stable_name        = $stable_page.links | ? href -match '.exe$'| % href | select -last 1
-	$stable_version     = ($stable_name -split '[-]' | select -Last 1 -Skip 1).replace('_','-')
-	$stable_modurl      = 'https://download.nextcloud.com/desktop/releases/Windows/' + $stable_name
+    $download_page = Invoke-WebRequest -Uri 'https://github.com/nextcloud/desktop/releases' -UseBasicParsing
     
-	$pre_page        = Invoke-WebRequest -Uri https://download.nextcloud.com/desktop/prereleases/Windows -UseBasicParsing
-	$pre_name        = $pre_page.links | ? href -match '.exe$'| % href | select -last 1
-	$pre_version     = ($pre_name -split '[-]' | select -First 2 -Skip 1) -join "-"
-	$pre_modurl      = 'https://download.nextcloud.com/desktop/prereleases/Windows/' + $pre_name
-	
-	
-	#$partVersion = ($version -split '\.' | select -First 2) -join "."
-	#$docsUrl = $docsUrl + $partVersion
-	
-	$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
-	
-	return @{ 	
-				Streams = [ordered] @{
-						'Stable' = @{ 
-							Version = $stable_version; 
-							URL32 = $stable_modurl; 
-							PackageName = 'nextcloud-client'; 
-							Options = @{ Headers = @{ 'User-Agent' = $useragent } }; 
-							}
-						'Pre' = @{
-							Version = $pre_version; 
-							URL32 = $pre_modurl; 
-							PackageName = 'nextcloud-client'; 
-							Options = @{ Headers = @{ 'User-Agent' = $useragent } }; 
-						}
-				}
-			}
+    $url64         = $download_page.links | ? href -match 'x64\.msi$'| % href | select -first 1
+    $url32         = $download_page.links | ? href -match 'x86\.msi$'| % href | select -first 1
+    $version       = ($url64 -split '/' | select -Last 1 -Skip 1).trim('v')
+    
+    $docsUrlPrefix = "https://docs.nextcloud.com/desktop/"
+    $partVersion   = ($version -split '\.' | select -First 2) -join "."
+    $docsUrl       = $docsUrlPrefix + $partVersion
+    
+    $useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
+    
+    return @{   
+        Version = $version; 
+        URL32 = 'https://github.com' + $url32
+        URL64 = 'https://github.com' + $url64
+        Options = @{ Headers = @{ 'User-Agent' = $useragent } };
+        docsUrl = $docsUrl
+    }
 }
 
-Update-Package -ChecksumFor none #-nocheckurl #-nocheckchocoversion
+Update-Package -ChecksumFor none -nocheckchocoversion #-nocheckurl 
 
 #todo
 # AU
 # re add in docs URL
-#	<docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
-#		".\nextcloud-client.nuspec" = @{
-#			"\<docsUrl\>.+" = "<docsUrl>$($Latest.docsUrl)</docsUrl>"
-#		}
+#   <docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
+#       ".\nextcloud-client.nuspec" = @{
+#           "\<docsUrl\>.+" = "<docsUrl>$($Latest.docsUrl)</docsUrl>"
+#       }

@@ -1,49 +1,34 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
-$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
 $pp                    = Get-PackageParameters
-$shortcutName          = 'Nextcloud.lnk'
-$shortcut              = Join-Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) $shortcutName
-$publisherRegKey       = "HKLM:\Software\Policies\Nextcloud GmbH\"
-$productRegKey         = "HKLM:\Software\Policies\Nextcloud GmbH\Nextcloud\"
+$silentArgs            = "/qn /norestart REBOOT=ReallySuppress "
 
+if (!($pp['icon'])) {
+    $silentArgs += 'NO_DESKTOP_SHORTCUT="1" '
+}
+
+if (!($pp['KeepUpdateCheck'])) {
+    $silentArgs += 'SKIPAUTOUPDATE="1" '
+}
+
+if ($pp['NoStart']) {
+    $silentArgs += 'NO_START_MENU_SHORTCUTS="1" '
+}
+
+if ($pp['NoShell']) {
+    $silentArgs += 'NO_SHELL_EXTENSIONS="1" '
+}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'EXE'
-  file 			= $fileLocation
-  silentArgs    = '/S'
-  validExitCodes= @(0)
+  fileType      = 'MSI'
+  file 			= Get-Item $toolsDir\*_x32.msi
+  file64        = Get-Item $toolsDir\*_x64.msi
+  silentArgs    = $silentArgs
+  validExitCodes= @(0, 3010, 1641)
+  softwareName  = 'Nextcloud Desktop*'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
 
-if (!($pp['icon'])) {
-	if (Test-Path $shortcut) {
-		Remove-Item $shortcut
-	} else {
-		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
-	}
-} else {
-	Write-Host -ForegroundColor green 'Adding desktop shortcut'
-}
-
-if (!($pp['KeepUpdateCheck'])) {
-	if (!(Test-Path $publisherRegKey)) {
-		Write-Host -ForegroundColor green 'Adding ' $publisherRegKey
-		$null = New-Item -Force -Path $publisherRegKey
-	}
-	
-	if (!(Test-Path $productRegKey)) {
-		Write-Host -ForegroundColor green 'Adding ' $productRegKey
-		$null = New-Item -Force -Path $productRegKey
-	}
-	
-	if (Test-Path $productRegKey) {
-		$null = New-ItemProperty -Path $productRegKey -Name 'skipUpdateCheck' -Value 1 -Force
-	} else {
-		Write-Host -ForegroundColor green 'Stopping update check failed'
-	}
-}
-
-Remove-Item $fileLocation -ea 0
+Remove-Item -Force -EA 0 -Path $toolsDir\*.msi
