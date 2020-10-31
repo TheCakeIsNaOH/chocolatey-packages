@@ -12,7 +12,7 @@
     <licenseUrl>https://github.com/maharmstone/btrfs/blob/master/LICENCE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>winbtrfs driver filesystem</tags>
-    <bugTrackerURL>https://github.com/maharmstone/btrfs/issues</bugTrackerURL>
+    <bugTrackerUrl>https://github.com/maharmstone/btrfs/issues</bugTrackerUrl>
     <copyright>2020 Mark Harmstone</copyright>
     <summary>An open-source btrfs driver for Windows</summary>
     <description>WinBtrfs is a Windows driver for the next-generation Linux filesystem Btrfs.
