@@ -31,6 +31,11 @@ function global:au_GetLatest {
     $partVersion   = ($version -split '\.' | select -First 2) -join "."
     $docsUrl       = $docsUrlPrefix + $partVersion
     
+    #If pre-release, use base docs URL because there is not a specific version live yet.
+    if ($version -like '*-*') {
+        $docsUrl = "https://docs.nextcloud.com/"
+    }
+    
     $useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
     
     return @{   
