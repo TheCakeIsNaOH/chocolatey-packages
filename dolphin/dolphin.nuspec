@@ -3,29 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dolphin</id>
-    <title>Dolphin Emulator</title>
-    <version>5.0.12716-beta</version>
+    <title>[Deprecated] Dolphin Emulator (Beta)</title>
+    <version>5.0.12716-beta20201120</version>
     <authors>Dolphin Emulator Project</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
-    <description>
-Dolphin is an emulator for running GameCube, Wii, and Triforce games on Windows, Linux, OS X, and recent Android devices.
+    <description>#### New package names: **[dolphin-beta](https://chocolatey.org/packages/dolphin-beta)**, **[dolphin-dev](https://chocolatey.org/packages/dolphin-dev)**, and **[dolphin-stable](https://chocolatey.org/packages/dolphin-stable)**
 
-It allows PC gamers to enjoy games for these two consoles in full HD (1080p) with several enhancements: compatibility with all PC controllers, turbo speed, networked multiplayer, and even more!
+---
 
-### Package specific
+`dolphin` has been deprecated because there are now multiple branches of dolphin, which have been split in their own package IDs.
 
-This package updates automatically. 
-
-#### Package Parameters
-The following package parameters can be set:
-
- * `/NOSTART` - Do not add a start menu item
- * `/DesktopIcon` - Add a desktop shorcut
-
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. 
-	</description>
+It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.</description>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/dolphin</packageSourceUrl>
     <projectUrl>https://dolphin-emu.org/</projectUrl>
     <projectSourceUrl>https://github.com/dolphin-emu/dolphin</projectSourceUrl>
@@ -44,11 +33,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 * [Changelog](https://dolphin-emu.org/download/list/master/)
     </releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" version="14.22.27821" />
+      <dependency id="dolphin-beta" version="5.0.12716-beta" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
-  </files>
 </package>
