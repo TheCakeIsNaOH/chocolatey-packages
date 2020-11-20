@@ -2,9 +2,9 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>dolphin-stable</id>
+    <id>dolphin</id>
     <title>Dolphin Emulator (Stable)</title>
-    <version>5.0</version>
+    <version>5.0.20201120</version>
     <authors>Dolphin Emulator Project</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
@@ -40,6 +40,9 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 * [Feeds](https://dolphin-emu.org/blog/feeds/)
 * [Changelog](https://dolphin-emu.org/download/list/master/)
     </releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" version="14.0.23026.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
