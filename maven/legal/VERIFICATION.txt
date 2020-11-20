@@ -1,0 +1,23 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1. Download the maven binary zip at
+	x32: https://apache.claz.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip
+
+2. Extract the maven zip
+
+3. Compare the checksums of the files included in the maven zip with the checksums of the files in the maven directory in the nupkg.
+A PowerShell (v4+) function to automate this comparison is below. It should return nothing if the directories have identical files, and return the difference if they are different. 
+
+Function Compare-Directories {
+	param(
+		[string]$nuspecDir,
+		[string]$checkDir
+	)
+    $nuspecDirHash = Get-ChildItem -Recurse -File -Path $nuspecDir | Get-FileHash -Algorithm SHA256
+	$checkDirHash = Get-ChildItem -Recurse -File -Path $checkDir | Get-FileHash -Algorithm SHA256 
+	Compare-Object -ReferenceObject $nuspecDirHash -DifferenceObject $checkDirHash -Property hash -PassThru
+}
+
+Compare-Directories -nuspecDir \path\to\extracted\nupkg\maven-directory -checkDir \path\to\extracted\maven\archive\

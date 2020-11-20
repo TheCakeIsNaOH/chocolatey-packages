@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>maven</id>
+    <title>Maven</title>
+    <version>3.6.3</version>
+    <authors>The Apache Maven team</authors>
+    <owners>TheCakeIsNaOH, Michael Pereira, Anthony Accioly</owners>
+    <summary>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
+	model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information</summary>
+    <description>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
+	model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information</description>
+    <projectUrl>http://maven.apache.org/</projectUrl>
+    <tags>apache maven build script xml java development</tags>
+    <copyright>2002-2020 The Apache Software Foundation</copyright>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/0/0b/Maven_logo.svg</iconUrl>
+    <releaseNotes>https://maven.apache.org/docs/3.6.3/release-notes.html</releaseNotes>
+    <docsUrl>https://maven.apache.org/guides/index.html</docsUrl>
+    <bugTrackerUrl>https://issues.apache.org/jira/projects/MNG/issues</bugTrackerUrl>
+    <mailingListUrl>https://maven.apache.org/mailing-lists.html</mailingListUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <projectSourceUrl>https://maven.apache.org/scm.html</projectSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+    <file src="apache-maven-3.6.3\**" target="apache-maven-3.6.3" />
+  </files>
+</package>
