@@ -3,18 +3,30 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dolphin</id>
-    <title>[Deprecated] Dolphin Emulator (Beta)</title>
-    <version>5.0.12716-beta20201120</version>
+    <title>Dolphin Emulator</title>
+    <version>5.0.12716-beta</version>
     <authors>Dolphin Emulator Project</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
-    <description>#### New package names: **[dolphin-beta](https://chocolatey.org/packages/dolphin-beta)**, **[dolphin-dev](https://chocolatey.org/packages/dolphin-dev)**, and **[dolphin-stable](https://chocolatey.org/packages/dolphin-stable)**
+    <description>
+Dolphin is an emulator for running GameCube, Wii, and Triforce games on Windows, Linux, OS X, and recent Android devices.
 
----
+It allows PC gamers to enjoy games for these two consoles in full HD (1080p) with several enhancements: compatibility with all PC controllers, turbo speed, networked multiplayer, and even more!
 
-`dolphin` has been deprecated because there are now multiple branches of dolphin, which have been split in their own package IDs.
+### Package specific
 
-It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.</description>
+This package updates automatically. 
+If it out of date by more than two days, please contact via the contact maintainers form.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOSTART` - Do not add a start menu item
+ * `/DesktopIcon` - Add a desktop shorcut
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. 
+	</description>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/dolphin</packageSourceUrl>
     <projectUrl>https://dolphin-emu.org/</projectUrl>
     <projectSourceUrl>https://github.com/dolphin-emu/dolphin</projectSourceUrl>
@@ -33,7 +45,11 @@ It exists only for backward compatibility to provide a transitional dummy packag
 * [Changelog](https://dolphin-emu.org/download/list/master/)
     </releaseNotes>
     <dependencies>
-      <dependency id="dolphin-beta" version="5.0.12716-beta" />
+      <dependency id="vcredist140" version="14.22.27821" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
 </package>
