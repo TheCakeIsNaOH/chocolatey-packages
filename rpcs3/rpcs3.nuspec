@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rpcs3</id>
-    <version>0.0.13-alpha11272</version>
+    <version>0.0.13-alpha11274</version>
     <title>RPCS3</title>
     <authors>Nekotekina, kd-11, Contributors</authors>
     <owners>TheCakeIsNaOH, Stewart Cossey</owners>
@@ -19,11 +19,13 @@
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
     <docsUrl>https://rpcs3.net/quickstart</docsUrl>
     <bugTrackerUrl>https://github.com/RPCS3/rpcs3/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/RPCS3/rpcs3/releases</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" version="14.20.27508.1" />
     </dependencies>
   </metadata>
-      <files>
-      <file src="tools\**" target="tools" />
-    </files>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
 </package>
