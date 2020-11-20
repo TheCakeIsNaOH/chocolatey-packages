@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dolphin</id>
+    <title>Dolphin Emulator</title>
+    <version>5.0.12716-beta</version>
+    <authors>Dolphin Emulator Project</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
+    <description>
+Dolphin is an emulator for running GameCube, Wii, and Triforce games on Windows, Linux, OS X, and recent Android devices.
+
+It allows PC gamers to enjoy games for these two consoles in full HD (1080p) with several enhancements: compatibility with all PC controllers, turbo speed, networked multiplayer, and even more!
+
+### Package specific
+
+This package updates automatically. 
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOSTART` - Do not add a start menu item
+ * `/DesktopIcon` - Add a desktop shorcut
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. 
+	</description>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/dolphin-chocolatey/tree/master/dolphin</packageSourceUrl>
+    <projectUrl>https://dolphin-emu.org/</projectUrl>
+    <projectSourceUrl>https://github.com/dolphin-emu/dolphin</projectSourceUrl>
+    <bugTrackerUrl>https://bugs.dolphin-emu.org/projects/emulator/issues</bugTrackerUrl>
+    <docsUrl>https://dolphin-emu.org/docs/guides/</docsUrl>
+    <mailingListUrl>https://forums.dolphin-emu.org/</mailingListUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/dolphin-chocolatey/f41ccdcf/Dolphin_0001.png</iconUrl>
+    <tags>gaming emulator wii gamecube dolphin</tags>
+    <copyright>© Dolphin Emulator Project 2020</copyright>
+    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+#### Program
+* [News](https://dolphin-emu.org/blog/)
+* [Feeds](https://dolphin-emu.org/blog/feeds/)
+* [Changelog](https://dolphin-emu.org/download/list/master/)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" version="14.22.27821" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
