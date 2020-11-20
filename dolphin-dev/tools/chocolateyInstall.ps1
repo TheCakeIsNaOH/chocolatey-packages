@@ -17,7 +17,7 @@ Get-ChocolateyUnzip @packageArgs
 
 Rename-Item -Path $extractedDir -NewName $dolphinDir -Force
 
-Remove-Item -Force -Path $toolsDir\*.zip
+Remove-Item -Force -Path $toolsDir\*.7z
 
 Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
 

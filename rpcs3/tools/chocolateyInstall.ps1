@@ -1,5 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$pp                    = Get-PackageParameters
+$shortcutName          = 'RPCS3.lnk'
+$extractDir            = $(Get-ToolsLocation)
+$extractedDir          = (Join-Path $extractDir 'Dolphin-x64')
+$dolphinDir            = (Join-Path $extractDir 'Dolphin-Dev')
+$exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
     PackageName  = $env:ChocolateyPackageName
@@ -11,4 +17,4 @@ Install-ChocolateyZipPackage @packageArgs
 
 Write-Host "$packageName installed to $toolsDir"
 
-Remove-Item -Force -Path $toolsDir\*.zip
+Remove-Item -Force -Path $toolsDir\*.7z
