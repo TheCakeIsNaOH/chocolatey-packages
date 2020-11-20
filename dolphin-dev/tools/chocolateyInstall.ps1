@@ -3,16 +3,19 @@ $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'Dolphin Emulator (Dev).lnk'
 $extractDir            = $(Get-ToolsLocation)
-$dolphinDir            = (Join-Path $extractDir Dolphin-Dev)
-$exepath               = (Join-Path $dolphinDir Dolphin.exe)
+$extractedDir          = (Join-Path $extractDir 'Dolphin-x64')
+$dolphinDir            = (Join-Path $extractDir 'Dolphin-Dev')
+$exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
   FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-13071-x64.7z'
-  Destination    = $extractDir 
+  Destination    = $extractDir
   PackageName    = $env:ChocolateyPackageName
 }
 
 Get-ChocolateyUnzip @packageArgs
+
+Rename-Item -Path $extractDir\Dolphin-X64 -NewName $dolphinDir -Force
 
 Remove-Item -Force -Path $toolsDir\*.zip
 
