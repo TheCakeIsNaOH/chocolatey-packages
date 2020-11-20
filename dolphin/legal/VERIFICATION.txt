@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-5b207c3b9566d02e0f687398566efe10f825fc7f/rpcs3-v0.0.13-11274-5b207c3b_win64.7z
+   x64: https://dl.dolphin-emu.org/builds/ed/c4/dolphin-master-5.0-12716-x64.7z
 
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 35383065607E2FC70C2C270FD103B3D2CED6A1A28E091C688708D7E2FD970C12
+   checksum64: 4959BFC80E954E1BDE9F31EB54EDF11F1E9C50CC25076D97225E5834E44B8D58

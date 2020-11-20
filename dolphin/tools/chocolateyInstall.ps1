@@ -7,7 +7,7 @@ $dolphinDir            = (Join-Path $extractDir Dolphin-x64)
 $exepath               = (Join-Path $dolphinDir Dolphin.exe)
 
 $packageArgs = @{
-  FileFullPath64 = Join-Path $toolsDir 'rclone-v1.53.3-windows-amd64.zip'
+  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-12716-x64.7z'
   Destination    = $extractDir 
   PackageName    = $env:ChocolateyPackageName
 }
