@@ -1,14 +1,16 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$shortcutName          = 'Dolphin Emulator (Stable).lnk'
-#FIXME $exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
+$shortcutName          = 'Dolphin.lnk'
+$dolphinFolder         = (Join-Path ([Environment]::GetFolderPath("ProgramFiles")) 'Dolphin')
+$exePath               = Join-Path $dolphinFolder  'Dolphin.exe'
+$shortcut              = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   file           = Join-Path $toolsDir 'dolphin-x64-5.0.exe'
-  softwareName   = 'Dolphin*' #FIXME
+  softwareName   = 'Dolphin*'
   silentArgs     = '/S'
   validExitCodes = @(0)
 }
@@ -17,16 +19,15 @@ Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item -Force -Path $toolsDir\*.exe
 
-#FIXME Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
+Install-BinFile -Name 'Dolphin-Stable' -Path $exepath -UseStart
 
-<# if ($pp['desktopicon']) {
-	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
-	Write-Host -ForegroundColor white 'Adding ' $desktopicon
-	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exepath  -RunAsAdmin
+if (!($pp['desktopicon'])) {
+    Write-Host -ForgroundColor white "Removing $shortcut"
+    Remove-Item -Force -Ea 0 -Path $shortcut 
 }
 
-if (!$pp['nostart']) {
-	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
-	Write-Host -ForegroundColor white 'Adding ' $starticon
-	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
-} #>
+if ($pp['nostart']) {
+	$startFolder = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::CommonPrograms)) 'Dolphin')
+	Write-Host -ForegroundColor white "Removeing  $startFolder"
+	Remove-Item -Force -Ea 0 -Path $startFolder
+}
