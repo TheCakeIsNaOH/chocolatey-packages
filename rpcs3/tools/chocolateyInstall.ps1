@@ -8,9 +8,14 @@ $exepath               = (Join-Path $rpcs3Dir 'rpcs3.exe')
 
 $packageArgs = @{
     PackageName  = $env:ChocolateyPackageName
-    Destination  = $toolsDir
+    Destination  = $rpcs3Dir
     FileFullPath = Join-Path $toolsDir 'rpcs3-v0.0.13-11280-5f010c2f_win64.7z'
 }
+
+Write-Host "Moving existing files from $toolsDir to rpcs3Dir"
+Mkdir -Force -Ea 0 -Path $rpcs3Dir  | Out-Null
+Get-ChildItem -Directory -Path $toolsDir | Move-Item -Destination $rpcs3Dir
+Get-ChildItem -Exclude "*.7z","*.ps1" -Path $toolsDir | Move-Item -Destination $rpcs3Dir
 
 Get-ChocolateyUnzip @packageArgs
 

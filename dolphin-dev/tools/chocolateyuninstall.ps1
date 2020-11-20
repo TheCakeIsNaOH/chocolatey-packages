@@ -23,5 +23,4 @@ if (Test-Path $starticon) {
 
 Uninstall-BinFile -Name 'Dolphin-Dev' -Path $exepath
 
-Write-Host -ForegroundColor white 'Removing ' $dolphinDir
-Remove-Item $DolphinDir -Recurse -ea 0
+Write-Host -ForegroundColor red "Not removing $rpcs3Dir so as to not remove user data, it can be removed manually"

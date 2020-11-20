@@ -24,5 +24,4 @@ if (Test-Path $starticon) {
 
 Uninstall-BinFile -Name 'Dolphin-Beta' -Path $exepath
 
-Write-Host -ForegroundColor white 'Removing ' $rpcs3Dir
-Remove-Item $rpcs3Dir -Recurse -ea 0
+Write-Host -ForegroundColor red "Not removing $rpcs3Dir so as to not remove user data, it can be removed manually"
