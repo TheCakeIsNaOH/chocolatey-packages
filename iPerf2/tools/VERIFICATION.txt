@@ -3,10 +3,10 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
 1. Download the following .exe-
-    https://sourceforge.net/projects/iperf2/files/iperf-2.0.14a-Oct22-win.exe/download
+    https://sourceforge.net/projects/iperf2/files/iperf-2.0.14a-Nov19-win.exe/download
 
 2. Use the checksum utility of your choice to get checksum of the .exe
 
 4. Check that the checksum matches the checksum of the included exe, checksums provided below for convenience-
-    SHA-1: 88FC2718F51C29A5B4166865C8D41066EA64037B
-    SHA-256: 3438EAB42F96B6FCD8226CDBED45F4D6D43E4DD65C80CD28F538F4A6B5BB523F
+    SHA-1: F278A74BDEEBAFC5174E716000FEEEEFFD701677
+    SHA-256: B54866D8E7C26F1C62F69CCA5A8E15E5879231D75FB1FE6D546539452E3C2128
