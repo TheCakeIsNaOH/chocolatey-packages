@@ -19,7 +19,7 @@ Rename-Item -Path $extractDir\Dolphin-X64 -NewName $dolphinDir -Force
 
 Remove-Item -Force -Path $toolsDir\*.zip
 
-Install-BinFile -Name 'Dolphin' -Path $exepath -UseStart
+Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
 
 if ($pp['desktopicon']) {
 	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)

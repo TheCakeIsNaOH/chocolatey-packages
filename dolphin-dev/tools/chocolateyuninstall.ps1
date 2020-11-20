@@ -21,7 +21,7 @@ if (Test-Path $starticon) {
 	Write-Host -ForegroundColor yellow 'Did not find ' $starticon 'to remove'
 }
 
-Uninstall-BinFile -Name 'Dolphin' -Path $exepath
+Uninstall-BinFile -Name 'Dolphin-Dev' -Path $exepath
 
 Write-Host -ForegroundColor white 'Removing ' $dolphinDir
 Remove-Item $DolphinDir -Recurse -ea 0
