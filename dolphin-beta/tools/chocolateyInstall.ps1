@@ -1,15 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$shortcutName          = 'Dolphin Emulator (Dev).lnk'
+$shortcutName          = 'Dolphin Emulator (Beta).lnk'
 $extractDir            = $(Get-ToolsLocation)
 $extractedDir          = (Join-Path $extractDir 'Dolphin-x64')
-$dolphinDir            = (Join-Path $extractDir 'Dolphin-Dev')
+$dolphinDir            = (Join-Path $extractDir 'Dolphin-Beta')
 $exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
-  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-13071-x64.7z'
-  Destination    = $extractDir
+  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-12716-x64.7z'
+  Destination    = $extractDir 
   PackageName    = $env:ChocolateyPackageName
 }
 
@@ -19,7 +19,7 @@ Rename-Item -Path $extractedDir -NewName $dolphinDir -Force
 
 Remove-Item -Force -Path $toolsDir\*.zip
 
-Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
+Install-BinFile -Name 'Dolphin-Beta' -Path $exepath -UseStart
 
 if ($pp['desktopicon']) {
 	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
