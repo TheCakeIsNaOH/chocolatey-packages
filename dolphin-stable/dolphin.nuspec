@@ -4,7 +4,7 @@
   <metadata>
     <id>dolphin</id>
     <title>Dolphin Emulator (Stable)</title>
-    <version>5.0.20201120</version>
+    <version>5.0.0.20201120</version>
     <authors>Dolphin Emulator Project</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
