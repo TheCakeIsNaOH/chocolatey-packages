@@ -2,11 +2,18 @@ Import-Module AU
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyInstall.ps1" = @{
-			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"          
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-		}
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(^\s*FileFullPath64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
+        }
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
+            "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+        }
 	}
+}
+
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_GetLatest {
@@ -20,4 +27,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL64 = $url64 }
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor none

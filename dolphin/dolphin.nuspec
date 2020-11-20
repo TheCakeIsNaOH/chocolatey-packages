@@ -26,13 +26,13 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. 
 	</description>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/dolphin-chocolatey/tree/master/dolphin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/dolphin</packageSourceUrl>
     <projectUrl>https://dolphin-emu.org/</projectUrl>
     <projectSourceUrl>https://github.com/dolphin-emu/dolphin</projectSourceUrl>
     <bugTrackerUrl>https://bugs.dolphin-emu.org/projects/emulator/issues</bugTrackerUrl>
     <docsUrl>https://dolphin-emu.org/docs/guides/</docsUrl>
     <mailingListUrl>https://forums.dolphin-emu.org/</mailingListUrl>
-    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/dolphin-chocolatey/f41ccdcf/Dolphin_0001.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/Dolphin_0001.png</iconUrl>
     <tags>gaming emulator wii gamecube dolphin</tags>
     <copyright>© Dolphin Emulator Project 2020</copyright>
     <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/license.txt</licenseUrl>
@@ -49,5 +49,6 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

@@ -5,18 +5,16 @@ $shortcutName          = 'Dolphin Emulator.lnk'
 $extractDir            = $(Get-ToolsLocation)
 $dolphinDir            = (Join-Path $extractDir Dolphin-x64)
 $exepath               = (Join-Path $dolphinDir Dolphin.exe)
-$url64                 = 'https://dl.dolphin-emu.org/builds/ed/c4/dolphin-master-5.0-12716-x64.7z'
-$checksum64            = '4959bfc80e954e1bde9f31eb54edf11f1e9c50cc25076d97225e5834e44b8d58'
 
 $packageArgs = @{
-  Url64bit       = $url64
-  Checksum64     = $checksum64
-  ChecksumType64 = 'sha256'
-  UnzipLocation  = $extractDir 
-  PackageName    = 'dolphin'
+  FileFullPath64 = Join-Path $toolsDir 'rclone-v1.53.3-windows-amd64.zip'
+  Destination    = $extractDir 
+  PackageName    = $env:ChocolateyPackageName
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
+
+Remove-Item -Force -Path $toolsDir\*.zip
 
 Install-BinFile -Name 'Dolphin' -Path $exepath -UseStart
 
