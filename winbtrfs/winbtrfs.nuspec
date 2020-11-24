@@ -4,7 +4,7 @@
   <metadata>
     <id>winbtrfs</id>
     <version>1.7.5</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinBtrfs</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/winbtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>WinBtrfs</title>
     <authors>maharmstone</authors>

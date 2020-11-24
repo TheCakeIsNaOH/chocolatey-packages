@@ -4,7 +4,7 @@
   <metadata>
     <id>regeditor</id>
     <version>12.0.2172</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/RegEditor</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/regeditor</packageSourceUrl>
 	<owners>TheCakeIsNaOH</owners>
     <title>O&amp;O RegEditor</title>
     <authors>O&amp;OSoftware</authors>

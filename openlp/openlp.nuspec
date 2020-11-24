@@ -4,7 +4,7 @@
   <metadata>
     <id>openlp</id>
     <version>2.9.1-alpha</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/OpenLP</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/openlp</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>OpenLP (Install)</title>
     <authors>OpenLP developers</authors>

@@ -4,7 +4,7 @@
   <metadata>
     <id>winmd</id>
     <version>0.1</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/WinMD</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/winmd</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>WinMD</title>
     <authors>Mark Harmstone</authors>

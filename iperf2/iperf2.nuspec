@@ -4,7 +4,7 @@
   <metadata>
     <id>iperf2</id>
     <version>2.0.14.1001-alpha20201119</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iPerf2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iperf2</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
     <authors>Mark Gates,Alex Warshavsky,Ajay Tirumala,Jim Ferguson,Jon Dugan,Feng Qin,Kevin Gibbs,John Estabrook,Andrew Gallatin,Stephen Hemminger,Nathan Jones,Gerrit Renker,Robert J. McMahon,Tim Auckland</authors>
