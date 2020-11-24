@@ -1,9 +1,0 @@
-﻿VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
- 
-1. Download https://eu.diskinternals.com/download/Linux_Reader.exe
-
-2. Get sha256 checksum of Linux_Reader.exe with utility of choice
-
-3. Check that it matches checksum of included Linux_Reader.exe
