@@ -6,7 +6,7 @@
     <version>4.4.160</version>
     <title>Open-Shell (Install)</title>
     <authors>Ivo Beltchev</authors>
-    <owners>TheCakeIsNaOH, bcurran3</owners>
+    <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/open-shell</packageSourceUrl>
     <copyright>2020 Ivo Beltchev</copyright>
     <licenseUrl>https://github.com/Open-Shell/Open-Shell-Menu/blob/master/LICENSE</licenseUrl>

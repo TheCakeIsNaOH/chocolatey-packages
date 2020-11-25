@@ -6,7 +6,7 @@
     <version>3.2</version>
     <title>Sumatra PDF (Install)</title>
     <authors>Krzysztof Kowalczyk</authors>
-    <owners>TheCakeIsNaOH, Rob Reynolds</owners>
+    <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/sumatrapdf.install</packageSourceUrl>
     <licenseUrl>https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING</licenseUrl>
     <projectUrl>https://www.sumatrapdfreader.org/free-pdf-reader.html</projectUrl>
