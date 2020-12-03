@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://netactuate.dl.sourceforge.net/project/iperf2/iperf-2.0.14a-Nov30-win.exe?viasf=1
+   x32: https://netactuate.dl.sourceforge.net/project/iperf2/iperf-2.0.14a-Dec02_20-win.exe?viasf=1
 
    to download the exe.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E8B8A721A9742AF4C9E9AAD156F114FA0A7EC9456F323975368E7C0ADB7DDE37
+   checksum32: 52664AD070460B6506939A016912A01D4F84D056B9FFD231D39D1D9B5A1AC87D
