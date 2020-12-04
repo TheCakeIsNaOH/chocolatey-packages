@@ -9,6 +9,10 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri https://help.elgato.com/hc/en-us/articles/360027964072-Elgato-Game-Capture-HD-Software-Release-Notes-Windows
     $regex64       = 'GameCaptureSetup_\d.*_x64\.msi'
@@ -22,4 +26,4 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor none
