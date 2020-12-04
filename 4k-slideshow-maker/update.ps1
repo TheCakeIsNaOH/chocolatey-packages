@@ -11,6 +11,10 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
 
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/download -UseBasicParsing
@@ -28,4 +32,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $modurl32; URL64 = $modurl64 }
 }
 
-Update-Package
+Update-Package -ChecksumFor none

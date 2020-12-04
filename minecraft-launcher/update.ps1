@@ -47,6 +47,9 @@ function Update-OnETagChanged() {
   return $result
 }
 
+function global:au_BeforeUpdate {
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+}
 
 function global:au_SearchReplace {
     @{
@@ -79,4 +82,4 @@ function global:au_GetLatest {
   return $result
 }
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor none
