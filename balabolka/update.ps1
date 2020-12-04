@@ -1,5 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
-Import-Module AU
+﻿Import-Module AU
 
 function global:au_GetLatest {
 	$version_page = (Invoke-WebRequest -Uri http://balabolka.site/changelog.txt -UseBasicParsing).content

@@ -47,12 +47,4 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package -ChecksumFor none #-nocheckchocoversion #-nocheckurl 
-
-#todo
-# AU
-# re add in docs URL
-#   <docsUrl>https://docs.nextcloud.com/desktop/2.6</docsUrl>
-#       ".\nextcloud-client.nuspec" = @{
-#           "\<docsUrl\>.+" = "<docsUrl>$($Latest.docsUrl)</docsUrl>"
-#       }
+Update-Package -ChecksumFor none

@@ -22,4 +22,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $modurl; PackageName = 'winmd'}
 }
 
-Update-Package  -ChecksumFor none
+Update-Package -ChecksumFor none

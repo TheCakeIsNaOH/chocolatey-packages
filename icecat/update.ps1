@@ -30,4 +30,4 @@ function global:au_BeforeUpdate {
      Get-RemoteFiles -Purge
 }
 
-update -ChecksumFor none
+Update-Package -ChecksumFor none

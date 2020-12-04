@@ -21,4 +21,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $url; PackageName = 'winbtrfs'}
 }
 
-Update-Package  -ChecksumFor none
+Update-Package -ChecksumFor none
