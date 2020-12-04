@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iperf2</id>
-    <version>2.0.14.1001-alpha20201203</version>
+    <version>2.0.14.1001-alpha20201204</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iperf2</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
