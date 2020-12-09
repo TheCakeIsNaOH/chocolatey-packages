@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lively</id>
-    <version>1.0</version>
+    <version>1.1.6.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Lively Wallpaper</title>
     <authors>Dani John</authors>
     <projectUrl>https://rocksdanister.github.io/lively/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/lively.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/lively.png</iconUrl>
+    <copyright>2020 Dani John</copyright>
     <licenseUrl>https://github.com/rocksdanister/lively/blob/dev-v1.0-fluent-netcore/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rocksdanister/lively</projectSourceUrl>
@@ -19,10 +19,11 @@
     <mailingListUrl>https://www.reddit.com/r/LivelyWallpaper/</mailingListUrl>
     <tags>lively wallpaper background video animation</tags>
     <summary>Free and open-source software that allows users to set animated and interactive desktop wallpapers.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description>Turn Video and GIF Files, Emulators, HTML, Web address and Shaders, Games into Windows desktop wallpaper; 
+Wallpapers will completely pause playback( 0% cpu and gpu usage) when fullscreen application/games are running.
+Just drag  drop files, webpages to set as wallpaper.</description>
     <releaseNotes>https://github.com/rocksdanister/lively/releases</releaseNotes>
-    <!-- =============================== -->      
-
+    <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <!--<dependencies>
       <dependency id="" version="__MINIMUM_VERSION__" />
