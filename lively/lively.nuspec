@@ -23,16 +23,10 @@
 Wallpapers will completely pause playback( 0% cpu and gpu usage) when fullscreen application/games are running.
 Just drag  drop files, webpages to set as wallpaper.</description>
     <releaseNotes>https://github.com/rocksdanister/lively/releases</releaseNotes>
-    <!-- =============================== -->
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="dotnetcore-desktopruntime" version="3.1.9" />
+      <dependency id="vcredist140" version="14.20.27508.1" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
