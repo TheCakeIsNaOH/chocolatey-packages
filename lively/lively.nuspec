@@ -25,7 +25,7 @@ Just drag  drop files, webpages to set as wallpaper.</description>
     <releaseNotes>https://github.com/rocksdanister/lively/releases</releaseNotes>
     <dependencies>
       <dependency id="dotnetcore-desktopruntime" version="3.1.9" />
-      <dependency id="vcredist140" version="14.20.27508.1" />
+      <dependency id="vcredist140" version="14.24.28127" />
     </dependencies>
   </metadata>
   <files>

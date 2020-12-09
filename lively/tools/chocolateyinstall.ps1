@@ -18,7 +18,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   file          = "$toolsDir\lively_setup_x86_full_v1160.exe"
   softwareName  = 'Lively Wallpaper*'
-  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /ALLUSERS'
   validExitCodes= @(0)
 }
 
