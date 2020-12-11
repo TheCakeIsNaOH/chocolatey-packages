@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://iweb.dl.sourceforge.net/project/iperf2/iperf-2.0.14a-Dec03_20-win.exe
+   x32: https://cfhcable.dl.sourceforge.net/project/iperf2/iperf-2.0.14a-Dec10_20-win.exe
 
    to download the exe.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 43387F5CB12FEBE0E441CAF5C0DF789B82F62F2D6D64270E09B11E987EE9A5DA
+   checksum32: A96C075FCA1FFA1A04BA4B53654224AA5F88B3892261BEE237EAB1DC6B369DAA
