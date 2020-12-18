@@ -1,6 +1,6 @@
 
 1. Download the .rar binary package from 
-	x32: https://sourceforge.net/projects/innounp/files/innounp/innounp%200.49/innounp049.rar/download
+	x32: https://sourceforge.net/projects/innounp/files/innounp/innounp%200.50/innounp050.rar/download
 	
 2. Extract the .rar file, 7zip works fine
 

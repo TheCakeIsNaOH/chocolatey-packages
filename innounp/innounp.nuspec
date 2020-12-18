@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>innounp</id>
-    <version>0.49</version>
+    <version>0.50</version>
     <title>Inno Setup Unpacker</title>
     <authors>2019 QuickeneR,Ariman</authors>
     <owners>TheCakeIsNaOH</owners>
