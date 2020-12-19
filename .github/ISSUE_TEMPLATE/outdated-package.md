@@ -3,7 +3,7 @@ name: Outdated Package
 about: For packages that are not up to date.
 title: ''
 labels: outdated package
-assignees: ''
+assignees: TheCakeIsNaOH
 
 ---
 

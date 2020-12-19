@@ -2,8 +2,8 @@
 name: Feature request
 about: For packages that don't do enough.
 title: ''
-labels: ''
-assignees: ''
+labels: enhancement
+assignees: TheCakeIsNaOH
 
 ---
 
