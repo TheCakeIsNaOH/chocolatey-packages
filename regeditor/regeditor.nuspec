@@ -19,7 +19,11 @@
 	It comes with an eminently user-friendly application, but it is really its portability that makes the life of an administrator much easier.
 
 No installation is needed and all settings are saved in the Profile data, so that O&amp; RegEditor can easily be used on other computers. 
-Special versions in 32 and 64-Bit are available, meaning certain registry entries can be edited on 64-Bit systems that are normally hidden from 32-Bit users.</description>
+Special versions in 32 and 64-Bit are available, meaning certain registry entries can be edited on 64-Bit systems that are normally hidden from 32-Bit users.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://www.oo-software.com/en/ooregeditor</releaseNotes>
   </metadata>
   <files>

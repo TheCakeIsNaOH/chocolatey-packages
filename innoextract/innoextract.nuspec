@@ -18,7 +18,11 @@
     <bugTrackerUrl>https://github.com/dscharrer/innoextract/issues</bugTrackerUrl>
     <tags>innosetup extract unpacker cli</tags>
     <summary>A tool to unpack installers created by Inno Setup</summary>
-    <description>Inno Setup is a tool to create installers for Microsoft Windows applications. innoextract allows to extract such installers under non-windows systems without running the actual installer using Wine. innoextract currently supports installers created by Inno Setup 1.2.10 to 6.0.3.</description>
+    <description>Inno Setup is a tool to create installers for Microsoft Windows applications. innoextract allows to extract such installers under non-windows systems without running the actual installer using Wine.
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://constexpr.org/innoextract/changelog</releaseNotes>
   </metadata>
   <files>

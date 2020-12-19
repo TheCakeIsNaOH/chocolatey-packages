@@ -21,7 +21,11 @@
     <summary>An Open Source DOS emulator to run old DOS games</summary>
     <description>DOSBox emulates a full x86 pc with sound and DOS. Its main use is to run old DOS games on platforms which don't have DOS 
 	
-	This is the command line version. If you would like a GUI to manage dosbox, take a look at- https://chocolatey.org/packages/dbgl
+This is the command line version. If you would like a GUI to manage dosbox, take a look at- https://chocolatey.org/packages/dbgl
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
 	</description>
     <releaseNotes>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/ChangeLog</releaseNotes>
   </metadata>

@@ -16,7 +16,11 @@
     <description>Connect to a computer remotely, be it from the other end of the office or halfway around the world. 
 	AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.
 	
-### If you want to install AnyDesk, you can either provide parameters to the [anydesk.portable package](https://chocolatey.org/packages/anydesk.portable) or install the [anydesk.install package](https://chocolatey.org/packages/anydesk.install).</description>
+### If you want to install AnyDesk, you can either provide parameters to the [anydesk.portable package](https://chocolatey.org/packages/anydesk.portable) or install the [anydesk.install package](https://chocolatey.org/packages/anydesk.install).
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <releaseNotes>http://download.anydesk.com/changelog.txt</releaseNotes>
     <tags>anydesk desk viewer remote control support online desktop teamviewer rdp</tags>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>

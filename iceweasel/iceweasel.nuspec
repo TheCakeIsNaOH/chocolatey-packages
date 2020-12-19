@@ -5,7 +5,11 @@
     <version>83.0</version>
     <id>iceweasel</id>
     <title>Debian IceWeasel</title>
-    <description>Unofficial Iceweasel build of Firefox</description>
+    <description>Unofficial Iceweasel build of Firefox
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <summary>A fork of Mozilla Firefox</summary>
     <owners>TheCakeISNaOH</owners>
     <authors>GNU Project</authors>

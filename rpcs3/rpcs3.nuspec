@@ -11,7 +11,11 @@
     <projectUrl>https://rpcs3.net/</projectUrl>
     <iconUrl>https://rpcs3.net/img/icons/menu/logo.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux and BSD. It was founded by programmers DH and Hykem. Initially hosted on Google Code, the project was eventually migrated to GitHub later on in its development. RPCS3's first successful boots were primarily composed of small homebrew projects and hardware tests. The emulator was later publicly released in June of 2012 and gained substantial attention from both the open-source community and PlayStation enthusiasts alike. Today, RPCS3 is primarily developed by its two lead developers; Nekotekina, kd-11 and backed by flourishing team of GitHub contributors.</description>
+    <description>RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux and BSD. It was founded by programmers DH and Hykem. Initially hosted on Google Code, the project was eventually migrated to GitHub later on in its development. RPCS3's first successful boots were primarily composed of small homebrew projects and hardware tests. The emulator was later publicly released in June of 2012 and gained substantial attention from both the open-source community and PlayStation enthusiasts alike. Today, RPCS3 is primarily developed by its two lead developers; Nekotekina, kd-11 and backed by flourishing team of GitHub contributors.
+    
+    **Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <summary>An Open-source Sony PlayStation 3 Emulator for Windows and Linux</summary>
     <copyright>2020 RPCS3 contributors</copyright>
     <tags>emulator sony playstation ps3</tags>

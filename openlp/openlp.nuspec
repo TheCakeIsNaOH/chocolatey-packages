@@ -23,6 +23,10 @@
 	Experience the power of open source in your church with worship presentation software designed to fit how you want to run your service. 
 	Fast, flexible and easy to use, you will have your service up and running in a few minutes. 
 	These features and a whole lot more at a price that can't be beat.
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
 	</description>
     <releaseNotes>https://gitlab.com/openlp/openlp/-/tags</releaseNotes>
   </metadata>

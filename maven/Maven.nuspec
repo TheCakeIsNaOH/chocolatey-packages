@@ -10,7 +10,11 @@
     <summary>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
 	model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information</summary>
     <description>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
-	model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information</description>
+	model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <projectUrl>http://maven.apache.org/</projectUrl>
     <tags>apache maven build script xml java development</tags>
     <copyright>2002-2020 The Apache Software Foundation</copyright>

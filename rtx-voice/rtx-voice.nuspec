@@ -17,7 +17,11 @@
     <description>NVIDIA RTX Voice is a new plugin that leverages NVIDIA RTX GPUs and their AI capabilities to remove distracting background noise from your broadcasts, voice chats, and remote video conferencing meetings. This allows users to "go live" or join a meeting without having to worry about unwanted sounds like loud keyboard typing or other ambient noise in noisy environments. RTX Voice also suppresses background noise from players in loud environments, making incoming audio easier to understand.
 	
 Requires an Nvidia GPU, Windows 10, and Nvidia driver 410.18 or newer. The software will install without these requirements, but will not run.
-Only RTX cards are officially supported.</description>
+Only RTX cards are officially supported.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

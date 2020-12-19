@@ -17,7 +17,11 @@ Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ a
 
 Sumatra PDF is powerful, small, portable and starts up very fast.
 
-Simplicity of the user interface has a high priority.</description>
+Simplicity of the user interface has a high priority.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <summary>Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows</summary>
     <releaseNotes>http://www.sumatrapdfreader.org/news.html</releaseNotes>
     <tags>sumatrapdf pdf reader</tags>

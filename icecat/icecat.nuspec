@@ -14,6 +14,7 @@ However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel
 
 * IceCat developers dropped support for Windows in 2016: *"Note that building binary packages for Windows and macOS currently requires non-free software, so we no longer distribute binary releases for those platforms"*.
 * This package contains an *unofficial* version of GNU IceCat installer for Windows x64 only.
+* This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <summary>A fully-free (as in freedom) fork of Mozilla Firefox ESR.</summary>
     <owners>TheCakeIsNaOH</owners>

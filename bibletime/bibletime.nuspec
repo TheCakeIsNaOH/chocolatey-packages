@@ -20,7 +20,11 @@
     <summary>BibleTime is a powerful cross platform Bible study tool.</summary>
     <description>BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. 
 	BibleTime contains over 200 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society via the SWORD programming library. 
-	BibleTime is written in C++ and uses the Qt GUI toolkit.</description>
+	BibleTime is written in C++ and uses the Qt GUI toolkit.
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://github.com/bibletime/bibletime/blob/master/ChangeLog</releaseNotes>
     <dependencies>
       <dependency id="vcredist2015" version="14.0.23506.0" />

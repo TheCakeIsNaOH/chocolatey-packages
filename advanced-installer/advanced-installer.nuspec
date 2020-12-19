@@ -12,13 +12,16 @@
 Advanced Installer is a Windows installer authoring tool for installing, updating, and configuring your products safely, securely, and reliably.
 
 30 trial with all features, then reverts to free version.
-    </description>
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.    </description>
     <projectUrl>https://www.advancedinstaller.com</projectUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/advanced-installer</packageSourceUrl>
 	<docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
     <bugTrackerUrl>https://www.advancedinstaller.com/forums/viewforum.php?f=2</bugTrackerUrl>
     <mailingListUrl>https://www.advancedinstaller.com/forums/index.php</mailingListUrl>
-    <tags>advanced-installer advinst caphyon</tags>
+    <tags>advanced-installer advinst caphyon #trial trial</tags>
     <copyright>2020 Caphyon</copyright>
     <licenseUrl>https://www.advancedinstaller.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
