@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!--- Fill in the title above with the package id like so: (package id) outdated -->
+<!--- Fill in the title above with the package id like so: (packageID) outdated -->
 
 <!-- Id of the package that is out of date  -->
 Package id:
