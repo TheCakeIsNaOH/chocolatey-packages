@@ -3,20 +3,17 @@ Import-Module AU
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
-            "(?i)(^\s*File64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
-        }
-        ".\legal\VERIFICATION.txt" = @{
-            "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
-            "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
-            "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
-            "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"          
+            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"          
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 function global:au_BeforeUpdate {
-    Get-RemoteFiles -Purge -NoSuffix
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
 }
 
 function global:au_GetLatest {
