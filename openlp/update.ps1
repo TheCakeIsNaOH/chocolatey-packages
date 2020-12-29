@@ -29,7 +29,7 @@ function global:au_GetLatest {
     
     $middleVersion = $version -split "\." | select -First 1 -Skip 1
     if (($middleVersion % 2) -eq 1) {
-        $version += "-alpha"
+        $version += "-pre"
     }
     
     return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
