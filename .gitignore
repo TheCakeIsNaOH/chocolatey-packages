@@ -3,7 +3,6 @@
 *.zip
 *.msi
 *.dll
-*.cer
 
 update_vars.ps1
 Update-AUPackages.md
