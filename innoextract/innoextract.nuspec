@@ -10,7 +10,7 @@
     <authors>Daniel Scharrer</authors>
     <projectUrl>https://constexpr.org/innoextract/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/68abd73e/Icons/innoextract.png</iconUrl>
-    <copyright>© 2011-2020 Daniel Scharrer</copyright>
+    <copyright>© 2011-2021 Daniel Scharrer</copyright>
     <licenseUrl>https://github.com/dscharrer/innoextract/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/dscharrer/innoextract</projectSourceUrl>

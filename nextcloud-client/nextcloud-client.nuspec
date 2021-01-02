@@ -11,7 +11,7 @@
     <projectUrl>https://nextcloud.com/clients/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ecc76f94/Icons/nextcloud.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<copyright>2017-2020 Nextcloud GmbH, 2012-2018 ownCloud GmbH</copyright>
+	<copyright>2017-2021 Nextcloud GmbH, 2012-2018 ownCloud GmbH</copyright>
 	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
 	<releaseNotes>https://github.com/nextcloud/desktop/releases</releaseNotes>
     <docsUrl>https://docs.nextcloud.com/</docsUrl>

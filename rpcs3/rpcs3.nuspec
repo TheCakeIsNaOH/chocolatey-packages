@@ -17,7 +17,7 @@
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.</description>
     <summary>An Open-source Sony PlayStation 3 Emulator for Windows and Linux</summary>
-    <copyright>2020 RPCS3 contributors</copyright>
+    <copyright>2021 RPCS3 contributors</copyright>
     <tags>emulator sony playstation ps3</tags>
     <projectSourceUrl>https://github.com/RPCS3/rpcs3/</projectSourceUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>

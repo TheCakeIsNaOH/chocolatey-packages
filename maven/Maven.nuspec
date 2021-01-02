@@ -17,7 +17,7 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.</description>
     <projectUrl>http://maven.apache.org/</projectUrl>
     <tags>apache maven build script xml java development</tags>
-    <copyright>2002-2020 The Apache Software Foundation</copyright>
+    <copyright>2002-2021 The Apache Software Foundation</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/0/0b/Maven_logo.svg</iconUrl>

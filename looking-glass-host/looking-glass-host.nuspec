@@ -10,7 +10,7 @@
     <authors>Geoffrey McRae</authors>
     <projectUrl>https://looking-glass.hostfission.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/looking-glass-host.png</iconUrl>
-    <copyright>2020 Geoffrey McRae</copyright>
+    <copyright>2021 Geoffrey McRae</copyright>
     <licenseUrl>https://github.com/gnif/LookingGlass/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gnif/LookingGlass</projectSourceUrl>

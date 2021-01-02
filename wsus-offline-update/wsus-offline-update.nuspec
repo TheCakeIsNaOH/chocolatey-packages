@@ -6,7 +6,7 @@
     <version>12.0</version>
     <title>WSUS Offline Update</title>
     <authors>Torsten Wittrock</authors>
-	<copyright>2020 Torsten Wittrock</copyright>
+	<copyright>2021 Torsten Wittrock</copyright>
     <owners>TheCakeIsNaOH</owners>
 	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>

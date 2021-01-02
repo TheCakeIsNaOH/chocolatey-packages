@@ -10,7 +10,7 @@
     <authors>DOSBox</authors>
     <projectUrl>https://www.dosbox.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/9ad6c557/Icons/DOSBox_0000.png</iconUrl>
-    <copyright>2020 DOSBox</copyright>
+    <copyright>2021 DOSBox</copyright>
     <licenseUrl>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/p/dosbox/code-0/HEAD/tree/</projectSourceUrl>

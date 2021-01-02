@@ -13,7 +13,7 @@
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/6bcde255fc9d27f1d56ea4abf1dafc1adc3d20bc/Icons/reflec-free.png</iconUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/reflect-free</packageSourceUrl>
 	<docsUrl>https://knowledgebase.macrium.com/</docsUrl>
-    <copyright>2020 Paramount Software UK Limited</copyright>
+    <copyright>2021 Paramount Software UK Limited</copyright>
     <summary>The trusted endpoint backup solution for commercial and personal use.</summary>
     <description>
 Free backup, disk imaging and cloning solution for commercial and personal use.

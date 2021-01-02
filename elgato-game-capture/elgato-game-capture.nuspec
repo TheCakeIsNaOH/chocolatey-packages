@@ -10,7 +10,7 @@
     <authors>Elgato</authors>
     <projectUrl>https://www.elgato.com/en/gaming/game-capture-software</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/ElgatoGameCapture.png</iconUrl>
-    <copyright>2020 Elgato</copyright>
+    <copyright>2021 Elgato</copyright>
     <docsUrl>https://help.elgato.com/hc/en-us</docsUrl>
     <tags>elgato video capture recording streaming</tags>
     <summary>Record and Stream from Elgato capture cards</summary>

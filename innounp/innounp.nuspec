@@ -5,7 +5,7 @@
     <id>innounp</id>
     <version>0.50</version>
     <title>Inno Setup Unpacker</title>
-    <authors>2019 QuickeneR,Ariman</authors>
+    <authors>2021 QuickeneR,Ariman</authors>
     <owners>TheCakeIsNaOH</owners>
 	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/innounp</packageSourceUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>

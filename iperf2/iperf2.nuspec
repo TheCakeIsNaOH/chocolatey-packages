@@ -8,6 +8,7 @@
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
     <authors>Mark Gates,Alex Warshavsky,Ajay Tirumala,Jim Ferguson,Jon Dugan,Feng Qin,Kevin Gibbs,John Estabrook,Andrew Gallatin,Stephen Hemminger,Nathan Jones,Gerrit Renker,Robert J. McMahon,Tim Auckland</authors>
+    <copyright>2021 The Board of Trustees of the University of Illinois</copyright>
     <projectUrl>https://sourceforge.net/projects/iperf2/</projectUrl>
     <licenseUrl>https://sourceforge.net/p/iperf2/code/ci/master/tree/doc/ui_license.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

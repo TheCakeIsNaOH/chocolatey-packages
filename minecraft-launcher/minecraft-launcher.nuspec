@@ -29,7 +29,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs</releaseNotes>
-    <copyright>2020 Microsoft</copyright>
+    <copyright>2021 Microsoft</copyright>
     <tags>minecraft mine craft microsoft mojang java</tags>
   </metadata>
   <files>
