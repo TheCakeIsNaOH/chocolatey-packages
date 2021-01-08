@@ -5,11 +5,11 @@
     <id>procrastitracker</id>
     <version>0.0.0.20200509</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
-	<owners>TheCakeIsNaOH</owners>
+    <owners>TheCakeIsNaOH</owners>
     <title>ProcrastiTracker</title>
     <authors>Wouter van Oortmerssen</authors>
     <projectUrl>http://strlen.com/procrastitracker/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/procrastitracker.png</iconUrl>-->
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/procrastitracker.png</iconUrl>
     <copyright>2020 Wouter van Oortmerssen</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -25,7 +25,7 @@ ProcrastriTracker is an open source time tracking tool that automatically tracks
 - **Fun!** Seeing such detailed statistics is plain interesting, especially over longer time, even if you don't intend to do anything with it.
 
 ### Features
-- **Most detailed statistics of any timetracking app**: ProcrastriTracker doesn't just track documents and web sites for every application, it gathers information fully hierarchically, meaning that you can see documents on a per project basis (such as in visual studio). This happens fully automatically, any application or web site that deals with data in an hierarchical fashion, and shows items in its title bar seperated by " - ", " | ", " : ", " > " or "\" will be represented hierarchically.
+- **Most detailed statistics of any timetracking app**: ProcrastriTracker doesn't just track documents and web sites for every application, it gathers information fully hierarchically, meaning that you can see documents on a per project basis (such as in visual studio). This happens fully automatically, any application or web site that deals with data in an hierarchical fashion, and shows items in its title bar seperated by " - ", " | ", " : ", " &gt; " or "\" will be represented hierarchically.
 - **Filtering**: the statistics view allows you to quickly drill down to subsets of the data, fold/unfold trees, limit displayed entries to a particular date range, tag, or minimum number of seconds used (to reduce clutter)
 - **Tagging**: allows you to group items to better track different uses and different projects. Tags color the bargraphs for an instant view. Tags work hierarchically, so items are counted as tagged like their parent unless you tag them explicitly.
 - **Precise Idle time**: takes into account the time when you are semi idle (default 10 seconds of inactivity) and fully idle (default 3 minutes of inactivity) for a more accurate picture of how much time was truely spent on an item.
