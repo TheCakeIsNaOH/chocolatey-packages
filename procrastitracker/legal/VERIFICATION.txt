@@ -6,14 +6,12 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com
+   x32: http://strlen.com/procrastitracker/ProcrastiTracker_Setup.exe
 
-   to download the zip file with the installer.
+   to download the installer.
 
-2. Unzip the zip file to the the .exe installer
-
-3. You can use one of the following methods to obtain the SHA256 checksum of the installer:
+2. You can use one of the following methods to obtain the SHA256 checksum of the installer:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: temp
+   checksum32: 9AFA5DDD0066490017D74EEB7262CD3AD2804205B1697251C7231C3A7C2A5D82
