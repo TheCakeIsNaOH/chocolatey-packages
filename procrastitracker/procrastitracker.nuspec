@@ -43,6 +43,7 @@ Input activity statistics: for every item, the amount of keyboard and mouseclick
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
     <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
