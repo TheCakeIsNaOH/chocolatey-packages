@@ -35,7 +35,7 @@ ProcrastriTracker is an open source time tracking tool that automatically tracks
 - **Automated culling**: Older items in the database that were used for very few seconds are culled, and their stats added to the parent item. This keeps timing accurate but reduces on clutter and database size.
 Input activity statistics: for every item, the amount of keyboard and mouseclicks are counted.
 - **Compatability**: Every version of ProcrastiTracker still loads databases from the earliest versions (back to 2007), and will continue to do so. This guarantees that you can run it for years, and gather some impressive statistics, meanwhile being able to get new features. Data is stored in a relatively generic way so that the representation can evolve even if the data doesn't.
-- Configurable: Every timing setting can be tweaked to suit the way you work.
+- **Configurable**: Every timing setting can be tweaked to suit the way you work.
 </description>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.3.4" />
