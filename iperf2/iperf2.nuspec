@@ -24,10 +24,6 @@ Iperf 2 vs iperf 3 major differences: Iperf 2 here has timing related stats incl
 
 Iperf2 and iperf3 do not interoperate. 
 
-## Note:
-The actual version should be `2.0.14-alphaYYYYMMDD` not `2.0.14.1001-alphaYYYYMMDD`
-This is because I previously misunderstood version `2.0.14a` as `2.0.14.1` instead of what it actually is, namely `2.0.14-alpha`.
-
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.</description>
