@@ -21,7 +21,7 @@ let them know the package is no longer updating correctly.    </description>
 	<docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
     <bugTrackerUrl>https://www.advancedinstaller.com/forums/viewforum.php?f=2</bugTrackerUrl>
     <mailingListUrl>https://www.advancedinstaller.com/forums/index.php</mailingListUrl>
-    <tags>advanced-installer advinst caphyon #trial trial</tags>
+    <tags>advanced-installer advinst caphyon trial</tags>
     <copyright>2021 Caphyon</copyright>
     <licenseUrl>https://www.advancedinstaller.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
