@@ -3,6 +3,7 @@
 *.zip
 *.msi
 *.dll
+*.7z
 
 update_vars.ps1
 Update-AUPackages.md
@@ -15,5 +16,6 @@ balabolka/tools/history.*.txt
 balabolka/tools/readme.*.txt
 balabolka/tools/license.*.txt
 
-*.7z
 innounp/tools/innounp.htm
+
+maven/apache-maven-*
