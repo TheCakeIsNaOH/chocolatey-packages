@@ -4,4 +4,4 @@ $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
 # Clean Environment variables 
 Uninstall-M2PathFromRegistry
-Uninstall-M2EnvVar
+Uninstall-ChocolateyEnvironmentVariable -VariableName 'M2_HOME' -VariableType Machine

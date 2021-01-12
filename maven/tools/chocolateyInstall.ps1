@@ -1,5 +1,4 @@
-﻿#cmd> mvn -version
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $version = '3.6.3'
 $name = "apache-maven-$version"
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
@@ -13,8 +12,8 @@ New-Item -Path $m2_repo -Type directory -Force
 
 # Clean Environment variables 
 Uninstall-M2PathFromRegistry
-Uninstall-M2EnvVar
+Uninstall-ChocolateyEnvironmentVariable -VariableName 'M2_HOME' -VariableType Machine
 
-# Add back environment variables
-[Environment]::SetEnvironmentVariable('M2_HOME', $m2_home, 'Machine')
+# Add environment variables for new version
+Install-ChocolateyEnvironmentVariable -VariableName 'M2_HOME' -VariableValue $m2_home -VariableType Machine
 Install-ChocolateyPath -PathToInstall $pathToAdd -PathType 'Machine'

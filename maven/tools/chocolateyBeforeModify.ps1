@@ -2,8 +2,7 @@
 $version = '3.6.3'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $toolsDir
-$installFolder = "apache-maven-$version"
-. $toolsDir\helpers.ps1
+$installFolder = Join-Path $package "apache-maven-$version"
 
 # Delete current version before upgrading or uninstalling
-Remove-Item "$(Join-Path $package $installFolder)" -Force -Recurse
+Remove-Item $installFolder -Force -Recurse

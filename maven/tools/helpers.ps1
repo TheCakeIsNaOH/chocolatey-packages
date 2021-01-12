@@ -24,7 +24,3 @@ Function Uninstall-M2PathFromRegistry() {
     $pathToRemove = Join-Path '%M2_HOME%' 'bin'
     Uninstall-PathFromRegistry -pathToRemove $pathToRemove
 }
-
-Function Uninstall-M2EnvVar() {
-    [Environment]::SetEnvironmentVariable('M2_HOME', $null, 'Machine')
-}
