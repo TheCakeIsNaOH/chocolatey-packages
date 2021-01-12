@@ -7,9 +7,6 @@ function global:au_SearchReplace {
         "tools\chocolateyInstall.ps1" = @{
 			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.Version)'"
         }
-		"tools\chocolateyBeforeModify.ps1" = @{
-			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.Version)'"
-        }
 	    "legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
 		}
