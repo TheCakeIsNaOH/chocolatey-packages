@@ -14,6 +14,7 @@ function global:au_SearchReplace {
     @{
         "tools\chocolateyInstall.ps1" = @{    
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]url32\s*=\s*)('.*')" = "`$1'$($Latest.Url32)'"
 		}
 	}
 }

@@ -6,22 +6,26 @@ $checksum32            = 'c1514c8762695de125389a6e97e00a941e741e698b7f01d1c70e4f
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  url           = $url32
   softwareName  = 'AnyDesk MSI'
+  validExitCodes= @(0, 3010, 1641)
+}
+
+$packageArgsInst = @{
+  url           = $url32 
   checksum      = $checksum32
   checksumType  = 'sha256'
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
-  validExitCodes= @(0, 3010, 1641)
 }
 
 Write-Host -ForegroundColor green "Trying to uninstall older versions of $packageName due to a limitation in the installer"
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 if ($key.Count -eq 1) {
-  $key | % { 
-    $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-    $packageArgs['file'] = ''
-    Uninstall-ChocolateyPackage @packageArgs
-    $packageArgs['silentArgs'] = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  $key | % {
+    $packageArgsUninst = @{
+        silentArgs = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+        file = ''
+    }
+    Uninstall-ChocolateyPackage @packageArgs @packageArgsUninst
   }
 } elseif ($key.Count -eq 0) {
   Write-Host -ForegroundColor green "$packageName is not installed, continuing on to install"
@@ -32,4 +36,4 @@ if ($key.Count -eq 1) {
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
 
- Install-ChocolateyPackage @packageArgs
+ Install-ChocolateyPackage @packageArgs @packageArgsInst
