@@ -16,4 +16,9 @@ Uninstall-ChocolateyEnvironmentVariable -VariableName 'M2_HOME' -VariableType Ma
 
 # Add environment variables for new version
 Install-ChocolateyEnvironmentVariable -VariableName 'M2_HOME' -VariableValue $m2_home -VariableType Machine
+# Adding to path instead of shimming; see comment: https://chocolatey.org/packages/maven#comment-4454809638
 Install-ChocolateyPath -PathToInstall $pathToAdd -PathType 'Machine'
+
+if (!(Get-Command javac.exe -ea 0)) {
+    Show-JDKWarning
+}

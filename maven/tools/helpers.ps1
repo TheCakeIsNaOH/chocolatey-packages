@@ -24,3 +24,17 @@ Function Uninstall-M2PathFromRegistry() {
     $pathToRemove = Join-Path '%M2_HOME%' 'bin'
     Uninstall-PathFromRegistry -pathToRemove $pathToRemove
 }
+
+Function Show-JDKWarning () {
+    Write-Output "**********************************************************************************"
+    Write-Output "*                       !! No Java JDK detected on path !!                       *"
+    Write-Output "*               Maven requires that a JDK be installed to function               *"
+    Write-Output "*                                                                                *"
+    Write-Output "*      However, this package does not take a dependency on any one specific      *"
+    Write-Output "*          JDK package so as to not lock you into any specific JDK build         *"
+    Write-Output "*                    Please separately install your JDK of choice                *"
+    Write-Output "*                                                                                *"
+    Write-Output "*See this issue on progress for the 'provides' nuspec element that will fix this:*"
+    Write-Output "*                 https://github.com/chocolatey/choco/issues/858                 *"
+    Write-Output "**********************************************************************************"
+}
