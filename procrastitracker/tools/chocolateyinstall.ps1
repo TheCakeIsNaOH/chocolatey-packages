@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Remove-Process -NameFilter "procrastitracker"
+Remove-Process -NameFilter "procrastitracker" | Out-Null
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
