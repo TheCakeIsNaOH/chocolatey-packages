@@ -15,7 +15,12 @@
     <bugTrackerUrl>https://github.com/maharmstone/btrfs/issues</bugTrackerUrl>
     <copyright>2021 Mark Harmstone</copyright>
     <summary>An open-source btrfs driver for Windows</summary>
-    <description>WinBtrfs is a Windows driver for the next-generation Linux filesystem Btrfs.
+    <description>
+## Note for windows 10 users
+This driver is "cross signed", not "WHQL signed". This means that it requires secure boot off in most cases.
+    
+## Winbtrfs    
+WinBtrfs is a Windows driver for the next-generation Linux filesystem Btrfs.
 A reimplementation from scratch, it contains no code from the Linux kernel,
 and should work on any version from Windows XP onwards. It is also included
 as part of the free operating system [ReactOS](https://www.reactos.org/).
@@ -38,6 +43,52 @@ Everything here is released under the GNU Lesser General Public Licence (LGPL);
 see the file LICENCE for more info. You are encouraged to play about with the
 source code as you will, and I'd appreciate a note (mark@harmstone.com) if you
 come up with anything nifty.
+
+See at the end of this document for copyright details of third-party code that's
+included here.
+
+Features
+--------
+
+* Reading and writing of Btrfs filesystems
+* Basic RAID: RAID0, RAID1, and RAID10
+* Advanced RAID: RAID5 and RAID6
+* Caching
+* Discovery of Btrfs partitions, even if Windows would normally ignore them
+* Getting and setting of Access Control Lists (ACLs), using the xattr
+  security.NTACL
+* Alternate Data Streams (e.g. :Zone.Identifier is stored as the xattr
+  user.Zone.Identifier)
+* Mappings from Linux users to Windows ones (see below)
+* Symlinks and other reparse points
+* Shell extension to identify and create subvolumes, including snapshots
+* Hard links
+* Sparse files
+* Free-space cache
+* Preallocation
+* Asynchronous reading and writing
+* Partition-less Btrfs volumes
+* Per-volume registry mount options (see below)
+* zlib compression
+* LZO compression
+* LXSS ("Ubuntu on Windows") support
+* Balancing (including resuming balances started on Linux)
+* Device addition and removal
+* Creation of new filesystems with `mkbtrfs.exe` and `ubtrfs.dll`
+* Scrubbing
+* TRIM/DISCARD
+* Reflink copy
+* Subvol send and receive
+* Degraded mounts
+* Free space tree (compat_ro flag `free_space_cache`)
+* Shrinking and expanding
+* Passthrough of permissions etc. for LXSS
+* Zstd compression
+* Windows 10 case-sensitive directory flag
+* Oplocks
+* Metadata UUID incompat flag (Linux 5.0)
+* Three- and four-disk RAID1 (Linux 5.5)
+* New checksum types (xxhash, sha256, blake2) (Linux 5.5)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

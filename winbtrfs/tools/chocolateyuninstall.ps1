@@ -1,9 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-write-host -ForegroundColor green	"Listing drivers"
-$btrfsDrivers = Get-WmiObject win32_pnpsigneddriver | where {$_.DeviceName -like "*btrfs*" -and $_.InfName -like
- "*oem*"}
+Write-Host -ForegroundColor green	"Listing drivers"
+$btrfsDrivers = Get-WmiObject win32_pnpsigneddriver | where { $_.DeviceName -like "*btrfs*" -and $_.InfName -like "*oem*"}
 
 foreach($driver in $btrfsDrivers)
 {
