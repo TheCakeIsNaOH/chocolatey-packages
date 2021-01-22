@@ -22,7 +22,7 @@ Write-Host -ForegroundColor green "Trying to uninstall older versions of $packag
 if ($key.Count -eq 1) {
   $key | % {
     $packageArgsUninst = @{
-        silentArgs = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+        silentArgs = "$($_.PSChildName) /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiUninstall.log`""
         file = ''
     }
     Uninstall-ChocolateyPackage @packageArgs @packageArgsUninst
