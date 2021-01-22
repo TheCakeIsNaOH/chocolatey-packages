@@ -3,18 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>looking-glass-host</id>
-    <version>0.0.0.0-B2Final</version>
+    <version>0.0.0.0-B3-RC1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Looking Glass (host)</title>
     <authors>Geoffrey McRae</authors>
-    <projectUrl>https://looking-glass.hostfission.com/</projectUrl>
+    <projectUrl>https://looking-glass.io/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/looking-glass-host.png</iconUrl>
     <copyright>2021 Geoffrey McRae</copyright>
     <licenseUrl>https://github.com/gnif/LookingGlass/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gnif/LookingGlass</projectSourceUrl>
-    <docsUrl>https://looking-glass.hostfission.com/wiki/Main_Page</docsUrl>
+    <docsUrl>https://looking-glass.io/wiki/Main_Page</docsUrl>
     <bugTrackerUrl>https://github.com/gnif/LookingGlass/issues</bugTrackerUrl>
     <tags>Looking Glass Host VFIO KVM PCIe Passthrough VM Virtual Machine</tags>
     <summary>An extremely low latency KVMFR (KVM FrameRelay) implementation for guests with VGA PCI Passthrough.</summary>
