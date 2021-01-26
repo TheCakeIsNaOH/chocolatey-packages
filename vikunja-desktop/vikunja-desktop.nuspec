@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vikunja-desktop</id>
+    <version>0.16.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>Vikunja Desktop</title>
+    <authors>The Vikunja Authors</authors>
+    <projectUrl>https://vikunja.io/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/https://github.com/TheCakeIsNaOH/chocolatey-packages/master/icons/vikunja-desktop.png</iconUrl>-->
+    <copyright>2021 The Vikunja Authors</copyright>
+    <licenseUrl>https://kolaente.dev/vikunja/frontend/src/branch/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://kolaente.dev/vikunja/frontend/</projectSourceUrl>
+    <docsUrl>https://vikunja.io/docs/</docsUrl>
+    <mailingListUrl>https://community.vikunja.io/</mailingListUrl>
+    <bugTrackerUrl>https://kolaente.dev/vikunja/frontend/issues</bugTrackerUrl>
+    <tags>vikunja todo organize to-do lists list</tags>
+    <summary>The to-do app to organize your life.</summary>
+    <description>
+# Vikunja (/vɪˈkuːnjə/)
+## The to-do app to organize your life.
+Also one of the two wild South American camelids which live in the high alpine areas of the Andes and a relative of the llama.
+Vikunja is an Open-Source, self-hosted To-Do list application for all platforms. It is licensed under the GPLv3.
+
+## Think of Vikunja like the notebook you have with all your things to keep track of.
+But better.
+
+## Stay organized
+Organize your tasks in lists, organize lists in namespaces.
+
+## Tasks
+Tasks are not only simple tasks. You can let Vikunja remind you of tasks when they're due. Never miss an important deadline again!
+
+Remember that thing you have to do every week but can't get the hang on? You can set tasks to repeat in a time interval, letting Vikunja remind you of important weekly or monthly tasks.
+
+Vikunja also lets you split a task in multiple subtasks for easy progress tracking and more satisfaction when crossing them off the list!
+
+##  Collaboration
+Ever wished you could just share that grocery list with your roomate instead of having to send dozens of texts on your way to the supermarket? With Vikunja, you can. Simply share a list (or a namespace with all its lists) to another user. Don't want your roommate to add new things to the grocery list and only do the shopping? You can also share a list with read-only access!
+
+Planning a bigger thing? You can use teams to share a list or namespace with multiple people at a time!
+
+## Share links
+You can share a list with a link so that others can directly see or edit all tasks on a list but don't need to create an account. Share links have all the same rights management as sharing with users or teams.
+
+## Kanban board
+Vikunja lets you organize and prioritize your tasks in a kanban board.
+Quickly get an overview of the status of things - especially when collaborating with multiple people on a project.
+
+Each card on a board represents a task in Vikunja.
+All tasks can be added through the usual ways and will then show up in the kanban board where they can be easily rearranged and reordered.
+
+## Labels
+Effortlessly mark tasks with a colorful label to find and group relevant tasks with a click!
+
+## Priorities
+Know that feeling when you have a dozen things to do but can't decide on what to work next? Vikunja lets you prioritize your tasks with a few clicks, so you'll always know on what to work next.
+
+## Delegation
+Assign tasks to team members so everyone knows what to do.
+
+
+## Attachments
+Attach files to tasks, so you can always have all related files for a task in one place!
+
+## Relations
+Relate different tasks together - even if they're not on the same list! A relation can be multiple things, for example a subtask or blocking task.
+
+## Due dates
+Remember these tasks with a deadline coming up? Set a due date for a task and see all tasks with upcoming deadlines at once!
+
+ CalDAV
+Vikunja comes with a calDAV-integration which lets you use the tools you already use and love.</description>
+    <releaseNotes>https://community.vikunja.io/c/releases/8</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
