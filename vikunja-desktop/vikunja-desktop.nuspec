@@ -9,7 +9,7 @@
     <title>Vikunja Desktop</title>
     <authors>The Vikunja Authors</authors>
     <projectUrl>https://vikunja.io/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/https://github.com/TheCakeIsNaOH/chocolatey-packages/master/icons/vikunja-desktop.png</iconUrl>-->
+    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/Vikunja.png</iconUrl>
     <copyright>2021 The Vikunja Authors</copyright>
     <licenseUrl>https://kolaente.dev/vikunja/frontend/src/branch/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -23,10 +23,7 @@
 # Vikunja (/vɪˈkuːnjə/)
 ## The to-do app to organize your life.
 Also one of the two wild South American camelids which live in the high alpine areas of the Andes and a relative of the llama.
-Vikunja is an Open-Source, self-hosted To-Do list application for all platforms. It is licensed under the GPLv3.
-
-## Think of Vikunja like the notebook you have with all your things to keep track of.
-But better.
+Vikunja is an Open-Source, self-hosted To-Do list application for all platforms. It is licensed under the AGPLv3.
 
 ## Stay organized
 Organize your tasks in lists, organize lists in namespaces.
@@ -72,7 +69,7 @@ Relate different tasks together - even if they're not on the same list! A relati
 ## Due dates
 Remember these tasks with a deadline coming up? Set a due date for a task and see all tasks with upcoming deadlines at once!
 
- CalDAV
+## CalDAV
 Vikunja comes with a calDAV-integration which lets you use the tools you already use and love.</description>
     <releaseNotes>https://community.vikunja.io/c/releases/8</releaseNotes>
     <dependencies>
