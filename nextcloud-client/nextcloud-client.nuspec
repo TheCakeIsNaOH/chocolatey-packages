@@ -42,6 +42,7 @@ let them know the package is no longer updating correctly.</description>
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
