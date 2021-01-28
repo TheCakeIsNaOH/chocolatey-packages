@@ -17,7 +17,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/download -UseBasicParsing
+	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
 	
 	$regex64       = '4kslideshowmaker_.*_x64.msi'
 	$regex32       = '4kslideshowmaker_.*\.msi'
