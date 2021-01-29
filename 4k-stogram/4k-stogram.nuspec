@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-stogram</id>
-    <version>3.3.2.20210128</version>
+    <version>3.3.2</version>
     <title>4K Stogram</title>
     <authors>OpenMedia LLC</authors>
     <owners>TheCakeIsNaOH</owners>
@@ -33,6 +33,6 @@ let them know the package is no longer updating correctly.</description>
     <tags>4k-stogram instagram downloader</tags>
   </metadata>
   <files>
-    <file src="tools/**" target="tools" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
