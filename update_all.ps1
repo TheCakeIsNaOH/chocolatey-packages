@@ -2,7 +2,7 @@
 
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
-if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
+if (Test-Path (Join-Path $PSScriptRoot 'update_vars.ps1')) { . (Join-Path $PSScriptRoot 'update_vars.ps1') }
 
 $Options = [ordered]@{
     WhatIf        = $au_WhatIf                              #Whatif all packages
@@ -39,7 +39,7 @@ $Options = [ordered]@{
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
+        Path = "$PSScriptRoot{0}Update-AUPackages.md" -f [IO.Path]::DirectorySeparatorChar        #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
@@ -53,13 +53,13 @@ $Options = [ordered]@{
     History = @{
         Lines = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
+        Path = "$PSScriptRoot{0}Update-History.md" -f [IO.Path]::DirectorySeparatorChar           #Path where to save history
     }
 
     Gist = @{
         Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
+        Path   = "$PSScriptRoot{0}Update-AUPackages.md" -f [IO.Path]::DirectorySeparatorChar, "$PSScriptRoot{0}Update-History.md" -f [IO.Path]::DirectorySeparatorChar      #List of files to add to the gist
     }
 
     Git = @{
@@ -74,7 +74,7 @@ $Options = [ordered]@{
 
     RunInfo = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+        Path    = "$PSScriptRoot{0}update_info.xml"  -f [IO.Path]::DirectorySeparatorChar         #Path where to save the run info
     }
 
     Mail = if ($Env:mail_user) {
@@ -86,7 +86,7 @@ $Options = [ordered]@{
                 Password   = $Env:mail_pass
                 Port       = $Env:mail_port
                 EnableSsl  = $Env:mail_enablessl -eq 'true'
-                Attachment = "$PSScriptRoot\update_info.xml"
+                Attachment =  "$PSScriptRoo{0}update_info.xml" -f [IO.Path]::DirectorySeparatorChar
                 UserMessage = ''
                 SendAlways  = $false                        #Send notifications every time
              }
