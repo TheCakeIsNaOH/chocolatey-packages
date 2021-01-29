@@ -27,7 +27,11 @@ function GetResultInformation([string]$url32) {
 
   #Linux: msiinfo export AnyDesk.msi Property | grep ProductVersion | cut -c 16-
   #$version       = (Get-MSIProperty -Path $dest -Property ProductVersion).value.tostring()
-  $version = ([string](Get-MsiDatabaseVersion $dest)).trim()
+  if ($isLinux) {
+      $version = & msiinfo export $dest Property | grep ProductVersion | cut -c 16-
+  } else {
+      $version = ([string](Get-MsiDatabaseVersion $dest)).trim()
+  }
 
   return @{
     URL32          = $url32
