@@ -23,7 +23,7 @@ function global:au_BeforeUpdate() {
 
 	Get-RemoteFiles -Purge -NoSuffix 
 
-	Expand-Archive -Path ".\tools\balabolka.zip" -DestinationPath "tools" -Force
+	Expand-Archive -Path $([System.IO.Path]::Combine('.', 'tools', 'balabolka.zip')) -DestinationPath "tools" -Force
 
 	Remove-Item "tools\balabolka.zip"
 }

@@ -1,4 +1,6 @@
 ﻿Import-Module AU
+#needed to use [Microsoft.PowerShell.Commands.PSUserAgent] when running in pwsh
+Import-Module Microsoft.PowerShell.Utility
 
 function global:au_SearchReplace {
     @{

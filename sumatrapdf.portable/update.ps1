@@ -10,12 +10,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-	Remove-Item -Force -Path ".\tools\*.exe"
+	Remove-Item -Force -Path $([System.IO.Path]::Combine('.', 'tools', '*.exe'))
 	Get-RemoteFiles -Purge -NoSuffix
-	Get-ChildItem -Path ".\tools\" -Filter "*.zip" | Expand-Archive -DestinationPath ".\tools\" -Force
+	Get-ChildItem -Path $([System.IO.Path]::Combine('.', 'tools')) -Filter "*.zip" | Expand-Archive -DestinationPath $([System.IO.Path]::Combine('.', 'tools')) -Force
 	Remove-Item -Force -Path ".\tools\*.zip"
-	Move-Item -Path ".\tools\*32.exe" -Destination ".\tools\SumatraPDF-32.exe" -Force
-	Move-Item -Path ".\tools\*64.exe" -Destination ".\tools\SumatraPDF-64.exe" -Force
+	Move-Item -Path $([System.IO.Path]::Combine('.', 'tools', '*32.exe')) -Destination $([System.IO.Path]::Combine('.', 'tools', 'SumatraPDF-32.exe')) -Force
+	Move-Item -Path $([System.IO.Path]::Combine('.', 'tools', '*64.exe')) -Destination $([System.IO.Path]::Combine('.', 'tools', 'SumatraPDF-64.exe')) -Force
 }
  
 function global:au_GetLatest {

@@ -1,6 +1,6 @@
 ﻿Import-Module AU
-Import-Module "$env:ChocolateyInstall/helpers/chocolateyInstaller.psm1"
-. "..\_scripts\Update-OnETagChanged.ps1"
+Import-Module $([System.IO.Path]::Combine($env:ChocolateyInstall, 'helpers', 'chocolateyInstaller.psm1'))
+. $([System.IO.Path]::Combine("..", '_scripts', 'Update-OnETagChanged.ps1'))
 
 $Url32 = 'https://download.anydesk.com/AnyDesk.exe'
 
@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 
 function GetResultInformation([string]$url32) {
   $fileName = Split-path -Leaf $url32
-  $dest = "$($env:temp)\$((new-guid).guid)\$fileName"
+  $dest = $([System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), $((new-guid).guid), $fileName))
 
   Get-WebFile $url32 $dest
     

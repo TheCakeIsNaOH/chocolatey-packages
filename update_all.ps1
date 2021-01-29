@@ -106,6 +106,8 @@ $Options = [ordered]@{
     }
 }
 
+
+Import-Module AU
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root         = $Root          #Path to the AU packages
 $global:au_GalleryUrl   = ''             #URL to package gallery, leave empty for Chocolatey Gallery

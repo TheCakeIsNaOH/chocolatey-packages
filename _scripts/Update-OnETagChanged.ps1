@@ -5,7 +5,7 @@
 function Update-OnETagChanged() {
   param(
     [uri]$execUrl,
-    [string]$saveFile = ".\info",
+    [string]$saveFile = ".{0}info" -f [IO.Path]::DirectorySeparatorChar,
     [scriptblock]$OnETagChanged,
     [scriptblock]$OnUpdated
   )

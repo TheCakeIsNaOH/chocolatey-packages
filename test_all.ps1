@@ -2,7 +2,7 @@
 
 param( [string[]] $Name, [string] $Root = "$PSScriptRoot" )
 
-if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
+if (Test-Path (Join-Path $PSScriptRoot 'update_vars.ps1')) { . (Join-Path $PSScriptRoot 'update_vars.ps1') }
 $global:au_root = Resolve-Path $Root
 
 if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
@@ -49,7 +49,7 @@ $options = [ordered]@{
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-Force-Test-${n}.md"    #Path where to save the report
+        Path = "$PSScriptRoot{0}Update-Force-Test-${n}.md" -f [IO.Path]::DirectorySeparatorChar    #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $true                             #  Markdown: do not show AppVeyor build shield
@@ -61,7 +61,7 @@ $options = [ordered]@{
     Gist = @{
         Id     = $Env:gist_id_test                          #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-Force-Test-${n}.md"  #List of files to add to the gist
+        Path   = "$PSScriptRoot{0}Update-Force-Test-${n}.md" -f [IO.Path]::DirectorySeparatorChar #List of files to add to the gist
         Description = "Update Force Test Report #powershell #chocolatey"
     }
 }
