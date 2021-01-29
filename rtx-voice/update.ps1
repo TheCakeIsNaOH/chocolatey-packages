@@ -5,7 +5,7 @@ $releases = 'https://www.nvidia.com/en-us/geforce/guides/nvidia-rtx-voice-setup-
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyInstall.ps1" = @{
+        "tools\chocolateyinstall.ps1" = @{
             "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"          
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
 		}

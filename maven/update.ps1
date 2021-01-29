@@ -4,13 +4,13 @@ $releases = "https://apache.claz.org/maven/maven-3/"
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyInstall.ps1" = @{
+        "tools\chocolateyinstall.ps1" = @{
 			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.Version)'"
         }
 	    "legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
 		}
-		"Maven.nuspec" = @{
+		"maven.nuspec" = @{
 			"apache-maven-[\d\.]*" = "apache-maven-$($Latest.Version)"
 		}
     }

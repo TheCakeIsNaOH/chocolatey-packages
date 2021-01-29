@@ -14,7 +14,7 @@ function global:au_GetLatest {
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyInstall.ps1" = @{
+        "tools\chocolateyinstall.ps1" = @{
         }
     }
 }

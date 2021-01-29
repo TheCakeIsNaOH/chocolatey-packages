@@ -2,7 +2,7 @@ Import-Module AU
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
+        ".\tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*FileFullPath64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
         }
         ".\legal\VERIFICATION.txt" = @{

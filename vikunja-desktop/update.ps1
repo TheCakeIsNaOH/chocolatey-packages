@@ -4,7 +4,7 @@ $releases = 'https://dl.vikunja.io/desktop'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
+        ".\tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
         }
         ".\legal\VERIFICATION.txt" = @{
