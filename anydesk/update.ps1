@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 #uses anydesk.portable updater
-. $([System.IO.Path]::Combine($PSScriptRoot, '..', 'anydesk.portable' 'update.ps1'))
+. $([System.IO.Path]::Combine($PSScriptRoot, '..', 'anydesk.portable', 'update.ps1'))
 
 function global:au_SearchReplace {
     @{
