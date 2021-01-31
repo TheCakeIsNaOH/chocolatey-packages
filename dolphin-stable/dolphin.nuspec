@@ -45,7 +45,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>

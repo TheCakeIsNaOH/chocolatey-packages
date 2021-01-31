@@ -18,7 +18,7 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.    </description>
     <projectUrl>https://www.advancedinstaller.com</projectUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/advanced-installer</packageSourceUrl>
-	<docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
+    <docsUrl>https://www.advancedinstaller.com/user-guide/introduction.html</docsUrl>
     <bugTrackerUrl>https://www.advancedinstaller.com/forums/viewforum.php?f=2</bugTrackerUrl>
     <mailingListUrl>https://www.advancedinstaller.com/forums/index.php</mailingListUrl>
     <tags>advanced-installer advinst caphyon trial</tags>

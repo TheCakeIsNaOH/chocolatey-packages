@@ -8,7 +8,7 @@
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3</licenseUrl>
-	<copyright>2021 PCSX2 Team</copyright>
+    <copyright>2021 PCSX2 Team</copyright>
     <projectUrl>http://pcsx2.net/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/pcsx2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -32,7 +32,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
     <docsUrl>http://wiki.pcsx2.net/index.php/PCSX2_Documentation</docsUrl>
     <bugTrackerUrl>https://github.com/PCSX2/pcsx2/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="vcredist140" version="14.21.27702.2"/>
+      <dependency id="vcredist140" version="14.21.27702.2" />
     </dependencies>
   </metadata>
   <files>

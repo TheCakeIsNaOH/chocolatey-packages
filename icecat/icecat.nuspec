@@ -32,7 +32,7 @@ However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>

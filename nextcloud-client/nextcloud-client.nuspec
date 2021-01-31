@@ -11,12 +11,12 @@
     <projectUrl>https://nextcloud.com/clients/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ecc76f94/Icons/nextcloud.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<copyright>2017-2021 Nextcloud GmbH, 2012-2018 ownCloud GmbH</copyright>
-	<bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
-	<releaseNotes>https://github.com/nextcloud/desktop/releases</releaseNotes>
+    <copyright>2017-2021 Nextcloud GmbH, 2012-2018 ownCloud GmbH</copyright>
+    <bugTrackerUrl>https://github.com/nextcloud/desktop/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/nextcloud/desktop/releases</releaseNotes>
     <docsUrl>https://docs.nextcloud.com/</docsUrl>
     <mailingListUrl>https://help.nextcloud.com/</mailingListUrl>
-	<summary>Desktop sync client for Nextcloud</summary>
+    <summary>Desktop sync client for Nextcloud</summary>
     <description>Use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop. Select one or more directories on your local machine and always have access to your latest files wherever you are.
 
 ### Package Specific

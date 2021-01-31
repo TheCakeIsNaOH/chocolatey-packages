@@ -6,13 +6,13 @@
     <version>6.1.5</version>
     <title>AnyDesk MSI (Install)</title>
     <authors>AnyDesk Software GmbH</authors>
-	<copyright>2021 AnyDesk GmbH</copyright>
+    <copyright>2021 AnyDesk GmbH</copyright>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://anydesk.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://anydesk.com/en</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/2b487e24/Icons/anydesk.png</iconUrl>
-	<summary>Remote Desktop Software</summary>
+    <summary>Remote Desktop Software</summary>
     <description>Connect to a computer remotely, be it from the other end of the office or halfway around the world. 
 AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.
     
@@ -23,9 +23,10 @@ let them know the package is no longer updating correctly.</description>
     <tags>anydesk desk viewer remote control support online desktop teamviewer rdp</tags>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <docsUrl>https://support.anydesk.com/Help_Center</docsUrl>
-	<bugTrackerUrl>https://anydesk.com/en/contact/support</bugTrackerUrl>
+    <bugTrackerUrl>https://anydesk.com/en/contact/support</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="info" target="info" />
   </files>
 </package>

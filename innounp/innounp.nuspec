@@ -7,13 +7,13 @@
     <title>Inno Setup Unpacker</title>
     <authors>2021 QuickeneR,Ariman</authors>
     <owners>TheCakeIsNaOH</owners>
-	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/innounp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/innounp</packageSourceUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>http://innounp.sourceforge.net/</projectUrl>
-	<projectSourceUrl>https://sourceforge.net/projects/innounp/</projectSourceUrl>
-	<mailingListUrl>https://sourceforge.net/p/innounp/mailman/</mailingListUrl>
-	<bugTrackerUrl>https://sourceforge.net/p/innounp/discussion/</bugTrackerUrl>
+    <projectSourceUrl>https://sourceforge.net/projects/innounp/</projectSourceUrl>
+    <mailingListUrl>https://sourceforge.net/p/innounp/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/innounp/discussion/</bugTrackerUrl>
     <description>Inno Setup is a popular program for making software installations. Unfortunately, there is no official unpacker - the only method of getting the files out of the self-extracting executable is to run it. One piece of software that addresses this issue is Sergei Wanin's InstallExplorer, a plug-in for the FAR Manager that unpacks several types of installations, including Inno Setup (IS). But since it is not updated in a timely fashion, and so does not support the latest IS most of the time, this program was born. The advantages over InstallExplorer are:
 
 Innounp is open source and based on IS source. Therefore, it is more likely to support future IS versions.
@@ -38,7 +38,7 @@ let them know the package is no longer updating correctly.</description>
     <tags>InnoSetup extract installer unpacker</tags>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>

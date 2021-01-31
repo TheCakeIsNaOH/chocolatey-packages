@@ -29,8 +29,8 @@ let them know the package is no longer updating correctly.</description>
     <projectSourceUrl>https://maven.apache.org/scm.html</projectSourceUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
     <file src="apache-maven-3.6.3\**" target="apache-maven-3.6.3" />
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>

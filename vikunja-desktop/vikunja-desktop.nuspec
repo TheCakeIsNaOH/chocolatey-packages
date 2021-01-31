@@ -77,8 +77,7 @@ Vikunja comes with a calDAV-integration which lets you use the tools you already
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+    <file src="tools\**" target="tools" />
   </files>
 </package>
