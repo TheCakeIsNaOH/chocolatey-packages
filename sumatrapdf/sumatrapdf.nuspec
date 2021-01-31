@@ -28,8 +28,8 @@ let them know the package is no longer updating correctly.</description>
     <projectSourceUrl>https://github.com/sumatrapdfreader/sumatrapdf</projectSourceUrl>
     <docsUrl>https://www.sumatrapdfreader.org/manual.html</docsUrl>
     <bugTrackerUrl>https://github.com/sumatrapdfreader/sumatrapdf/wiki/Submitting-bug-reports</bugTrackerUrl>
-	<dependencies>
-		<dependency id="sumatrapdf.install" version="3.2" />
-	</dependencies>
+    <dependencies>
+      <dependency id="sumatrapdf.install" version="3.2" />
+    </dependencies>
   </metadata>
 </package>

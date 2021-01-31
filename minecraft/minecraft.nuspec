@@ -8,14 +8,14 @@
     <authors>Mojang</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/minecraft.png</iconUrl>
-	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
-	<bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
-	<docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
+    <bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
+    <docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
     <summary>Launcher for Minecraft Java edition</summary>
-	<description>#### New package name: **[minecraft-launcher](https://chocolatey.org/packages/minecraft-launcher)**
+    <description>#### New package name: **[minecraft-launcher](https://chocolatey.org/packages/minecraft-launcher)**
 
 ---
 
@@ -34,7 +34,7 @@ It exists only for backward compatibility to provide a transitional dummy packag
 `choco uninstall minecraft --whatif`</releaseNotes>
     <copyright>2020 Microsoft</copyright>
     <tags>minecraft mine craft microsoft mojang java</tags>
-	<dependencies>
+    <dependencies>
       <dependency id="minecraft-launcher" />
     </dependencies>
   </metadata>

@@ -8,14 +8,14 @@
     <authors>Mojang</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/minecraft.png</iconUrl>
-	<packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
-	<bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
-	<docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
+    <bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
+    <docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
     <summary>Launcher for Minecraft Java edition</summary>
-	<description>The original version of Minecraft! Java Edition has cross-platform play between Windows, Linux and macOS, and also supports user-created skins and mods. Includes a decade’s worth of updates, with much more to come!
+    <description>The original version of Minecraft! Java Edition has cross-platform play between Windows, Linux and macOS, and also supports user-created skins and mods. Includes a decade’s worth of updates, with much more to come!
 	
 #### Package Parameters
 The following package parameters can be set:

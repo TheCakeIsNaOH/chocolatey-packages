@@ -20,7 +20,7 @@
 
 It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.</description>
     <summary>Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows</summary>
-	<releaseNotes>#### New users
+    <releaseNotes>#### New users
 * Do not install this package. Install **sumatrapdf.portable** instead.
 
 #### Existing users - Updating
@@ -33,7 +33,7 @@ It exists only for backward compatibility to provide a transitional dummy packag
     <projectSourceUrl>https://github.com/sumatrapdfreader/sumatrapdf</projectSourceUrl>
     <docsUrl>https://www.sumatrapdfreader.org/manual.html</docsUrl>
     <bugTrackerUrl>https://github.com/sumatrapdfreader/sumatrapdf/wiki/Submitting-bug-reports</bugTrackerUrl>
-	<dependencies>
+    <dependencies>
       <dependency id="sumatrapdf.portable" />
     </dependencies>
   </metadata>
