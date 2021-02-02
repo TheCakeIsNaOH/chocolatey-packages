@@ -48,6 +48,5 @@ let them know the package is no longer updating correctly.
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="install.ahk" target="install.ahk" />
   </files>
 </package>
