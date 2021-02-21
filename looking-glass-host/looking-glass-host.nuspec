@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>looking-glass-host</id>
-    <version>0.0.0.0-B3-RC1</version>
+    <version>0.0.0.0-B3Final</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Looking Glass (host)</title>
