@@ -1,0 +1,344 @@
+Balabolka (Command Line Utility)
+Copyright (c) 2013-2021 Ilya Morozov
+All Rights Reserved
+
+
+*** History ***
+
+2021-02-23     v1.73
+[+] Small improvements.
+
+
+2021-01-24     v1.72
+[+] Small improvements.
+
+
+2020-11-28     v1.71
+[+] Added the option to ignore URLs in text.
+[-] Fixed the subtitle creating.
+
+
+2020-11-22     v1.70
+[+] Small improvements.
+[*] The command line can contain more than one input text file name.
+
+
+2020-09-13     v1.69
+[+] Added the support of IPA phonetic transcription for BXD dictionaries.
+
+
+2020-06-29     v1.68
+[+] Added the support of LRC format for subtitle converting.
+
+
+2020-05-30     v1.67
+[+] Added the support of WebVTT format for subtitle converting.
+[+] Small improvements.
+
+
+2020-05-16     v1.66
+[-] Fixed the using of SAPI 5.1 on Windows 7.
+
+
+2020-05-10     v1.65
+[+] Added the option to fix the converting of subtitles via SAPI 5.
+[+] Added the converting of subtitles to audio files via SAPI 4.
+
+
+2020-05-02     v1.64
+[+] Small improvements.
+
+
+2020-04-23     v1.63
+[*] Some options were renamed and improved.
+
+
+2020-04-21     v1.62
+[+] Added options to read foreign text (an additional voice can be used to read foreign words).
+
+
+2019-12-31     v1.61
+[-] Fixed small bugs.
+
+
+2019-12-29     v1.60
+[+] Added the tag {{Voice}} to change a voice and its properties.
+
+
+2019-12-25     v1.59
+[-] Fixed the using of SAPI 5.1 on Windows XP.
+
+
+2019-12-07     v1.58
+[-] Fixed small bugs.
+
+
+2019-10-08     v1.57
+[-] Fixed small bugs.
+
+
+2019-08-17     v1.56
+[+] Small improvements.
+
+
+2019-06-02     v1.55
+[-] Fixed the option for pause/resume.
+
+
+2019-05-12     v1.54
+[-] Fixed the audio file saving if the audio output device is absent.
+
+
+2019-04-03     v1.53
+[-] Fixed the subtitle converting for SMI files.
+
+
+2019-02-23     v1.52
+[+] Added the options to ignore text in brackets.
+
+
+2019-02-02     v1.51
+[+] Small improvements.
+
+
+2018-12-08     v1.50
+[+] Added the option to ignore comments (single-line and multiline).
+[*] The options "--deletefile" and "--ignorelength" were renamed to "--delete-file" and "--ignore-length" ("-il").
+
+
+2018-11-25     v1.49
+[*] An output file with visemes contains text splitted into words. A file encoding is UTF-8.
+
+
+2018-10-15     v1.48
+[-] Fixed the applying of rules.
+
+
+2018-06-20     v1.47
+[+] Small improvements.
+
+
+2018-06-11     v1.46
+[+] Added the option for pause/resume reading aloud by the active copy of the console application.
+[*] If the command line contains text for reading and the input encoding is defined, the application will convert the input text.
+
+
+2018-05-12     v1.45
+[*] The multi-line modifier is specified by default for regular expressions.
+
+
+2018-04-14     v1.44
+[+] Added the support of BXD format for dictionaries.
+[*] Updated Bulgarian translation of README file (thanks to Kostadin Kolev).
+
+
+2018-03-31     v1.43
+[+] Added the option for creating of text files with synchronized visemes.
+[-] Fixed the voice selecting: if the value of the [-n] parameter is "elena", the application must select the voice "Elena", not "Helena".
+
+
+2018-03-17     v1.42
+[+] Small improvements.
+
+
+2018-02-24     v1.41
+[-] Fixed the converting subtitles to audio files for IVONA voices (when the speech rate is not equal to 0).
+
+
+2018-02-01     v1.40
+[+] Small improvements.
+
+
+2017-11-25     v1.39
+[*] The converting of subtitles to audio files was improved.
+
+
+2017-09-24     v1.38
+[-] Fixed small bugs.
+
+
+2017-08-24     v1.37
+[+] Added the option for selecting of audio device by its name.
+
+
+2017-06-10     v1.36
+[-] Fixed small bugs.
+
+
+2017-03-29     v1.35
+[-] Fixed the creating of LRC and SRT files.
+
+
+2017-02-11     v1.34
+[+] Added the support of new operators for regular expresions (\U, \L, \E, \u, \l).
+
+
+2017-02-05     v1.33
+[-] Fixed the creating of LRC and SRT files.
+
+
+2016-11-19     v1.32
+[+] Added the options for creating of SRT files.
+
+
+2016-10-15     v1.31
+[*] The utility was renamed to "balcon.exe".
+[-] Fixed small bugs.
+
+
+2016-08-25     v1.30
+[-] Fixed small bugs.
+
+
+2016-05-28     v1.29
+[+] Added the options for the output audio format.
+[+] Small improvements.
+
+
+2016-04-26     v1.28
+[-] Fixed the reading of text from STDIN.
+
+
+2016-03-12     v1.27
+[+] Small improvements.
+
+
+2016-01-03     v1.26
+[-] Fixed small bugs.
+
+
+2015-11-06     v1.25
+[-] Fixed small bugs.
+
+
+2015-07-05     v1.24
+[-] Fixed small bugs.
+[*] Updated Spanish translation of README file (thanks to Fernando Gregoire).
+
+
+2015-06-07     v1.23
+[*] Updated the applying of rules from REX-dictionaries.
+
+
+2015-03-09     v1.22
+[+] Added the option for selecting of text lines by their numbers.
+
+
+2014-12-14     v1.21
+[+] Added new messages about errors.
+
+
+2014-08-30     v1.20
+[+] Small improvements.
+
+
+2014-04-24     v1.19
+[+] Small improvements.
+[*] Updated French translation of README file (thanks to Lyubov Tyurina).
+[*] Updated Polish translation of README file (thanks to Natalia Atamanchuk).
+[*] Updated Finnish, Portuguese and Spanish translations of README file.
+
+
+2014-02-08     v1.18
+[+] Added the option for closing of the active copy of the console application.
+[+] Added the items "Pause" and "Next" to the context menu of the tray's icon.
+
+
+2014-01-26     v1.17
+[-] Fixed small bugs.
+
+
+2014-01-19     v1.16
+[+] Added the option for the program's icon in the system tray.
+[+] Small improvements.
+[*] Updated Bulgarian translation of README file (thanks to Kostadin Kolev).
+[*] Updated German translation of README file (thanks to Regine Mueller).
+
+
+2014-01-03     v1.15
+[+] Small improvements.
+
+
+2013-12-15     v1.14
+[+] Added the option for text file deleting.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+
+
+2013-10-02     v1.13
+[*] Added the option for voice selecting by Locale ID.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+[*] Updated French translation of README file (thanks to Lyubov Tyurina).
+
+
+2013-09-24     v1.12
+[*] The command line options were renamed.
+[*] Updated Bulgarian translation of README file (thanks to Kostadin Kolev).
+
+
+2013-09-22     v1.11
+[+] Added the exit code = 1 for errors.
+
+
+2013-08-25     v1.10
+[+] Added the options for silence at the beginning/end of audio files.
+[+] Added the using of audio clips (WAV) in text of documents.
+[+] The library LIBSAMPLERATE.DLL is used.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+
+
+2013-08-22     v1.09
+[+] Added the option for input encoding.
+
+
+2013-07-21     v1.08
+[+] Added the options for converting of subtitles to audio files.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+
+
+2013-06-21     v1.07
+[+] Small improvements.
+
+
+2013-06-02     v1.06
+[-] Fixed small bugs.
+
+
+2013-04-06     v1.05
+[+] Added the option for printing of the voice's parameters.
+[+] Added the option for output as raw PCM data.
+[+] Added the option for ignoring of data length in WAV header.
+[+] The Polish translation of README file (thanks to Natalia Atamanchuk).
+[*] Updated German translation of README file (thanks to Regine Mueller).
+[*] Updated French translation of README file (thanks to Lyubov Tyurina).
+
+
+2013-03-31     v1.04
+[+] Added the options for creating of LRC files.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+
+
+2013-03-27     v1.03
+[+] Added the option for closing of other copies of the console application.
+[+] Added the option for a queue of the application's copies.
+
+
+2013-03-12     v1.02
+[+] Added the option for audio device selection.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+[*] Updated Bulgarian translation of README file (thanks to Kostadin Kolev).
+[+] The French translation of README file (thanks to Lyubov Tyurina).
+[+] The Finnish translation of README file.
+[+] The Portuguese translation of README file.
+[+] The Spanish translation of README file.
+
+
+2013-03-03     v1.01
+[+] Added the output to stdout for SAPI 5 and Microsoft Speech Platform.
+[*] Updated German translation of README file (thanks to Regine Mueller).
+[*] Updated Bulgarian translation of README file (thanks to Kostadin Kolev).
+
+
+2013-02-26     v1.0
+[+] The console application is available for downloading.
+[+] The German translation of README file (thanks to Regine Mueller).
+[+] The Bulgarian translation of README file (thanks to Kostadin Kolev).
