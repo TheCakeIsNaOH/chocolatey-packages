@@ -18,7 +18,7 @@ This End-User License Agreement ("EULA") is a legal agreement between you (eithe
 
 SOFTWARE PRODUCT LICENSE
 
-The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. The SOFTWARE PRODUCT is licensed, not sold.
+The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. The SOFTWARE PRODUCT is licensed, not sold. The SOFTWARE PRODUCT can not be used on the territory of Belarus, Cuba, Iran, North Korea, Syria, and the Crimea Region.
 
 1. GRANT OF LICENSE: This EULA grants you the following rights: 
 Installation and Use. You may install and use an unlimited number of copies of the SOFTWARE PRODUCT.
