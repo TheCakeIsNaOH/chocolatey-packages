@@ -6,6 +6,6 @@ in verifying that this package's contents are trustworthy.
 
 2. Extract zip
 
-2. Get sha256 checksum of setup.exe with utility of choice
+3. Get sha256 checksum of setup.exe with utility of choice
 
-3. Check that it matches checksum of included setup.exe
+4. Check that it matches checksum of included setup.exe
