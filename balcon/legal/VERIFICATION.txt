@@ -1,0 +1,16 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Download URL from authors site at: http://www.cross-plus-a.com/bconsole.htm
+
+1. Download http://www.cross-plus-a.com/balcon.zip
+
+2. Extract zip
+
+3. Get sha256 checksums of balcon.exe and libsamplerate.dll with utility of choice, they are also included below for convenience
+
+    ChecksumExe: 20158A9D72FA7A2AD97E0F36FED0D79F2626151D080CBE8A98C7E58E0B495F80
+    ChecksumDll: 01BB04EC2D815CE30A5B4D9EDCADA479461D3DE31C78532468C398BC4C328505
+
+4. Check that they match checksums of files included in package
