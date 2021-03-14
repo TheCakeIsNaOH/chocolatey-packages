@@ -14,18 +14,22 @@ function global:au_GetLatest {
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyinstall.ps1" = @{
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
         }
     }
 }
 
 function global:au_BeforeUpdate() {
+    Remove-Item "tools\*.exe"
 
 	Get-RemoteFiles -Purge -NoSuffix 
 
 	Expand-Archive -Path $([System.IO.Path]::Combine('.', 'tools', 'balabolka.zip')) -DestinationPath "tools" -Force
 
 	Remove-Item "tools\balabolka.zip"
+    
+    $Latest.Checksum32 = Get-Childitem -Path 'tools' -Filter "*.exe" | Get-FileHash | Select-Object -ExpandProperty hash
 }
 
 Update-Package -ChecksumFor none

@@ -1,11 +1,16 @@
-﻿VERIFICATION
+VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
- 
+
+Download URL from authors site at: http://www.cross-plus-a.com/balabolka.htm
+
 1. Download http://balabolka.site/balabolka.zip
 
 2. Extract zip
 
-3. Get sha256 checksum of setup.exe with utility of choice
+3. Get sha256 checksum of included setup with utility of choice, also included below for convenience
+
+   Checksum32: 92F6DE80637F68AF9215A12EBF80CDC42B9B9D54E195669683672E183792A68F
+
 
 4. Check that it matches checksum of included setup.exe
