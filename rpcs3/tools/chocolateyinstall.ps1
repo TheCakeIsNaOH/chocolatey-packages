@@ -9,7 +9,7 @@ $exepath               = (Join-Path $rpcs3Dir 'rpcs3.exe')
 $packageArgs = @{
     PackageName  = $env:ChocolateyPackageName
     Destination  = $rpcs3Dir
-    FileFullPath = Join-Path $toolsDir 'rpcs3-v0.0.15-11980-379138af_win64.7z'
+    FileFullPath = Join-Path $toolsDir 'rpcs3-v0.0.15-11984-2766e5ca_win64.7z'
 }
 
 Write-Host "Moving existing files from $toolsDir to rpcs3Dir"
