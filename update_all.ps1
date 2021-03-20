@@ -88,7 +88,7 @@ $Options = [ordered]@{
                 EnableSsl  = $Env:mail_enablessl -eq 'true'
                 Attachment =  "$PSScriptRoot{0}update_info.xml" -f [IO.Path]::DirectorySeparatorChar
                 UserMessage = ''
-                SendAlways  = $true                      #Send notifications every time
+                SendAlways  = $false                     #Send notifications every time
              }
            } else {}
 
