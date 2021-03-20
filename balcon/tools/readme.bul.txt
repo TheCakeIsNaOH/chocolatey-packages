@@ -1,4 +1,4 @@
-Balabolka (конзолно приложение), версия 1.73
+Balabolka (конзолно приложение), версия 1.74
 Авторски права (c) 2013-2021 Илия Морозов
 Всички права запазени
 
@@ -176,6 +176,12 @@ balcon [опции ...]
 
 --lrc-creator <текст>
    Задава ID тага за LRC файла: създател на LRC файла.
+
+--lrc-sent
+   Inserts blank lines after sentences in the LRC file.
+
+--lrc-para
+   Inserts blank lines after paragraphs in the LRC file.
 
 --srt-length <целочислена_стойност>
    Задава максималната дължина на редовете в SRT файла (в брой знаци).

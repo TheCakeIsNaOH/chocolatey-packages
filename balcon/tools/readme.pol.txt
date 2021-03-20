@@ -1,4 +1,4 @@
-Balabolka (aplikacja konsolowa), wersja 1.73
+Balabolka (aplikacja konsolowa), wersja 1.74
 Copyright (c) 2013-2021 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
@@ -176,6 +176,12 @@ balcon [parametry ...]
 
 --lrc-creator <tekst>
    Znacznik dla pliku LRC: twórc¹ pliku.
+
+--lrc-sent
+   Inserts blank lines after sentences in the LRC file.
+
+--lrc-para
+   Inserts blank lines after paragraphs in the LRC file.
 
 --srt-length <liczba>
    Ustawiæ maksymaln¹ d³ugoœæ wierszy plika SRT (symboli).

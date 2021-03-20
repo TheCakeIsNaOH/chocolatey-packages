@@ -1,4 +1,4 @@
-Balabolka (Command Line Utility), version 1.73
+Balabolka (Command Line Utility), version 1.74
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -175,6 +175,12 @@ balcon [options ...]
 
 --lrc-creator <text>
    Sets the ID tag for the LRC file: creator of the LRC file.
+
+--lrc-sent
+   Inserts blank lines after sentences when creating the LRC file.
+
+--lrc-para
+   Inserts blank lines after paragraphs when creating the LRC file.
 
 --srt-length <integer>
    Sets the maximal length of text lines for the SRT file (in characters).

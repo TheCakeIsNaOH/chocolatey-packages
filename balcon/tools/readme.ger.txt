@@ -1,4 +1,4 @@
-Balabolka (Konsolenanwendung), Version 1.73
+Balabolka (Konsolenanwendung), Version 1.74
 Copyright (c) 2013-2021 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -177,6 +177,12 @@ balcon [Optionen ...]
 
 --lrc-creator <Textzeile>
    Bestimmt den ID-Tag für die LRC-Datei: Ersteller der LRC-Datei.
+
+--lrc-sent
+   Fügt leere Zeilen nach Sätzen in die LRC-Datei ein.
+
+--lrc-para
+   Fügt leere Zeilen nach Absätzen in die LRC-Datei ein.
 
 --srt-length <Zahl>
    Bestimmt die maximale Länge der Textzeilen für die SRT-Datei (in Zeichen).

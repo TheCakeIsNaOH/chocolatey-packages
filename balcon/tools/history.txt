@@ -5,6 +5,10 @@ All Rights Reserved
 
 *** History ***
 
+2021-03-20     v1.74
+[+] Added the options to insert blank lines after sentences and paragraphs in LRC files.
+
+
 2021-02-23     v1.73
 [+] Small improvements.
 

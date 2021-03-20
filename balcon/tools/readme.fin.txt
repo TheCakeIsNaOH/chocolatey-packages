@@ -1,4 +1,4 @@
-Balabolka (komentorivisovellus), versio 1.73
+Balabolka (komentorivisovellus), versio 1.74
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -176,6 +176,12 @@ balcon [options ...]
 
 --lrc-creator <tekstin_rivi>
    LRC-muotoisen tiedoston tag: tiedoston luoja.
+
+--lrc-sent
+   Inserts blank lines after sentences in the LRC file.
+
+--lrc-para
+   Inserts blank lines after paragraphs in the LRC file.
 
 --srt-length <luku>
    M‰‰ritt‰‰ SRT-muotoisen tiedoston maksimaalinen rivin pituus (symboleissa).

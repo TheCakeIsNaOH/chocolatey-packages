@@ -1,4 +1,4 @@
-Balabolka (application console), version 1.73
+Balabolka (application console), version 1.74
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -177,6 +177,12 @@ balcon [options ...]
 
 --lrc-creator <texte>
    Spécifie une balise ID pour le fichier LRC : créateur du fichier LRC.
+
+--lrc-sent
+   Inserts blank lines after sentences in the LRC file.
+
+--lrc-para
+   Inserts blank lines after paragraphs in the LRC file.
 
 --srt-length <nombre_intégral>
    Spécifie la longueur maximale des lignes de texte pour le fichier SRT (en caractères).
