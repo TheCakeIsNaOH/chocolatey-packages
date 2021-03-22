@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>winspy</id>
+    <version>1.7.202103022</version>
+    <title>WinSpy++</title>
+    <authors>James Brown</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://raw.githubusercontent.com/strobejb/winspy/master/LICENCE.TXT</licenseUrl>
+    <projectUrl>https://www.catch22.net/software/winspy</projectUrl>
+    <iconUrl>FIXME</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WinSpy++ is a handy programmer's utility which can be used to select and view the properties of any window in the system. WinSpy is based around the Spy++ utility that ships with Microsoft Visual Studio.
+
+WinSpy++ can obtain the following window properties:
+
+* Window Class and Name.
+* Window procedure address.
+* All window styles and extended styles.
+* Window properties (set using the SetProp API call).
+* Complete Child and Sibling window relationships.
+* Scrollbar positional information.
+* Full window Class information.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOSTART` - Do not add a start menu item
+ * `/DesktopIcon` - Add a desktop shorcut
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. </description>
+    <summary>View the properties of any window</summary>
+    <releaseNotes>https://www.catch22.net/software/winspy#</releaseNotes>
+    <copyright>© 2001-2006 James Brown</copyright>
+    <tags>development debug window properties</tags>
+    <projectSourceUrl>https://github.com/strobejb/winspy/tree/master</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
