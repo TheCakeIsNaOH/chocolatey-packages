@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hidevolumeosd</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/thecakeisnaoh/chocolatey-packages</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>HideVolume OSD</title>
+    <authors>Marcus Venturi</authors>
+    <projectUrl>http://wordpress.venturi.de/?p=354</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/hidevolumeosd.png</iconUrl>-->
+    <copyright>2021 Marcus Venturi</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/UnlimitedStack/HideVolumeOSD/master/License.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/UnlimitedStack/HideVolumeOSD</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/UnlimitedStack/HideVolumeOSD/issues</bugTrackerUrl>
+    <tags>hidevolumeosd Volume Media</tags>
+    <summary>Hide the Windows 10 volume bar </summary>
+    <!-- <description></description> -->
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
