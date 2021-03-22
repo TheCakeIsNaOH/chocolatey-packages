@@ -28,7 +28,7 @@ WinSpy++ can obtain the following window properties:
 The following package parameters can be set:
 
  * `/NOSTART` - Do not add a start menu item
- * `/DesktopIcon` - Add a desktop shorcut
+ * `/DESKTOPICON` - Add a desktop shorcut
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. </description>
