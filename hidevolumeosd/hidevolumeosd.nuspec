@@ -9,7 +9,7 @@
     <title>HideVolume OSD</title>
     <authors>Marcus Venturi</authors>
     <projectUrl>http://wordpress.venturi.de/?p=354</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/hidevolumeosd.png</iconUrl>-->
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/HideVolumeOSD.png</iconUrl>
     <copyright>2021 Marcus Venturi</copyright>
     <licenseUrl>https://raw.githubusercontent.com/UnlimitedStack/HideVolumeOSD/master/License.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -17,8 +17,11 @@
     <bugTrackerUrl>https://github.com/UnlimitedStack/HideVolumeOSD/issues</bugTrackerUrl>
     <tags>hidevolumeosd Volume Media</tags>
     <summary>Hide the Windows 10 volume bar </summary>
-    <!-- <description></description> -->
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <description>Hides the Windows 10 volume bar that appears when changing volume.
+
+More information about that available at...
+
+http://wordpress.venturi.de/?p=1</description>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.3.4" />
     </dependencies>

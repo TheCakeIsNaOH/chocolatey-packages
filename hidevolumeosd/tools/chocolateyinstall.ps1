@@ -10,6 +10,8 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
+$null = Remove-Process -NameFilter "HideVolumeOSD"
+
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item "$toolsDir\*.exe" -Force -EA SilentlyContinue | Out-Null

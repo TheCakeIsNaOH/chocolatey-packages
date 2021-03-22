@@ -1,0 +1,1 @@
+﻿$null = Remove-Process -NameFilter "HideVolumeOSD"
