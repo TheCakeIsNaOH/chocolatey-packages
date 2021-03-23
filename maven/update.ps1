@@ -17,8 +17,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-	Get-RemoteFiles -Purge -NoSuffix 
-
+	remove-item .\apache-maven-*  -Recurse
+    Get-RemoteFiles -Purge -NoSuffix 
+    
 	Expand-Archive -Path ".\tools\*.zip" -DestinationPath ".\" -Force
 
 	Remove-Item ".\tools\*.zip"
