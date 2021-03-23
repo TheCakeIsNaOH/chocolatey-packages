@@ -4,7 +4,7 @@
   <metadata>
     <id>maven</id>
     <title>Maven</title>
-    <version>3.6.3</version>
+    <version>3.8.0</version>
     <authors>The Apache Maven team</authors>
     <owners>TheCakeIsNaOH, Michael Pereira, Anthony Accioly</owners>
     <summary>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
@@ -29,7 +29,7 @@ let them know the package is no longer updating correctly.</description>
     <projectSourceUrl>https://maven.apache.org/scm.html</projectSourceUrl>
   </metadata>
   <files>
-    <file src="apache-maven-3.6.3\**" target="apache-maven-3.6.3" />
+    <file src="apache-maven-3.8.0\**" target="apache-maven-3.8.0" />
     <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
