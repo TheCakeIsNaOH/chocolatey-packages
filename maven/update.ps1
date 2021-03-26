@@ -12,6 +12,7 @@ function global:au_SearchReplace {
 		}
 		"maven.nuspec" = @{
 			"apache-maven-[\d\.]*" = "apache-maven-$($Latest.Version)"
+            "maven.apache.org/docs/[\d\.d]*" = "maven.apache.org/docs/$($Latest.Version)"
 		}
     }
 }
