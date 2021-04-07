@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-stogram</id>
-    <version>3.3.3</version>
+    <version>3.3.4</version>
     <title>4K Stogram</title>
     <authors>OpenMedia LLC</authors>
     <owners>TheCakeIsNaOH</owners>
