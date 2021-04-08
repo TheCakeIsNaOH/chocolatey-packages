@@ -1,4 +1,4 @@
-Balabolka (komentorivisovellus), versio 1.74
+Balabolka (komentorivisovellus), versio 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -27,6 +27,9 @@ balcon [options ...]
 
 -f <tiedoston_nimi>
    Avaa tekstitiedosto. Komentoon voi sis‰lty‰ muutama [-f] -parametri.
+
+-fl <tiedoston_nimi>
+   Sets the name of the text file with the list of input files (one file name per line). Komentoon voi sis‰lty‰ muutama [-fl] -parametri.
 
 -w <tiedoston_nimi>
    Kirjoittaa WAV-‰‰nitiedosto. Jos t‰m‰ parametri on syˆty, luodaan ‰‰nitiedosto. Jos parametria ei ole, teksti‰ luetaan ‰‰neen.

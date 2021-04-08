@@ -1,4 +1,4 @@
-Balabolka (Konsolenanwendung), Version 1.74
+Balabolka (Konsolenanwendung), Version 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -27,6 +27,9 @@ balcon [Optionen ...]
 
 -f <Dateiname>
    Bestimmt den Namen der Eingabe-Textdatei. Die Befehlszeile kann einige Optionen enthalten [-f].
+
+-fl <Dateiname>
+   Sets the name of the text file with the list of input files (one file name per line). Die Befehlszeile kann einige Optionen enthalten [-fl].
 
 -w <Dateiname>
    Bestimmt den Namen der Ausgabe-Datei im WAV-Format. Wenn diese Option angegeben ist, wird eine Audio-Datei erstellt. Sonst wird der Text laut vorgelesen.

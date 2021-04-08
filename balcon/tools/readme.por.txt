@@ -1,4 +1,4 @@
-Balabolka (aplicativo de console), versão 1.74
+Balabolka (aplicativo de console), versão 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -27,6 +27,9 @@ balcon [opções ...]
 
 -f <nome_do_arquivo>
    Abrir o arquivo de texto. A linha de comando pode conter várias opções [-f].
+
+-fl <nome_do_arquivo>
+   Sets the name of the text file with the list of input files (one file name per line). A linha de comando pode conter várias opções [-fl].
 
 -w <nome_do_arquivo>
    Gravar um arquivo de áudio em formato WAV. Especificando a opção, será criado o arquivo de áudio. Se a opção não é especificada, o texto será lido em voz alta.

@@ -1,4 +1,4 @@
-Balabolka (application console), version 1.74
+Balabolka (application console), version 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -27,6 +27,9 @@ balcon [options ...]
 
 -f <nom_de_fichier>
    Spécifie le nom du fichier texte d'entrée. La ligne de commande peut contenir quelques options [-f].
+
+-fl <nom_de_fichier>
+   Sets the name of the text file with the list of input files (one file name per line). La ligne de commande peut contenir quelques options [-fl].
 
 -w <nom_de_fichier>
    Spécifie le nom du fichier de sortie au format WAV. Si l'option est spécifiée, un fichier audio sera créé. Dans le cas contraire, le texte sera lu à haute voix.

@@ -5,6 +5,11 @@ All Rights Reserved
 
 *** History ***
 
+2021-04-08     v1.75
+[+] Added the option to open a file with a list of input filenames.
+[*] Updated the subtitle converting for SAPI 4.
+
+
 2021-03-20     v1.74
 [+] Added the options to insert blank lines after sentences and paragraphs in LRC files.
 
@@ -32,11 +37,11 @@ All Rights Reserved
 
 
 2020-06-29     v1.68
-[+] Added the support of LRC format for subtitle converting.
+[+] Added the support of LRC format for the subtitle converting.
 
 
 2020-05-30     v1.67
-[+] Added the support of WebVTT format for subtitle converting.
+[+] Added the support of WebVTT format for the subtitle converting.
 [+] Small improvements.
 
 

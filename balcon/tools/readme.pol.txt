@@ -1,4 +1,4 @@
-Balabolka (aplikacja konsolowa), wersja 1.74
+Balabolka (aplikacja konsolowa), wersja 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
@@ -27,6 +27,9 @@ balcon [parametry ...]
 
 -f <nazwa_pliku>
    Otworzyæ plik tekstowy. Wiersz poleceñ mo¿e zawieraæ kilka parametrów [-f].
+
+-fl <nazwa_pliku>
+   Sets the name of the text file with the list of input files (one file name per line). Wiersz poleceñ mo¿e zawieraæ kilka parametrów [-fl].
 
 -w <nazwa_pliku>
    Zapisaæ plik dŸwiêkowy w formacie WAV. Jeœli parametr jest ustawiony, plik dŸwiêkowy zostanie utworzony. Jeœli parametr nie jest ustawiony, tekst zostanie przeczytany na g³os.

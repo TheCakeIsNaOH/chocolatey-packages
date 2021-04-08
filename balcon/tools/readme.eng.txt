@@ -1,4 +1,4 @@
-Balabolka (Command Line Utility), version 1.74
+Balabolka (Command Line Utility), version 1.75
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -27,6 +27,9 @@ balcon [options ...]
 
 -f <file_name>
    Sets the name of the input text file. The command line may contain few options [-f].
+
+-fl <file_name>
+   Sets the name of the text file with the list of input files (one file name per line). The command line may contain few options [-fl].
 
 -w <file_name>
    Sets the name of the output file in WAV format. If the option is specified, an audio file will be created. Otherwise, text will be read aloud.
