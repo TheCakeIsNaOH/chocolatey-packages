@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
 	
 	$regex64       = '4kvideotomp3_.*_x64.msi'
-	$regex32       = '4kvideotomp3_.*\.msi'
+	$regex32       = '4kvideotomp3_[\d\.]*\.msi'
     $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
 	$url32         = $download_page.links | ? href -match $regex32 | select -First 1 -expand href 
 	

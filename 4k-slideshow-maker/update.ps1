@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
 	
 	$regex64       = '4kslideshowmaker_.*_x64.msi'
-	$regex32       = '4kslideshowmaker_.*\.msi'
+	$regex32       = '4kslideshowmaker_[\d\.]*\.msi'
     $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
 	$url32         = $download_page.links | ? href -match $regex32 | select -First 1 -expand href 
 	

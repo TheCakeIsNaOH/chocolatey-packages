@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageName		   = '4K Stogram'
 $toolsDir  			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kstogram_3.3.4_x64.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4kstogram_3.3.4.msi?source=chocolatey'
 $url64                 = 'https://dl.4kdownload.com/app/4kstogram_3.3.4_x64.msi?source=chocolatey'
-$checksum32            = '74a1ddda62154f16c8cd90577fa87f6e68243ab80a8e8e19eb95a140520c8537'
+$checksum32            = '7cc8e8ca41031b0a9cb8ccd79f036bbdffa297c5fef07632e74c1aee65fe33b7'
 $checksum64            = '74a1ddda62154f16c8cd90577fa87f6e68243ab80a8e8e19eb95a140520c8537'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Stogram.lnk'
