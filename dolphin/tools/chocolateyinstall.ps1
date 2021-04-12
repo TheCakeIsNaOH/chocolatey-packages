@@ -15,8 +15,17 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Rename-Item -Path $extractedDir -NewName $dolphinDir -Force
+if (Test-Path $dolphinDir) {
+    Remove-Process -PathFilter "$([System.Text.RegularExpressions.Regex]::escape($dolphinDir))" | Out-Null
+} else {
+    $null = New-Item -ItemType Directory -Path $dolphinDir
+}
 
+Get-Childitem -Path $extractedDir -Recurse -File | ForEach-Object {
+    [System.IO.File]::Copy($_.fullname, (Join-Path $dolphinDir $_.FullName.SubString($extractedDir.Length)), $true)
+}
+
+Remove-Item -Force -Recurse -Path $extractedDir
 Remove-Item -Force -Path $toolsDir\*.7z
 
 Install-BinFile -Name 'Dolphin-Beta' -Path $exepath -UseStart
@@ -32,3 +41,5 @@ if (!$pp['nostart']) {
 	Write-Host -ForegroundColor white 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
 }
+
+$env:ChocolateyPackageInstallLocation = $dolphinDir

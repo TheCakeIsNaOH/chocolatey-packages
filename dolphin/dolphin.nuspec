@@ -4,7 +4,7 @@
   <metadata>
     <id>dolphin</id>
     <title>Dolphin Emulator</title>
-    <version>5.0.13963-beta</version>
+    <version>5.0.13963.20210412-beta</version>
     <authors>Dolphin Emulator Project</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Cross platform GameCube, Wii, and Triforce emulator</summary>
@@ -50,6 +50,7 @@ let them know the package is no longer updating correctly.	</description>
     </releaseNotes>
     <dependencies>
       <dependency id="vcredist140" version="14.22.27821" />
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
     </dependencies>
   </metadata>
   <files>
