@@ -22,7 +22,9 @@ if (Test-Path $dolphinDir) {
 }
 
 Get-Childitem -Path $extractedDir -Recurse -File | ForEach-Object {
-    [System.IO.File]::Copy($_.fullname, (Join-Path $dolphinDir $_.FullName.SubString($extractedDir.Length)), $true)
+    $dest = (Join-Path $dolphinDir $_.FullName.SubString($extractedDir.Length))
+    if (!(Test-Path (Split-Path $dest))) { $null = New-Item -ItemType Directory -Path (Split-Path $dest) }
+    [System.IO.File]::Copy($_.fullname, $dest, $true)
 }
 
 Remove-Item -Force -Recurse -Path $extractedDir
