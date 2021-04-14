@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pcsx2.portable</id>
-    <version>1.6.0</version>
+    <version>1.6.0.20210414</version>
     <title>PCSX2 Emulator (Portable)</title>
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
@@ -20,7 +20,7 @@ Recompilers and a Virtual Machine which manages hardware states and PS2 system m
 The following package parameters can be set:
 
  * `/Desktop` - Add a desktop shortcut
- * `/Start` - Add a start menu shortcut
+ * `/Nostart` - Do not add a start menu shortcut
  * `/Path:C:\path\to\install` - Custom path to put files in
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
@@ -37,5 +37,6 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
