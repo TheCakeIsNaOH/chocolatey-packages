@@ -1,0 +1,11 @@
+﻿1. Go to the download page at https://pcsx2.net/download/releases/windows.html
+
+2. Click download on the standalone installer (they have hotlink protection, so cannot be linked directly)
+
+2. Get checksums of downloaded binary and included binary
+
+3. Check that the checksums match
+
+-------
+
+License URL: https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3
