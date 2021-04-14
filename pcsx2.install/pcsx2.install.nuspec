@@ -8,7 +8,7 @@
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3</licenseUrl>
-    <copyright>2021 PCSX2 Team</copyright>
+    <copyright>2020 PCSX2 Team</copyright>
     <projectUrl>http://pcsx2.net/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/pcsx2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -16,6 +16,9 @@
 Recompilers and a Virtual Machine which manages hardware states and PS2 system memory. This allows you to play PS2 games on your PC, with many additional features and benefits.
 	
 ### Package Specific
+
+This package version uses an AutoHotKey to run the installer, as the silent switch is broken for this package version.
+
 #### Package Parameters
 The following package parameters can be set:
 
