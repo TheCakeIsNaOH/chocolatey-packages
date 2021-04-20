@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>minecraft-launcher</id>
-    <version>1.0.0.020210420</version>
+    <version>1.0.0.020210421</version>
     <title>Minecraft Launcher</title>
     <authors>Mojang</authors>
     <owners>TheCakeIsNaOH</owners>
