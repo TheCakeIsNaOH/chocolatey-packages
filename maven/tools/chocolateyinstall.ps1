@@ -22,3 +22,5 @@ Install-ChocolateyPath -PathToInstall $pathToAdd -PathType 'Machine'
 if (!(Get-Command javac.exe -ea 0)) {
     Show-JDKWarning
 }
+
+$env:ChocolateyPackageInstallLocation = $m2_home
