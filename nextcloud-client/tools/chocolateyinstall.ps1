@@ -19,6 +19,14 @@ if ($pp['NoShell']) {
     $silentArgs += 'NO_SHELL_EXTENSIONS="1" '
 }
 
+if ([Environment]::OSVersion.Version.Major -lt 10) {
+	Write-Error "$($env:ChocolateyPackageName) requires Windows 10"
+}
+
+if ([Environment]::OSVersion.Version.Build -lt 16299) {
+	Write-Error "$($env:ChocolateyPackageName) client requires Windows 10 1709 or newer"
+}
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
