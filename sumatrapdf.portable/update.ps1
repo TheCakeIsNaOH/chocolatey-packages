@@ -19,7 +19,7 @@ function global:au_BeforeUpdate() {
 }
  
 function global:au_GetLatest {
-    $download_page        = Invoke-WebRequest -UseBasicParsing -Uri https://www.sumatrapdfreader.org/download-free-pdf-viewer.html
+    $download_page        = Invoke-WebRequest -UseBasicParsing -Uri https://www.sumatrapdfreader.org/download-free-pdf-viewer
 	
     $regex64       = '-64\.zip'
     $regex32       = 'SumatraPDF-[\d\.]*zip'
