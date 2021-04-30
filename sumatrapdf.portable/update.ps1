@@ -21,12 +21,11 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
     $download_page        = Invoke-WebRequest -UseBasicParsing -Uri https://www.sumatrapdfreader.org/download-free-pdf-viewer
 	
-    $regex64       = '-64\.zip'
-    $regex32       = 'SumatraPDF-[\d\.]*zip'
-    $baseURL       = 'https://www.sumatrapdfreader.org'
+    $regex64       = 'https.*-64\.zip'
+    $regex32       = 'https.*SumatraPDF-[\d\.]*zip'
 	
-    $url64         = $baseURL + "$($download_page.links | ? href -match $regex64 | select -First 1 -expand href)"
-    $url32         = $baseURL + "$($download_page.links | ? href -match $regex32 | select -First 1 -expand href)"
+    $url64         = ($download_page.links | ? href -match $regex64 | select -First 1 -expand href)
+    $url32         = ($download_page.links | ? href -match $regex32 | select -First 1 -expand href)
 	
     $version       = ($url32.trim("/") -split "-" | select -Last 1).trim(".zip")
 	

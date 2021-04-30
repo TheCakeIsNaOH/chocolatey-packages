@@ -16,12 +16,11 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
     $download_page        = Invoke-WebRequest -UseBasicParsing -Uri https://www.sumatrapdfreader.org/download-free-pdf-viewer
 	
-    $regex64       = 'SumatraPDF-[\d\.]*\d-64-install.exe'
-    $regex32       = 'SumatraPDF-[\d\.]*\d-install.exe'
-    $baseURL       = 'https://www.sumatrapdfreader.org'
-	
-    $url64         = $baseURL + "$($download_page.links | ? href -match $regex64 | select -First 1 -expand href)"
-    $url32         = $baseURL + "$($download_page.links | ? href -match $regex32 | select -First 1 -expand href)"
+    $regex64       = 'https.*SumatraPDF-[\d\.]*\d-64-install.exe'
+    $regex32       = 'https.*SumatraPDF-[\d\.]*\d-install.exe'
+    
+    $url64         = ($download_page.links | ? href -match $regex64 | select -First 1 -expand href)
+    $url32         = ($download_page.links | ? href -match $regex32 | select -First 1 -expand href)
 	
     $version       = $url32 -split '-' | select -Last 1 -Skip 1
 	
