@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $url                   = 'https://launcher.mojang.com/download/MinecraftInstaller.msi'
-$checksum              = 'e8895a3619eb983136bd6cfa1d948e3573d77fc55c7e3aa56abbe9d381bc63d1'
+$checksum              = '1d9f66794a5af4e409a6c6b32a14d674cc1ea96f69e2cf2acb3c7b997750d5f8'
 $pp                    = Get-PackageParameters
 
 $packageArgs = @{
