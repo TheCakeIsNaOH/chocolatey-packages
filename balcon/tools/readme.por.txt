@@ -1,4 +1,4 @@
-Balabolka (aplicativo de console), versão 1.75
+Balabolka (aplicativo de console), versão 1.77
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -213,10 +213,6 @@ balcon [opções ...]
 --sub-max <número> ou -sm <número>
    SAPI 4: a opção não é usada.
    SAPI 5 e Microsoft Speech Platform: especificar a velocidade máxima de fala na faixa de -10 a 10 (para converter subtítulos em ficheiros de áudio).
-
---sub-sil <nome_da_voz> ou -sl <nome_da_voz>
-   SAPI 4 e Microsoft Speech Platform: a opção não é usada.
-   SAPI 5: sets the voice name for silence tag reading during converting of subtitles (the part of the name will be enough). If an old voice is used to convert subtitles to speech, the created audio file may not contain pauses between text lines. To fix that problem, an additional modern voice can be used to read the silence tag.
 
 --delete-file ou -df
    Eliminar um ficheiro de texto depois de ler em voz alta ou salvar o ficheiro de áudio.

@@ -5,6 +5,15 @@ All Rights Reserved
 
 *** History ***
 
+2021-05-13     v1.77
+[*] Updated the audio file saving.
+[*] Updated the subtitle converting.
+
+
+2021-05-06     v1.76
+[-] Fixed the subtitle creating.
+
+
 2021-04-08     v1.75
 [+] Added the option to open a file with a list of input filenames.
 [*] Updated the subtitle converting for SAPI 4.
@@ -50,8 +59,8 @@ All Rights Reserved
 
 
 2020-05-10     v1.65
-[+] Added the option to fix the converting of subtitles via SAPI 5.
-[+] Added the converting of subtitles to audio files via SAPI 4.
+[+] Added the option to fix the subtitle converting via SAPI 5.
+[+] Added the subtitle converting to audio files via SAPI 4.
 
 
 2020-05-02     v1.64
@@ -151,7 +160,7 @@ All Rights Reserved
 
 
 2018-02-24     v1.41
-[-] Fixed the converting subtitles to audio files for IVONA voices (when the speech rate is not equal to 0).
+[-] Fixed the subtitle converting to audio files for IVONA voices (when the speech rate is not equal to 0).
 
 
 2018-02-01     v1.40
@@ -159,7 +168,7 @@ All Rights Reserved
 
 
 2017-11-25     v1.39
-[*] The converting of subtitles to audio files was improved.
+[*] The subtitle converting to audio files was improved.
 
 
 2017-09-24     v1.38
@@ -300,7 +309,7 @@ All Rights Reserved
 
 
 2013-07-21     v1.08
-[+] Added the options for converting of subtitles to audio files.
+[+] Added the options for subtitle converting to audio files.
 [*] Updated German translation of README file (thanks to Regine Mueller).
 
 

@@ -1,4 +1,4 @@
-Balabolka (komentorivisovellus), versio 1.75
+Balabolka (komentorivisovellus), versio 1.77
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 
@@ -215,10 +215,6 @@ balcon [options ...]
 --sub-max <luku> tai -sm <luku>
    SAPI 4: parametria ei k‰ytett‰viss‰.
    SAPI 5 ja Microsoft Speech Platform: m‰‰ritt‰‰ maksimaalinen puheen nopeus ‰‰nialueella -10:st‰ 10:een (muuttaakseen tekstitys ‰‰nitiedostoksi).
-
---sub-sil <‰‰nen_nimi> tai -sl <‰‰nen_nimi>
-   SAPI 4 ja Microsoft Speech Platform: parametria ei k‰ytett‰viss‰.
-   SAPI 5: sets the voice name for silence tag reading during converting of subtitles (the part of the name will be enough). If an old voice is used to convert subtitles to speech, the created audio file may not contain pauses between text lines. To fix that problem, an additional modern voice can be used to read the silence tag.
 
 --delete-file tai -df
    Poistaa tekstitiedosto ‰‰neen lukemisen tai ‰‰nitiedoston tallentamisen j‰lkeen.

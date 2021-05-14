@@ -1,4 +1,4 @@
-Balabolka (aplikacja konsolowa), wersja 1.75
+Balabolka (aplikacja konsolowa), wersja 1.77
 Copyright (c) 2013-2021 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
@@ -214,10 +214,6 @@ balcon [parametry ...]
 --sub-max <liczba> lub -sm <liczba>
    SAPI 4: parametr nie jest u¿ywany.
    SAPI 5 i Microsoft Speech Platform: ustawiæ maksymaln¹ prêdkoœæ mowy w zakresie od -10 do 10 (do konwersji napisów w pliki dŸwiêkowe).
-
---sub-sil <nazwa_g³osu> lub -sl <nazwa_g³osu>
-   SAPI 4 i Microsoft Speech Platform: parametr nie jest u¿ywany.
-   SAPI 5: sets the voice name for silence tag reading during converting of subtitles (the part of the name will be enough). If an old voice is used to convert subtitles to speech, the created audio file may not contain pauses between text lines. To fix that problem, an additional modern voice can be used to read the silence tag.
 
 --delete-file lub -df
    Usun¹æ plik tekstowy po zakoñczeniu czytania na g³os lub zapisywania pliku dŸwiêkowego.
