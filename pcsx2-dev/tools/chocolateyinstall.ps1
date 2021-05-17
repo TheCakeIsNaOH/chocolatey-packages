@@ -10,7 +10,7 @@ Remove-Item -Recurse -ea 0 -Path $tempPath
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  FileFullPath  = Join-Path $toolsDir 'pcsx2-1.7.0-dev-1259-g7efa96c73.7z'
+  FileFullPath  = Join-Path $toolsDir 'pcsx2-1.7.0-dev-1262-g084c7db9a.7z'
   Destination   = "$tempPath"
 }
 
