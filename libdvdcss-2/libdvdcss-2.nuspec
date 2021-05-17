@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>libdvdcss-2</id>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>libdvdcss-2</title>
