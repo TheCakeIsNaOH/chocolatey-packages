@@ -1,8 +1,8 @@
 ﻿$pp 				   = Get-PackageParameters
 $ErrorActionPreference = 'Stop';
 $toolsDir   		   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$dllPath64			   = join-path $toolsDir 'x64\libdvdcss-2.dll'
-$dllPath32 			   = join-path $toolsDir 'x32\libdvdcss-2.dll'
+$dllPath64			   = join-path $toolsDir '64-bit\libdvdcss-2.dll'
+$dllPath32 			   = join-path $toolsDir '32-bit\libdvdcss-2.dll'
 $handbrakeDirPortable  = join-path $env:ChocolateyInstall 'lib\handbrake.portable\tools'
 $handbrakeDir		   = join-path "$env:ProgramFiles" 'HandBrake'
 $handbrakeDir32		   = join-path "$env:ProgramFiles(x86)" 'HandBrake'

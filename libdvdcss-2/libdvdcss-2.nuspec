@@ -4,12 +4,12 @@
   <metadata>
     <id>libdvdcss-2</id>
     <version>1.4.2</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/libdvdcss-2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>libdvdcss-2</title>
     <authors>VideoLAN</authors>
     <projectUrl>https://github.com/allienx/libdvdcss-dll</projectUrl>
-    <copyright>2018 VideoLAN</copyright>
+    <copyright>2021 VideoLAN</copyright>
     <licenseUrl>https://github.com/allienx/libdvdcss-dll/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://code.videolan.org/videolan/libdvdcss</projectSourceUrl>
@@ -38,5 +38,6 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

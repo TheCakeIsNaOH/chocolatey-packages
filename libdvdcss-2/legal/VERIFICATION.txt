@@ -1,0 +1,14 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1. Download release zip with the dlls from here- https://github.com/allienx/libdvdcss-dll/releases
+
+2. Extract
+
+3. Get checksums of dll in 32 and 64 bit folders
+
+4. Check that the checksums match the included dlls
+
+    ChecksumDll32: 9
+    ChecksumDll64: A
