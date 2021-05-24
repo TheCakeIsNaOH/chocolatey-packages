@@ -4,7 +4,7 @@ $url32                 = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe
 $agentfileName         = $url32 -split '/' | select -Last 1
 $downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
-$checksum32            = '85391702714f9a2458d023299aadffb1e22d173f7231dfcefed46f1bdc5987e5'
+$checksum32            = 'f23ed5c381b938499fff14a275fb579f9bfe17fcf993ddb16ac5749c504f5649'
 $macriumPath           = (Join-Path $env:programfiles 'macrium\reflect')
 $mstPath               = (Join-Path $toolsDir 'ReflectFreeEnableSilent.mst')
 
