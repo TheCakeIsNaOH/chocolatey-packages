@@ -5,6 +5,11 @@ All Rights Reserved
 
 *** History ***
 
+2021-05-25     v1.78
+[-] Fixed the using of external audio files (audio clips).
+[*] Updated Spanish translation of README file (thanks to Fernando Gregoire).
+
+
 2021-05-13     v1.77
 [*] Updated the audio file saving.
 [*] Updated the subtitle converting.

@@ -10,7 +10,7 @@ Download URL from authors site at: http://www.cross-plus-a.com/bconsole.htm
 
 3. Get sha256 checksums of balcon.exe and libsamplerate.dll with utility of choice, they are also included below for convenience
 
-    ChecksumExe: 4D0FD658331A76A5C19326BCEC9760F148D86B6EB2B573D0522F9E1CD9F39710
+    ChecksumExe: 48266A6D2A2077064FFCDE0BFC49DF01447520C6FBD32EC15BEC4705AED65BCF
     ChecksumDll: 01BB04EC2D815CE30A5B4D9EDCADA479461D3DE31C78532468C398BC4C328505
 
 4. Check that they match checksums of files included in package

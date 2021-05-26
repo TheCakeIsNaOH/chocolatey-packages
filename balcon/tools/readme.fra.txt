@@ -1,4 +1,4 @@
-Balabolka (application console), version 1.77
+Balabolka (application console), version 1.78
 Copyright (c) 2013-2021 Ilya Morozov
 All Rights Reserved
 

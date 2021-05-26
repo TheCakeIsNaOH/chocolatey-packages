@@ -1,9 +1,9 @@
-Balabolka (aplicación de consola), versión 1.77
+Balabolka (aplicación de consola), versión 1.78
 Copyright (c) 2013-2021 Ilya Morozov
 Todos los derechos reservados
 
 WWW: http://balabolka.site/es/bconsole.htm
-E-mail: crossa@list.ru
+Correo electrónico: crossa@list.ru
 
 Licencia: Gratuito (Freeware)
 Sistema operativo: Microsoft Windows XP/Vista/7/8/10
@@ -29,7 +29,7 @@ balcon [opciones ...]
    Establece el nombre del archivo de texto de entrada. La línea de comandos puede contener varias opciones [-f].
 
 -fl <nombre_de_archivo>
-   Sets the name of the text file with the list of input files (one file name per line). La línea de comandos puede contener varias opciones [-fl].
+   Establece el nombre del archivo de texto con la lista de archivos de entrada (un nombre de archivo por línea). La línea de comandos puede contener varias opciones [-fl].
 
 -w <archivo de onda>
    Establece el nombre del archivo de salida en formato WAV. Si se especifica la opción, se creará un archivo de audio. De lo contrario, el texto será leído en voz alta.
@@ -41,7 +41,7 @@ balcon [opciones ...]
    Establece el identificador de idioma (Locale ID) de la voz. El identificador de idioma es el código de idioma asignado por Microsoft
    (por ejemplo, "1033" o "0x0409" para "inglés - Estados Unidos", "3082" o "0x0C0A" para "español - alfabetización internacional").
    El programa escogerá de la lista la primera voz cuyo identificador de idioma coincida con el valor especificado.
-   Si el parámetro no está especificado, entonces se utilizará la voz, especificada con ayuda del parámetro [-n], o la voz seleccionada en el panel de control de Windows.
+   Si no se especifica el parámetro, se utilizará la voz, especificada con ayuda del parámetro [-n], o la voz seleccionada en el panel de control de Windows.
    Lista de identificadores de idioma: https://msdn.microsoft.com/en-us/library/cc233982.aspx
 
 -m
@@ -51,7 +51,7 @@ balcon [opciones ...]
    Establece el dispositivo de salida de audio por su índice. El índice del dispositivo de audio predeterminado es 0.
 
 -r <texto>
-   Sets the audio output device by its name.
+   Establece el dispositivo de salida de audio por su nombre.
 
 -c
    Toma como entrada el texto del portapapeles.
@@ -68,7 +68,7 @@ balcon [opciones ...]
 
 -s <entero>
    SAPI 4: establece la velocidad de la voz en el rango de 0 a 100 (no hay valor predeterminado).
-   SAPI 5 y Microsoft Speech Platform: configurar la velocidad de la voz en el rango de -10 a 10 (el valor predeterminado es 0).
+   SAPI 5 y Microsoft Speech Platform: establece la velocidad de la voz en el rango de -10 a 10 (el valor predeterminado es 0).
 
 -p <entero>
    SAPI 4: establece el tono de la voz en el rango de 0 a 100 (no hay valor predeterminado).
@@ -94,7 +94,7 @@ balcon [opciones ...]
    Elimina de la memoria del equipo la copia de la aplicación de consola activa.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Pausa o reanuda la lectura en voz alta por parte de la copia activa de la aplicación. Es la misma acción que la del elemento del menú contextual "Pausa"/"Reanudar".
 
 -q
    Añade la aplicación a una cola. La aplicación de consola esperará hasta que otras copias del programa finalicen.
@@ -109,10 +109,10 @@ balcon [opciones ...]
 
 -vs <nombre_de_archivo>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: sets the name of output text file with visemes, if the option [-w] is specified.
-   A viseme is the mouth shape that corresponds to a particular speech sound. SAPI supports the list of 21 visemes.
-   This list is based on the original Disney visemes. The application will create the audio file and then read it aloud to get visemes and their timecodes.
-   The list of visemes supported by SAPI 5: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
+   SAPI 5 y Microsoft Speech Platform: establece el nombre del archivo de texto de salida con visemas, si se especifica la opción [-w].
+   Un visema es la forma de la boca correspondiente a un sonido en particular al hablar. SAPI es compatible con la lista de 21 visemas.
+   Esta lista está basada en los visemas originales de Disnei. La aplicación creará el archivo de audio y lo leerá en voz alta para obtener los visemas y sus códigos de tiempo.
+   La lista de visemas compatibles con SAPI 5: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
 
 -sub
    El texto se procesará como subtítulos. La opción puede ser útil al especificar las opciones [-i] o [-c].
@@ -128,18 +128,18 @@ balcon [opciones ...]
 
 -fr <entero>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: sets the output audio sampling frequency in kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 y Microsoft Speech Platform: establece la frecuencia de muestreo de la salida de audio en kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
+   Si no se especifica la opción, se utilizará el valor predeterminado de la voz seleccionada.
 
 -bt <entero>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: sets the output audio bit depth (8 o 16).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 y Microsoft Speech Platform: establece la profundidad en bits del audio de salida (8 o 16).
+   Si no se especifica la opción, se utilizará el valor predeterminado de la voz seleccionada.
 
 -ch <entero>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: sets the output audio channel mode (1 o 2).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 y Microsoft Speech Platform: establece el modo de canal del audio de salida (1 o 2).
+   Si no se especifica la opción, se utilizará el valor predeterminado de la voz seleccionada.
 
 -? o -h
    Muestra la lista de opciones de línea de comandos disponibles.
@@ -181,10 +181,10 @@ balcon [opciones ...]
    Establece la etiqueta de ID para el archivo LRC: creador del archivo LRC.
 
 --lrc-sent
-   Inserts blank lines after sentences in the LRC file.
+   Inserta líneas en blanco después de las frases en el archivo LRC.
 
 --lrc-para
-   Inserts blank lines after paragraphs in the LRC file.
+   Inserta líneas en blanco después de los párrafos en el archivo LRC.
 
 --srt-length <entero>
    Ajusta la longitud máxima de líneas para el archivo SRT (en caracteres).
@@ -202,67 +202,66 @@ balcon [opciones ...]
 
 --ignore-length o -il
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: no grabar la dimensión de los datos de audio en el encabezado del formato WAV.
-   La opción se utiliza junto con la opción [-o].
+   SAPI 5 y Microsoft Speech Platform: no grabar la dimensión de los datos de audio en el encabezado del formato WAV. La opción se utiliza junto con la opción [-o].
 
 --sub-format <texto>
-   Establece el formato de subtítulos ("srt", "lrc", "ssa", "ass", "smi" o "vtt"). Si no se especifica la opción, el formato se definirá acorde a la extensión del archivo.
+   Establece el formato de subtítulos ("srt", "lrc", "ssa", "ass", "smi" o "vtt"). Si no se especifica la opción, el formato se definirá según la extensión del archivo.
 
 --sub-fit o -sf
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para poder ajustarse en los intervalos de tiempo, especificados en los subtítulos.
+   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio.
 
 --sub-max <entero> o -sm <entero>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: ajusta la velocidad máxima del habla en la gama de -10 a 10 (para convertir los subtítulos en un fichero de audio).
+   SAPI 5 y Microsoft Speech Platform: ajusta la velocidad máxima del habla en la gama de -10 a 10 (para convertir los subtítulos en un archivo de audio).
 
 --delete-file o -df
    Al terminar el trabajo, borra el archivo de texto. La opción se utiliza junto con la opción [-f].
 
 --ignore-square-brackets o -isb
-   Ignore text in [square brackets].
+   Ignorar el texto entre [corchetes cuadrados].
 
 --ignore-curly-brackets o -icb
-   Ignore text in {curly brackets}.
+  Ignorar el texto entre {llaves}.
 
 --ignore-angle-brackets o -iab
-   Ignore text in <angle brackets>.
+  Ignora el texto entre <corchetes angulares>.
 
 --ignore-round-brackets o -irb
-   Ignore text in (round brackets).
+   Ignorar texto entre (corchetes redondos).
 
 --ignore-url o -iu
-   Ignore URLs.
+   Ignorar las URL.
 
 --ignore-comments o -ic
    Omite los comentarios. Los comentarios de una sola línea comienzan con // y continúan hasta el final de la línea. Los comentarios de varias líneas comienzan con /* y terminan con */.
 
 --voice1-name <nombre_de_voz>
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: sets the additional voice name to read foreign words in text (the part of the name will be enough).
-   The option is used together with the option [--voice1-langid]. Other voices can be set by options [--voice2-name], [--voice3-name], etc.
+   SAPI 5 y Microsoft Speech Platform: establece el nombre de la voz adicional para leer palabras del texto en otros idiomas (bastará con parte del nombre).
+   La opción se utiliza junto con la opción [--voice1-langid]. Pueden establecerse otras voces con las opciones [--voice2-name], [--voice3-name], etc.
 
 --voice1-langid <ID_de_idioma>
-   Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   Establece el identificador de idioma para palabras del texto que estén en otros idiomas. La opción se utiliza junto con la opción [--voice1-name]. La línea de comandos puede contener más de una opción [--voice1-langid]. Además, una opción puede contener una lista de identificadores separados por comas.
+   La lista de identificadores de idioma compatibles está basada en los códigos ISO 639-1: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
 
 --voice1-rate <entero>
-   Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).
+  Ajusta la velocidad de la voz adicional en la gama de -10 a 10 (la predeterminada es 0).
 
 --voice1-pitch <entero>
-   Sets the pitch for the additional voice in a range of -10 to 10 (the default is 0).
+  Ajusta el tono de la voz adicional en la gama de -10 a 10 (el predeterminado es 0).
 
 --voice1-volume <entero>
-   Sets the volume for the additional voice in a range of 0 to 100 (the default is 100).
+  Ajusta el volumen de la voz adicional en la gama de 0 a 100 (el predeterminado es 100).
 
 --voice1-roman
-   Use the default voice to read Roman numerals in text. If text with non-Latin characters contains Roman numerals, the application will not change a voice to read them.
+   Para leer números romanos en el texto, utiliza la voz predeterminada. Si un texto con caracteres no latinos contiene números romanos, la aplicación no cambiará de voz para leerlos.
 
 --voice1-digit
-   Use the default voice to read numbers in text.
+   Para leer números en el texto, utiliza la voz predeterminada.
 
 --voice1-length <entero>
-   Set the minimal length of foreign text parts that will be read by the additional voice (in characters).
+   Establece la longitud mínima de las partes de texto en otros idiomas que leerá la voz adicional (en caracteres).
 
 
 *** Ejemplos ***
@@ -283,7 +282,7 @@ balcon -f "d:\Texto\libro.txt" -w "d:\Sonido\libro.wav" -lrc --lrc-length 80 --l
 
 balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n "Laura" --sub-fit --sub-max 2
 
-balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
+balcon -f "d:\Texto\libro.txt" -n Diego --voice1-name Tatyana --voice1-langid ru
 
 
 Ejemplo de utilización de la aplicación junto con la utilidad LAME.EXE:
@@ -314,7 +313,7 @@ Un ejemplo del contenido del archivo:
 -p -1
 -v 95
 -e 300
--d d:\Dict\reglas.bxd
+-d d:\Dicc\reglas.bxd
 -lrc
 --lrc-length 75
 --lrc-enc utf8
@@ -334,51 +333,47 @@ Al leer el texto en voz alta, el programa se pausará cuando llegue a la etiqueta
 Al convertir en archivos de audio, el clip de audio se incrustará en el archivo de audio que cree la aplicación.
 
 
-*** "Voice" Tag ***
+*** Etiqueta "Voice" ***
 
-If it is necessary to change a voice or its properties during reading aloud, a special tag can be used for SAPI 5 and Microsoft Speech Platform (SAPI 4 voices will ignore this tag).
+Si durante la lectura en voz alta fuera necesario cambiar la voz o sus propiedades, para SAPI 5 y Microsoft Speech Platform se puede usar una etiqueta especial (las voces SAPI 4 la ignorarán).
 
-The tag format:
+El formato de la etiqueta:
 
-{{Voice=Name;Rate;Pitch;Volume}}
+{{Voice=Nombre;Velocidad;Tono;Volumen}}
 
-- Name: the name of a voice (one word or the part of a word is enough);
-- Rate: the rate of a voice (values range from -10 to 10);
-- Pitch: the pitch of a voice (values range from -10 to 10);
-- Volume: the volume (values range from 0 to 100).
+- Nombre: el nombre de alguna voz (basta con una palabra o parte de ésta);
+- Velocidad: la velocidad de la voz (los valores van de -10 a 10);
+- Tono: el tono de la voz (los valores van de -10 a 10);
+- Volumen: el volumen (los valores van de 0 a 100).
 
-A tag applies to all subsequent text. The values are separated by semicolons. For example:
+La etiqueta se aplica a todo el texto que le siga. Los valores se separan por punto y comas. Por ejemplo:
 
-This text will be spoken by the default voice of Balabolka. {{Voice=Kimberly;0;0;100}} The voice 'Kimberly' will read the other text.
+Este texto lo leerá la voz de Balabolka predeterminada. {{Voice=Esperanza;0;0;100}} El otro texto lo leerá la voz Marta.
 
-The tag's content is case insensitive. Values for some properties can be omitted:
+EL contenido de la etiqueta no distingue entre mayúsculas y minúsculas. Pueden omitirse los valores de algunas propiedades:
 
-{{voice=eric;;;50}}
+{{voice=enrique;;;50}}
 
-{{Voice=Hans;-1}}
+{{Voice=Pablo;-1}}
 
-{{Voice=Rachel}}
+{{Voice=Rosa}}
 
-To return to the default voice, use this tag:
+Para volver a la voz predeterminada, use esta etiqueta:
 
 {{Voice=}}
 
-Warning! It is impossible to switch between SAPI 5 voices and voices of the Microsoft Speech Platform.
+Aviso: Es imposible cambiar entre voces SAPI 5 y voces de Microsoft Speech Platform.
 
 
-*** "Pause" Tag ***
+*** Etiqueta "Pause" ***
 
-A specified number of milliseconds of silence can be inserted into the output audio file. For example:
+Se puede insertar el número especificado de milisegundos de silencio en el archivo de audio de salida. Por ejemplo:
 
-One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
+Ciento veinte milisegundos de silencio {{Pause=120}} acabaron de pasar.
 
 
 *** Licencia ***
 
-Derecho al uso no comercial del programa:
-- para las personas naturales: sin ningún tipo de restricciones;
-- para las personas jurídicas: sujeto a las restricciones que figuran en el "Contrato de licencia" del software Balabolka.
-
-El uso comercial del programa sólo se permite con previa autorización del titular de derechos de autor.
+Es libre de utilizar y distribuir el software sin fines comerciales. Para uso o distribución con fines comerciales, tiene que obtener permiso del titular de los derechos de autor. La aplicación no se puede utilizar en el territorio de Belarús, Cuba, Irán, Corea del Norte, Syria ni en la Región de Crimea.
 
 ###
