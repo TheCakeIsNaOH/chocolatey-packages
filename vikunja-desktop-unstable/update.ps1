@@ -1,0 +1,54 @@
+﻿Import-Module AU
+Import-Module $([System.IO.Path]::Combine($env:ChocolateyInstall, 'helpers', 'chocolateyInstaller.psm1'))
+. $([System.IO.Path]::Combine("..", '_scripts', 'Update-OnETagChanged.ps1'))
+
+$releases = 'https://dl.vikunja.io/desktop/unstable'
+
+function global:au_SearchReplace {
+    @{
+        ".\tools\chocolateyinstall.ps1" = @{
+            "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
+        }
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
+            "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+        }
+	}
+}
+
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -NoSuffix
+}
+
+function GetResultInformation([string]$url32) {
+  $fileName = Split-path -Leaf $url32
+  $dest = $([System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), $((new-guid).guid), $fileName))
+
+  Get-WebFile $url32 $dest
+    
+  $item = Get-Item $dest
+  $version = $item.VersionInfo.FileVersion
+  $version = $version + "-$(get-date -Format 'yyyyMMdd')"
+
+  return @{
+    URL32          = $url32
+    Version        = $version
+    RemoteVersion  = $version
+    FileName32     = $fileName
+  }
+}
+
+function global:au_GetLatest {
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $regexDownload = 'Vikunja.*exe$'
+    $download_link = $download_page.links | ? href -match $regexDownload
+    $url32         = 'https://dl.vikunja.io' + ($download_link | Select -expand href).tostring()  
+    
+    $result = Update-OnETagChanged -execUrl $url32 -OnEtagChanged {
+        GetResultInformation $url32
+    } -OnUpdated { @{ URL32 = $url32 } }
+
+  return $result
+}
+
+Update-Package -ChecksumFor none
