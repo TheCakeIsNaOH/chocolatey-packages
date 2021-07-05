@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pcsx2-dev</id>
-    <version>1.7.0-dev-1430-g627f216bf</version>
+    <version>1.7.0-dev-1433-g6dd90aeae</version>
     <title>PCSX2 Emulator (Dev)</title>
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
