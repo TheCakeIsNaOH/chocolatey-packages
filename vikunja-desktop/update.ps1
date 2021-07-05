@@ -21,7 +21,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$releases_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexReleases = '\d\.\d\d'
-	$download_url  = 'https://dl.vikunja.io/' + ($releases_page.links | ? href -match $regexReleases | select -Last 1 -expand href).tostring()
+	$download_url  = 'https://dl.vikunja.io/' + ($releases_page.links | ? href -match $regexReleases | select -First 1 -Expand href).tostring()
     
     $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
     $regexDownload = 'Vikunja.*exe$'
