@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = (Get-ChildItem $toolsDir -Filter "*.zip").FullName
+$fileLocation          = Join-Path $toolsDir 'winmd-0.1.zip'
 $driverFile            = Join-Path $toolsDir 'winmd.cat'
 $outputFile            = Join-Path $toolsDir 'MarkHarmstone.cer'
 $exportType            = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert

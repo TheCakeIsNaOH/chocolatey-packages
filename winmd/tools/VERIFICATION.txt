@@ -1,5 +1,0 @@
-﻿1. Download release zip from https://github.com/maharmstone/winmd/releases
-
-2. Get checksum of zip with utility of choice
-
-3. Verify that checksum matches included winmd.zip file

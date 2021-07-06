@@ -1,0 +1,19 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32: https://github.com/maharmstone/winmd/releases/download/v0.1/winmd-0.1.zip
+
+   to download the archive.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: 836C2B8CCF5FB075C4D381BB0D8A5C270CB520292CBB52F025A122A4632D9F5C
+   checksumType: sha256
