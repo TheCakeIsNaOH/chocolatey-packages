@@ -23,6 +23,9 @@ function global:au_SearchReplace {
         "iceweasel.nuspec" = @{
             "(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ChangeLog)`$2"
         }
+        ".\tools\chocolateyinstall.ps1" = @{
+            "(?i)(^\s*File64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
+        }
     }
 }
 
