@@ -3,9 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1. Download installer zip at 
-   x32: https://looking-glass.io/ci/host/download?id=551
+   x32: https://looking-glass.io/ci/host/download?id=688
 
-2. Extract installer zip (Password is commit hash of 2973319b)
+2. Extract installer zip (Password is short commit hash, included in archive file name)
 
 3. Get checksums of extracted installer binary and the installer binary in tools directory.
 

@@ -1,12 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = Join-Path $toolsDir 'looking-glass-host-setup.exe'
 $pp                    = Get-PackageParameters
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = $fileLocation
+  file          = Join-Path $toolsDir 'looking-glass-host-setup.exe'
   softwareName  = 'Looking Glass (host)'
   silentArgs    = '/S'      
   validExitCodes= @(0)
@@ -33,4 +32,4 @@ if ($pp['path']) {
 
 Install-ChocolateyInstallPackage @packageArgs
 
-Remove-Item -Force -ea 0 $fileLocation
+Remove-Item -Force -ea 0 -Path $toolsDir\*.exe
