@@ -1,7 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file32                = (Get-ChildItem -Path $toolsDir -Filter "*_x32.exe").FullName
-$file64                = (Get-ChildItem -Path $toolsDir -Filter "*_x64.exe").FullName
 $pp                    = Get-PackageParameters
 $shortcutName          = 'SumatraPDF.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("DesktopDirectory")) $shortcutName
@@ -26,8 +24,8 @@ if ($pp['Path']) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = $file32
-  file64        = $file64
+  file          = Join-Path $toolsDir 'SumatraPDF-3.2-install_x32.exe'
+  file64        = Join-Path $toolsDir 'SumatraPDF-3.2-64-install_x64.exe'
   silentArgs    = $args
   validExitCodes= @(0)
 }

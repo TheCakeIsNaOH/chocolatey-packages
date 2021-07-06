@@ -1,7 +1,0 @@
-1. Download installer exes from:
-	x32: https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-install.exe
-	x64: https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-64-install.exe
-	
-2. Get checksums of included executables
-
-3. Compare with checksums of downloaded executables

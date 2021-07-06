@@ -2,10 +2,16 @@
 
 function global:au_SearchReplace {
     @{
-        "tools\VERIFICATION.txt" = @{
-			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
-			"(?i)(\s+x64:).*" = "`${1} $($Latest.URL64)"
-		}
+        ".\legal\VERIFICATION.txt" = @{
+          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
+          "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
+          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+          "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+        }
+        ".\tools\chocolateyinstall.ps1" = @{
+            "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
+            "(?i)(^\s*File64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
+        }  
 	}
 }
 
