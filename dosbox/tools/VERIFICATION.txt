@@ -1,5 +1,0 @@
-﻿1. Download win32-installer for the current release from https://sourceforge.net/projects/dosbox/files/dosbox
-
-2. Get checksum of downloaded executable
-
-3. Check that the checksum matches the included executeable in the tools directory

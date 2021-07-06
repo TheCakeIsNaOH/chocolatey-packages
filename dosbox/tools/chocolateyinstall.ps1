@@ -4,8 +4,9 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = (Get-ChildItem $toolsDir -Filter "*.exe").FullName
+  file          = Join-Path $toolsDir 'DOSBox0.74-3-win32-installer.exe'
   silentArgs    = '/S'
+  softwareName  = 'DosBox*'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
