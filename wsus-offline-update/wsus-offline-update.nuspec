@@ -35,5 +35,6 @@ let them know the package is no longer updating correctly.</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
