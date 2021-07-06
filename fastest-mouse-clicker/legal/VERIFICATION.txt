@@ -7,8 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/nextcloud/desktop/releases/download/v3.2.3/Nextcloud-3.2.3-x86.msi
-   x64: https://github.com/nextcloud/desktop/releases/download/v3.2.3/Nextcloud-3.2.3-x64.msi
+   x32: https://filedn.com/llBp1EbMQML0Hdv9A9SVo6b/Install_TheFastestMouseClicker_2.6.1.0.exe
 
    to download the installer.
 
@@ -16,6 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 9BB0BD866295F980F4F4F8C0C2D93CFC28F1ACA998E9CEABD511D9987CBD9615
-   checksum64: E26AEB51CB65617A467D3C7249E293D9D0C2096E7811831687A5535EDD6784E8
+   checksum32: EB6A79FCECB598B626B10D34951D6B51B7C56AF25C340A59C208B879F3D2E151
    checksumType: sha256
