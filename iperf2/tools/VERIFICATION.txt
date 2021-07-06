@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/iperf2/files/iperf-2.1.1-April_07_2021-win.exe/download
+   x32: https://sourceforge.net/projects/iperf2/files/iperf-2.1.1-win.exe/download
 
    to download the exe.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 06BC8DF695380477C8B125AD2566B9D79BA4F52C5FC60BF5D319CE15A47D4B8C
+   checksum32: B146F71F231B6FC78485498EE6164C768EEDF3FB1B4EFFF1AD710DF1446F6E74
    checksumType32: SHA256
