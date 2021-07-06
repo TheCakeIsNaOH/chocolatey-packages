@@ -1,9 +1,0 @@
-﻿VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
- 
-1. Download release from https://github.com/Open-Shell/Open-Shell-Menu/releases
-
-2. Get sha256 checksum with utility of choice
-
-3. Check that it matches checksum of included installer
