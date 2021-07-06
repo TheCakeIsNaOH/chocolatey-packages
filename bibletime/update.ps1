@@ -2,8 +2,9 @@
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyinstall.ps1" = @{
-		}
+        ".\tools\chocolateyinstall.ps1" = @{
+            "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
+        }   
 	}
 }
 
