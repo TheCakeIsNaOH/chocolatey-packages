@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/rel/SumatraPDF-3.2-install.exe
-   x64: https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/rel/SumatraPDF-3.2-64-install.exe
+   x32: https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/rel/SumatraPDF-3.3-install.exe
+   x64: https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/rel/SumatraPDF-3.3-64-install.exe
 
    to download the installer.
 
@@ -16,6 +16,6 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 896166F4C56BD25A8AC49DE6A57A82CDD2D21073914ADCED3BB33E161F070DDE
-   checksum64: 36D95DADF36CEAE35F49BA0DFF47FF628E3433B1150FB5A845F646BE67F90198
+   checksum32: AA20D0C676FBD091B119075B7952214EE9339773E3FA014406E4411B638DC83E
+   checksum64: 989310DB119AFC4C097BEB58FD3F3B69127FF2407367211CD1500E039E3EDA2B
    checksumType: sha256
