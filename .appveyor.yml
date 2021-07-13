@@ -21,8 +21,9 @@ environment:
 
   # Github token to commit pushed packages to repository
   github_user_repo: TheCakeIsNaOH/chocolatey-packages
+  github_user_name: TheCakeIsNaOH
   github_api_key:
-    secure: NYwlzlnxTQ0CnbOknSnNqgXMaawxGA2fvXGY8eI2Z4jjNcD6vzkbfMUtxSfKWZ7Z #https://ci.appveyor.com/tools/encrypt
+    secure: OsxofjYX6YNkAchLzX7IZTkfcDvzQ5sVuZ0Cer7dPy7Au1LWdJLobrBRB5H3stCd #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
