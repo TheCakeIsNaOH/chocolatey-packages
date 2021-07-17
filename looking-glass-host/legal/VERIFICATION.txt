@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1. Download installer zip at 
-   x32: https://looking-glass.io/ci/host/download?id=707
+   x32: https://looking-glass.io/ci/host/download?id=715
 
 2. Extract installer zip (Password is short commit hash)
 
