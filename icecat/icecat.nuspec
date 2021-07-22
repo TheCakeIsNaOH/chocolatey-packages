@@ -2,7 +2,7 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <version>78.11.0</version>
+    <version>78.12.0</version>
     <id>icecat</id>
     <title>GNU IceCat</title>
     <description>
@@ -21,7 +21,7 @@ However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel
     <authors>GNU Project</authors>
     <tags>foss cross-platform unofficial gnu icecat web browser web-browser firefox freedom privacy esr fork</tags>
     <projectUrl>https://www.gnu.org/software/gnuzilla/</projectUrl>
-    <releaseNotes>[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), [Firefox ESR](https://www.mozilla.org/en-US/firefox/78.11.0/releasenotes/)</releaseNotes>
+    <releaseNotes>[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), [Firefox ESR](https://www.mozilla.org/en-US/firefox/78.12.0/releasenotes/)</releaseNotes>
     <projectSourceUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git</projectSourceUrl>
     <licenseUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/COPYING</licenseUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/icecat.png</iconUrl>

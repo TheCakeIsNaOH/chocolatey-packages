@@ -30,8 +30,8 @@ if ([Environment]::OSVersion.Version.Build -lt 16299) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  file 			= Join-Path $toolsDir 'Nextcloud-3.2.4-x86_x32.msi'
-  file64        = Join-Path $toolsDir 'Nextcloud-3.2.4-x64_x64.msi'
+  file 			= Join-Path $toolsDir 'Nextcloud-3.3.0-rc2-x86_x32.msi'
+  file64        = Join-Path $toolsDir 'Nextcloud-3.3.0-rc2-x64_x64.msi'
   silentArgs    = $silentArgs
   validExitCodes= @(0, 3010, 1641)
   softwareName  = 'Nextcloud*'
