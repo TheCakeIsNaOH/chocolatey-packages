@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/bibletime/bibletime/releases/download/v3.0/BibleTime-3.0.0-win32.exe
+   x32: https://github.com/bibletime/bibletime/releases/download/v3.0.1/BibleTime-3.0.1-win32.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 871BA77EF1A369C561E8F2DFFCCB08FDCD348644419067551E323E66D9881ECB
+   checksum32: 7723AB3D837AA616B955537594D3416122480AFEEA74B7CD2312A4E3BD068AC3
    checksumType: sha256
