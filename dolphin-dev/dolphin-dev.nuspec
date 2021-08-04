@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.	</description>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/Dolphin_0001.png</iconUrl>
     <tags>gaming emulator wii gamecube dolphin</tags>
     <copyright>© Dolphin Emulator Project 2021</copyright>
-    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/license.txt</licenseUrl>
+    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
