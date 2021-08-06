@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_4.2.0.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_4.2.0_x64.msi?source=chocolatey'
-$checksum32            = '60127252def2e27936154c822fe15ab64601ca54babac0d7cfab9dd0455024a4'
-$checksum64            = '088a2c1b9a9acac7a3fd5e9a7476b6cae137d0c3052f62ad959843009d4a9082'
+$url32                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_4.2.1.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kyoutubetomp3_4.2.1_x64.msi?source=chocolatey'
+$checksum32            = 'd6c580a2544d4ac60d3797ea5e54a6b9abc2bb1ff43255620f1d07ca12fd6843'
+$checksum64            = '5956e2bd8f8dda40cf7cc7f117b26344e4a54d929836b2450eed0f81dd809f66'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K YouTube to MP3.lnk'
 $shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
