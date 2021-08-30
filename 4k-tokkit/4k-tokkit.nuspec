@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>4k-tokkit</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>4K Tokkit (Install)</title>
+    <authors>OpenMedia LLC</authors>
+    <projectUrl>https://www.4kdownload.com/products/tokkit</projectUrl>
+    <iconUrl>FXIME</iconUrl>
+    <copyright>2021 OpenMedia LLC</copyright>
+    <licenseUrl>https://www.4kdownload.com/agreement/terms-of-use</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.4kdownload.com/help#howto</docsUrl>
+    <tags>4k tokkit tiktok download</tags>
+    <summary>Download All Videos from TikTok Hashtags and Users in One Click </summary>
+    <description> One easy way to download everything off TikTok
+
+4K Tokkit is the ultimate application for mass TikTok content download. Save TikTok challenges, captions, whole accounts, hashtags, and single videos in high quality. Watch TikToks offline, browse your TikTok feed without ads, repost clips to other social networks. 
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
