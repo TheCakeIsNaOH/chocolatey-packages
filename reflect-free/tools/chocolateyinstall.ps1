@@ -1,10 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
-$url32                 = 'https://updates.macrium.com/reflect/v7/ReflectDLHF.exe'
-$agentfileName         = $url32 -split '/' | select -Last 1
-$downloadDir           = (Join-Path $(Get-ToolsLocation) "reflect-free")
 $pp                    = Get-PackageParameters
-$checksum32            = 'f23ed5c381b938499fff14a275fb579f9bfe17fcf993ddb16ac5749c504f5649'
 $macriumPath           = (Join-Path $env:programfiles 'macrium\reflect')
 $mstPath               = (Join-Path $toolsDir 'ReflectFreeEnableSilent.mst')
 
@@ -13,50 +9,23 @@ if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {
 	throw  "Install failed due to Server OS"
 }
 
-Remove-Item $downloadDir -Recurse -ea 0
+$silentArgs = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES TRANSFORMS=`"$mstPath`" /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 
-$downloadArgs = @{
-	packageName   = 'reflect-free'
-	FileFullPath  = (Join-Path $downloadDir $agentfileName)
-	url           = $url32
-	checksumType  = 'sha256'
-	checksum      = $checksum32
+if (!$pp['desktopicon']) {
+    Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
+    $silentArgs = $silentArgs + " NODESKTOPSHORTCUT=YES"
 }
 
-Get-ChocolateyWebFile @downloadArgs
-
-Write-Host -ForegroundColor green "Running Macrium download agent via Autohotkey"
-Autohotkey.exe $toolsDir\download.ahk "$downloadDir\$agentfileName" $downloadDir
-
-$installer = Get-Item $downloadDir\Macrium\*.exe -ea 0
-
-if (!$installer) { 
-	Write-Host -ForegroundColor red "Autohotkey script failed for Macrium download agent, please manually run $downloadDir\$agentfileName" 
+$packageArgs = @{
+    packageName    = 'reflect-free'
+    fileType       = 'exe'
+    url            = 'https://download.macrium.com/reflect/v8/v8.0.6036/reflect_setup_free_x86.exe'
+    url64          = 'https://download.macrium.com/reflect/v8/v8.0.6036/reflect_setup_free_x64.exe'
+    checksum       = '3b587a058212680346c2d2cbe014eae95ffe4bf56eb2b384b969c3a378158717'
+    checksum64     = '43e718323579a1aa3e6d1fd72b8d66b9da776e19d2ba0c4a69ceeb77e00dec3b'
+    checksumtype   = 'sha256'
+    validExitCodes = @(0)
+    silentArgs     = $silentArgs
 }
-else {
-	$silentArgs = "/qn /norestart NOIMAGEGUARDIAN=YES NOVIBOOT=YES NOCBT=YES TRANSFORMS=`"$mstPath`" /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
-	
-	if (!$pp['desktopicon']) {
-		Write-Host -ForegroundColor green 'Not adding a desktop shortcut'
-		$silentArgs = $silentArgs + " NODESKTOPSHORTCUT=YES"
-	}
 
-	$packageArgs = @{
-		packageName    = 'reflect-free'
-		fileType       = 'exe'
-		file           = $installer
-		validExitCodes = @(0)
-		silentArgs     = $silentArgs
-	}
-	
-	Write-Host -ForegroundColor green "Running $installer"
-	Install-ChocolateyInstallPackage @packageArgs
-
-	if (Test-Path $macriumPath) {	
-		Write-Host -ForegroundColor green "Installation completed"
-		Write-Host -ForegroundColor green "Downloaded files are left in: $downloadDir"
-	} else {
-		Write-Host -ForegroundColor red "$downloadDir\Macrium\$installer needs to be run manually"
-		Write-Host -ForegroundColor red "The installer has a bad habit of failing without any error(ie 0 exit code)"
-	}
-}
+Install-ChocolateyPackage @packageArgs

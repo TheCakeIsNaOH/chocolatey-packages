@@ -8,7 +8,7 @@
     <authors>Macrium</authors>
     <owners>TheCakeIsNaOH</owners>
     <tags>disk drive image partition clone hdd backup</tags>
-    <projectUrl>http://www.macrium.com/reflectfree.aspx</projectUrl>
+    <projectUrl>https://www.macrium.com/reflectfree</projectUrl>
     <licenseUrl>https://www.macrium.com/eula</licenseUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/6bcde255fc9d27f1d56ea4abf1dafc1adc3d20bc/Icons/reflec-free.png</iconUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/reflect-free</packageSourceUrl>
@@ -21,8 +21,6 @@ Free backup, disk imaging and cloning solution for commercial and personal use.
 Protect your data, upgrade your hard disk or try new operating systems in the safe knowledge that everything is securely saved in an easily recovered backup file. 
 Macrium Reflect supports backup to local, network and USB drives.
 
-Macrium Reflect 7 Free Edition is ready to download now and has a number of additional features not available in version 6. It is now licensed for both home and business use.
-	
 ## Important infomation
 Macrium Reflect Free will not install on Windows Server.
 
@@ -40,11 +38,8 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 	</description>
-    <releaseNotes>http://updates.macrium.com/reflect/v7/latest_release_notes.asp</releaseNotes>
+    <releaseNotes>http://updates.macrium.com/reflect/v8/latest_release_notes.asp</releaseNotes>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.30" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
