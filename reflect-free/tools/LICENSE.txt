@@ -1,6 +1,6 @@
 From: https://github.com/TheCakeIsNaOH/chocolatey-packages/blob/master/LICENSE
 
-Applies to included AHK script and MST transform only.
+Applies to included MST transform only.
 Does NOT apply to files downloaded during package install
 
 LICENSE
