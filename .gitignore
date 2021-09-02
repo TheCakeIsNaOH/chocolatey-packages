@@ -19,3 +19,4 @@ balabolka/tools/license.*.txt
 innounp/tools/innounp.htm
 
 maven/apache-maven-*
+*.part

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mozillabuild</id>
+    <version>3.3</version>
+    <owners>TheCakeIsNaOH</owners>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/41900ad91e01aabbd642a126edf2dfa74be702f6/Icons/mozillabuild.png</iconUrl>
+    <title>MozillaBuild</title>
+    <authors>Mozilla</authors>
+    <copyright>2019 Mozilla</copyright>
+    <projectUrl>https://wiki.mozilla.org/MozillaBuild</projectUrl>
+    <projectSourceUrl>https://hg.mozilla.org/mozilla-build/</projectSourceUrl>
+    <tags>Firefox Thunderbird Mozilla Build</tags>
+    <summary>MozillaBuild Windows Toolchain</summary>
+    <description>MozillaBuild is a meta-installer that provides everything needed to build Mozilla on Windows, sans Visual C++.
+    
+## Package Notes
+This software does not create uninstall registry keys or an uninstaller.
+Therefore, there is a manual uninstall script, however, it only works for the default install location.
+
+Installs going to anything but the default location would need to be uninstalled outside of choco.</description>
+    <bugTrackerUrl>https://bugzilla.mozilla.org/home</bugTrackerUrl>
+    <mailingListUrl>https://groups.google.com/g/mozilla.dev.platform</mailingListUrl>
+    <licenseUrl>http://www.mozilla.org/MPL/2.0/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://groups.google.com/d/msg/mozilla.dev.platform/oQk9k9-co54/k5FaAMg2BwAJ</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
