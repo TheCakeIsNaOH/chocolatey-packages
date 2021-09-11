@@ -25,16 +25,20 @@ function global:au_GetLatest {
   $url32             = 'https://download.macrium.com/reflect/v8/v' + $version + '/reflect_setup_free_x86.exe'
   $url64             = 'https://download.macrium.com/reflect/v8/v' + $version + '/reflect_setup_free_x64.exe'
 
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_setup_free_x86.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_setup_free_x64.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_server_setup_x86.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_server_setup_x64.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_server_plus_setup_x86.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_server_plus_setup_x64.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_home_setup_x86.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_home_setup_x64.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_wkstn_setup_x86.exe
-#https://download.macrium.com/reflect/v8/v8.0.5928/reflect_wkstn_setup_x64.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_setup_free_x86.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_setup_free_x64.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_server_setup_x86.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_server_setup_x64.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_server_plus_setup_x86.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_server_plus_setup_x64.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_home_setup_x86.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_home_setup_x64.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_wkstn_setup_x86.exe
+#https://download.macrium.com/reflect/v8/v8.0.6036/reflect_wkstn_setup_x64.exe
+
+#https://updates.macrium.com/reflect/v8/ReflectDLBT.exe
+#https://updates.macrium.com/reflect/v8/ReflectDLHT.exe
+#https://updates.macrium.com/reflect/v8/ReflectDLHF.exe
 
   @{
 	PackageName     = 'reflect-free'
