@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.0-dev-1740-gb0d1d4ff4&platform=windows-x86
+   x32: https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.0-dev-1744-gac87484ac&platform=windows-x86
 
    to download the zip.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 9F13C6AF3D257E85CB28BD2620D660B16A944014D6FAFA514F7602ABBA915A97
+   checksum32: FA7618E1C888EB92B4B59075B1F2F3DD445AA306388F6F238F0C6EDE4724DD72
 
 ----------------------------------------------------------------------
 
