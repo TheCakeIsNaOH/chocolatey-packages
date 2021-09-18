@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>yt-dlp</id>
+    <version>2021.09.02</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>YT-DLP</title>
+    <authors>https://github.com/yt-dlp/yt-dlp/blob/master/CONTRIBUTORS</authors>
+    <projectUrl>https://github.com/yt-dlp/yt-dlp</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/51e486b27d09e8c5ee478d314688154145bbdc8c/Icons/yt-dlp.png</iconUrl>
+    <copyright>2021 YT-DLP Project</copyright>
+    <licenseUrl>https://github.com/yt-dlp/yt-dlp/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/yt-dlp/yt-dlp</projectSourceUrl>
+    <docsUrl>https://github.com/yt-dlp/yt-dlp/tree/master/docs</docsUrl>
+    <mailingListUrl>https://discord.gg/H5MNcFW63r</mailingListUrl>
+    <bugTrackerUrl>https://github.com/yt-dlp/yt-dlp/issues</bugTrackerUrl>
+    <tags>yt-dlp youtube-dl youtube downloader video-downloader sponsorblock</tags>
+    <summary>A youtube-dl fork with additional features and fixes </summary>
+    <description>
+yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
+    
+## Notes
+  
+- Optional dependency package: [ffmpeg](/packages/ffmpeg) (for stream extraction and conversion support)
+</description>
+    <releaseNotes>https://github.com/yt-dlp/yt-dlp/releases/</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist2010" version="10.0.40219.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" /> 
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
