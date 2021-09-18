@@ -25,6 +25,9 @@ yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focu
 ## Notes
   
 - Optional dependency package: [ffmpeg](/packages/ffmpeg) (for stream extraction and conversion support)
+- This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
 </description>
     <releaseNotes>https://github.com/yt-dlp/yt-dlp/releases/</releaseNotes>
     <dependencies>
