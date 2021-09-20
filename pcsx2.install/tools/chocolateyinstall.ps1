@@ -10,7 +10,7 @@ AutoHotkey $ahkScript "$installer"
 Remove-Item -Force -ea 0 -Path $toolsDir\*.exe
 
 if (!$pp['DESKTOP']) {
-	$shortcut = Get-Childitem -Path ([System.Environment]::GetFolderPath('Desktop')) -Filter "PCSX2 *.lnk"
+	$shortcut = Get-Childitem -Path ([System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)) -Filter "PCSX2 *.lnk"
     Remove-Item -ea 0 -Path $shortcut.fullname
 }
 

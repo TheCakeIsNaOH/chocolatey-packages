@@ -7,7 +7,7 @@ $checksum32            = 'bb8218fbd39562cd01d0f3e90882b8797eafdf50447a68f1a903bb
 $checksum64            = '468ac6fbe145ea32b763f83e7a01ef6d99326b7a49963ea0c52c33072a9a594a'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Stogram.lnk'
-$shortcut              = Join-Path ([System.Environment]::GetFolderPath("Desktop")) $shortcutName
+$shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 
 
 $packageArgs = @{

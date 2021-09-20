@@ -4,7 +4,7 @@ $url32                 = 'https://dl.4kdownload.com/app/4kvideotomp3_3.0.0.msi?s
 $url64                 = 'https://dl.4kdownload.com/app/4kvideotomp3_3.0.0_x64.msi?source=chocolatey'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Video to MP3.lnk'
-$shortcut              = Join-Path ([System.Environment]::GetFolderPath("Desktop")) $shortcutName
+$shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 $checksum32            = '42c975bb8a7de2b86a61b5453b36874b5f868452d50ab8b789da2a9735d2389e'
 $checksum64            = '319eacc777051b8582e2f4967fc296baf13af9b3c0e1f81d3940e8601c730a6c'
 

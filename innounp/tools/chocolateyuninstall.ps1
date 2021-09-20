@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $shortcutName          = 'innounp.lnk'
-$desktopicon           = (Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName)
+$desktopicon           = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 $starticon             = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 
 if (Test-Path $desktopicon) {

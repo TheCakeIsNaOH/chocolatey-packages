@@ -3,7 +3,7 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $fileLocation          = Join-Path $toolsDir 'setup.exe'
 $pp                    = Get-PackageParameters
 $shortcutName          = 'Balabolka.lnk'
-$shortcut              = Join-Path ([System.Environment]::GetFolderPath("Desktop")) $shortcutName
+$shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

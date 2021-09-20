@@ -3,7 +3,7 @@ $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $dolphinDir            = (Join-Path $(Get-ToolsLocation) Dolphin-Dev)
 $exepath               = (Join-Path $dolphinDir Dolphin.exe)
 $shortcutName          = 'Dolphin Emulator (Dev).lnk'
-$desktopicon           = (Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName)
+$desktopicon           = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 $starticon             = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 
 

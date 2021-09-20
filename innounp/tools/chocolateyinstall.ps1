@@ -5,7 +5,7 @@ $fileFullPath          = (Join-Path $toolsDir 'innounp.exe')
 $shortcutName          = 'innounp.lnk'
 
 if ($pp['desktop']) {
-	$desktopicon = (Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName)
+	$desktopicon = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $desktopicon
 	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $fileFullPath  -RunAsAdmin
 }
