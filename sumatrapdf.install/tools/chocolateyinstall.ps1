@@ -2,7 +2,12 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'SumatraPDF.lnk'
-$shortcut              = Join-Path ([Environment]::GetFolderPath("DesktopDirectory")) $shortcutName
+
+# Test to avoid error in cases where DesktopDirectory is null (choco.exe running as SYSTEM, etc)
+if (![string]::IsNullOrWhiteSpace([Environment]::GetFolderPath("DesktopDirectory"))) {
+	$shortcut              = Join-Path ([Environment]::GetFolderPath("DesktopDirectory")) $shortcutName
+}
+
 $args                  = '/S '
 
 if ($pp['WithFilter']) {
@@ -33,7 +38,9 @@ $packageArgs = @{
 Install-ChocolateyInstallPackage @packageArgs
 
 if ($pp['NODESKTOP']) {
-	if (Test-Path $shortcut) {
+	if (!$shortcut) {
+		Write-Host -ForegroundColor yellow "Unable to get 'DesktopDirectory' (Is choco.exe running as System?).  Not attempted to remove Desktop Shortcut."
+	} elseif (Test-Path $shortcut) {
 		Write-Host -ForegroundColor green "Removing desktop shortcut"
 		Remove-Item $shortcut
 	} else {
