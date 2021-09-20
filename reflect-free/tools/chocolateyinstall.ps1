@@ -1,7 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $pp                    = Get-PackageParameters
-$macriumPath           = (Join-Path $env:programfiles 'macrium\reflect')
 $mstPath               = (Join-Path $toolsDir 'ReflectFreeEnableSilent.mst')
 
 if ((Get-WmiObject win32_operatingsystem).caption -match "Server") {

@@ -33,13 +33,13 @@ Remove-Item -Force -Path $toolsDir\*.7z
 Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
 
 if ($pp['desktopicon']) {
-	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
+	$desktopicon = (Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $desktopicon
 	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exepath  -RunAsAdmin
 }
 
 if (!$pp['nostart']) {
-	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
+	$starticon = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
 }

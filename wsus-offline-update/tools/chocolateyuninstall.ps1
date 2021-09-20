@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $linkNameGen           = "UpdateGenerator.lnk"
 $linkNameInst          = "UpdateInstaller.lnk"
-$startmenu             = [environment]::GetFolderPath([environment+specialfolder]::Programs)
+$startmenu             = [System.Environment]::GetFolderPath('Programs')
 $shortcutFilePathGen   = Join-Path $startmenu $linkNameGen
 $shortcutFilePathInst  = Join-Path $startmenu $linkNameInst
 

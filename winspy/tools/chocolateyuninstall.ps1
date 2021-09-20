@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $shortcutName          = 'WinSpy++.lnk'
-$desktopicon           = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
-$starticon             = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
+$desktopicon           = (Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName)
+$starticon             = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 
 
 if (Test-Path $desktopicon) {

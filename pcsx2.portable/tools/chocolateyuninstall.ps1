@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $shortcutName          = 'PCSX2 Portable.lnk'
-$startPath             = Join-Path ([Environment]::GetFolderPath("CommonStartMenu")) $shortcutName
-$desktopPath           = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName
+$startPath             = Join-Path ([System.Environment]::GetFolderPath("CommonStartMenu")) $shortcutName
+$desktopPath           = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName
 $installpathfile       = Join-Path $toolsDir 'install-files.txt'
 
 

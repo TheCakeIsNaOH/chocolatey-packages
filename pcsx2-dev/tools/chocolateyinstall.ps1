@@ -2,8 +2,8 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'PCSX2 (Dev).lnk'
-$startPath             = Join-Path ([Environment]::GetFolderPath("CommonStartMenu")) $shortcutName
-$desktopPath           = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName
+$startPath             = Join-Path ([System.Environment]::GetFolderPath("CommonStartMenu")) $shortcutName
+$desktopPath           = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName
 $tempPath              = Join-Path $env:temp 'PCSX2-Dev'
 
 Remove-Item -Recurse -ea 0 -Path $tempPath 

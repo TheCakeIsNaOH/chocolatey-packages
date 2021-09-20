@@ -5,7 +5,7 @@ $rpcs3Dir              = (Join-Path $extractDir 'RPCS3')
 $exepath               = (Join-Path $rpcs3Dir 'rpcs3.exe')
 $shortcutName          = 'RPCS3.lnk'
 $desktopicon           = (Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName)
-$starticon             = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::CommonPrograms)) $shortcutName)
+$starticon             = (Join-Path ([System.Environment]::GetFolderPath("CommonPrograms")) $shortcutName)
 
 
 if (Test-Path $desktopicon) {

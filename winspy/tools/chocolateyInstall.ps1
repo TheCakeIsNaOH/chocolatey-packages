@@ -15,13 +15,13 @@ Get-ChocolateyUnzip @packageArgs
 Set-Content -Path ("$exePath.gui") -Value $null
 
 if ($pp['desktopicon']) {
-	$desktopicon = (Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName)
+	$desktopicon = (Join-Path ([System.Environment]::GetFolderPath('Desktop'))) $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $desktopicon
 	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exePath
 }
 
 if (!$pp['nostart']) {
-	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) $shortcutName)
+	$starticon = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 	Write-Host -ForegroundColor green 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exePath
 }

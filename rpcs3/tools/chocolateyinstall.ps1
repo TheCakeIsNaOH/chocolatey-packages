@@ -26,13 +26,13 @@ Remove-Item -Force -Path $toolsDir\*.7z
 Install-BinFile -Name 'RPCS3' -Path $exepath -UseStart
 
 if ($pp['desktopicon']) {
-	$desktopicon = (Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName)
+	$desktopicon = (Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $desktopicon
 	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exepath  -RunAsAdmin
 }
 
 if (!$pp['nostart']) {
-	$starticon = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::CommonPrograms)) $shortcutName)
+	$starticon = (Join-Path ([System.Environment]::GetFolderPath("CommonPrograms")) $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $starticon
 	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
 }

@@ -2,9 +2,10 @@
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'Dolphin.lnk'
-$dolphinFolder         = (Join-Path ([Environment]::GetFolderPath("ProgramFiles")) 'Dolphin')
+$dolphinFolder         = (Join-Path ([System.Environment]::GetFolderPath("ProgramFiles")) 'Dolphin')
 $exePath               = Join-Path $dolphinFolder  'Dolphin.exe'
-$shortcut              = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $shortcutName
+$shortcut              = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName
+$startFolder           = Join-Path ([System.Environment]::GetFolderPath("CommonPrograms")) 'Dolphin'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -27,7 +28,6 @@ if (!($pp['desktopicon'])) {
 }
 
 if ($pp['nostart']) {
-	$startFolder = (Join-Path ([environment]::GetFolderPath([environment+specialfolder]::CommonPrograms)) 'Dolphin')
 	Write-Host -ForegroundColor white "Removeing  $startFolder"
 	Remove-Item -Force -Ea 0 -Path $startFolder
 }

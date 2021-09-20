@@ -6,7 +6,7 @@ $checksum32            = 'bcd0223d29c0bbd3d281ab0c44933a7cb3eb869c04662f9c8a1599
 $checksum64            = 'a1723474c502ca4c4439abed0f56f52a759c57bd3953f982dde9b7cffbeb3654'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K YouTube to MP3.lnk'
-$shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
+$shortcut              = Join-Path ([System.Environment]::GetFolderPath("Desktop")) $shortcutName
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

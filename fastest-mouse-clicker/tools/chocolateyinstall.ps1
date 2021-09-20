@@ -2,7 +2,7 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
 $shortcutName          = 'The Fastest Mouse Clicker for Windows.lnk'
-$shortcut              = Join-Path ([Environment]::GetFolderPath("Desktop")) $shortcutName
+$shortcut              = Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

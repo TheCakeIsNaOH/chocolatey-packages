@@ -5,8 +5,8 @@ $checksum64            = '4df3b99816f8257451e6639c07881394a2f88093c53821e03b15a2
 $pp                    = Get-PackageParameters
 $gcShortcutName        = 'Game Capture HD.lnk'
 $scShortcutName        = 'Sound Capture.lnk'
-$scshortcut            = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $scShortcutName
-$gcshortcut            = Join-Path ([Environment]::GetFolderPath("CommonDesktop")) $gcShortcutName
+$scshortcut            = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $scShortcutName
+$gcshortcut            = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $gcShortcutName
 
 $cert = Get-ChildItem Cert:\LocalMachine\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq '1C34353BB195727CD0DAAEFAA7B1DA3DE5CDFA5E' }
 if (!$cert) {

@@ -16,7 +16,7 @@ if (!$pp['nostart']) {
 	$fileNameInst = "UpdateInstaller.exe"
 	$linkNameGen  = "UpdateGenerator.lnk"
 	$linkNameInst = "UpdateInstaller.lnk"
-	$programs     = [environment]::GetFolderPath([environment+specialfolder]::Programs)
+	$programs     = [System.Environment]::GetFolderPath('Programs')
 	$shortcutFilePathGen  = Join-Path $programs $linkNameGen
 	$shortcutFilePathInst = Join-Path $programs $linkNameInst
 	$targetPathGen        = [System.IO.Path]::Combine("$toolsDir", "wsusoffline", $fileNameGen)
