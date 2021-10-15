@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/muslayev/iceweasel-win64/releases/download/v88.0.1/iceweasel-88.0.1.en-US.win64.installer.exe
+   x64: https://github.com/muslayev/iceweasel-win64/releases/download/v93.0/iceweasel-93.0.en-US.win64.installer.exe
 
    to download the installer.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 8214714105F0DCE2660C6CC772D0DA16659CD5D663F0CED8FBE2F572F0189366
+   checksum64: 102F93C73D479D171A082D42566A266B620771CC31FBFE2990021772AD99F2A3
