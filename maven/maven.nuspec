@@ -4,7 +4,7 @@
   <metadata>
     <id>maven</id>
     <title>Maven</title>
-    <version>3.8.3</version>
+    <version>3.8.3.20211022</version>
     <authors>The Apache Maven team</authors>
     <owners>TheCakeIsNaOH, Michael Pereira, Anthony Accioly</owners>
     <summary>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 

@@ -5,14 +5,14 @@ $releases = "https://apache.claz.org/maven/maven-3/"
 function global:au_SearchReplace {
     @{
         "tools\chocolateyinstall.ps1" = @{
-			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.Version)'"
+			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.ActualVersion)'"
         }
 	    "legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
 		}
 		"maven.nuspec" = @{
-			"apache-maven-[\d\.]*" = "apache-maven-$($Latest.Version)"
-            "maven.apache.org/docs/[\d\.d]*" = "maven.apache.org/docs/$($Latest.Version)"
+			"apache-maven-[\d\.]*" = "apache-maven-$($Latest.ActualVersion)"
+            "maven.apache.org/docs/[\d\.d]*" = "maven.apache.org/docs/$($Latest.ActualVersion)"
 		}
     }
 }
@@ -36,7 +36,7 @@ function global:au_GetLatest {
 	$downloadRegex = "\.zip"
 	$url32         = $prefixUrl32 + $($download_page.links | ? href -match $downloadRegex | select -expand href)
 	
-	return @{ Version = $version; URL32 = $url32; PackageName = "maven" }
+	return @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $version }
 }
 
 Update-Package -ChecksumFor none

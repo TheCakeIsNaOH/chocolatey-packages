@@ -20,9 +20,19 @@
     }
 }
 
-Function Uninstall-M2PathFromRegistry() {
+Function Uninstall-OldM2PathFromRegistry() {
     $pathToRemove = Join-Path '%M2_HOME%' 'bin'
     Uninstall-PathFromRegistry -pathToRemove $pathToRemove
+}
+
+Function Remove-PreviousVersions($installFolders) {
+    $installs = Get-Childitem -Path $installFolders -Filter "apache-maven-*"
+    
+    $installs | ForEach-Object {
+        Write-host "Removing old version $($_.name)"
+        Uninstall-PathFromRegistry -pathToRemove (Join-Path $_.fullname 'bin')
+        Remove-Item $_.fullname -Force -Recurse
+    }
 }
 
 Function Show-JDKWarning () {
