@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$releases = "https://apache.claz.org/maven/maven-3/"
+$releases = "https://downloads.apache.org/maven/maven-3/"
 
 function global:au_SearchReplace {
     @{
@@ -33,7 +33,7 @@ function global:au_GetLatest {
 	$version       = $partUrl32.trim("/")
 	$prefixUrl32   = $releases + $partUrl32 + "binaries/"
 	$download_page = Invoke-WebRequest -Uri $prefixUrl32 -UseBasicParsing
-	$downloadRegex = "\.zip"
+	$downloadRegex = "\.zip$"
 	$url32         = $prefixUrl32 + $($download_page.links | ? href -match $downloadRegex | select -expand href)
 	
 	return @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $version }
