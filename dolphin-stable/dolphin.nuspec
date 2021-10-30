@@ -32,7 +32,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/Dolphin_0001.png</iconUrl>
     <tags>gaming emulator wii gamecube dolphin</tags>
     <copyright>© Dolphin Emulator Project</copyright>
-    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/license.txt</licenseUrl>
+    <licenseUrl>https://github.com/dolphin-emu/dolphin/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
