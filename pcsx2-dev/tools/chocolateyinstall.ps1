@@ -9,9 +9,10 @@ $tempPath              = Join-Path $env:temp 'PCSX2-Dev'
 Remove-Item -Recurse -ea 0 -Path $tempPath 
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  FileFullPath  = Join-Path $toolsDir 'pcsx2-1.7.2008.7z'
-  Destination   = "$tempPath"
+  packageName     = $env:ChocolateyPackageName
+  FileFullPath    = Join-Path $toolsDir 'pcsx2-v1.7.2010-windows-32bit-SSE4.7z'
+  FileFullPath64  = Join-Path $toolsDir 'pcsx2-v1.7.2010-windows-64bit-SSE4.7z'
+  Destination     = "$tempPath"
 }
 
 Get-ChocolateyUnzip @packageArgs
