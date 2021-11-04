@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2010/pcsx2-v1.7.2010-windows-32bit-SSE4.7z
-   x64: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2010/pcsx2-v1.7.2010-windows-64bit-SSE4.7z
+   x32: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2012/pcsx2-v1.7.2012-windows-32bit-SSE4.7z
+   x64: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2012/pcsx2-v1.7.2012-windows-64bit-SSE4.7z
 
    to download the zip.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: F1B427E0579DE17B413940BD82B65DE5F78A125B727A56C35E1C9C351289CCBD
-   checksum64: 8652D83AE391802503C99F13DA9CD324B1169179997564507E4EB90FD64A0B5F
+   checksum32: E7273952CFDDE2B0839EBDC029F95FA940E5A25683477C3EA6002A0083152742
+   checksum64: D58680F366B3F1A16F7AFD4900BAB6F9A7392D1E6F74E1227B9449D7583126D0
 
 ----------------------------------------------------------------------
 
