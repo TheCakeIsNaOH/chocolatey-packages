@@ -8,10 +8,25 @@ $tempPath              = Join-Path $env:temp 'PCSX2-Dev'
 
 Remove-Item -Recurse -ea 0 -Path $tempPath 
 
+$file32sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-32bit-SSE4.7z'
+$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-64bit-SSE4.7z'
+$file32avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-32bit-AVX2.7z'
+$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-64bit-AVX2.7z'
+
+if ($pp['UseAvx2']) {
+    Write-Output "Installing AVX2 build. If you have issues, you may want to switch back to the SSE4 build."
+    $file32 = $file32avx2
+    $file64 = $file64avx2
+} else {
+    Write-Output "Installing SSE4 build. To switch to the AVX2 build, use the 'UseAVX2' parameter"
+    $file32 = $file32sse4
+    $file64 = $file64sse4
+}
+
 $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
-  FileFullPath    = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-32bit-SSE4.7z'
-  FileFullPath64  = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-64bit-SSE4.7z'
+  FileFullPath    = $file32
+  FileFullPath64  = $file64
   Destination     = "$tempPath"
 }
 
@@ -40,7 +55,7 @@ $innerFolder = (Get-ChildItem -Path "$tempPath" -Filter "PCSX2*").FullName
 $fileList = Get-ChildItem -Path $innerFolder | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList | select -ExpandProperty FullName | Out-File -Force -FilePath (Join-Path $toolsDir 'install-files.txt')
 
-if (((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
+if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
     $exePath = Join-Path "$destination" "pcsx2.exe"
 } else {
     $exePath = Join-Path "$destination" "pcsx2x64.exe"

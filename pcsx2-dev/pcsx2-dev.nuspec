@@ -22,6 +22,7 @@ The following package parameters can be set:
  * `/Desktop` - Add a desktop shortcut
  * `/Nostart` - Do not add a start menu shortcut
  * `/Path:C:\path\to\install` - Custom path to put files in
+ * `/UseAVX2` - Use build with AVX2 support instead of the build with SSE4 support.
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
