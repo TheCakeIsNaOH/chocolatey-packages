@@ -51,8 +51,9 @@ if (Test-Path $configFile) {
 
 Write-Host -ForegroundColor white "Copying files to $destination"
 
-$innerFolder = (Get-ChildItem -Path "$tempPath" -Filter "PCSX2*").FullName
-$fileList = Get-ChildItem -Path $innerFolder | Copy-Item -Destination $destination -Recurse -Force -PassThru
+#$innerFolder = (Get-ChildItem -Path "$tempPath" -Filter "PCSX2*").FullName
+#$fileList = Get-ChildItem -Path $innerFolder | Copy-Item -Destination $destination -Recurse -Force -PassThru
+$fileList = Get-ChildItem -Path $tempPath | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList | select -ExpandProperty FullName | Out-File -Force -FilePath (Join-Path $toolsDir 'install-files.txt')
 
 if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
