@@ -13,6 +13,15 @@ $file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-64bit-SSE4.7z'
 $file32avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-32bit-AVX2.7z'
 $file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2017-windows-64bit-AVX2.7z'
 
+if ($pp['Path']) {
+	$destination = $pp['Path']
+	if (!(Test-Path "$destination" -IsValid)) {
+		Throw "Bad path parameter"
+	}
+} else {
+	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
+}
+
 if ($pp['UseAvx2']) {
     Write-Output "Installing AVX2 build. If you have issues, you may want to switch back to the SSE4 build."
     $file32 = $file32avx2
@@ -43,15 +52,6 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
-
-if ($pp['Path']) {
-	$destination = $pp['Path']
-	if (!(Test-Path "$destination" -IsValid)) {
-		Throw "Bad path parameter"
-	}
-} else {
-	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
-}
 
 $null = New-Item -ItemType Directory -Path $destination -Force
 
