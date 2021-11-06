@@ -17,10 +17,22 @@ if ($pp['UseAvx2']) {
     Write-Output "Installing AVX2 build. If you have issues, you may want to switch back to the SSE4 build."
     $file32 = $file32avx2
     $file64 = $file64avx2
+    
+    if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
+        $exePath = Join-Path "$destination" "pcsx2-avx2.exe"
+    } else {
+        $exePath = Join-Path "$destination" "pcsx2x64-avx2.exe"
+    }
 } else {
     Write-Output "Installing SSE4 build. To switch to the AVX2 build, use the 'UseAVX2' parameter"
     $file32 = $file32sse4
     $file64 = $file64sse4
+    
+    if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
+        $exePath = Join-Path "$destination" "pcsx2.exe"
+    } else {
+        $exePath = Join-Path "$destination" "pcsx2x64.exe"
+    }
 }
 
 $packageArgs = @{
@@ -55,12 +67,6 @@ Write-Host -ForegroundColor white "Copying files to $destination"
 #$fileList = Get-ChildItem -Path $innerFolder | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList = Get-ChildItem -Path $tempPath | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList | select -ExpandProperty FullName | Out-File -Force -FilePath (Join-Path $toolsDir 'install-files.txt')
-
-if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
-    $exePath = Join-Path "$destination" "pcsx2.exe"
-} else {
-    $exePath = Join-Path "$destination" "pcsx2x64.exe"
-}
 
 if (!$pp['nostart']) {
     Write-Host -ForegroundColor white 'Adding ' $startPath
