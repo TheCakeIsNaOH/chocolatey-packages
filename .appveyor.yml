@@ -46,8 +46,8 @@ environment:
     secure: /ZIlP5vMoltd8ahqeM3J/uS/PilznewWI98cViyqmkQMqgD+fWaULLEZ1arOEbJ5
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "naoh-bot@naoh.host"
+- git config --global user.name "TheCakeIsNaOH's bot"
 - git config --global core.safecrlf false
 
 install:
