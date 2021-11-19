@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64                 = 'https://edge.elgato.com/egc/windows/egcw/3.70/final/GameCaptureSetup_3.70.51.3051_x64.msi'
-$checksum64            = '4df3b99816f8257451e6639c07881394a2f88093c53821e03b15a2fa48a3712f'
+$url64                 = 'https://edge.elgato.com/egc/windows/egcw/3.70/final/GameCaptureSetup_3.70.55.3055_x64.msi'
+$checksum64            = '2a0542b89a222afbf217534b5e72d8e054a438574db205b16b9e6c9aa7e46024'
 $pp                    = Get-PackageParameters
 $gcShortcutName        = 'Game Capture HD.lnk'
 $scShortcutName        = 'Sound Capture.lnk'
