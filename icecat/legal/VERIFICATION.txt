@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/muslayev/icecat-win64/releases/download/v91.2.0/icecat-91.2.0.en-US.win64.installer.exe
+   x64: https://github.com/muslayev/icecat-win64/releases/download/v91.3.0/icecat-91.3.0.en-US.win64.installer.exe
 
    to download the installer.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 1632B798F53226686DC8BB5F22770CEF06540DAB6ED7F70469C46654A23870CE
+   checksum64: 8158C4CAB5C7739419CE28DFBF5729375AD35CCB82736F9CF1A7AEB022BAA423
