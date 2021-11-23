@@ -3,6 +3,7 @@
 $releases    = 'https://github.com/yt-dlp/yt-dlp/releases'
 $x64Filename = 'yt-dlp.exe'
 $x32Filename = 'yt-dlp_x86.exe'
+$baseDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 function global:au_SearchReplace {
     @{
@@ -16,9 +17,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
+    $toolsDir = Join-Path $baseDir 'tools'
+    
 	Get-RemoteFiles -Purge -NoSuffix
-    Move-Item -Force -Path ".\tools\$x64Filename" -Destination ".\tools\x64\yt-dlp.exe"
-    Move-Item -Force -Path ".\tools\$x32Filename" -Destination ".\tools\x86\yt-dlp.exe"
+    Move-Item -Force -Path (Join-Path $toolsDir $x32Filename) -Destination ([io.path]::Combine($toolsDir, 'x86', 'yt-dlp.exe'))
+    Move-Item -Force -Path (Join-Path $toolsDir $x64Filename) -Destination ([io.path]::Combine($toolsDir, 'x64', 'yt-dlp.exe'))
 }
 
 
