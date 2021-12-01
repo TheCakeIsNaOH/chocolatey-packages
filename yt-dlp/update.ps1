@@ -18,10 +18,16 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate() {
     $toolsDir = Join-Path $baseDir 'tools'
+    $x64Dir = Join-Path $toolsDir 'x64'
+    $x86Dir = Join-Path $toolsDir 'x86'
+    
+    New-Item -ItemType Directory -Path $x64Dir | Out-Null
+    New-Item -ItemType Directory -Path $x86Dir | Out-Null
     
 	Get-RemoteFiles -Purge -NoSuffix
-    Move-Item -Force -Path (Join-Path $toolsDir $x32Filename) -Destination ([io.path]::Combine($toolsDir, 'x86', 'yt-dlp.exe'))
-    Move-Item -Force -Path (Join-Path $toolsDir $x64Filename) -Destination ([io.path]::Combine($toolsDir, 'x64', 'yt-dlp.exe'))
+
+    Move-Item -Force -Path (Join-Path $toolsDir $x32Filename) -Destination ([io.path]::Combine($x86Dir, 'yt-dlp.exe'))
+    Move-Item -Force -Path (Join-Path $toolsDir $x64Filename) -Destination ([io.path]::Combine($x64Dir, 'yt-dlp.exe'))
 }
 
 
