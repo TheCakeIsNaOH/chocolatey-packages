@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>adobereader-update</id>
+    <version>18.011.99999</version>
+    <title>Adobe Reader DC Update</title>
+    <authors>Adobe</authors>
+    <owners>doc, TheCakeIsnaOH</owners>
+    <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
+    <projectUrl>http://www.adobe.com/products/reader.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/adobereader.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adobe Reader is the global standard for reliably viewing, printing, and commenting on PDF documents. It's the only PDF file viewer that can open and interact with all types of PDF content, including forms and multimedia.
+    </description>
+    <summary>View, print, sign, and annotate PDF files</summary>
+    <tags>adobereader adobe acrobat reader DC pdf</tags>
+    <dependencies>
+        <dependency id="adobereader" />
+    </dependencies>
+    <packageSourceUrl>https://github.com/thecakeisnaoh/chocolatey-packages</packageSourceUrl>
+    <docsUrl>https://helpx.adobe.com/reader.html</docsUrl>
+    <releaseNotes>https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotes/index.html</releaseNotes>
+    </metadata>
+</package>
