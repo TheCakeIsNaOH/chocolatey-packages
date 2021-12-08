@@ -1,12 +1,19 @@
-﻿VERIFICATION
+VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-1. Download installer zip at 
-   x32: https://looking-glass.io/ci/host/download?id=715
+Download URL from authors site at: https://looking-glass.io/downloads
 
-2. Extract installer zip (Password is short commit hash)
+1. Go to
 
-3. Get checksums of extracted installer binary and the installer binary in tools directory.
+   x64: https://looking-glass.io/artifact/B4/host
+   
+   to download the installer archive
 
-4. Check that the checksums match.
+2. Extract the installer archive
+
+3. Get sha256 checksum of included setup executable with utility of choice, also included below for convenience
+
+   checksum64: D55DE03FE75683552B0A259A22BE6F3B04FC62BE4890204D39D6523F92E3D0EC
+
+4. Check that it matches checksum of included setup executable
