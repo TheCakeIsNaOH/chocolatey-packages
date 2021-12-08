@@ -7,7 +7,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   file64        = Join-Path $toolsDir 'looking-glass-host-setup.exe'
   softwareName  = 'Looking Glass (host)'
-  silentArgs    = '/S'      
+  silentArgs    = '/S'
   validExitCodes= @(0)
 }
 
