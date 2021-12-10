@@ -5,8 +5,8 @@
     <id>wsus-offline-update-community</id>
     <version>12.0</version>
     <title>WSUS Offline Update Community Edition</title>
-    A<authors>Torsten Wittrock</authors>
-    A<copyright>2021 Torsten Wittrock</copyright>
+    <authors>Torsten Wittrock, WSUS Offline Community</authors>
+    <copyright>2021</copyright>
     <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
