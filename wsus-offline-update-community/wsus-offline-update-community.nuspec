@@ -6,7 +6,6 @@
     <version>12.6</version>
     <title>WSUS Offline Update Community Edition</title>
     <authors>Torsten Wittrock, WSUS Offline Community</authors>
-    <copyright>2021</copyright>
     <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
