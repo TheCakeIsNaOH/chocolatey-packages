@@ -24,11 +24,11 @@ function global:au_GetLatest {
     
     $normalRelease = $releasesData | Where-Object tag_name -match "\d\d\.\d[\d\.]*_CommunityEdition" | Select-Object -First 1
     $normalReleaseVersion = $normalRelease.tag_name -split "_" | Select-Object -First 1
-    $normalReleaseUrl = $normalRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
+    $normalReleaseUrl = "https://gitlab.com/wsusoffline/wsusoffline" + (($normalRelease.description -split "`n" | Where-Object { $_ -match "wsusofflineCE\d{3,4}.zip" }) -split "\(" | Select-Object -Last 1).trimend(")")
 
     $esrRelease = $releasesData | Where-Object tag_name -match "\d\d\.\d[\d\.]*esr_CommunityEdition" | Select-Object -First 1
 	$esrReleaseVersion = $esrRelease.tag_name -split "esr_" | Select-Object -First 1
-    $esrReleaseUrl = $esrRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
+    $esrReleaseUrl = "https://gitlab.com/wsusoffline/wsusoffline" + (($esrRelease.description -split "`n" | Where-Object { $_ -match "wsusofflineCE\d{3,5}.zip" }) -split "\(" | Select-Object -Last 1).trimend(")")
 
     <#return @{   
                 Streams = [ordered] @{

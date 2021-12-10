@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$file                  = Join-Path $toolsDir 'wsusoffline-12.6_CommunityEdition.zip'
+$file                  = Join-Path $toolsDir 'wsusofflineCE126.zip'
 
 $packageArgs = @{
   FileFullPath = $file
