@@ -9,6 +9,9 @@ function global:au_SearchReplace {
         ".\tools\chocolateyinstall.ps1" = @{
             '(?i)(^\s*\$file\s*=\s*)(.*)' = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
         }  
+        <#".\wsus-offline-update-community.nuspec"  = @{
+            "(?i)(^\s*\<title\>).*(\<\/title\>)" = "`${1}$($Latest.Title)`${2}"
+        } #>
 	}
 }
 
@@ -22,10 +25,28 @@ function global:au_GetLatest {
     $normalRelease = $releasesData | Where-Object tag_name -match "\d\d\.\d[\d\.]*_CommunityEdition" | Select-Object -First 1
     $normalReleaseVersion = $normalRelease.tag_name -split "_" | Select-Object -First 1
     $normalReleaseUrl = $normalRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
-    
-    #TODO, add support for ESR stream.
+
     $esrRelease = $releasesData | Where-Object tag_name -match "\d\d\.\d[\d\.]*esr_CommunityEdition" | Select-Object -First 1
-	
+	$esrReleaseVersion = $esrRelease.tag_name -split "esr_" | Select-Object -First 1
+    $esrReleaseUrl = $esrRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
+
+    <#return @{   
+                Streams = [ordered] @{
+                        'Normal' = @{ 
+                            Version = $normalReleaseVersion; 
+                            URL32 = $normalReleaseUrl; 
+                            FileType = 'zip';
+                            Title = "WSUS Offline Update Community Edition"
+                            }
+                        'ESR' = @{
+                            Version = $esrReleaseVersion; 
+                            URL32 = $esrReleaseUrl; 
+                            FileType = 'zip';
+                            Title = "WSUS Offline Update Community Edition (ESR)"
+                        }
+                }
+            } #>
+    
     return @{
         URL32        = $normalReleaseUrl
         Version      = $normalReleaseVersion
