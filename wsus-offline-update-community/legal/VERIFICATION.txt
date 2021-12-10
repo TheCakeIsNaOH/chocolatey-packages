@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://download.wsusoffline.net/wsusoffline120.zip
+   x32: https://gitlab.com/wsusoffline/wsusoffline/-/archive/12.6_CommunityEdition/wsusoffline-12.6_CommunityEdition.zip
 
    to download the archive.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 4D6A2EE08864E8F6338D71B2A8627038073DB5FC5C2BE9424E00C50C20A38FB2
+   checksum32: 079273236F7E1F082768261E21D7B0BF99498449F1212219A0D6A5FD6774E49B
    checksumType: sha256
