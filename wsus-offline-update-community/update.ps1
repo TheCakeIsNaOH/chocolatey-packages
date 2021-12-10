@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $releasesData = Invoke-RestMethod -Method Get -UseBasicParsing -Uri "https://gitlab.com/api/v4/projects/19504919/releases"
     
     $normalRelease = $releasesData | Where-Object tag_name -match "\d\d\.\d[\d\.]*_CommunityEdition" | Select-Object -First 1
-    $normalReleaseVersion = $normalRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
+    $normalReleaseVersion = $normalRelease.tag_name -split "_" | Select-Object -First 1
     $normalReleaseUrl = $normalRelease.assets.sources | Where-Object format -eq "zip" | Select-Object -ExpandProperty url
     
     #TODO, add support for ESR stream.
