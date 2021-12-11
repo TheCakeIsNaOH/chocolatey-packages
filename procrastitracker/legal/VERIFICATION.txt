@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/aardappel/procrastitracker/actions/runs/1539403890
+   x32: https://github.com/aardappel/procrastitracker/actions/runs/1565027116
 
    and download the artifact archive that contains the installer.
    
@@ -16,4 +16,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C860CEFC3FF219ECA07CCCAB4DF5347F94C10325D806BAABCE5A2FADB532A6EE
+   checksum32: 3E63E364EBB4CCC34EBD0B51E94060D77B9AA75D3313130D62A7E2B12632385D
