@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-    checksum32: 741BB06A7518DF40CDD83C475A38F08E396744490EE8AD9CEA979FA1DCB3D1F3
+    checksum32: 64FA6734175F3863E1B714949398C593D19F68B40B351255C5AACEE08307FB14
     checksumType32: sha256
