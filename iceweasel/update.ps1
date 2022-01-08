@@ -5,7 +5,7 @@ $releases = 'https://github.com/muslayev/iceweasel-win64/releases'
 function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url64 = $page.links | ? { $_.href -match '.exe$' } | select -expand href -First 1
-    $version = ($url64 -split '/' | select -Last 1 -Skip 1).Replace('v','')
+    $version = (($url64 -split '/' | select -Last 1 -Skip 1).Replace('v','') -Replace 'a','-alpha') -Replace 'b','-beta'
 
     @{
         URL64      = 'https://github.com' + $url64
