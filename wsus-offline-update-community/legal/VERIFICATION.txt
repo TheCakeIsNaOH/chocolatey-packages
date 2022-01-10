@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://gitlab.com/wsusoffline/wsusoffline/uploads/952ad9c04346c003131efd3d2898ac3d/wsusofflineCE126.zip
+   x32: https://gitlab.com/wsusoffline/wsusoffline/uploads/501df1e91594e53e4f0d35add9bb7167/wsusofflineCE1261.zip
 
    to download the archive.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E56DC32D8A8FACDF4B81B2B388628C2A49AC3C0D08124EAA826841B6F852C53C
+   checksum32: 037570FC4A200F77C1AFCD584FF80EDBF58FA90A30D144EB4EC6F733DEEF76C8
    checksumType: sha256
