@@ -7,10 +7,10 @@ Package can be verified like this:
 
 1. Go to
 
-   x32sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2225/pcsx2-v1.7.2225-windows-32bit-SSE4.7z
-   x64sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2225/pcsx2-v1.7.2225-windows-64bit-SSE4.7z
-   x32avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2225/pcsx2-v1.7.2225-windows-32bit-AVX2.7z
-   x64avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2225/pcsx2-v1.7.2225-windows-64bit-AVX2.7z
+   x32sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2232/pcsx2-v1.7.2232-windows-32bit-SSE4.7z
+   x64sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2232/pcsx2-v1.7.2232-windows-64bit-SSE4.7z
+   x32avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2232/pcsx2-v1.7.2232-windows-32bit-AVX2.7z
+   x64avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2232/pcsx2-v1.7.2232-windows-64bit-AVX2.7z
 
    to download the zip.
 
@@ -18,10 +18,10 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32sse4: C24371B70F4E08602F8A43E877B9340170FE7EA94DCE64BF60A36D950402BB3C
-   checksum64sse4: 49720B6572356A28C7D498346AFB5DE8721DD9A1E8529D91570E053F2074E5AF
-   checksum32avx2: 0AC7CF27B71870F5469B4359490858D81BF41E379FC386FA157DF49758D0599D
-   checksum64avx2: 2CCB9609B6A51313B3DADA6028C35A86D47FE0586B96CDE4CF029A2E9E241923
+   checksum32sse4: CC38B0A7D4F5F7D2A6080B3AF71BE07A34CC85B993541FC0CFB8E9B205A96A3E
+   checksum64sse4: 9B096BDB0BAAFF23A94CA0E902C39A403D9D13A3EF6C5308A4B32BF37BF57DC4
+   checksum32avx2: 8FE5B1531DC75AFBFCA1FB3F2902632CE053D0D6D7EE156516EC32C63C6F780A
+   checksum64avx2: ED0A4EE363A32BA7A94DF11D1EB5B83671AEE475B31E32D788D25049DB199C4C
 
 ----------------------------------------------------------------------
 
