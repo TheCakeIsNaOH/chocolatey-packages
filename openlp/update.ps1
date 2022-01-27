@@ -22,8 +22,8 @@ function global:au_GetLatest {
     $versionURL = 'https://get.openlp.org/' + $version + '/'
     
     $versionPage = Invoke-WebRequest -Uri ($versionURL) -UseBasicParsing
-    $url64end    = $versionPage.links | ? href -match "x64.msi" | select -ExpandProperty href
-    $url32end    = $versionPage.links | ? href -match "$version.msi" | select -ExpandProperty href 
+    $url64end    = $versionPage.links | ? href -match "x64.msi$" | select -ExpandProperty href
+    $url32end    = $versionPage.links | ? href -match "$version.msi$" | select -ExpandProperty href 
     $url64       = $versionURL + $url64end 
     $url32       = $versionURL + $url32end
     
