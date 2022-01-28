@@ -1,6 +1,7 @@
 ﻿Import-Module AU
 
 $releases = "https://downloads.apache.org/maven/maven-3/"
+#$releases = "https://archive.apache.org/dist/maven/maven-3/"
 
 function global:au_SearchReplace {
     @{
@@ -38,6 +39,38 @@ function global:au_GetLatest {
 	
 	return @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $version }
 }
+
+
+<#function GetStreams() {
+  param($releaseUrls)
+  $streams = @{ }
+
+  $releaseUrls | % {
+    $actualVersion = $_.trim('/')
+    $version = $actualVersion + "." + (Get-Date -Format "yyyyMMdd")
+    
+    $downloadPageUrl = $releases + $_ + "binaries/"
+    $download_page = Invoke-WebRequest -Uri $downloadPageUrl -UseBasicParsing
+
+    $relURL = $download_page.links | Where-Object href -match "apache-maven-.*\.zip$" | select -first 1 -expand href
+    $url32 = $downloadPageUrl + $relURL
+
+    $streams.$version = @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $actualVersion }
+  }
+
+  Write-Host $streams.Count 'streams collected'
+  $streams
+}
+
+function global:au_GetLatest {
+  $versions_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
+  $re = "\d\.\d\.\d/"
+  $releaseUrls = $versions_page.links | ? href -match $re | select -ExpandProperty href
+  
+
+  @{ Streams = GetStreams $releaseUrls }
+} #>
 
 Update-Package -ChecksumFor none
 
