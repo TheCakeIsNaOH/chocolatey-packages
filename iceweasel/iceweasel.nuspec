@@ -2,7 +2,7 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <version>98.0-alpha1</version>
+    <version>99.0-alpha1</version>
     <id>iceweasel</id>
     <title>Debian IceWeasel</title>
     <description>Unofficial Iceweasel build of Firefox
@@ -15,7 +15,7 @@ let them know the package is no longer updating correctly.</description>
     <authors>GNU Project</authors>
     <tags>foss cross-platform unofficial web browser web-browser freedom privacy fork</tags>
     <projectUrl>https://github.com/muslayev/iceweasel-win64</projectUrl>
-    <releaseNotes>[Firefox ESR](https://www.mozilla.org/en-US/firefox/98.0-alpha1/releasenotes/)</releaseNotes>
+    <releaseNotes>[Firefox ESR](https://www.mozilla.org/en-US/firefox/99.0-alpha1/releasenotes/)</releaseNotes>
     <projectSourceUrl>https://github.com/muslayev/iceweasel-win64</projectSourceUrl>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/iceweasel.png</iconUrl>
