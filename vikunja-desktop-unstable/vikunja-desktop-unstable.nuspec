@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vikunja-desktop-unstable</id>
-    <version>0.16.0-dev-20220216</version>
+    <version>0.16.0-dev-20220217</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Vikunja Desktop (Unstable)</title>
