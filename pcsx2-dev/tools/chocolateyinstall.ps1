@@ -8,10 +8,10 @@ $tempPath              = Join-Path $env:temp 'PCSX2-Dev'
 
 Remove-Item -Recurse -ea 0 -Path $tempPath 
 
-$file32sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2385-windows-32bit-SSE4.7z'
-$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2385-windows-64bit-SSE4.7z'
-$file32avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2385-windows-32bit-AVX2.7z'
-$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2385-windows-64bit-AVX2.7z'
+$file32sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2390-windows-32bit-SSE4.7z'
+$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2390-windows-64bit-SSE4.7z'
+$file32avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2390-windows-32bit-AVX2.7z'
+$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2390-windows-64bit-AVX2.7z'
 
 if ($pp['Path']) {
 	$destination = $pp['Path']
