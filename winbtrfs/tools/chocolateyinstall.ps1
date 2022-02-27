@@ -5,6 +5,7 @@ $driverFile            = Join-Path $toolsDir 'btrfs.cat'
 $outputFile            = Join-Path $toolsDir 'MarkHarmstone.cer'
 $exportType            = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
 $akhscript             = Join-Path $toolsDir 'no-reboot.ahk'
+$pp                    = Get-PackageParameters
 
 Get-ChocolateyUnzip $fileLocation $toolsDir
 
@@ -36,3 +37,7 @@ if (Get-OSArchitectureWidth 64) {
 }
 
 (Get-ChildItem -Recurse -Path $toolsDir -Filter '*.exe').FullName | ForEach-Object { Out-File "$_.ignore" }
+
+if ($pp['automount']) {
+    & mountvol /E
+}
