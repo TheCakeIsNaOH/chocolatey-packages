@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mssqlserver-compact3.5</id>
+    <version>3.5.8080.0</version>
+    <title>SQL Server Compact 3.5 with SP2</title>
+    <authors>Microsoft</authors>
+    <owners>TheCakeIsNaOH, Ritch Melton</owners>
+    <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=5783</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=5783</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/microsoft-sql-server.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Microsoft SQL Server Compact 3.5 is a free, embedded database</summary>
+    <description>SQL Server Compact 3.5 SP2 is an embedded database that allows developers to build robust applications for Windows desktops and mobile devices. The download contains the files for installing SQL Server Compact 3.5 SP2 and Synchronization Services for ADO.NET version 1.0 SP1 on Windows desktop.
+
+SQL Server Compact 3.5 SP2 includes a host of new features including the following:
+
+    -Support for the Transact-SQL Editor in Visual Studio 2010 that can be used to run free-text T-SQL queries and to view query show-plans for optimizing queries.
+    -Exposes the Change Tracking feature as an application programming interface (API), namely, System.Data.SqlServerCe.SqlCeChangeTracking. The new Change Tracking API provides the ability to configure, enable, and disable change tracking on a table, and to access the change tracking data for the table.
+    -New assembly versioning support and directory structure that enables the SQL Server Compact applications that use private deployment to load SQL Server Compact assemblies from within the application folder if they are of a higher version than that in the global assembly cache (GAC).
+    -Support added for deploying the 64-bit version of SQL Server Compact using the ClickOnce deployment.
+    -Synchronization Services for ADO.NET v1.0 providing the ability to synchronize data from disparate sources over two-tier, N-tier, and service-based architectures.
+
+## Package Parameters
+
+The `language` package parameter can be set to install the package with the specified language.  If no language is
+specified the install will default to English.
+
+* `/language=[language-code]` - installs the package using the specified language.  Supported languages are:
+  * br - Brazilian (Portuguese) - `--params '"/language=br"'`
+  * de - German - `--params '"/language=de"'`
+  * en - English - `--params '"/language=en"'`
+  * es - Spanish - `--params '"/language=es"'`
+  * fr - French - `--params '"/language=fr"'`
+  * it - Italian - `--params '"/language=it"'`
+  * ja - Japanese - `--params '"/language=ja"'`
+  * ko - Korean - `--params '"/language=ko"'`
+  * ru - Russian - `--params '"/language=ru"'`
+  * zh - Chinese (Simplified) - `--params '"/language=zh"'`
+  * zh-CN - Chinese (Simplified) - `--params '"/language=zh-CN"'`
+  * zh-TW - Chinese (Tradition) - `--params '"/language=gz-TW"'`
+
+For example: `choco install mssqlserver-compact3.5 --params '"/language=fr"'` to install the French version of the package
+
+## Notes
+
+* This package is manually updated
+* If this package is outdated, please use "Contact Maintainers" to contact the maintainer(s)</description>
+    <tags>sql server compact sql-server mssql mssqlce sqlce microsoft</tags>
+    <copyright>Copyright Microsoft Corporation</copyright>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <bugTrackerUrl>https://feedback.azure.com/forums/908035-sql-server/</bugTrackerUrl>
+    <docsUrl>https://www.microsoft.com/en-us/download/details.aspx?id=17872</docsUrl>
+    <dependencies>
+      <dependency id="DotNet3.5" version="3.5.20160716" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

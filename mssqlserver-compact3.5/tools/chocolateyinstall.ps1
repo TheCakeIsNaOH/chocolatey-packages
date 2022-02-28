@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 if ($env:ChocolateyForceX86 -eq 'true' -and (Get-ProcessorBits 64) -eq 'true') {
