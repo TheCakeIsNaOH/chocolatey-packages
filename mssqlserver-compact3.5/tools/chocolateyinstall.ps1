@@ -84,4 +84,4 @@ if ($architecture -eq 'x64') {
 }
 
 Remove-Item -Path "$toolsDir\*.exe" -Force -EA 0
-Remove-Item -Path "$tempDir" -Force -EA 0
+Remove-Item -Path "$tempDir" -Force -EA 0 -Recurse
