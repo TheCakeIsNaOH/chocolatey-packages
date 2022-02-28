@@ -1,0 +1,78 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installers have been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the software distribution page
+
+  https://www.microsoft.com/en-us/download/details.aspx?id=5783
+
+and retrieve the SSCERuntime files by selecting the relevant language in the
+dropdown followed by the download button and file selection.
+
+2. The archives can be validated by comparing checksums
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime-CHS.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime-CHS.exe
+
+  File:     SSCERuntime-CHS.exe
+  Type:     sha256
+  Checksum: 126199C4226EC240F52413D44583A5A66F8314B530F3961388A06AD4293D7FE1
+
+
+  File:     SSCERuntime-CHT.exe
+  Type:     sha256
+  Checksum: 55C33E09C925F6C9CF6A6EAEF5D417CF085D2FBD4ECA3D8EDF074B246019624F
+
+
+  File:     SSCERuntime-DEU.exe
+  Type:     sha256
+  Checksum: 97026DB2581A6ECD2BF3B8BC3C87B227BDD527FEA857426632F23D4D5CAAE71A
+
+
+  File:     SSCERuntime-ENU.exe
+  Type:     sha256
+  Checksum: 2B15E1FAB3533E9C3807184B741A24B4A66C24664432BF6B6177FEFBD1BCE6E3
+
+
+  File:     SSCERuntime-ESN.exe
+  Type:     sha256
+  Checksum: 1697F3C6F1B2B3FA4A8E69843731676A9048C4CF9EAEEAB225CD3289BBDB40F1
+
+
+  File:     SSCERuntime-FRA.exe
+  Type:     sha256
+  Checksum: DAF8D974D348318EDDA39E8DA3576493452A0A78619AB4896A238A354A6F9AEE
+
+
+  File:     SSCERuntime-ITA.exe
+  Type:     sha256
+  Checksum: F69B75184BED21F75001118B4B0EFB81485B1A1CB58D60C763775B0385C8EC67
+
+
+  File:     SSCERuntime-JPN.exe
+  Type:     sha256
+  Checksum: 1D62B50433CD23AD4B111A881837DC7D169FCBC03D9737197E17266229716EAB
+
+
+  File:     SSCERuntime-KOR.exe
+  Type:     sha256
+  Checksum: 5662EE56374DCE324A2718F523FC1FD88C3BEE0125A912EFF4AEA4990C45ACAD
+
+
+  File:     SSCERuntime-PTB.exe
+  Type:     sha256
+  Checksum: 175D771D2D57FA1A51BC7FEF40ACED8AF64F1D40CC4D16EAFC4386D61ABF0956
+
+
+  File:     SSCERuntime-RUS.exe
+  Type:     sha256
+  Checksum: DE02FA0EBA8F854AAB2970AFE8209B773C7C5D134D46E2B0ACBE3FF2B04C4828
+
+  
+Contents of file LICENSE.txt is obtained from the software distribution page
+under the Additional Information section and the software post installation in the files
+EULA_ENU.rtf and REDIST_ENU.txt.
