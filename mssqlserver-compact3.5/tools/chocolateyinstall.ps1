@@ -64,7 +64,7 @@ Start-Process "$fileName" -ArgumentList "/T:`"$tempDir`" /q" -Wait
 $packageArgs32 = @{
   PackageName    = "$($env:ChocolateyPackageName)-x32"
   FileType       = 'msi'
-  File           = "{0}\SSCERuntime_x32-{1}.msi" -f $tempDir, $mapping
+  File           = "{0}\SSCERuntime_x86-{1}.msi" -f $tempDir, $mapping
   SilentArgs     = '/quiet /qn /norestart'
   ValidExitCodes = @(0, 1641, 3010)
 }
