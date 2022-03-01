@@ -27,6 +27,7 @@ The following package parameters can be set:
  * `/KeepUpdateCheck` - Do not disable automatic updates
  * `/NoStart` - Do not add a start menu entry
  * `/NoShell` - Do not install the shell extension
+ * `/NoRelaunch` - Do not restart the client after the upgrade is installed
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.

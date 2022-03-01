@@ -2,6 +2,12 @@
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $pp                    = Get-PackageParameters
 $silentArgs            = "/qn /norestart REBOOT=ReallySuppress /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+$processInfo           = Get-Process -Name "nextcloud" -EA 0
+$clientStarted         = $null -ne $processInfo
+
+if ($clientStarted) {
+    $clientPath = $processInfo.path
+}
 
 if (!($pp['icon'])) {
     $silentArgs += 'NO_DESKTOP_SHORTCUT="1" '
@@ -30,5 +36,9 @@ $packageArgs = @{
 }
 
 Install-ChocolateyInstallPackage @packageArgs
+
+if ($clientStarted -and (!($pp['norelaunch']))) {
+    & $clientPath
+}
 
 Remove-Item -Force -EA 0 -Path $toolsDir\*.msi
