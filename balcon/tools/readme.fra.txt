@@ -1,12 +1,12 @@
-Balabolka (application console), version 1.78
-Copyright (c) 2013-2021 Ilya Morozov
+Balabolka (application console), version 1.79
+Copyright (c) 2013-2022 Ilya Morozov
 All Rights Reserved
 
 WWW : http://balabolka.site/fr/bconsole.htm
 E-mail : crossa@list.ru
 
 Licence : Freeware
-Système d'exploitation : Microsoft Windows XP/Vista/7/8/10
+Système d'exploitation : Microsoft Windows XP/Vista/7/8/10/11
 Microsoft Speech API: v4.0/5.0 and above
 Microsoft Speech Platform: v11.0
 
@@ -29,7 +29,7 @@ balcon [options ...]
    Spécifie le nom du fichier texte d'entrée. La ligne de commande peut contenir quelques options [-f].
 
 -fl <nom_de_fichier>
-   Sets the name of the text file with the list of input files (one file name per line). La ligne de commande peut contenir quelques options [-fl].
+   Ouvrir le fichier avec la liste des fichiers texte (un nom de fichier par ligne). La ligne de commande peut contenir quelques options [-fl].
 
 -w <nom_de_fichier>
    Spécifie le nom du fichier de sortie au format WAV. Si l'option est spécifiée, un fichier audio sera créé. Dans le cas contraire, le texte sera lu à haute voix.
@@ -95,7 +95,7 @@ balcon [options ...]
    Désactiver la copie de l'application console en cours d'exécution.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Mettre sur pause ou reprendre la lecture à voix haute par la copie de l’application en cours pour la console. L’action est la même que pour sélectionner un élément de menu "Pause"/"Reprendre".
 
 -q
    Met l'application dans une file d'attente. L'application console va attendre que les autres copies du programme terminent leur opération.
@@ -110,10 +110,10 @@ balcon [options ...]
 
 -vs <nom_de_fichier>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : sets the name of output text file with visemes, if the option [-w] is specified.
-   A viseme is the mouth shape that corresponds to a particular speech sound. SAPI supports the list of 21 visemes.
-   This list is based on the original Disney visemes. The application will create the audio file and then read it aloud to get visemes and their timecodes.
-   The list of visemes supported by SAPI 5: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
+   SAPI 5 et Microsoft Speech Platform : créer un fichier texte avec des visèmes, si le paramètre [-w] est donné.
+   Un visème est la forme de la bouche qui correspond à un son de parole particulier. SAPI supporte la liste de 21 visèmes.
+   Cette liste est basée sur les visèmes originaux de Disney. L’application console créera un fichier audio, puis le lira à haute voix pour obtenir des visèmes et leurs codes temporels.
+   La liste des visèmes supportés par SAPI 5 : https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
 
 -sub
    Le texte constitue des sous-titres et doit être converti en fichier audio, compte tenu des pauses spécifiées. Le paramètre peut être utile lorsque les options [-i] ou [-c] sont spécifiées en ligne de commande.
@@ -129,20 +129,20 @@ balcon [options ...]
 
 -fr <nombre_intégral>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : sets the output audio sampling frequency in kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 et Microsoft Speech Platform : sélectionner la fréquence d’échantillonnage audio de sortie en kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
+   Si le paramètre n’est pas spécifié, la valeur par défaut de la voix sélectionnée sera utilisée.
 
 -bt <nombre_intégral>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : sets the output audio bit depth (8 ou 16).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 et Microsoft Speech Platform : définir la profondeur de bits audio de sortie (8 ou 16).
+   Si le paramètre n’est pas spécifié, la valeur par défaut de la voix sélectionnée sera utilisée.
 
 -ch <nombre_intégral>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : sets the output audio channel mode (1 ou 2).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 et Microsoft Speech Platform : définir le mode du canal audio de sortie (1 ou 2).
+   Si le paramètre n’est pas spécifié, la valeur par défaut de la voix sélectionnée sera utilisée.
 
--? ou -h
+-h
    Affiche la liste des options de ligne de commande.
 
 --encoding <encodage> ou -enc <encodage>
@@ -182,10 +182,10 @@ balcon [options ...]
    Spécifie une balise ID pour le fichier LRC : créateur du fichier LRC.
 
 --lrc-sent
-   Inserts blank lines after sentences in the LRC file.
+   Insérer des lignes vides après les phrases dans le fichier LRC.
 
 --lrc-para
-   Inserts blank lines after paragraphs in the LRC file.
+   Insérer des lignes vides après les alinéas dans le fichier LRC.
 
 --srt-length <nombre_intégral>
    Spécifie la longueur maximale des lignes de texte pour le fichier SRT (en caractères).
@@ -236,7 +236,7 @@ balcon [options ...]
    Ignore URLs.
 
 --ignore-comments ou -ic
-   Ignore comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
+   Ignorer les commentaires dans le texte. Les commentaires sur une seule ligne commencent par // et se poursuivent jusqu’à la fin de la ligne. Les commentaires multilignes commencent par /* et se terminent par */.
 
 --voice1-name <nom_de_voix>
    SAPI 4 : l’option n’est pas utilisée.

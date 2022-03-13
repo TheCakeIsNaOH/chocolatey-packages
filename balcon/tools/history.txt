@@ -1,9 +1,13 @@
 Balabolka (Command Line Utility)
-Copyright (c) 2013-2021 Ilya Morozov
+Copyright (c) 2013-2022 Ilya Morozov
 All Rights Reserved
 
 
 *** History ***
+
+2022-03-12     v1.79
+[-] Fixed small bugs.
+
 
 2021-05-25     v1.78
 [-] Fixed the using of external audio files (audio clips).

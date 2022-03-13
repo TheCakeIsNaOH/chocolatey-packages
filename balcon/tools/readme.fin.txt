@@ -1,12 +1,12 @@
-Balabolka (komentorivisovellus), versio 1.78
-Copyright (c) 2013-2021 Ilya Morozov
+Balabolka (komentorivisovellus), versio 1.79
+Copyright (c) 2013-2022 Ilya Morozov
 All Rights Reserved
 
 WWW: http://balabolka.site/fi/bconsole.htm
 E-mail: crossa@list.ru
 
 Lisenssi: Freeware
-Käyttöjärestelmä: Microsoft Windows XP/Vista/7/8/10
+Käyttöjärestelmä: Microsoft Windows XP/Vista/7/8/10/11
 Microsoft Speech API: v4.0/5.0
 Microsoft Speech Platform: v11.0
 
@@ -141,7 +141,7 @@ balcon [options ...]
    SAPI 5 ja Microsoft Speech Platform: sets the output audio channel mode (1 tai 2).
    If the option is not specified, the default value of the selected voice will be used.
 
--? tai -h
+-h
    Näytä kaikki mahdolliset parametrit.
 
 --encoding <merkistö> tai –enc <merkistö>

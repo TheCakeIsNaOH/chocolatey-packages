@@ -1,12 +1,12 @@
-Balabolka (Command Line Utility), version 1.78
-Copyright (c) 2013-2021 Ilya Morozov
+Balabolka (Command Line Utility), version 1.79
+Copyright (c) 2013-2022 Ilya Morozov
 All Rights Reserved
 
 WWW: http://balabolka.site/bconsole.htm
 E-mail: crossa@list.ru
 
 Licence: Freeware
-Operating System: Microsoft Windows XP/Vista/7/8/10
+Operating System: Microsoft Windows XP/Vista/7/8/10/11
 Microsoft Speech API: v4.0/5.0 and above
 Microsoft Speech Platform: v11.0
 
@@ -140,7 +140,7 @@ balcon [options ...]
    SAPI 5 and Microsoft Speech Platform: sets the output audio channel mode (1 or 2).
    If the option is not specified, the default value for the selected voice will be used.
 
--? or -h
+-h
    Prints the list of available command line options.
 
 --encoding <encoding> or -enc <encoding>
@@ -209,7 +209,7 @@ balcon [options ...]
 
 --sub-fit or -sf
    SAPI 4: not used.
-   SAPI 5 and Microsoft Speech Platform: automatically increases the speed to fit time intervals (when the program converts subtitles to audio file).
+   SAPI 5 and Microsoft Speech Platform: automatically increases the speech rate to fit time intervals (when the program converts subtitles to audio file).
 
 --sub-max <integer> or -sm <integer>
    SAPI 4: not used.

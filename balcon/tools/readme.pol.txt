@@ -1,12 +1,12 @@
-Balabolka (aplikacja konsolowa), wersja 1.78
-Copyright (c) 2013-2021 Ilya Morozov
+Balabolka (aplikacja konsolowa), wersja 1.79
+Copyright (c) 2013-2022 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
 WWW: http://balabolka.site/pl/bconsole.htm
 E-mail: crossa@list.ru
 
 Licenzja: Freeware
-System operacyjny: Microsoft Windows XP/Vista/7/8/10
+System operacyjny: Microsoft Windows XP/Vista/7/8/10/11
 Microsoft Speech API: 4.0/5.0
 Microsoft Speech Platform: 11.0
 
@@ -141,7 +141,7 @@ balcon [parametry ...]
    SAPI 5 i Microsoft Speech Platform: sets the output audio channel mode (1 lub 2).
    If the option is not specified, the default value of the selected voice will be used.
 
--? lub -h
+-h
    Pokazaæ opis parametrów wiersza poleceñ.
 
 --encoding <kodowanie> lub -enc <kodowanie>
