@@ -8,10 +8,12 @@ $tempPath              = Join-Path $env:temp 'PCSX2-Dev'
 
 Remove-Item -Recurse -ea 0 -Path $tempPath 
 
-$file32sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2484-windows-32bit-SSE4.7z'
-$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2484-windows-64bit-SSE4.7z'
-$file32avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2484-windows-32bit-AVX2.7z'
-$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2484-windows-64bit-AVX2.7z'
+if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) {
+    Throw "32-bit builds have been dropped. Install version 1.7.2484-dev or older for a 32 bit build"
+}
+
+$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2503-windows-64bit-SSE4.7z'
+$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2503-windows-64bit-AVX2.7z'
 
 if ($pp['Path']) {
 	$destination = $pp['Path']
@@ -24,29 +26,16 @@ if ($pp['Path']) {
 
 if ($pp['UseAvx2']) {
     Write-Output "Installing AVX2 build. If you have issues, you may want to switch back to the SSE4 build."
-    $file32 = $file32avx2
     $file64 = $file64avx2
-    
-    if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
-        $exePath = Join-Path "$destination" "pcsx2-avx2.exe"
-    } else {
-        $exePath = Join-Path "$destination" "pcsx2x64-avx2.exe"
-    }
+    $exePath = Join-Path "$destination" "pcsx2x64-avx2.exe"
 } else {
     Write-Output "Installing SSE4 build. To switch to the AVX2 build, use the 'UseAVX2' parameter"
-    $file32 = $file32sse4
     $file64 = $file64sse4
-    
-    if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) { 
-        $exePath = Join-Path "$destination" "pcsx2.exe"
-    } else {
-        $exePath = Join-Path "$destination" "pcsx2x64.exe"
-    }
+    $exePath = Join-Path "$destination" "pcsx2x64.exe"
 }
 
 $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
-  FileFullPath    = $file32
   FileFullPath64  = $file64
   Destination     = "$tempPath"
 }
