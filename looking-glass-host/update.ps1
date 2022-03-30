@@ -6,11 +6,12 @@ function global:au_GetLatest {
     $beta_url = 'https://looking-glass.io' + ($downloads_page.links | Where-Object href -match "/artifact/B\d/host" | Select-Object -First 1 -ExpandProperty href)
     $beta_version = "0.0.0.0-" + ($beta_url -split '/' | Select-Object -Last 1 -Skip 1) + "Final"
     
-    $beta_rc_url = 'https://looking-glass.io' + ($downloads_page.links | Where-Object href -match "/artifact/B\d-RC\d/host" | Select-Object -First 1 -ExpandProperty href)
+    $beta_rc_url = 'https://looking-glass.io' + ($downloads_page.links | Where-Object href -match "/artifact/B[\d\.]+-RC\d/host" | Select-Object -First 1 -ExpandProperty href)
     $beta_rc_version = "0.0.0.0-" + ($beta_rc_url -split '/' | Select-Object -Last 1 -Skip 1)
     
     $bleeding_edge_url = 'https://looking-glass.io' + ($downloads_page.links | Where-Object href -match "/artifact/B\d-[rc\-\w]{2,7}-\w{8}/host" | Select-Object -First 1 -ExpandProperty href)
     $bleeding_edge_version = "0.0.0.0-" + ($bleeding_edge_url -split '/' | Select-Object -Last 1 -Skip 1)
+    if ($bleeding_edge_version -like "*-rc*") { $bleeding_edge_version = $bleeding_edge_version -replace "-rc", "" }
     
     return @{   
                 Streams = [ordered] @{
