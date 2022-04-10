@@ -14,7 +14,6 @@
     <licenseUrl>https://github.com/yt-dlp/yt-dlp/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/yt-dlp/yt-dlp</projectSourceUrl>
-    <docsUrl>https://github.com/yt-dlp/yt-dlp/tree/master/docs</docsUrl>
     <mailingListUrl>https://discord.gg/H5MNcFW63r</mailingListUrl>
     <bugTrackerUrl>https://github.com/yt-dlp/yt-dlp/issues</bugTrackerUrl>
     <tags>yt-dlp youtube-dl youtube downloader video-downloader sponsorblock</tags>

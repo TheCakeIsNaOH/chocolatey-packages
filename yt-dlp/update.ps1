@@ -21,8 +21,8 @@ function global:au_BeforeUpdate() {
     $x64Dir = Join-Path $toolsDir 'x64'
     $x86Dir = Join-Path $toolsDir 'x86'
     
-    New-Item -ItemType Directory -Path $x64Dir | Out-Null
-    New-Item -ItemType Directory -Path $x86Dir | Out-Null
+    New-Item -ItemType Directory -Path $x64Dir -EA 0 | Out-Null
+    New-Item -ItemType Directory -Path $x86Dir -EA 0 | Out-Null
     
 	Get-RemoteFiles -Purge -NoSuffix
 
