@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x64sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2648/pcsx2-v1.7.2648-windows-64bit-SSE4.7z
-   x64avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2648/pcsx2-v1.7.2648-windows-64bit-AVX2.7z
+   x64sse4: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2651/pcsx2-v1.7.2651-windows-64bit-SSE4.7z
+   x64avx2: https://github.com/PCSX2/pcsx2/releases/download/v1.7.2651/pcsx2-v1.7.2651-windows-64bit-AVX2.7z
 
    to download the zip.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64sse4: 9EB323F9E6A50BCABE6E7277D2EE5FDDD17AA9E5A2FE6D20883E6D4FC25DFC4B
-   checksum64avx2: 54A8A9E21D37D2F3912E100EC1C5B8F8F4D5B17BCA49577004C213DC672BCAC1
+   checksum64sse4: 2599B44D440D714B3562C397CCEE714612C845E37404CC98832D5B29379EEAFB
+   checksum64avx2: B01502490837FBB7D853B46ECB6126A2342BBB2E43A4F3522762D405CE2B3058
 
 ----------------------------------------------------------------------
 
