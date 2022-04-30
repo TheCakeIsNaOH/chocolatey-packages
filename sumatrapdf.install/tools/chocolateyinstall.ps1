@@ -17,6 +17,14 @@ if ($pp['WithPreview']) {
     $args = $args + ' -with-preview '
 }
 
+if ($pp['UserLevelInstall']) {
+    Write-Host -ForegroundColor Cyan "Installing SumatraPDF for your user only"
+} else {
+    Write-Host -ForegroundColor Cyan "Installing SumatraPDF system wide for all users"
+    Write-Host -ForegroundColor Cyan 'To revert back to a single user install, use --package-parameters=''"/UserLevelInstall"'''
+    $args = $args + ' -all-users '
+}
+
 if ($pp['Path']) {
 	$path = $pp['Path']
     if (!(Test-Path $path -IsValid)) {
