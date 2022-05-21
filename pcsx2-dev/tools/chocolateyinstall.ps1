@@ -12,8 +12,8 @@ if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true
     Throw "32-bit builds have been dropped. Install version 1.7.2484-dev or older for a 32 bit build"
 }
 
-$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2757-windows-64bit-SSE4.7z'
-$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2757-windows-64bit-AVX2.7z'
+$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2758-windows-64bit-SSE4.7z'
+$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2758-windows-64bit-AVX2.7z'
 
 if ($pp['Path']) {
 	$destination = $pp['Path']
