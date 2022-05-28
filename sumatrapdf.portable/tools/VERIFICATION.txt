@@ -1,6 +1,6 @@
 1. Download binary zips from:
-	x32: https://www.sumatrapdfreader.org/dl/rel/3.4.1/SumatraPDF-3.4.1.zip
-	x64: https://www.sumatrapdfreader.org/dl/rel/3.4.1/SumatraPDF-3.4.1-64.zip
+	x32: https://www.sumatrapdfreader.org/dl/rel/3.4.2/SumatraPDF-3.4.2.zip
+	x64: https://www.sumatrapdfreader.org/dl/rel/3.4.2/SumatraPDF-3.4.2-64.zip
 	
 2. Extract the zip files to get executables
 
