@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk</id>
-    <version>7.0.9</version>
+    <version>7.0.10</version>
     <title>AnyDesk Exe (Portable or Install)</title>
     <authors>AnyDesk Software GmbH</authors>
     <copyright>2021 AnyDesk GmbH</copyright>
@@ -27,7 +27,7 @@ let them know the package is no longer updating correctly.</description>
     <docsUrl>https://support.anydesk.com/knowledge</docsUrl>
     <bugTrackerUrl>https://anydesk.com/en/contact/support</bugTrackerUrl>
     <dependencies>
-      <dependency id="anydesk.portable" version="7.0.9" />
+      <dependency id="anydesk.portable" version="7.0.10" />
     </dependencies>
   </metadata>
   <files>
