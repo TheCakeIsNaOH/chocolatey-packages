@@ -12,8 +12,11 @@ if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true
     Throw "32-bit builds have been dropped. Install version 1.7.2484-dev or older for a 32 bit build"
 }
 
-$file64sse4 = Join-Path $toolsDir 'pcsx2-v1.7.2758-windows-64bit-SSE4.7z'
-$file64avx2 = Join-Path $toolsDir 'pcsx2-v1.7.2758-windows-64bit-AVX2.7z'
+$SSE4_Qt = Join-Path $toolsDir 'pcsx2-v1.7.2893-windows-64bit-SSE4-Qt.7z'
+$SSE4_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.2893-windows-64bit-SSE4-wxWidgets.7z'
+$AVX2_Qt = Join-Path $toolsDir 'pcsx2-v1.7.2893-windows-64bit-AVX2-Qt.7z'
+$AVX2_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.2893-windows-64bit-AVX2-wxWidgets.7z'
+
 
 if ($pp['Path']) {
 	$destination = $pp['Path']
@@ -24,13 +27,21 @@ if ($pp['Path']) {
 	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
 }
 
-if ($pp['UseAvx2']) {
-    Write-Output "Installing AVX2 build. If you have issues, you may want to switch back to the SSE4 build."
-    $file64 = $file64avx2
+if ($pp['UseAvx2'] -and $pp['UseQt']) {
+    Write-Output "Installing AVX2 QT build. See package description for how to switch which build is installed"
+    $file64 = $AVX2_Qt
+    $exePath = Join-Path "$destination" "pcsx2-qtx64-avx2.exe"
+} elseif ($pp['UseAvx2']) {
+    Write-Output "Installing AVX wxWidgets build. See package description for how to switch which build is installed"
+    $file64 = $AVX2_wxWidgets
     $exePath = Join-Path "$destination" "pcsx2x64-avx2.exe"
+} elseif ($pp['UseQT']) {
+    Write-Output "Installing SSE4 QT build. See package description for how to switch which build is installed"
+    $file64 = $SSE4_Qt
+    $exePath = Join-Path "$destination" "pcsx2-qtx64.exe"
 } else {
-    Write-Output "Installing SSE4 build. To switch to the AVX2 build, use the 'UseAVX2' parameter"
-    $file64 = $file64sse4
+    Write-Output "Installing SSE4 wxWidgets build. See package description for how to switch which build is installed"
+    $file64 = $SSE4_wxWidgets
     $exePath = Join-Path "$destination" "pcsx2x64.exe"
 }
 

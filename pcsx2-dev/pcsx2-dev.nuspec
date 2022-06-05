@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pcsx2-dev</id>
-    <version>1.7.2758-dev</version>
+    <version>1.7.2893-dev</version>
     <title>PCSX2 Emulator (Dev)</title>
     <authors>arcum42,avih,gregory,pseudonym,rama,Refraction</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3</licenseUrl>
-    <copyright>2021 PCSX2 Team</copyright>
+    <copyright>2022 PCSX2 Team</copyright>
     <projectUrl>http://pcsx2.net/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/pcsx2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,8 @@ The following package parameters can be set:
  * `/Desktop` - Add a desktop shortcut
  * `/Nostart` - Do not add a start menu shortcut
  * `/Path:C:\path\to\install` - Custom path to put files in
- * `/UseAVX2` - Use build with AVX2 support instead of the build with SSE4 support.
+ * `/UseAVX2` - Use build with AVX2 support instead of a build with SSE4 support.
+ * `/UseQt` - Use build with a QT GUI instead of a build with a wxWidgets GUI.
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
