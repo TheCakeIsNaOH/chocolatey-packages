@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sumatrapdf</id>
-    <version>3.4.4</version>
+    <version>3.4.5</version>
     <title>Sumatra PDF (Install)</title>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>TheCakeIsNaOH</owners>
@@ -29,7 +29,7 @@ let them know the package is no longer updating correctly.</description>
     <docsUrl>https://www.sumatrapdfreader.org/manual.html</docsUrl>
     <bugTrackerUrl>https://github.com/sumatrapdfreader/sumatrapdf/wiki/Submitting-bug-reports</bugTrackerUrl>
     <dependencies>
-      <dependency id="sumatrapdf.install" version="3.4.4" />
+      <dependency id="sumatrapdf.install" version="3.4.5" />
     </dependencies>
   </metadata>
 </package>

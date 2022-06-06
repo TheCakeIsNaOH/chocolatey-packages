@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sumatrapdf.portable</id>
-    <version>3.4.4</version>
+    <version>3.4.5</version>
     <title>Sumatra PDF (Portable)</title>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>TheCakeIsNaOH</owners>
