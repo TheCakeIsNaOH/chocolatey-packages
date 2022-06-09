@@ -36,8 +36,8 @@ if ($pp['Path']) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = Join-Path $toolsDir 'SumatraPDF-3.4.5-install_x32.exe'
-  file64        = Join-Path $toolsDir 'SumatraPDF-3.4.5-64-install_x64.exe'
+  file          = Join-Path $toolsDir 'SumatraPDF-3.4.6-install_x32.exe'
+  file64        = Join-Path $toolsDir 'SumatraPDF-3.4.6-64-install_x64.exe'
   silentArgs    = $args
   validExitCodes= @(0)
 }
