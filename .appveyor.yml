@@ -29,7 +29,7 @@ environment:
   # Mail credentials - for error notifications
   mail_user: thecakeisnaoh@gmail.com 
   mail_pass:
-    secure: HaXA69vOmTKBeAfRtBUgBw==
+    secure: K5LGex/MH0MUybHVRE0sF7a0/DrtHER3vsCorVXuW3A=
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
