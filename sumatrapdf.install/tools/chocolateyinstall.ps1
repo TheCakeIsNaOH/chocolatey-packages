@@ -4,11 +4,6 @@ $pp                    = Get-PackageParameters
 $shortcutName          = 'SumatraPDF.lnk'
 $args                  = '/S '
 
-# Test to avoid error in cases where DesktopDirectory is null (choco.exe running as SYSTEM, etc)
-if (![string]::IsNullOrWhiteSpace([System.Environment]::GetFolderPath('Desktop'))) {
-	$shortcut              = Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName
-}
-
 if ($pp['WithFilter']) {
     $args = $args + ' -with-filter '
 }
@@ -18,8 +13,18 @@ if ($pp['WithPreview']) {
 }
 
 if ($pp['UserLevelInstall']) {
+    # Test to avoid error in cases where DesktopDirectory is null (choco.exe running as SYSTEM, etc)
+    if (![string]::IsNullOrWhiteSpace([System.Environment]::GetFolderPath('Desktop'))) {
+        $shortcut = Join-Path ([System.Environment]::GetFolderPath('Desktop')) $shortcutName
+    }
+    
     Write-Host -ForegroundColor Cyan "Installing SumatraPDF for your user only"
 } else {
+    # Test to avoid error in cases where DesktopDirectory is null (choco.exe running as SYSTEM, etc)
+    if (![string]::IsNullOrWhiteSpace([System.Environment]::GetFolderPath('CommonDesktop'))) {
+        $shortcut = Join-Path ([System.Environment]::GetFolderPath('CommonDesktop')) $shortcutName
+    }
+    
     Write-Host -ForegroundColor Cyan "Installing SumatraPDF system wide for all users"
     Write-Host -ForegroundColor Cyan 'To revert back to a single user install, use --package-parameters=''"/UserLevelInstall"'''
     $args = $args + ' -all-users '
