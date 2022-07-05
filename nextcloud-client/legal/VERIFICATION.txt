@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/nextcloud/desktop/releases/download/v3.5.1/Nextcloud-3.5.1-x86.msi
-   x64: https://github.com/nextcloud/desktop/releases/download/v3.5.1/Nextcloud-3.5.1-x64.msi
+   x32: https://github.com/nextcloud/desktop/releases/download/v3.5.2/Nextcloud-3.5.2-x86.msi
+   x64: https://github.com/nextcloud/desktop/releases/download/v3.5.2/Nextcloud-3.5.2-x64.msi
 
    to download the installer.
 
@@ -16,6 +16,6 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: ACBE7048E9BF0CAA926053A59E4429C6FD5B9FD2E61A7C38E8087B6F7BE94E0A
-   checksum64: 1BBAD75122624DC052C7779565D85365E4C72D8A1F6B206514D656742FD90DEB
+   checksum32: 953A721A1807A2A24DE6468E01BF9CD992CABAB3EBAF3F6FA2D29675F9068915
+   checksum64: 4073E747EEACB5B48E9649ED8F86B29C0635FC583E9C637E280D5EEC7EDD9566
    checksumType: sha256
