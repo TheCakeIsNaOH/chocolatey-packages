@@ -18,10 +18,10 @@ if (!$pp['desktopicon']) {
 $packageArgs = @{
     packageName    = 'reflect-free'
     fileType       = 'exe'
-    url            = 'https://download.macrium.com/reflect/v8/v8.0.6758/reflect_setup_free_x86.exe'
-    url64          = 'https://download.macrium.com/reflect/v8/v8.0.6758/reflect_setup_free_x64.exe'
-    checksum       = '7c6390ffd4ff1f358517130785119670d1d30cd9136466f676a6a5a00856107b'
-    checksum64     = '2ee0db4a300f759ddc5e32a756ea3aa9f0fe239c8c4a66999583eeccca72ac54'
+    url            = 'https://download.macrium.com/reflect/v8/v8.0.6867/reflect_setup_free_x86.exe'
+    url64          = 'https://download.macrium.com/reflect/v8/v8.0.6867/reflect_setup_free_x64.exe'
+    checksum       = 'cb2627bedcd81cc7ae18cefa7d867f30c5c15c1b67fae458a3b6d0fed503c377'
+    checksum64     = 'c140f0696b7d8ff929bf4b5dfcd262542f7b9f36877dbe13c3e4766366b3c13b'
     checksumtype   = 'sha256'
     validExitCodes = @(0)
     silentArgs     = $silentArgs
