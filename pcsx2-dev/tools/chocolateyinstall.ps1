@@ -12,10 +12,10 @@ if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true
     Throw "32-bit builds have been dropped. Install version 1.7.2484-dev or older for a 32 bit build"
 }
 
-$SSE4_Qt = Join-Path $toolsDir 'pcsx2-v1.7.3055-windows-64bit-SSE4-Qt.7z'
-$SSE4_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.3055-windows-64bit-SSE4-wxWidgets.7z'
-$AVX2_Qt = Join-Path $toolsDir 'pcsx2-v1.7.3055-windows-64bit-AVX2-Qt.7z'
-$AVX2_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.3055-windows-64bit-AVX2-wxWidgets.7z'
+$SSE4_Qt = Join-Path $toolsDir 'pcsx2-v1.7.3058-windows-64bit-SSE4-Qt.7z'
+$SSE4_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.3058-windows-64bit-SSE4-wxWidgets.7z'
+$AVX2_Qt = Join-Path $toolsDir 'pcsx2-v1.7.3058-windows-64bit-AVX2-Qt.7z'
+$AVX2_wxWidgets = Join-Path $toolsDir 'pcsx2-v1.7.3058-windows-64bit-AVX2-wxWidgets.7z'
 
 
 if ($pp['Path']) {
