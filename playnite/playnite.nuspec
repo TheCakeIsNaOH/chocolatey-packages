@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>playnite</id>
+    <version>9.19</version>
+    <releaseNotes>https://playnite.link/forum/forum-11.html</releaseNotes>
+    <title>Playnite</title>
+    <authors>Josef Numec</authors>
+    <owners>TheCakeIsNaOH, Hyp5r</owners>
+    <projectUrl>https://playnite.link</projectUrl>
+    <licenseUrl>https://github.com/JosefNemec/Playnite/blob/master/LICENSE.md</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/36cdec772744c373abeaf3e791fca7a60742d69d/Icons/playnite.png</iconUrl>
+    <projectSourceUrl>https://github.com/JosefNemec/Playnite</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
+    <tags>playnite game management launcher steam gog uplay emulator battlenet origin</tags>
+    <summary>Open source video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Origin, Battle.net and Uplay. Including game emulation support, providing one unified interface for your games.</summary>
+    <description>**Playnite** is open source video game library manager with one simple goal: Provide unified interface for all your games.
+
+#### Import popular libraries
+Link games from Steam, Origin, GOG, Battle.net and Uplay services, including games that are not installed! Windows Store (UWP) games are also supported.
+
+#### Emulation support
+Playnite supports wide variety of console emulators.
+
+#### Themes
+Playnite's look can be fully customized, from simple color changes to complete layout re-designs.
+
+#### Extensions
+Playnite can be extended with plugins (written in .NET languages) or by scripts (PowerShell and IronPython are currently supported).
+
+#### Fullscreen mode
+Fullscreen mode with full controller support is available.
+
+#### Playtime counter
+Playnite counts time of your game sessions (any game including emulated ones) and can also import your play times from Steam and GOG.
+
+#### Fast
+Playnites user interface is fast and light on resources, even with large libraries.
+
+#### Portable
+Playnite can run from any portable storage with option to configure database location for automatic sync via services like DropBox or Google Drive.
+
+#### Completely Free
+No Playnite features are locked behind paywall and complete source code is available under MIT license.
+
+#### Safe
+Playnite doesn't store any user information. It stores the same amount of information like web browser when linking accounts (cookies).
+
+#### igdb.com integration
+Playnite can automatically download metadata for your custom games (covers, descriptions and other information).
+    </description>
+    <dependencies>
+        <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\tools\*" target="tools" />
+    <file src=".\legal\*" target="legal" />
+  </files>
+</package>
