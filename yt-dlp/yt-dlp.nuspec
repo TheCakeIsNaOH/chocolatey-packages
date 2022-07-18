@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>yt-dlp</id>
-    <version>2022.06.29</version>
+    <version>2022.07.18</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>YT-DLP</title>
