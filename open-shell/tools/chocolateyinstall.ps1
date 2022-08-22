@@ -20,7 +20,7 @@ if ($pp['StartMenu'] -or $pp['ClassicExplorer'] -or $pp['ClassicIE']) {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  file           = Join-Path $toolsDir 'OpenShellSetup_4_4_170.exe'
+  file           = Join-Path $toolsDir 'OpenShellSetup_4_4_175.exe'
   softwareName   = 'Open-Shell*'
   silentArgs     = $silentArgs
   validExitCodes = @(0)
