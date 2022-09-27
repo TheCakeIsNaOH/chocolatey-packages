@@ -1,5 +1,6 @@
 Import-Module AU
 Import-Module Wormies-AU-Helpers
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 function global:au_SearchReplace {
     @{
@@ -46,7 +47,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri 'https://github.com/PCSX2/pcsx2/releases' -UseBasicParsing
+	$download_page = Get-GitHubLatestReleaseLinks -User "PCSX2" -Repository "pcsx2"
     
     $regex_avx2_qt = "pcsx2-v[\d\.]*-windows-64bit-AVX2-Qt.7z"
     $url_avx2_qt   = 'https://github.com' + ($download_page.links | ? href -match $regex_avx2_qt | select -First 1 -expand href)

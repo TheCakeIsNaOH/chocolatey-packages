@@ -1,4 +1,5 @@
 ﻿Import-Module AU
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 function global:au_SearchReplace {
     @{
@@ -18,7 +19,7 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri https://github.com/maharmstone/winmd/releases -UseBasicParsing
+	$download_page = Get-GitHubLatestReleaseLinks -User "maharmstone" -Repository "winmd"
 	
 	$url        = $download_page.links | ? href -match '.zip$'| % href | select -First 1
 	$version    = ($url -split '[/]' | select -Last 1 -Skip 1).substring(1)

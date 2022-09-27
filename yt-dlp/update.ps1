@@ -32,7 +32,7 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$download_page = Get-GitHubLatestReleaseLinks -User "yt-dlp" -Repository "yt-dlp"
 	
 	$url64      = $download_page.links | ? href -match $x64Filename | % href | select -First 1
     $url32      = $download_page.links | ? href -match $x32Filename | % href | select -First 1
