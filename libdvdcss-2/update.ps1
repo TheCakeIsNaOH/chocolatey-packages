@@ -1,9 +1,10 @@
 ﻿import-module au
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases = 'https://github.com/allienx/libdvdcss-dll/releases'
 
 function global:au_GetLatest {
-    $page    = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $page    = Get-GitHubLatestReleaseLinks -User "allienx" -Repository "libdvdcss-dll"
     $url32   =  $page.links | ? { $_.href -match '\.zip$' } | Select-Object -First 1 -ExpandProperty href
     $version = ($url32 -split '/' | select -Last 1 -Skip 1).Replace('v','')
 

@@ -1,4 +1,5 @@
 ﻿Import-Module AU
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 function global:au_SearchReplace {
     @{
@@ -18,8 +19,8 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri 'https://github.com/JosefNemec/Playnite/releases' -UseBasicParsing
-	
+	$download_page = Get-GitHubLatestReleaseLinks -User "JosefNemec" -Repository "Playnite"
+    
 	$url        = $download_page.links | ? href -match '.exe$' | Select-Object -First 1 -ExpandProperty href
 	$version    = ($url -split '/' | select -Last 1 -Skip 1)
 	$modurl     = 'https://github.com' + $url 
