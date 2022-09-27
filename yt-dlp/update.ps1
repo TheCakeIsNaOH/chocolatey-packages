@@ -1,4 +1,5 @@
 ﻿Import-Module AU
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases    = 'https://github.com/yt-dlp/yt-dlp/releases'
 $x64Filename = 'yt-dlp.exe'
