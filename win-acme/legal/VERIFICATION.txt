@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.1.22.1289/win-acme.v2.1.22.1289.x86.pluggable.zip
-   x64: https://github.com/win-acme/win-acme/releases/download/v2.1.22.1289/win-acme.v2.1.22.1289.x64.pluggable.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.1.23.1315/win-acme.v2.1.23.1315.x86.pluggable.zip
+   x64: https://github.com/win-acme/win-acme/releases/download/v2.1.23.1315/win-acme.v2.1.23.1315.x64.pluggable.zip
    
    to download the zip.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C13081A7545C4FE53EF1D70AA4F45DD50659E7766A005E68B02DD51AB125E391
-   checksum64: F6D1EAF7EEDFCEF319EF09960A0784B35491FCE6A412091E6F63A3F77BE2A4DE
+   checksum32: 50740FF6BFE48F8AB5C074AA672B2DBC73D8C886AE06602E11679E100A118954
+   checksum64: 9E310A037B25FC3A7C9B535F66B130E2C6A7F823AF4D37967FC35293BF2EF715
