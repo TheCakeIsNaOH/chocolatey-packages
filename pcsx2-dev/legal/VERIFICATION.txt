@@ -7,10 +7,10 @@ Package can be verified like this:
 
 1. Go to
 
-   SSE4_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3497/pcsx2-v1.7.3497-windows-64bit-SSE4-Qt.7z
-   SSE4_wxWidgets: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3497/pcsx2-v1.7.3497-windows-64bit-SSE4-wxWidgets.7z
-   AVX2_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3497/pcsx2-v1.7.3497-windows-64bit-AVX2-Qt.7z
-   AVX2_wxWidgets: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3497/pcsx2-v1.7.3497-windows-64bit-AVX2-wxWidgets.7z
+   SSE4_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3501/pcsx2-v1.7.3501-windows-64bit-SSE4-Qt.7z
+   SSE4_wxWidgets: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3501/pcsx2-v1.7.3501-windows-64bit-SSE4-wxWidgets.7z
+   AVX2_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3501/pcsx2-v1.7.3501-windows-64bit-AVX2-Qt.7z
+   AVX2_wxWidgets: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3501/pcsx2-v1.7.3501-windows-64bit-AVX2-wxWidgets.7z
 
    to download the zip.
 
@@ -18,10 +18,10 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum_SSE4_QT: C1FA2B72DC1B87C3C73405D6548BAE34E3E659993CF7F47A7FF9D2F18248F07A
-   checksum_SSE4_wxWidgets: CB292D437A824DE34AB9F20FBE9E60024F17A591DDBD650358DAA4E7DDE4C2C5
-   checksum_AVX2_QT: 477EC17EC2822736EFCBEA9C983EEA350C7E462222F8D3FE47E6753970088CA5
-   checksum_AVX2_wxWidgets: 78A0AA3C89A22FF3EE64349B7B678B6118FB7D680AB705B453AD1EB2F2E552E3
+   checksum_SSE4_QT: 62B506766FBE6EB497C7BC572313B8F31B61E6192B993FA4F17A34D2C2985846
+   checksum_SSE4_wxWidgets: 4B5B7FB80A2AB1A94F85ED47E29AD67D76C528B945D6D6071F96580D1B94CCF0
+   checksum_AVX2_QT: A42DCD0323EBB0B0043E5D84D0B8D866B0991640C337E1E8FE107A50A11FA4A6
+   checksum_AVX2_wxWidgets: 2EC860F826EE87E906B1DB2DA6EB99C9F4A99BE07F5DF58F98A9F97B7FA2EEBF
 
 ----------------------------------------------------------------------
 
