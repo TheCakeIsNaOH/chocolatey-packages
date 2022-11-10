@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/JosefNemec/Playnite/releases/download/10.5/Playnite105.exe
+   x32: https://github.com/JosefNemec/Playnite/releases/download/10.6/Playnite106.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 2835128123839CF2E37F1B7D1B5D761BDC7982F9C3EFE7B088F5FA787A011A78
+   checksum32: F814E43DDEC7698AA3218B287D2331D7A99B2F15007801CF6889937CFDA96447
    checksumType: sha256
