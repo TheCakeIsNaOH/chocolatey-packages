@@ -66,7 +66,13 @@ function global:au_GetLatest {
     
     #$url32       = $api_base + '/artifacts/' + ($run_list_data.artifacts.id | select -First 1) + '/zip'
 
-    $datetime    = [datetime](([xml]($run_page.content -split "`n" | where { $_ -like "*time-ago datetime*" })).'time-ago'.datetime)
+    $timeago = ([xml]($run_page.content -split "`n" | where { $_ -like "*time-ago datetime*" })).'time-ago'.datetime
+    if ([string]::IsNullOrEmpty($timeago)) {
+        $datetime = [datetime]("2000-01-01")
+    } else {
+        $datetime = [datetime](([xml]($run_page.content -split "`n" | where { $_ -like "*time-ago datetime*" })).'time-ago'.datetime)
+    }
+ 
     $version     = $datetime.ToUniversalTime().tostring("yyy.MM.dd") + '-ci'
 
     return @{   
