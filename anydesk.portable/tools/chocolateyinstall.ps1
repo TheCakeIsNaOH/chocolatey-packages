@@ -18,8 +18,12 @@ $packageArgs = @{
   ForceDownload  = $true
 }
 
+Get-ChocolateyWebFile @packageArgs
+
 if ($pp['install'] -or $pp['path'] -or $pp['noautostart'] -or $pp['nostartmenu'] -or $pp['desktopicon'] -or $pp['updatetype']) {
 	
+    $packageArgs["file"] = $fileFullPath
+    
 	$silentArgs = ' --install '
 	
 	if ($pp['path']) {
@@ -52,7 +56,5 @@ if ($pp['install'] -or $pp['path'] -or $pp['noautostart'] -or $pp['nostartmenu']
 	
 	$packageArgs['silentArgs'] = $silentArgs
 	
-	Install-ChocolateyPackage @packageArgs
-} else {
-	Get-ChocolateyWebFile @packageArgs
+	Install-ChocolateyInstallPackage @packageArgs
 }
