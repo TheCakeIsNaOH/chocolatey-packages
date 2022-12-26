@@ -23,10 +23,13 @@ The following package parameters can be set:
  * `/Nostart` - Do not add a start menu shortcut
  * `/Path:C:\path\to\install` - Custom path to put files in
  * `/UseAVX2` - Use build with AVX2 support instead of a build with SSE4 support.
- * `/UseQt` - Use build with a QT GUI instead of a build with a wxWidgets GUI.
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+#### Note
+
+The `/UseQt` was removed because wxWidgets support was removed and all builds use QT now. Install `1.7.3753-dev` to use wxWidgets.</description>
     <summary> The Playstation 2 Emulator </summary>
     <tags>pcsx2 ps2 playstation emulator games</tags>
     <projectSourceUrl>https://github.com/PCSX2/pcsx2</projectSourceUrl>
