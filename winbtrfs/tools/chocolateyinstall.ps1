@@ -1,10 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation          = Join-Path $toolsDir 'btrfs-1.8.1.zip'
+$fileLocation          = Join-Path $toolsDir 'btrfs-1.8.2.zip'
 $driverFile            = Join-Path $toolsDir 'btrfs.cat'
 $outputFile            = Join-Path $toolsDir 'MarkHarmstone.cer'
 $exportType            = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-$akhscript             = Join-Path $toolsDir 'no-reboot.ahk'
 $pp                    = Get-PackageParameters
 
 Get-ChocolateyUnzip $fileLocation $toolsDir
@@ -21,10 +20,7 @@ if (!($checkCert)) {
 }
 
 Write-Host -ForegroundColor green "Adding btrfs driver"
-& infdefaultinstall.exe $toolsDir\btrfs.inf 
-
-Write-Host "Running Autohotkey script"
-& AutoHotkey $akhscript
+& pnputil -i -a $toolsDir\btrfs.inf 
 
 Write-Host -ForegroundColor green "Removing files for other architectures"
 Remove-Item -Recurse -Path $toolsDir\aarch64

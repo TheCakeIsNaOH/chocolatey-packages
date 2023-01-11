@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winbtrfs</id>
-    <version>1.8.1</version>
+    <version>1.8.2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/winbtrfs</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>WinBtrfs</title>
@@ -16,10 +16,8 @@
     <copyright>2021 Mark Harmstone</copyright>
     <summary>An open-source btrfs driver for Windows</summary>
     <description>
-## Note for windows 10 users
-This driver is "cross signed", not "WHQL signed". This means that it requires secure boot off in most cases.
-    
 ## Winbtrfs    
+
 WinBtrfs is a Windows driver for the next-generation Linux filesystem Btrfs.
 A reimplementation from scratch, it contains no code from the Linux kernel,
 and should work on any version from Windows XP onwards. It is also included
@@ -38,14 +36,6 @@ First, a disclaimer:
 You use this software at your own risk. I take no responsibility for any damage
 it may do to your filesystem. It ought to be suitable for day-to-day use, but
 make sure you take backups anyway.
-
-Everything here is released under the GNU Lesser General Public Licence (LGPL);
-see the file LICENCE for more info. You are encouraged to play about with the
-source code as you will, and I'd appreciate a note (mark@harmstone.com) if you
-come up with anything nifty.
-
-See at the end of this document for copyright details of third-party code that's
-included here.
 
 Features
 --------
@@ -90,6 +80,7 @@ Features
 * Three- and four-disk RAID1 (Linux 5.5)
 * New checksum types (xxhash, sha256, blake2) (Linux 5.5)
 
+
 #### Package Parameters
 The following package parameters can be set:
 
@@ -103,9 +94,6 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://github.com/maharmstone/btrfs/blob/master/README.md</releaseNotes>
-    <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.26.01" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
