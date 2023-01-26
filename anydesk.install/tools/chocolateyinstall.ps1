@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32                 = 'https://download.anydesk.com/AnyDesk.msi'
-$checksum32            = '3faae3e3ed589ded2072e9bd05352585dead4afedd2727d0ffa81bb4654dfe4d'
+$checksum32            = 'a47c5377962d85707ae2de8d1ab352aa48a5712db853c47e8af6400f98db68e4'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

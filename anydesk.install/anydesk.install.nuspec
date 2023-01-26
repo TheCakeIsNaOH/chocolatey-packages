@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk.install</id>
-    <version>7.1.7</version>
+    <version>7.1.8</version>
     <title>AnyDesk MSI (Install)</title>
     <authors>AnyDesk Software GmbH</authors>
     <copyright>2021 AnyDesk GmbH</copyright>
