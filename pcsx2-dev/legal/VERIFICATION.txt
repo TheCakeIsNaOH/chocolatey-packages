@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   SSE4_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3976/pcsx2-v1.7.3976-windows-64bit-SSE4-Qt.7z
-   AVX2_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3976/pcsx2-v1.7.3976-windows-64bit-AVX2-Qt.7z
+   SSE4_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3980/pcsx2-v1.7.3980-windows-64bit-SSE4-Qt.7z
+   AVX2_Qt: https://github.com/PCSX2/pcsx2/releases/download/v1.7.3980/pcsx2-v1.7.3980-windows-64bit-AVX2-Qt.7z
 
    to download the zip.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum_SSE4_QT: EE47330FA60A48474D330D09783654D109828C2076A2E3D281EB142EA10A872E
-   checksum_AVX2_QT: BA67E9FEEBC2FFE1ED76C5A3A93B8712018442454B5D8C7F41AAC2A54C974F9A
+   checksum_SSE4_QT: 2A40569130C25E848B4B8824A2280A6E314CB43696A0C4F65A56168330ADE113
+   checksum_AVX2_QT: 3B4A7214FA20492A15A0DAA7F560778E548D180F547094AC4B6CB2A49D6EC960
 
 ----------------------------------------------------------------------
 
