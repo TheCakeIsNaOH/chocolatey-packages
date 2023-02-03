@@ -80,6 +80,10 @@ Features
 * Three- and four-disk RAID1 (Linux 5.5)
 * New checksum types (xxhash, sha256, blake2) (Linux 5.5)
 
+### Note about Virus Scan Positives
+
+There is a known issue with the `mkbtrfs.exe` executable triggering false positives in a variety of malware scanners, even when minimal changes are made between versions.
+https://github.com/maharmstone/btrfs/issues/252
 
 #### Package Parameters
 The following package parameters can be set:
