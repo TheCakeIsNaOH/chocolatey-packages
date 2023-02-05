@@ -4,8 +4,8 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
     destination    = $toolsDir
-    FileFullPath   = Join-Path $toolsDir 'win-acme.v2.1.23.1315.x86.pluggable.zip'
-    FileFullPath64 = Join-Path $toolsDir 'win-acme.v2.1.23.1315.x64.pluggable.zip'
+    FileFullPath   = Join-Path $toolsDir 'win-acme.v2.2.0.1408.x86.pluggable.zip'
+    FileFullPath64 = Join-Path $toolsDir 'win-acme.v2.2.0.1408.x64.pluggable.zip'
 }
 
 Get-ChocolateyUnzip @packageArgs
