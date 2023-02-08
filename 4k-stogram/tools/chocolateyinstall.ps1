@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageName		   = '4K Stogram'
 $toolsDir  			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kstogram_4.4.2.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4kstogram_4.4.2_x64.msi?source=chocolatey'
-$checksum32            = 'd86b6846929a33345294d955a9fd059189702be989a20d08db039163eb7d46e6'
-$checksum64            = '5e9319f6bb742c1c5fac821eebb2327729c210b3e067e1bafb29100e575675f9'
+$url32                 = 'https://dl.4kdownload.com/app/4kstogram_4.5.0.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kstogram_4.5.0_x64.msi?source=chocolatey'
+$checksum32            = 'b1ec9adc3419334290522f2d15fb068ea97c932cc58c894af00749e564535b5c'
+$checksum64            = 'becc7658f3bfca14bc9397e00df129881ade615fae2e488a02120f356c9600b1'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Stogram.lnk'
 $shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
