@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4kvideodownloader_4.23.2.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4kvideodownloader_4.23.2_x64.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4kvideodownloader_4.23.3.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4kvideodownloader_4.23.3_x64.msi?source=chocolatey'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Video Downloader.lnk'
 $shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
-$checksum32            =  'a278df4a861128125938b32856e2a238783bc48af3c0ca4ea921aa76f4622339'
-$checksum64            =  'e36c3b3958331a4ae875554aff61f01cf2893857253fc9b3a7b75c7fe8a42260'
+$checksum32            =  '1f964d40284904a860784904a856161cae59c499baece228f72156d369604927'
+$checksum64            =  'f70f0887b0778def81463a809ee2fd5c3afa9d1684a35e71c453dbbccfd6aae3'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
