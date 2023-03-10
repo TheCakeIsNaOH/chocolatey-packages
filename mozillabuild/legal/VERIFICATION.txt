@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-4.0.1.exe
+   x32: https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-4.0.2.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 75AB5AF771D892F4B96FC4CC4F9C3EE87B4D29CEB3E1EEF7BA3B3E3504ABD8B0
+   checksum32: A7B84C266FC8908A925F6A788F46226AA76507E1B43230F7A63DB6E1B1384ED1
    checksumType: sha256

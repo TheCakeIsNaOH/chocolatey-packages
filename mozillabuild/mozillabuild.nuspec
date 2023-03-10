@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mozillabuild</id>
-    <version>4.0.1</version>
+    <version>4.0.2</version>
     <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/41900ad91e01aabbd642a126edf2dfa74be702f6/Icons/mozillabuild.png</iconUrl>
