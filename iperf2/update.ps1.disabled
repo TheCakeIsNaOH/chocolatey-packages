@@ -16,15 +16,17 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
+    $version = "2.1.7"
+    
 	$rss_page = Invoke-RestMethod -Uri https://sourceforge.net/projects/iperf2/rss?path=/ -UseBasicParsing
-    $rss_entry= $rss_page | ? link -match 'iperf-2.0.14a-.*-win\.exe' | select -First 1
+    $rss_entry= $rss_page | ? link -match ('iperf-' + $version + '.*-win\.exe') | select -First 1
     $orig_url = $rss_entry.link
     $url      = Get-RedirectedUrl -url $orig_url
     
     
-    $main_version = '2.0.14.1001-alpha'
-    $date         = ([dateTime][string]::Join("-",($rss_entry.pubDate -split " " | select -First 3 -Skip 1))).ToString("yyyyMMdd")
-    $version      = $main_version + $date
+    #$main_version = '2.0.14.1001-alpha'
+    #$date         = ([dateTime][string]::Join("-",($rss_entry.pubDate -split " " | select -First 3 -Skip 1))).ToString("yyyyMMdd")
+    #$version      = $main_version + $date
     
     $useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
     
