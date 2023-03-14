@@ -25,7 +25,7 @@ if ($pp['Path']) {
 	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
 }
 
-if ($pp['UseQt']) {
+if ($pp['UseQt'] -or $pp['UseAVX2']) {
     Write-Output "Installing AVX2 QT build. See package description for how to switch which build is installed"
     $file64 = $AVX2_Qt
     $exePath = Join-Path "$destination" "pcsx2-qtx64-avx2.exe"
