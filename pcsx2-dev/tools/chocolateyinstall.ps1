@@ -12,10 +12,6 @@ if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true
     Throw "32-bit builds have been dropped. Install version 1.7.2484-dev or older for a 32 bit build"
 }
 
-$SSE4_Qt = Join-Path $toolsDir 'pcsx2-v1.7.4287-windows-64bit-SSE4-Qt.7z'
-$AVX2_Qt = Join-Path $toolsDir 'pcsx2-v1.7.4287-windows-64bit-AVX2-Qt.7z'
-
-
 if ($pp['Path']) {
 	$destination = $pp['Path']
 	if (!(Test-Path "$destination" -IsValid)) {
@@ -25,15 +21,9 @@ if ($pp['Path']) {
 	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
 }
 
-if ($pp['UseQt'] -or $pp['UseAVX2']) {
-    Write-Output "Installing AVX2 QT build. See package description for how to switch which build is installed"
-    $file64 = $AVX2_Qt
-    $exePath = Join-Path "$destination" "pcsx2-qtx64-avx2.exe"
-} else {
-    Write-Output "Installing SSE4 QT build. See package description for how to switch which build is installed"
-    $file64 = $SSE4_Qt
-    $exePath = Join-Path "$destination" "pcsx2-qtx64.exe"
-}
+$file64 = Join-Path $toolsDir 'pcsx2-v1.7.4296-windows-64bit-Qt.7z'
+
+$exePath = Join-Path "$destination" "pcsx2-qt.exe"
 
 $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
