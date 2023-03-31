@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/PCSX2/pcsx2/releases/download/v1.7.4296/pcsx2-v1.7.4296-windows-64bit-Qt.7z
+   x64: https://github.com/PCSX2/pcsx2/releases/download/v1.7.4304/pcsx2-v1.7.4304-windows-64bit-Qt.7z
 
    to download the zip.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 2B0BB5211A8C7B1F45D9BCCC3853AE35D950FF4FCC7F840D69275664226E6CD7
+   checksum64: 1F0B0C8EB2B0B7D1C20382702505123DCC1DFC91FD65669AA92D6B06A8E6ADEA
 
 ----------------------------------------------------------------------
 
