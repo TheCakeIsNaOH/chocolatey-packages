@@ -48,12 +48,12 @@ Write-Host -ForegroundColor white "Copying files to $destination"
 $fileList = Get-ChildItem -Path $tempPath | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList | select -ExpandProperty FullName | Out-File -Force -FilePath (Join-Path $toolsDir 'install-files.txt')
 
-if (!$pp['nostart']) {
+if (!$pp['NoStart']) {
     Write-Host -ForegroundColor white 'Adding ' $startPath
 	Install-ChocolateyShortcut -ShortcutFilePath "$startPath" -TargetPath "$exePath" -WorkingDirectory "$destination"
 }
 
-if ($pp['Desktop']) {
+if ($pp['Desktop'] -or $pp['DesktopShortcut']) {
     Write-Host -ForegroundColor white 'Adding ' $desktopPath
 	Install-ChocolateyShortcut -ShortcutFilePath "$desktopPath" -TargetPath "$exePath" -WorkingDirectory "$destination"
 }

@@ -22,7 +22,7 @@ This package version uses an AutoHotKey to run the installer, as the silent swit
 #### Package Parameters
 The following package parameters can be set:
 
- * `/Desktop` - Add a desktop shortcut
+ * `/DesktopShortcut` - Add a desktop shortcut
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.	</description>
