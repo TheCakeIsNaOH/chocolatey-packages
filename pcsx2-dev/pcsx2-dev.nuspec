@@ -19,8 +19,8 @@ Recompilers and a Virtual Machine which manages hardware states and PS2 system m
 #### Package Parameters
 The following package parameters can be set:
 
- * `/Desktop` - Add a desktop shortcut
- * `/Nostart` - Do not add a start menu shortcut
+ * `/DesktopShortcut` - Add a desktop shortcut
+ * `/NoStart` - Do not add a start menu shortcut
  * `/Path:C:\path\to\install` - Custom path to put files in
  
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
