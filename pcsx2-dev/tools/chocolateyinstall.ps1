@@ -21,7 +21,7 @@ if ($pp['Path']) {
 	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Dev'
 }
 
-$file64 = Join-Path $toolsDir 'pcsx2-v1.7.4406-windows-64bit-Qt.7z'
+$file64 = Join-Path $toolsDir 'pcsx2-v1.7.4410-windows-64bit-Qt.7z'
 
 $exePath = Join-Path "$destination" "pcsx2-qt.exe"
 
