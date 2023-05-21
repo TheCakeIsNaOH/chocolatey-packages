@@ -1,8 +1,8 @@
-Balabolka (aplikacja konsolowa), wersja 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (aplikacja konsolowa), wersja 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
-WWW: http://balabolka.site/pl/bconsole.htm
+WWW: http://www.cross-plus-a.com/pl/bconsole.htm
 E-mail: crossa@list.ru
 
 Licenzja: Freeware
@@ -38,7 +38,7 @@ balcon [parametry ...]
    Wybraæ g³os (wystarczy podaæ czêœæ jego nazwy). Jeœli parametr nie jest ustawiony, bêdzie u¿ywany g³os wybrany w Panelu sterowania systemu Windows.
 
 -id <liczba>
-   Wybraæ g³os komputerowy za pomoc¹ identyfikatora jêzyka (Locale ID). Takie identyfikatory s¹ przypisane wszystkim jêzykom przez programistów Microsoft
+   Wybraæ g³os komputerowy za pomoc¹ identyfikatora jêzyka (Language ID). Takie identyfikatory s¹ przypisane wszystkim jêzykom przez programistów Microsoft
    (np. "1045" lub "0x0415" - jêzyk polski, "1058" lub "0x0422" - jêzyk ukraiñski).
    Program wybierze z listy pierwszy g³os, identyfikator którego odpowiada okreœlonej wartoœci.
    Jeœli ten parametr nie zostanie okreœlony, bêdzie u¿ywany g³os okreœlony przez parametr [-n] lub wybrany w Panelu sterowania systemu Windows.
@@ -243,7 +243,7 @@ balcon [parametry ...]
 
 --voice1-langid <identyfikator_jêzyka>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <liczba>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).

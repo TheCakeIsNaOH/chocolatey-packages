@@ -1,8 +1,8 @@
-Balabolka (конзолно приложение), версия 1.79
-Авторски права (c) 2013-2022 Илия Морозов
+Balabolka (конзолно приложение), версия 1.80
+Авторски права (c) 2013-2023 Илия Морозов
 Всички права запазени
 
-Уебсайт: http://balabolka.site/bg/bconsole.htm
+Уебсайт: http://www.cross-plus-a.com/bg/bconsole.htm
 Е-поща: crossa@list.ru
 
 Лиценз: Безплатен (Freeware)
@@ -38,7 +38,7 @@ balcon [опции ...]
    Задава кой глас ще бъде използван (името на гласа е достатъчно). Ако опцията не е зададена, ще бъде използван гласа зададен по подразбиране в Windows.
 
 -id <целочислена_стойност>
-   Задава регионалния идентификатор (Locale ID) за гласа. Регионалният идентификатор е езиковия код, зададен от Microsoft
+   Задава регионалния идентификатор (Language ID) за гласа. Регионалният идентификатор е езиковия код, зададен от Microsoft
    (например "1026" или "0x0402" за "Български", "1033" или "0x0409" за "Английски - САЩ"). Програмата ще избере първия глас със зададен регионален идентификатор от списъка с гласове.
    Ако тази настройка не е зададена, гласът зададен с настройката [-n] или гласът по подразбиране в Windows ще бъде използван.
    Списъкът с регионални идентификатори, може да бъде открит на следния уеб адрес:
@@ -244,7 +244,7 @@ balcon [опции ...]
 
 --voice1-langid <идентификатор_на_езика>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <целочислена_стойност>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).

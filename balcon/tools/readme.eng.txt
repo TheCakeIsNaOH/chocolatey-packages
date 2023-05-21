@@ -1,8 +1,8 @@
-Balabolka (Command Line Utility), version 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (Command Line Utility), version 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
-WWW: http://balabolka.site/bconsole.htm
+WWW: http://www.cross-plus-a.com/bconsole.htm
 E-mail: crossa@list.ru
 
 Licence: Freeware
@@ -38,8 +38,8 @@ balcon [options ...]
    Sets the voice name (the part of the name will be enough). If the option is not specified, the voice, defined by the option [-id], or the default voice of Windows will be used.
 
 -id <integer>
-   Sets Locale ID for the voice. Locale ID is the language code, assigned by Microsoft (for example, "1033" or "0x0409" for "English - United States", "2057" or "0x0809" for "English - United Kingdom").
-   The program will choose the first voice with specified Locale ID from the list of voices. If the option is not specified, the voice, defined by the option [-n], or the default voice of Windows will be used.
+   Sets Language ID for the voice. Language ID is the language code assigned by Microsoft (for example, "1033" or "0x0409" for "English - United States", "2057" or "0x0809" for "English - United Kingdom").
+   The program will choose the first voice with specified Language ID from the list of voices. If the option is not specified, the voice, defined by the option [-n], or the default voice of Windows will be used.
    The list of Locale IDs: https://msdn.microsoft.com/en-us/library/cc233982.aspx
 
 -m
@@ -52,13 +52,13 @@ balcon [options ...]
    Sets the audio output device by its name.
 
 -c
-   Takes the text input from clipboard.
+   Gets the text input from the clipboard.
 
 -t <text>
-   Text input can be taken from the command line. The command line may contain few options [-t].
+   Gets the text input from the command line. The command line may contain few options [-t].
 
 -i
-   Takes the text input from STDIN.
+   Gets the text input from STDIN.
 
 -o
    SAPI 4: not used.
@@ -243,7 +243,7 @@ balcon [options ...]
 
 --voice1-langid <language_id>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <integer>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).
@@ -400,6 +400,6 @@ One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
 
 *** Licence ***
 
-You are free to use and distribute software for noncommercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Belarus, Cuba, Iran, North Korea, Syria, and the Crimea Region.
+You are free to use and distribute software for noncommercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Belarus, Cuba, Iran, Nicaragua, North Korea, Syria, and the Crimea Region.
 
 ###

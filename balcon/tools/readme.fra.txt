@@ -1,14 +1,14 @@
-Balabolka (application console), version 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (application console), version 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
-WWW : http://balabolka.site/fr/bconsole.htm
+WWW : http://www.cross-plus-a.com/fr/bconsole.htm
 E-mail : crossa@list.ru
 
 Licence : Freeware
 Système d'exploitation : Microsoft Windows XP/Vista/7/8/10/11
-Microsoft Speech API: v4.0/5.0 and above
-Microsoft Speech Platform: v11.0
+Microsoft Speech API : v4.0/5.0 and above
+Microsoft Speech Platform : v11.0
 
 
 
@@ -39,7 +39,7 @@ balcon [options ...]
    Si le paramètre n'est pas spécifié, la voix définie par le paramètre [-id] ou la voix par défaut de Windows sera utilisée.
 
 -id <nombre_intégral>
-   Spécifier le code de langue pour la voix (Locale ID). Locale ID est le code de langue attribué par Microsoft
+   Spécifier le code de langue pour la voix (Language ID). Language ID est le code de langue attribué par Microsoft
    (par exemple "1033" ou "0x0409" pour Anglais - États-Unis", "1036" ou "0x040C" pour "Français - France").
    Le logiciel choisit dans la liste de voix la première voix avec l'ID spécifié.
    Si le paramètre n'est pas spécifié, la voix définie par le paramètre [-n] ou la voix par défaut de Windows sera utilisée.
@@ -245,7 +245,7 @@ balcon [options ...]
 
 --voice1-langid <id_de_langue>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <nombre_intégral>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).

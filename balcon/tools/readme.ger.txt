@@ -1,8 +1,8 @@
-Balabolka (Konsolenanwendung), Version 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (Konsolenanwendung), Version 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 Alle Rechte vorbehalten
 
-WWW: http://balabolka.site/de/bconsole.htm
+WWW: http://www.cross-plus-a.com/de/bconsole.htm
 E-mail: croßa@list.ru (nur rußisch oder englisch)
 
 Lizenzart: Freeware
@@ -29,7 +29,7 @@ balcon [Optionen ...]
    Bestimmt den Namen der Eingabe-Textdatei. Die Befehlszeile kann einige Optionen enthalten [-f].
 
 -fl <Dateiname>
-   Sets the name of the text file with the list of input files (one file name per line). Die Befehlszeile kann einige Optionen enthalten [-fl].
+   Bestimmt den Namen der Textdatei mit der Liste der Eingabedateien (ein Dateiname pro Zeile). Die Befehlszeile kann einige Optionen enthalten [-fl].
 
 -w <Dateiname>
    Bestimmt den Namen der Ausgabe-Datei im WAV-Format. Wenn diese Option angegeben ist, wird eine Audio-Datei erstellt. Sonst wird der Text laut vorgelesen.
@@ -39,9 +39,9 @@ balcon [Optionen ...]
    Wenn diese Option nicht festgelegt wurde, wird die Stimme, die durch die Option [-id] bestimmt wurde, oder die Standard-Stimme von Windows verwendet.
 
 -id <Zahl>
-   Setzt die "Lokale ID" für die Stimme. Die Lokale ID ist der von Microsoft zugewiesene Sprachen-Code
+   Setzt die "Language ID" für die Stimme. Die "Language ID" ist der von Microsoft zugewiesene Sprachen-Code
    (z. B. "1031" oder "0x0407" für "Deutsch - Deutschland", "1033" oder "0x0409" für "Englisch - Amerika").
-   Das Programm wird die erste Stimme mit definierter Lokaler ID aus der Liste von Stimmen auswählen. 
+   Das Programm wird die erste Stimme mit definierter Language ID aus der Liste von Stimmen auswählen. 
    Wenn diese Option nicht festgelegt wurde, wird die Stimme, die durch die Option [-n] bestimmt wurde, oder die Standard-Stimme von Windows verwendet.
    Liste der Sprachen mit zugewiesenen Codes: https://msdn.microsoft.com/en-us/library/cc233982.aspx
 
@@ -243,7 +243,7 @@ balcon [Optionen ...]
 
 --voice1-langid <Sprachen-ID>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <Zahl>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).

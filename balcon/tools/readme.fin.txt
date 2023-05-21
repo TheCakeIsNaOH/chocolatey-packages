@@ -1,8 +1,8 @@
-Balabolka (komentorivisovellus), versio 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (komentorivisovellus), versio 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
-WWW: http://balabolka.site/fi/bconsole.htm
+WWW: http://www.cross-plus-a.com/fi/bconsole.htm
 E-mail: crossa@list.ru
 
 Lisenssi: Freeware
@@ -39,7 +39,7 @@ balcon [options ...]
    If the option is not specified, the voice, defined by the option [-id], or the default voice of Windows will be used.
 
 -id <luku>
-   Valita tietokoneen ‰‰ni kielitunnisteen avulla (Locale ID).
+   Valita tietokoneen ‰‰ni kielitunnisteen avulla (Language ID).
    Microsoftin kehitt‰j‰t myˆnsiv‰t sellaiset tunnisteet kaikille kielille (esimerkiksi, "1033" tai "0x0409" on englannin kielen tunniste ja "1035" tai "0x040B" ñ suomen kielen tunniste).
    Ohjelma valitsee listalta ensimm‰isen ‰‰nen, jonka kielitunniste vastaa tarvittavaan koodiin. Jos parametri ei ole annettu, niin k‰ytet‰‰n ‰‰nt‰, joka annettiin [ñn] -parametrin avulla, tai ‰‰nt‰, joka valittiin Windowsin ohjauspaneelista.
    Tunnisteiden lista: https://msdn.microsoft.com/en-us/library/cc233982.aspx
@@ -244,7 +244,7 @@ balcon [options ...]
 
 --voice1-langid <kielen tunnus>
    Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <luku>
    Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).

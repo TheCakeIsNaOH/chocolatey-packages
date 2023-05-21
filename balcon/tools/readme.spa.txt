@@ -1,8 +1,8 @@
-Balabolka (aplicación de consola), versión 1.79
-Copyright (c) 2013-2022 Ilya Morozov
+Balabolka (aplicación de consola), versión 1.80
+Copyright (c) 2013-2023 Ilya Morozov
 Todos los derechos reservados
 
-WWW: http://balabolka.site/es/bconsole.htm
+WWW: http://www.cross-plus-a.com/es/bconsole.htm
 Correo electrónico: crossa@list.ru
 
 Licencia: Gratuito (Freeware)
@@ -38,7 +38,7 @@ balcon [opciones ...]
    Nombre de la voz (basta especificar una parte del nombre). Si no se especifica, se usará la voz seleccionada en el panel de control de Windows.
 
 -id <entero>
-   Establece el identificador de idioma (Locale ID) de la voz. El identificador de idioma es el código de idioma asignado por Microsoft
+   Establece el identificador de idioma (Language ID) de la voz. El identificador de idioma es el código de idioma asignado por Microsoft
    (por ejemplo, "1033" o "0x0409" para "inglés - Estados Unidos", "3082" o "0x0C0A" para "español - alfabetización internacional").
    El programa escogerá de la lista la primera voz cuyo identificador de idioma coincida con el valor especificado.
    Si no se especifica el parámetro, se utilizará la voz, especificada con ayuda del parámetro [-n], o la voz seleccionada en el panel de control de Windows.
@@ -243,7 +243,7 @@ balcon [opciones ...]
 
 --voice1-langid <ID_de_idioma>
    Establece el identificador de idioma para palabras del texto que estén en otros idiomas. La opción se utiliza junto con la opción [--voice1-name]. La línea de comandos puede contener más de una opción [--voice1-langid]. Además, una opción puede contener una lista de identificadores separados por comas.
-   La lista de identificadores de idioma compatibles está basada en los códigos ISO 639-1: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tr, tt, uk, zh.
+   La lista de identificadores de idioma compatibles está basada en los códigos ISO 639-1: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <entero>
   Ajusta la velocidad de la voz adicional en la gama de -10 a 10 (la predeterminada es 0).
