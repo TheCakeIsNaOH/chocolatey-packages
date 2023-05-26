@@ -5,24 +5,27 @@ $checksum32            = '5b70972c72bf8af098350f8a53ec830ddbd5c2c7809c71649c93f3
 $pp                    = Get-PackageParameters
 $fileFullPath          = (Join-Path $toolsDir 'AnyDesk.exe')
 
-$packageArgs = @{
+$downloadArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url            = $url32
   softwareName   = 'AnyDesk'
   checksum       = $checksum32
   checksumType   = 'sha256'
-  silentArgs     = ' '
-  validExitCodes = @(0)
   fileFullPath   = $fileFullPath
   ForceDownload  = $true
 }
 
-Get-ChocolateyWebFile @packageArgs
+Get-ChocolateyWebFile @downloadArgs
 
 if ($pp['install'] -or $pp['path'] -or $pp['noautostart'] -or $pp['nostartmenu'] -or $pp['desktopicon'] -or $pp['updatetype']) {
-	
-    $packageArgs["file"] = $fileFullPath
+	$installArgs = @{
+      packageName    = $env:ChocolateyPackageName
+      fileType       = 'EXE'
+      silentArgs     = ' '
+      file           = $fileFullPath
+      validExitCodes = @(0)
+    }
     
 	$silentArgs = ' --install '
 	
@@ -54,7 +57,7 @@ if ($pp['install'] -or $pp['path'] -or $pp['noautostart'] -or $pp['nostartmenu']
 		$silentArgs = $silentArgs + ' --update-auto'
 	}
 	
-	$packageArgs['silentArgs'] = $silentArgs
+	$installArgs['silentArgs'] = $silentArgs
 	
-	Install-ChocolateyInstallPackage @packageArgs
+	Install-ChocolateyInstallPackage @installArgs
 }
