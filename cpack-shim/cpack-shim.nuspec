@@ -4,16 +4,16 @@
   <metadata>
     <id>cpack-shim</id>
     <version>1.0.0</version>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/cpack-shim</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/cpack-shim</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>cpack Redirect Shim (Unofficial)</title>
     <authors>TheCakeIsNaOH</authors>
-    <projectUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/cpack-shim</projectUrl>
+    <projectUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/cpack-shim</projectUrl>
     <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/cpack-shim.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/cpack-shim</projectSourceUrl>
+    <projectSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/cpack-shim</projectSourceUrl>
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/issues</bugTrackerUrl>
