@@ -10,7 +10,7 @@ Download URL from authors site at: http://www.cross-plus-a.com/balabolka.htm
 
 3. Get sha256 checksum of included setup with utility of choice, also included below for convenience
 
-   Checksum32: 63AD83590A3514F345A301BA71423F00E8509538B8C2572194456285DA5408B0
+   Checksum32: A3A2CF6D55085E7EA7C56E3DE03F270743B7164261A13A98713D7EEB9D8E7C4E
 
 
 4. Check that it matches checksum of included setup.exe
