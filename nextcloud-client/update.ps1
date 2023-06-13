@@ -1,8 +1,6 @@
 ﻿Import-Module AU
 . $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
-$releases = 'https://github.com/nextcloud/desktop/releases'
-
 function global:au_SearchReplace {
     @{
         ".\legal\VERIFICATION.txt" = @{
@@ -20,7 +18,7 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-    $download_page = Get-GitHubLatestReleaseLinks -User "nextcloud" -Repository "desktop"
+    $download_page = Get-GitHubLatestReleaseLinks -User "nextcloud-releases" -Repository "desktop"
     
     $url64         = $download_page.links | ? href -match 'x64\.msi$'| % href | select -first 1
     $version       = ($url64 -split '/' | select -Last 1 -Skip 1).trim('v')
