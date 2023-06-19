@@ -5,7 +5,8 @@ $pp                    = Get-PackageParameters
 $shortcutName          = 'WinSpy++.lnk'
 
 $packageArgs = @{
-  FileFullPath64 = Join-Path $toolsDir 'WinSpy17.zip'
+  FileFullPath   = Join-Path $toolsDir 'WinSpy_Release_x86.zip'
+  FileFullPath64 = Join-Path $toolsDir 'WinSpy_Release_x64.zip'
   Destination    = $toolsDir
   PackageName    = $env:ChocolateyPackageName
 }

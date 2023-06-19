@@ -2,7 +2,7 @@ From: https://raw.githubusercontent.com/strobejb/winspy/master/LICENCE.TXT
 
 ---------------------------------------------------------------------------
 
-Copyright (C) 2012 James Brown
+Copyright (C) 2023 James Brown
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

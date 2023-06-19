@@ -34,7 +34,7 @@ To pass parameters, use `--params "''"` (e.g. `choco install packageID [other op
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. </description>
     <summary>View the properties of any window</summary>
     <releaseNotes>https://www.catch22.net/software/winspy#</releaseNotes>
-    <copyright>© 2001-2006 James Brown</copyright>
+    <copyright>© 2001-2023 James Brown</copyright>
     <tags>development debug window properties</tags>
     <projectSourceUrl>https://github.com/strobejb/winspy/tree/master</projectSourceUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
