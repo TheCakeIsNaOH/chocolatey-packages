@@ -24,7 +24,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$download_page = Get-GitHubLatestReleaseLinks -User "PCSX2" -Repository "pcsx2" -AbsoluteLatestRelease
     
-    $regex64 = "pcsx2-v[\d\.]*-windows-64bit-Qt.7z"
+    $regex64 = "pcsx2-v[\d\.]*-windows-x64-Qt.7z"
     $url64   = 'https://github.com' + ($download_page.links | ? href -match $regex64 | select -First 1 -expand href)
 
 	$version   = ($url64 -split "/" | select -Last 1 -Skip 1).trim("v") + '-dev'
