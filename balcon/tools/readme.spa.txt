@@ -1,4 +1,4 @@
-Balabolka (aplicación de consola), versión 1.80
+Balabolka (aplicación de consola), versión 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 Todos los derechos reservados
 
@@ -140,6 +140,9 @@ balcon [opciones ...]
    SAPI 4: la opción no se usa.
    SAPI 5 y Microsoft Speech Platform: establece el modo de canal del audio de salida (1 o 2).
    Si no se especifica la opción, se utilizará el valor predeterminado de la voz seleccionada.
+
+-dp
+   Display progress information in a console window.
 
 -h
    Muestra la lista de opciones de línea de comandos disponibles.
@@ -305,7 +308,7 @@ balcon -f d:\libro.txt -n Ines -o -il | wmaencode - d:\libro.wma --ignorelength
 Se puede guardar el archivo de configuración "balcon.cfg" en la misma carpeta que la aplicación de consola.
 
 Un ejemplo del contenido del archivo:
-===============
+===================
 -f d:\Texto\libro.txt
 -w d:\Sonido\libro.wav
 -n Microsoft Anna
@@ -318,7 +321,7 @@ Un ejemplo del contenido del archivo:
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 El programa puede combinar opciones del archivo de configuración y de la línea de comandos.
 

@@ -1,4 +1,4 @@
-Balabolka (application console), version 1.80
+Balabolka (application console), version 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
@@ -142,6 +142,9 @@ balcon [options ...]
    SAPI 5 et Microsoft Speech Platform : définir le mode du canal audio de sortie (1 ou 2).
    Si le paramètre n’est pas spécifié, la valeur par défaut de la voix sélectionnée sera utilisée.
 
+-dp
+   Afficher les informations sur l’avancement dans la fenêtre de console.
+
 -h
    Affiche la liste des options de ligne de commande.
 
@@ -221,70 +224,96 @@ balcon [options ...]
    Supprimer le fichier texte après la lecture à haute voix ou enregistrer le fichier audio.
 
 --ignore-square-brackets ou -isb
-   Ignore text in [square brackets].
+   Ignorer le texte entre [les crochets].
 
 --ignore-curly-brackets ou -icb
-   Ignore text in {curly brackets}.
+   Ignorer le texte entre {les accolades}.
 
 --ignore-angle-brackets ou -iab
-   Ignore text in <angle brackets>.
+   Ignorer le texte entre <les crochets angulaires>.
 
 --ignore-round-brackets ou -irb
-   Ignore text in (round brackets).
+   Ignorer le texte entre (les parenthèses).
 
 --ignore-url ou -iu
-   Ignore URLs.
+   Ignorer les adresses URL.
 
 --ignore-comments ou -ic
    Ignorer les commentaires dans le texte. Les commentaires sur une seule ligne commencent par // et se poursuivent jusqu’à la fin de la ligne. Les commentaires multilignes commencent par /* et se terminent par */.
 
 --voice1-name <nom_de_voix>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : sets the additional voice name to read foreign words in text (the part of the name will be enough).
-   The option is used together with the option [--voice1-langid]. Other voices can be set by options [--voice2-name], [--voice3-name], etc.
+   SAPI 5 et Microsoft Speech Platform : sélectionner une voix supplémentaire prévue pour lire des mots étrangers dans le corps du texte (il suffit d’indiquer une partie du nom de la voix). Le paramètre est utilisé conjointement avec le paramètre [--voice1-langid].
+   Vous pouvez sélectionner plusieurs voix pour différentes langues à l’aide des paramètres [--voice2-name], [--voice3-name], etc.
 
---voice1-langid <id_de_langue>
-   Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
+--voice1-langid <identifiant_langue>
+   Sélectionner un identifiant de langue pour la recherche des mots étrangers dans le texte. Le programme trouvera les lettres de la langue spécifiée dans le texte et ajoutera des balises de changement de voix pour lire ces caractères. Le paramètre est utilisé conjointement avec le paramètre [--voice1-name]. L’invite de commande peut contenir plusieurs paramètres [--voice1-langid]. On peut lister plusieurs identifiants, séparés par des virgules, au sein d’un même paramètre (par exemple : "fi,sv").
+   La liste des identifiants de langue supportées par le programme (les codes des langues selon la norme ISO 639-1 sont utilisés) : am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <nombre_intégral>
-   Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).
+   Définir le débit de parole pour la voix supplémentaire dans une plage de -10 à 10 (la valeur par défaut est 0).
 
 --voice1-pitch <nombre_intégral>
-   Sets the pitch for the additional voice in a range of -10 to 10 (the default is 0).
+   Régler la hauteur de la voix supplémentaire dans une plage de -10 à 10 (la valeur par défaut est 0).
 
 --voice1-volume <nombre_intégral>
-   Sets the volume for the additional voice in a range of 0 to 100 (the default is 100).
+   Régler le volume de la voix supplémentaire dans une plage de 0 à 100 (la valeur par défaut est 100).
 
 --voice1-roman
-   Use the default voice to read Roman numerals in text. If text with non-Latin characters contains Roman numerals, the application will not change a voice to read them.
+   Utiliser la voix par défaut pour lire les chiffres romains. Si une voix supplémentaire est définie pour la lecture des lettres latines, le programme ne changera pas de voix pour lire des chiffres romains.
 
 --voice1-digit
-   Use the default voice to read numbers in text.
+   Utiliser la voix par défaut pour lire des nombres composés de chiffres arabes. Si le paramètre n’est pas défini, les nombres seront lus par la voix supplémentaire s’ils côtoient des mots étrangers.
 
 --voice1-length <nombre_intégral>
-   Set the minimal length of foreign text parts that will be read by the additional voice (in characters).
+   Définir la longueur minimale du texte étranger pour la lecture duquel le programme utilisera une voix supplémentaire (en caractères).
 
 
 *** Exemples ***
 
+Créer un fichier texte avec une liste des voix installées sur l’ordinateur :
+
 balcon -l
+
+
+Afficher les caractéristiques de la voix Microsoft Anna :
 
 balcon -n "Microsoft Anna" -m
 
+
+Convertir le fichier texte BOOK.TXT en fichier audio BOOK.WAV :
+
 balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -n "Emma"
+
+
+Récupérer le texte du presse-papiers, appliquer les règles des dictionnaires de correction de prononciation et lire à haute voix :
 
 balcon -n "Callie" -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic"
 
+
+Lire le texte à partir de l’invite de commande à la vitesse et au volume spécifiés :
+
 balcon -n "Mathieu" -t "Le texte sera lu lentement." -s -5 -v 70
+
+
+Arrêter les autres instances de l’application console :
 
 balcon -k
 
-balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
+
+Convertir le texte de STDIN en fichier audio BOOK.WAV et créer un fichier BOOK.LRC :
+
+balcon -w "d:\Sound\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
+
+
+Convertir les sous-titres en fichier audio FILM.WAV :
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-max 2
 
-balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
+
+Lire à haute voix des phrases en français et en russe par des voix différentes :
+
+balcon -f "d:\Text\book.txt" -n Aurelie --voice1-name Tatyana --voice1-langid ru
 
 
 Un exemple de l'utilisation de l'application avec l'utilitaire LAME.EXE :
@@ -307,7 +336,7 @@ balcon -f d:\book.txt -n Julie -o -il | wmaencode - d:\book.wma --ignorelength
 Les options de ligne de commande peuvent être enregistrées en tant que fichier de configuration « balcon.cfg » dans le même dossier que l'application console.
 
 Exemple de fichier de configuration :
-===============
+===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
 -n Microsoft Anna
@@ -320,7 +349,7 @@ Exemple de fichier de configuration :
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 Le programme peut combiner les options du fichier de configuration et celles de la ligne de commande.
 

@@ -1,4 +1,4 @@
-Balabolka (Konsolenanwendung), Version 1.80
+Balabolka (Konsolenanwendung), Version 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -141,6 +141,9 @@ balcon [Optionen ...]
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Legt den Ausgabe-Audiokanal-Modus (1 oder 2) fest.
    Wenn die Option nicht angegeben ist, wird der Standardwert für die ausgewählte Stimme verwendet.
+
+-dp
+   Display progress information in a console window.
 
 -h
    Druckt die Liste der verfügbaren Befehlszeilen-Optionen.
@@ -305,7 +308,7 @@ balcon -f d:\book.txt -n Klaus -o -il | wmaencode - d:\book.wma --ignorelength
 Die Befehlszeilen-Optionen können als Konfigurationsdatei "balcon.cfg" im Ordner der Konsolen-Anwendung gespeichert werden. 
 
 Beispiel für eine Konfigurationsdatei:
-===============
+===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
 -n Microsoft Anna
@@ -318,7 +321,7 @@ Beispiel für eine Konfigurationsdatei:
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 Das Programm kann Optionen von der Konfigurationsdatei und der Kommandozeile kombinieren.
 

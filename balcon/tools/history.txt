@@ -1,9 +1,14 @@
 Balabolka (Command Line Utility)
-Copyright (c) 2013-2022 Ilya Morozov
+Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
 
 *** History ***
+
+2023-08-06     v1.81
+[+] Added the option to display progress information in a console window.
+[*] Fixed the using of SAPI 4 for foreign languages.
+
 
 2022-05-20     v1.80
 [-] Fixed reading data from STDIN.

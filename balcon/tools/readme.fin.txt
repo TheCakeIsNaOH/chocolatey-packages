@@ -1,4 +1,4 @@
-Balabolka (komentorivisovellus), versio 1.80
+Balabolka (komentorivisovellus), versio 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
@@ -140,6 +140,9 @@ balcon [options ...]
    SAPI 4: parametria ei k‰ytett‰viss‰.
    SAPI 5 ja Microsoft Speech Platform: sets the output audio channel mode (1 tai 2).
    If the option is not specified, the default value of the selected voice will be used.
+
+-dp
+   Display progress information in a console window.
 
 -h
    N‰yt‰ kaikki mahdolliset parametrit.
@@ -306,7 +309,7 @@ balcon -f d:\book.txt -n Sanna -o -il | wmaencode - d:\book.wma --ignorelength
 Parametrit voi tallentaa "balcon.cfg" -nimiseen konfiguraatiotiedostoon, joka sijaitsee sovelluksen kansiossa.
 
 Tiedoston sis‰llyksen esimerkki:
-===============
+===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
 -n Microsoft Anna
@@ -319,7 +322,7 @@ Tiedoston sis‰llyksen esimerkki:
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 Sovellus voi yhdist‰‰ konfiguraatiotiedostossa olevat ja komentorivin parametrit.
 

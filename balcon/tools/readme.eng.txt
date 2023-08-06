@@ -1,4 +1,4 @@
-Balabolka (Command Line Utility), version 1.80
+Balabolka (Command Line Utility), version 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
@@ -139,6 +139,9 @@ balcon [options ...]
    SAPI 4: not used.
    SAPI 5 and Microsoft Speech Platform: sets the output audio channel mode (1 or 2).
    If the option is not specified, the default value for the selected voice will be used.
+
+-dp
+   Display progress information in a console window.
 
 -h
    Prints the list of available command line options.
@@ -331,7 +334,7 @@ balcon -f d:\book.txt -n Heather -o -il | wmaencode - d:\book.wma --ignorelength
 The command line options can be stored as a configuration file "balcon.cfg" in the same folder as the utility.
 
 The sample configuration file:
-===============
+===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
 -n Microsoft Anna
@@ -344,7 +347,7 @@ The sample configuration file:
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 The utility may combine options from the configuration file and the command line.
 

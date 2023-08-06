@@ -1,4 +1,4 @@
-Balabolka (aplikacja konsolowa), wersja 1.80
+Balabolka (aplikacja konsolowa), wersja 1.81
 Copyright (c) 2013-2023 Ilya Morozov
 Wszystkie prawa zastrze¿one
 
@@ -140,6 +140,9 @@ balcon [parametry ...]
    SAPI 4: parametr nie jest u¿ywany.
    SAPI 5 i Microsoft Speech Platform: sets the output audio channel mode (1 lub 2).
    If the option is not specified, the default value of the selected voice will be used.
+
+-dp
+   Display progress information in a console window.
 
 -h
    Pokazaæ opis parametrów wiersza poleceñ.
@@ -305,7 +308,7 @@ balcon -f d:\book.txt -n Heather -o -il | wmaencode - d:\book.wma --ignorelength
 Parametry mo¿na zachowaæ jak plik konfiguracyjny "balcon.cfg" w tym samym folderze co aplikacja konsolowa.
 
 Przyk³ad zawartoœci pliku:
-===============
+===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
 -n Microsoft Anna
@@ -318,7 +321,7 @@ Przyk³ad zawartoœci pliku:
 --lrc-length 75
 --lrc-enc utf8
 --lrc-offset 300
-===============
+===================
 
 Program mo¿e kombinowaæ parametry z pliku konfiguracyjnego i wiersza poleceñ.
 
