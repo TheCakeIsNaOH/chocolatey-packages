@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>partition-assistant-standard</id>
+    <version>10.0.0</version>
+    <title>AOMEI Partition Assistant Standard (Install)</title>
+    <authors>AOMEI</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://www.diskpart.com/terms.html</licenseUrl>
+    <projectUrl>https://www.aomeitech.com/pa/standard.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/c3b17424bc33404ee4565a390a54b85101c05209/Icons/AOMEI_Partition_Assistant.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>
+AOMEI Partition Assistant Standard allows you to realize disk upgrade/replacement, partition style conversion, OS migration and other disk managements without any difficulties.
+
+Safely manage disk partitions without data loss.
+Windows 11/10/8.1/8/7/Vista/ XP( 32-bit/64-bit).
+Over 30 million+ Downloads Worldwide.
+</description>
+    <summary>Free disk partition software for home and personal use.</summary>
+    <releaseNotes>https://www.diskpart.com/changelog.html</releaseNotes>
+    <copyright>Copyright 2009-2023 AOMEI International Network Limited.</copyright>
+    <tags>disk drive image partition clone hdd</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/partition-assistant-standard</packageSourceUrl>
+    <docsUrl>https://www.diskpart.com/manual.html</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
