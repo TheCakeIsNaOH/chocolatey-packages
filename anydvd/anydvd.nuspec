@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>anydvd</id>
+    <version>8.6.3.0</version>
+    <title>AnyDVD, AnyDVD HD</title>
+    <authors>RedFox</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <projectUrl>https://www.redfox.bz/anydvdhd.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/fc745dfc3671630c4cde2a77a23523ad5f26f272/Icons/anydvd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description> AnyDVD HD is a Windows based application that removes restrictions of DVD and Blu-ray media automatically in the background.
+
+AnyDVD HD works in the background to automatically and transparently enable read access of the contents of a movie DVD or Blu-ray as soon as it's inserted into the drive. The DVD/Blu-ray will become useable to your windows operating system and all programs on your computer, such as DVD/Blu-ray backup software like CloneDVD, CloneBD and others, then supporting any DVD or Blu-ray. AnyDVD HD optionally disables RPC region codes, thereby making the movie region free and comfortably viewable on any DVD/Blu-ray player and with any DVD/Blu-ray playback software.
+
+AnyDVD HD is capable of disabling unwanted movie features such as forced subtitles, forced delays, and no-skip marks, giving you full control over your movie experience. It also allows you to launch an external application whenever you insert or remove a disc, and prevents unwanted software from automatically launching when you insert a video DVD.
+
+You can control the drive speed of your DVD drive, allowing you to reduce the noise level when watching movies on your PC. You can even adjust the display frequency of your monitor for both NTSC and PAL displays.
+
+AnyDVD HD doesn't just stop at DVD's or Blu-ray's, it also fixes audio cd's to allow you to play and use them.
+
+Note: This is commercial software and requires a valid license to function. There is a 21 day trial available.
+NOTICE TO SLYSOFT CUSTOMERS: You must have a Redfox license to use this version.</description>
+    <summary>anydvd</summary>
+    <releaseNotes>https://www.redfox.bz/download/changes_anydvd.txt</releaseNotes>
+    <tags>anydvd dvd drm trial</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/anydvd</packageSourceUrl>
+    <docsUrl>https://forum.redfox.bz/threads/global-faqs-for-anydvd-hd.14798/</docsUrl>
+    <mailingListUrl>https://forum.redfox.bz</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
