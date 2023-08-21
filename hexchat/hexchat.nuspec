@@ -16,7 +16,7 @@
     <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2023 Berke Viktor.</copyright>
     <tags>hexchat irc xchat xchat-wdk chat</tags>
     <projectSourceUrl>https://github.com/hexchat/hexchat</projectSourceUrl>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/hexchat</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/hexchat</packageSourceUrl>
     <docsUrl>https://hexchat.readthedocs.io/en/latest/</docsUrl>
     <bugTrackerUrl>https://github.com/hexchat/hexchat/issues</bugTrackerUrl>
     <dependencies>
@@ -25,5 +25,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
