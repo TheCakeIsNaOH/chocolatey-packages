@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>hexchat</id>
+    <version>2.16.0</version>
+    <title>HexChat IRC client</title>
+    <authors>Berke Viktor</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://raw.githubusercontent.com/hexchat/hexchat/master/COPYING</licenseUrl>
+    <projectUrl>https://hexchat.github.io/index.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/fd52b0f431362d83f03de1e3e0269c9401a308f7/Icons/Hexchat.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>HexChat is a fork of XChat which is free for Linux and Windows. It was originally named XChat-WDK and was created as an alternative to the Shareware version of XChat for Windows, but changed its name because it went far beyond being a simple Windows only version of XChat and efforts to merge into XChat officially hit a dead-end</description>
+    <summary>HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems.</summary>
+    <releaseNotes>https://hexchat.readthedocs.io/en/latest/changelog.html</releaseNotes>
+    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2023 Berke Viktor.</copyright>
+    <tags>hexchat irc xchat xchat-wdk chat</tags>
+    <projectSourceUrl>https://github.com/hexchat/hexchat</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/hexchat</packageSourceUrl>
+    <docsUrl>https://hexchat.readthedocs.io/en/latest/</docsUrl>
+    <bugTrackerUrl>https://github.com/hexchat/hexchat/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist2015" version="14.0.24215.20170201" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

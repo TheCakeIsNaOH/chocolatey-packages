@@ -1,0 +1,16 @@
+﻿$ErrorActionPreference = 'Stop';
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'EXE'
+  file          = Join-Path $toolsDir 'HexChat%202.16.1%20x86.exe'
+  file64        = Join-Path $toolsDir 'HexChat%202.16.1%20x64.exe'
+  softwareName  = 'hexchat*'
+  silentArgs    = "/SILENT"
+  validExitCodes= @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item -Force -EA 0 -Path $toolsDir\*.exe
