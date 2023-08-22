@@ -21,7 +21,7 @@ Over 30 million+ Downloads Worldwide.
     <releaseNotes>https://www.diskpart.com/changelog.html</releaseNotes>
     <copyright>Copyright 2009-2023 AOMEI International Network Limited.</copyright>
     <tags>disk drive image partition clone hdd</tags>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/partition-assistant-standard</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/partition-assistant-standard</packageSourceUrl>
     <docsUrl>https://www.diskpart.com/manual.html</docsUrl>
   </metadata>
   <files>
