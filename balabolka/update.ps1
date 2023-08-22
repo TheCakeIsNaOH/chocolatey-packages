@@ -1,7 +1,7 @@
 ﻿Import-Module AU
 
 function global:au_GetLatest {
-	$version_page = (Invoke-WebRequest -Uri http://balabolka.site/changelog.txt -UseBasicParsing).content
+	$version_page = (Invoke-WebRequest -Uri http://www.cross-plus-a.com/changelog.txt -UseBasicParsing).content
 	
 	$version_string = ($version_page.Tostring() -split "[\s]" | sls "(v)(?<ver>\d*\.)" | Select-Object -First 1)
 	
