@@ -16,7 +16,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-    Get-RemoteFiles -Purge -NoSuffix
+    $nameBase = "HexChat-$($Latest.Version)"
+    Get-RemoteFiles -Purge -FileNameBase $nameBase
 }
 
 function global:au_GetLatest {
