@@ -27,8 +27,10 @@ function global:au_GetLatest {
     $url64       = $versionURL + $url64end 
     $url32       = $versionURL + $url32end
     
+    $version = (Get-Version $version).tostring()
+    
     $middleVersion = $version -split "\." | select -First 1 -Skip 1
-    if (($middleVersion % 2) -eq 1) {
+    if ((($middleVersion % 2) -eq 1) -and ($version -notlike "*-*")) {
         $version += "-pre"
     }
     
