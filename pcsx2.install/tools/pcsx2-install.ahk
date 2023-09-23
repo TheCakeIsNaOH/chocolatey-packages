@@ -1,15 +1,14 @@
-#SingleInstance force, NoEnv
+#Requires AutoHotkey v2.0
+#SingleInstance Force
 SendMode("Input")  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory.
 SetTitleMatchMode("RegEx")
 
-if (%0% < 1) {
-	FileAppend("`"Too few arguments given`"", "*")
-	Exit()
+if A_Args.Length < 1 {
+	Throw(Error("No file path passed in"))
 }
 
-file := 1
-Run(file)
+Run(A_Args[1])
 
 WinWait("PCSX2 [\d\.]+ Setup", , 30)
 hwnd := WinExist()
