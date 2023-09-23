@@ -46,7 +46,13 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+
+#### Virus scan 
+
+This software is known to have a high rate of false positives on virus scanners. See the software FAQ:
+https://github.com/Open-Shell/Open-Shell-Menu/wiki/FAQ#why-does-my-antivirus-claim-that-the-download-is-not-safe
+</description>
     <releaseNotes>https://github.com/Open-Shell/Open-Shell-Menu/releases</releaseNotes>
   </metadata>
   <files>
