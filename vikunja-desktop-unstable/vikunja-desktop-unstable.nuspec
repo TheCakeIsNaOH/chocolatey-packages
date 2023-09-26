@@ -9,7 +9,7 @@
     <title>Vikunja Desktop (Unstable)</title>
     <authors>The Vikunja Authors</authors>
     <projectUrl>https://vikunja.io/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/Vikunja.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/Vikunja.png</iconUrl>
     <copyright>2021 The Vikunja Authors</copyright>
     <licenseUrl>https://kolaente.dev/vikunja/frontend/src/branch/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

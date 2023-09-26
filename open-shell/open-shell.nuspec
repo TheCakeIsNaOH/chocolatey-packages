@@ -13,12 +13,12 @@
     <projectUrl>https://open-shell.github.io/Open-Shell-Menu/</projectUrl>
     <projectSourceUrl>https://github.com/Open-Shell/Open-Shell-Menu/</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Open-Shell/Open-Shell-Menu/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/open-shell.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/open-shell.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Classic style Start Menu for Windows 7, 8, 8.1, 10</summary>
     <tags>classic-shell open-shell shell freeware start-menu binary</tags>
     <description>
-## Open-Shell ![Open-Shell](https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/open-shell.png)
+## Open-Shell ![Open-Shell](https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/open-shell.png)
 
 *Originally* **[Classic Shell](http://www.classicshell.net)** *by [Ivo Beltchev](https://sourceforge.net/u/ibeltchev/profile/)*
 

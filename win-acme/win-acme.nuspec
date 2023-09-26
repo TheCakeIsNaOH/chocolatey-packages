@@ -8,7 +8,7 @@
     <authors>PKISharp</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/win-acme/win-acme/blob/master/LICENSE</licenseUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/win-acme.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/d2e33db3a8339111ad0ddfe3787611668dd7b2a4/Icons/win-acme.png</iconUrl>
     <projectUrl>https://www.win-acme.com/</projectUrl>
     <projectSourceUrl>https://github.com/win-acme/win-acme/</projectSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -10,7 +10,7 @@
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/sumatrapdf.portable</packageSourceUrl>
     <licenseUrl>https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING</licenseUrl>
     <projectUrl>https://www.sumatrapdfreader.org/free-pdf-reader.html</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/sumatrapdf.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/sumatrapdf.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>What is Sumatra PDF?
 Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.

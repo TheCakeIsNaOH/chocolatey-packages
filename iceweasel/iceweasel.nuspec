@@ -18,7 +18,7 @@ let them know the package is no longer updating correctly.</description>
     <releaseNotes>[Firefox ESR](https://www.mozilla.org/en-US/firefox/102.0-alpha1/releasenotes/)</releaseNotes>
     <projectSourceUrl>https://github.com/muslayev/iceweasel-win64</projectSourceUrl>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/iceweasel.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/iceweasel.png</iconUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <bugTrackerUrl>https://bugzilla.mozilla.org/home</bugTrackerUrl>
     <dependencies>

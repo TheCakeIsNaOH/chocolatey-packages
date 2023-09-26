@@ -9,7 +9,7 @@
     <owners>TheCakeIsNaOH, Ritch Melton</owners>
     <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=5783</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=5783</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/microsoft-sql-server.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/microsoft-sql-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft SQL Server Compact 3.5 is a free, embedded database</summary>
     <description>SQL Server Compact 3.5 SP2 is an embedded database that allows developers to build robust applications for Windows desktops and mobile devices. The download contains the files for installing SQL Server Compact 3.5 SP2 and Synchronization Services for ADO.NET version 1.0 SP1 on Windows desktop.

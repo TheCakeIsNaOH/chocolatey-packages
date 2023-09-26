@@ -9,7 +9,7 @@
     <title>Looking Glass (Host Bleeding-Edge)</title>
     <authors>Geoffrey McRae</authors>
     <projectUrl>https://looking-glass.io/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/looking-glass-host.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/looking-glass-host.png</iconUrl>
     <copyright>2021 Geoffrey McRae</copyright>
     <licenseUrl>https://github.com/gnif/LookingGlass/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

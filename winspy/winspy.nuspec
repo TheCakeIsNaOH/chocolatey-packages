@@ -9,7 +9,7 @@
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://raw.githubusercontent.com/strobejb/winspy/master/LICENCE.TXT</licenseUrl>
     <projectUrl>https://www.catch22.net/software/winspy</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/winspy.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/winspy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <bugTrackerUrl>https://github.com/strobejb/winspy/issues</bugTrackerUrl>
     <description>WinSpy++ is a handy programmer's utility which can be used to select and view the properties of any window in the system. WinSpy is based around the Spy++ utility that ships with Microsoft Visual Studio.

@@ -9,7 +9,7 @@
     <title>BibleTime</title>
     <authors>BibleTime team</authors>
     <projectUrl>http://bibletime.info/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/69fd7fe70b9c3069df16c2c3bd6effca6e2a12ba/Icons/bibletime_0000.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/69fd7fe70b9c3069df16c2c3bd6effca6e2a12ba/Icons/bibletime_0000.png</iconUrl>
     <copyright>2021 BibleTime team</copyright>
     <licenseUrl>https://github.com/bibletime/bibletime/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

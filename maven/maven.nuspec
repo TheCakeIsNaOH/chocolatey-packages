@@ -20,7 +20,7 @@ let them know the package is no longer updating correctly.</description>
     <copyright>2002-2021 The Apache Software Foundation</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/maven.svg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/maven.svg</iconUrl>
     <releaseNotes>https://maven.apache.org/docs/3.9.4/release-notes.html</releaseNotes>
     <docsUrl>https://maven.apache.org/guides/index.html</docsUrl>
     <bugTrackerUrl>https://issues.apache.org/jira/projects/MNG/issues</bugTrackerUrl>

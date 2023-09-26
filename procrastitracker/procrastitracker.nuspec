@@ -9,7 +9,7 @@
     <title>ProcrastiTracker</title>
     <authors>Wouter van Oortmerssen</authors>
     <projectUrl>http://strlen.com/procrastitracker/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/procrastitracker.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/procrastitracker.png</iconUrl>
     <copyright>2020 Wouter van Oortmerssen</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -9,7 +9,7 @@
     <title>HideVolume OSD</title>
     <authors>Marcus Venturi</authors>
     <projectUrl>http://wordpress.venturi.de/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/HideVolumeOSD.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/HideVolumeOSD.png</iconUrl>
     <copyright>2022 Marcus Venturi</copyright>
     <licenseUrl>https://raw.githubusercontent.com/UnlimitedStack/HideVolumeOSD/master/License.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

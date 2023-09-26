@@ -9,7 +9,7 @@
     <title>Nvidia RTX Voice</title>
     <authors>Nvidia</authors>
     <projectUrl>https://www.nvidia.com/en-us/geforce/guides/nvidia-rtx-voice-setup-guide</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/RTX-Voice-Icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/RTX-Voice-Icon.png</iconUrl>
     <copyright>2021 Nvidia</copyright>
     <bugTrackerUrl>https://docs.google.com/forms/d/e/1FAIpQLSeLVdcX_G6F0LR-W8VcCA_5v7E265AkSBlP0IYYd1_HU_cYFA/viewform</bugTrackerUrl>
     <tags>Nvidia GPU graphics sound audio RTX voice</tags>

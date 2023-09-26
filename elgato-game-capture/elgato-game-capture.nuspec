@@ -9,7 +9,7 @@
     <title>Elgato Game Capture for Windows</title>
     <authors>Elgato</authors>
     <projectUrl>https://www.elgato.com/en/gaming/game-capture-software</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/ElgatoGameCapture.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/ElgatoGameCapture.png</iconUrl>
     <copyright>2021 Elgato</copyright>
     <docsUrl>https://help.elgato.com/hc/en-us</docsUrl>
     <tags>elgato video capture recording streaming</tags>

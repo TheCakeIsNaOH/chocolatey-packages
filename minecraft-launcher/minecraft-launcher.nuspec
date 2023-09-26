@@ -10,7 +10,7 @@
     <licenseUrl>https://account.mojang.com/documents/minecraft_eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.minecraft.net/en-us/about-minecraft</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/TheCakeIsNaOH/chocolatey-packages/master/Icons/minecraft.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/minecraft.png</iconUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <bugTrackerUrl>https://bugs.mojang.com/secure/Dashboard.jspa</bugTrackerUrl>
     <docsUrl>https://help.minecraft.net/hc/en-us</docsUrl>
