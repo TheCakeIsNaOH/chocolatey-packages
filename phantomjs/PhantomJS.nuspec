@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>phantomjs</id>
+    <version>2.1.1.20231008</version>
+    <title>PhantomJS</title>
+    <authors>Ariya Hidayat, PhantomJS Committers</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
+    <projectUrl>https://phantomjs.org/</projectUrl>
+    <projectSourceUrl>https://github.com/ariya/phantomjs</projectSourceUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/b04753b28b9d89d1c24e37d0be4d5c11d15672ed/Icons/PhantomJS.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>2010-2018 PhantomJS contributors</copyright>
+    <description>PhantomJS is a headless WebKit with JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
+
+PhantomJS is created by Ariya Hidayat.</description>
+    <summary>PhantomJS – Headless WebKit</summary>
+    <releaseNotes>https://github.com/ariya/phantomjs/blob/master/ChangeLog</releaseNotes>
+    <tags>PhantomJS javascript webkit web browser testing</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/phantomjs</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
