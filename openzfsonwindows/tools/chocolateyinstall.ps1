@@ -4,7 +4,7 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file64        = Join-Path $toolsDir 'OpenZFSOnWindows-debug-2.2.0rc5'
+  file64        = Join-Path $toolsDir 'OpenZFSOnWindows-debug-2.2.0rc5.exe'
   softwareName  = 'OpenZFS On Windows'
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0) 
@@ -12,4 +12,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
-Remove-Item $fileLocation -force -ea 0 
+Remove-Item $packageArgs.file64 -force -ea 0 
