@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>openzfsonwindows</id>
+    <version>2.2.0-rc5</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/openzfsonwindows</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>OpenZFSOnWindows</title>
+    <authors>Jorgen Lundman</authors>
+    <projectUrl>https://github.com/openzfsonwindows/openzfs</projectUrl>
+    <copyright>2023 Jorgen Lundman</copyright>
+    <licenseUrl>https://github.com/openzfsonwindows/openzfs/blob/windows/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/openzfsonwindows/openzfs</projectSourceUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/56af0456899779152dca45255a73ed75c24ae337/Icons/openzfs.png</iconUrl>
+    <docsUrl>https://openzfsonosx.org/wiki/Windows</docsUrl>
+    <mailingListUrl>https://openzfsonosx.org/forum/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/openzfsonwindows/openzfs/issues</bugTrackerUrl>
+    <tags>ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
+    <summary>OpenZFS on Windows port</summary>
+    <description>
+## Beta Software
+## Do not use for production systems yet.
+
+See https://github.com/openzfsonwindows/openzfs/blob/windows/module/os/windows/README.md for details on usage.</description>
+    <releaseNotes>https://github.com/openzfsonwindows/openzfs/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
