@@ -8,7 +8,7 @@ $dolphinDir            = (Join-Path $extractDir 'Dolphin-Dev')
 $exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
-  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-20318-x64.7z'
+  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-5.0-20327-x64.7z'
   Destination    = $extractDir
   PackageName    = $env:ChocolateyPackageName
 }
