@@ -1,13 +1,13 @@
-Balabolka (Konsolenanwendung), Version 1.81
+ï»¿Balabolka (Konsolenanwendung), Version 1.82
 Copyright (c) 2013-2023 Ilya Morozov
 Alle Rechte vorbehalten
 
-WWW: http://www.cross-plus-a.com/de/bconsole.htm
-E-mail: croßa@list.ru (nur rußisch oder englisch)
+WWW: https://www.cross-plus-a.com/de/bconsole.htm
+E-mail: crossa@list.ru (nur ruÃŸisch oder englisch)
 
 Lizenzart: Freeware
 Plattformen: Microsoft Windows XP/Vista/7/8/10/11
-Microsoft Speech API: 4.0/5.0 und höher
+Microsoft Speech API: 4.0/5.0 und hÃ¶her
 Microsoft Speech Platform: 11.0
 
 
@@ -20,10 +20,10 @@ balcon [Optionen ...]
 *** Befehlszeilen-Optionen ***
 
 -l
-   Druckt die Liste der verfügbaren Stimmen.
+   Druckt die Liste der verfÃ¼gbaren Stimmen.
 
 -g
-   Druckt die Liste der verfügbaren Audio-Ausgabegeräte.
+   Druckt die Liste der verfÃ¼gbaren Audio-AusgabegerÃ¤te.
 
 -f <Dateiname>
    Bestimmt den Namen der Eingabe-Textdatei. Die Befehlszeile kann einige Optionen enthalten [-f].
@@ -39,9 +39,9 @@ balcon [Optionen ...]
    Wenn diese Option nicht festgelegt wurde, wird die Stimme, die durch die Option [-id] bestimmt wurde, oder die Standard-Stimme von Windows verwendet.
 
 -id <Zahl>
-   Setzt die "Language ID" für die Stimme. Die "Language ID" ist der von Microsoft zugewiesene Sprachen-Code
-   (z. B. "1031" oder "0x0407" für "Deutsch - Deutschland", "1033" oder "0x0409" für "Englisch - Amerika").
-   Das Programm wird die erste Stimme mit definierter Language ID aus der Liste von Stimmen auswählen. 
+   Setzt die "Language ID" fÃ¼r die Stimme. Die "Language ID" ist der von Microsoft zugewiesene Sprachen-Code
+   (z. B. "1031" oder "0x0407" fÃ¼r "Deutsch - Deutschland", "1033" oder "0x0409" fÃ¼r "Englisch - Amerika").
+   Das Programm wird die erste Stimme mit definierter Language ID aus der Liste von Stimmen auswÃ¤hlen. 
    Wenn diese Option nicht festgelegt wurde, wird die Stimme, die durch die Option [-n] bestimmt wurde, oder die Standard-Stimme von Windows verwendet.
    Liste der Sprachen mit zugewiesenen Codes: https://msdn.microsoft.com/en-us/library/cc233982.aspx
 
@@ -49,10 +49,10 @@ balcon [Optionen ...]
    Druckt die Parameter der Stimme.
 
 -b <Zahl>
-   Wählt das Audio-Ausgabegerät nach seinem Index. Der Index des Standard-Audio-Ausgabegerätes ist 0.
+   WÃ¤hlt das Audio-AusgabegerÃ¤t nach seinem Index. Der Index des Standard-Audio-AusgabegerÃ¤tes ist 0.
 
 -r <Textzeile>
-   Wählt das Audio-Ausgabegerät nach seinem Namen.
+   WÃ¤hlt das Audio-AusgabegerÃ¤t nach seinem Namen.
 
 -c
    Verwendet die Texteingabe aus der Zwischenablage.
@@ -65,37 +65,37 @@ balcon [Optionen ...]
 
 -o
    SAPI 4: nicht verwendet.
-   SAPI 5 und Microsoft Speech Platform: Schreibt Tondaten auf STDOUT. Wenn diese Option gewählt ist, wird die Option [-w] ignoriert.
+   SAPI 5 und Microsoft Speech Platform: Schreibt Tondaten auf STDOUT. Wenn diese Option gewÃ¤hlt ist, wird die Option [-w] ignoriert.
 
 -s <Zahl>
    SAPI 4: Bestimmt die Geschwindigkeit in einem Bereich von 0 bis 100 (kein Standardwert).
    SAPI 5 und Microsoft Speech Platform: Bestimmt die Geschwindigkeit in einem Bereich von -10 bis 10 (der Standardwert ist 0).
 
 -p <Zahl>
-   SAPI 4: Bestimmt die Tonhöhe in einem Bereich von 0 bis 100 (kein Standardwert).
-   SAPI 5 und Microsoft Speech Platform: Bestimmt die Tonhöhe in einem Bereich von -10 bis 10 (der Standardwert ist 0).
+   SAPI 4: Bestimmt die TonhÃ¶he in einem Bereich von 0 bis 100 (kein Standardwert).
+   SAPI 5 und Microsoft Speech Platform: Bestimmt die TonhÃ¶he in einem Bereich von -10 bis 10 (der Standardwert ist 0).
 
 -v <Zahl>
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Bestimmt das Volumen in einem Bereich von 0 bis 100 (der Standardwert ist 100).
 
 -e <Zahl>
-   Bestimmt die Länge der Pausen zwischen den Sätzen (in Millisekunden). Der Standardwert ist 0.
+   Bestimmt die LÃ¤nge der Pausen zwischen den SÃ¤tzen (in Millisekunden). Der Standardwert ist 0.
 
 -a <Zahl>
-   Bestimmt die Länge der Pausen zwischen den Absätzen (in Millisekunden). Der Standardwert ist 0.
+   Bestimmt die LÃ¤nge der Pausen zwischen den AbsÃ¤tzen (in Millisekunden). Der Standardwert ist 0.
 
 -d <Dateiname>
-   Verwendet das Wörterbuch für die Außprache-Korrektur (*.BXD, *.DIC oder *.REX). Die Befehlszeile kann ein paar Optionen enthalten [-d].
+   Verwendet das WÃ¶rterbuch fÃ¼r die AuÃŸprache-Korrektur (*.BXD, *.DIC oder *.REX). Die Befehlszeile kann ein paar Optionen enthalten [-d].
 
 -k
-   Beendet weitere Exemplare der Konsolen-Anwendung im Arbeitßpeicher des Computers.
+   Beendet weitere Exemplare der Konsolen-Anwendung im ArbeitÃŸpeicher des Computers.
 
 -ka
-   Beendet das aktive Exemplar der Konsolen-Anwendung im Arbeitßpeicher des Computers.
+   Beendet das aktive Exemplar der Konsolen-Anwendung im ArbeitÃŸpeicher des Computers.
 
 -pr
-   Macht eine Pause oder beginnt mit dem Lesen der aktiven Kopie der Anwendung. Die Aktion ist dieselbe wie für den Kontextmenüeintrag "Pause"/"Fortsetzen".
+   Macht eine Pause oder beginnt mit dem Lesen der aktiven Kopie der Anwendung. Die Aktion ist dieselbe wie fÃ¼r den KontextmenÃ¼eintrag "Pause"/"Fortsetzen".
 
 -q
    Setzt die Anwendung in eine Warteschlange. Die Konsolen-Anwendung wartet, bis andere Exemplare des Programms fertig sind.
@@ -111,93 +111,96 @@ balcon [Optionen ...]
 -vs <Dateiname>
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Bestimmt den Namen der ausgegebenen Textdatei mit Visemen, wenn die Option [-w] angegeben ist.
-   Ein Visem ist die Mundform, die einem bestimmten Sprachklang entspricht. SAPI unterstützt die Liste von 21 Visemen.
+   Ein Visem ist die Mundform, die einem bestimmten Sprachklang entspricht. SAPI unterstÃ¼tzt die Liste von 21 Visemen.
    Diese Liste basiert auf den originalen Disney Visemen. Die Anwendung erstellt die Audiodatei und liest sie dann laut, um Viseme und ihre Timecodes zu erhalten.
-   Die Liste der von SAPI 5 unterstützten Viseme: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
+   Die Liste der von SAPI 5 unterstÃ¼tzten Viseme: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
 
 -sub
-   Text wird als Untertitel verarbeitet. Diese Option kann nützlich sein, wenn die Optionen [-i] oder [-c] festgelegt wurden.
+   Text wird als Untertitel verarbeitet. Diese Option kann nÃ¼tzlich sein, wenn die Optionen [-i] oder [-c] festgelegt wurden.
 
 -tray
-   Das Programm-Icon im System-Tray anzeigen. Dies ermöglicht es, den Fortschritt der Aufgabe zu sehen.
-   Mit der Option "Stopp" im Kontext-Menü kann man den Prozeß stoppen.
+   Das Programm-Icon im System-Tray anzeigen. Dies ermÃ¶glicht es, den Fortschritt der Aufgabe zu sehen.
+   Mit der Option "Stopp" im Kontext-MenÃ¼ kann man den ProzeÃŸ stoppen.
 
 -ln <Zahl>
-   Wählt eine Zeile aus einer Textdatei mit Hilfe einer Zeilennummer. Die Zeilennummerierung beginnt bei "1".
-   Ein Intervall von Zahlen kann verwendet werden, um mehr als eine Zeile auszuwählen (beispielsweise "26-34").
+   WÃ¤hlt eine Zeile aus einer Textdatei mit Hilfe einer Zeilennummer. Die Zeilennummerierung beginnt bei "1".
+   Ein Intervall von Zahlen kann verwendet werden, um mehr als eine Zeile auszuwÃ¤hlen (beispielsweise "26-34").
    Die Befehlszeile kann ein paar Optionen enthalten [-ln].
 
 -fr <Zahl>
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Legt die Ausgabe-Audio-Abtastfrequenz in kHz fest (8, 11, 12, 16, 22, 24, 32, 44, 48).
-   Wenn die Option nicht angegeben ist, wird der Standardwert für die ausgewählte Stimme verwendet.
+   Wenn die Option nicht angegeben ist, wird der Standardwert fÃ¼r die ausgewÃ¤hlte Stimme verwendet.
 
 -bt <Zahl>
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Legt die Audio-Bittiefe des Ausgangs (8 oder 16) fest.
-   Wenn die Option nicht angegeben ist, wird der Standardwert für die ausgewählte Stimme verwendet.
+   Wenn die Option nicht angegeben ist, wird der Standardwert fÃ¼r die ausgewÃ¤hlte Stimme verwendet.
 
 -ch <Zahl>
    SAPI 4: nicht verwendet.
    SAPI 5 und Microsoft Speech Platform: Legt den Ausgabe-Audiokanal-Modus (1 oder 2) fest.
-   Wenn die Option nicht angegeben ist, wird der Standardwert für die ausgewählte Stimme verwendet.
+   Wenn die Option nicht angegeben ist, wird der Standardwert fÃ¼r die ausgewÃ¤hlte Stimme verwendet.
 
 -dp
-   Display progress information in a console window.
+   Anzeige von Fortschrittsinformationen in einem Konsolenfenster.
+
+-cfg <file_name>
+   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
 
 -h
-   Druckt die Liste der verfügbaren Befehlszeilen-Optionen.
+   Druckt die Liste der verfÃ¼gbaren Befehlszeilen-Optionen.
 
 --encoding <Kodierung> oder -enc <Kodierung>
-   Bestimmt die Kodierung für die Texteingabe ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
+   Bestimmt die Kodierung fÃ¼r die Texteingabe ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
 
 --silence-begin <Zahl> oder -sb <Zahl>
-   Legt die Lönge der Stille am Anfang der Audio-Datei fest (in Millisekunden). Der Standardwert ist 0.
+   Legt die LÃ¶nge der Stille am Anfang der Audio-Datei fest (in Millisekunden). Der Standardwert ist 0.
 
 --silence-end <Zahl> oder -se <Zahl>
-   Legt die Lönge der Stille am Ende der Audio-Datei fest (in Millisekunden). Der Standardwert ist 0.
+   Legt die LÃ¶nge der Stille am Ende der Audio-Datei fest (in Millisekunden). Der Standardwert ist 0.
 
 --lrc-length <Zahl>
-   Bestimmt die maximale Länge der Textzeilen für die LRC-Datei (in Zeichen).
+   Bestimmt die maximale LÃ¤nge der Textzeilen fÃ¼r die LRC-Datei (in Zeichen).
 
 --lrc-fname <Dateiname>
-   Bestimmt den Namen der LRC-Datei. Die Option kann nützlich sein, wenn die Option [-o] angegeben ist.
+   Bestimmt den Namen der LRC-Datei. Die Option kann nÃ¼tzlich sein, wenn die Option [-o] angegeben ist.
 
 --lrc-enc <Kodierung>
-   Bestimmt die Kodierung für die LRC-Datei ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
+   Bestimmt die Kodierung fÃ¼r die LRC-Datei ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
 
 --lrc-offset <Zahl>
-   Bestimmt die Zeitverschiebung für die LRC-Datei (in Millisekunden).
+   Bestimmt die Zeitverschiebung fÃ¼r die LRC-Datei (in Millisekunden).
 
 --lrc-artist <Textzeile>
-   Bestimmt den ID-Tag für die LRC-Datei: Künstler.
+   Bestimmt den ID-Tag fÃ¼r die LRC-Datei: KÃ¼nstler.
 
 --lrc-album <Textzeile>
-   Bestimmt den ID-Tag für die LRC-Datei: Album.
+   Bestimmt den ID-Tag fÃ¼r die LRC-Datei: Album.
 
 --lrc-title <Textzeile>
-   Bestimmt den ID-Tag für die LRC-Datei: Titel.
+   Bestimmt den ID-Tag fÃ¼r die LRC-Datei: Titel.
 
 --lrc-author <Textzeile>
-   Bestimmt den ID-Tag für die LRC-Datei: Autor.
+   Bestimmt den ID-Tag fÃ¼r die LRC-Datei: Autor.
 
 --lrc-creator <Textzeile>
-   Bestimmt den ID-Tag für die LRC-Datei: Ersteller der LRC-Datei.
+   Bestimmt den ID-Tag fÃ¼r die LRC-Datei: Ersteller der LRC-Datei.
 
 --lrc-sent
-   Fügt leere Zeilen nach Sätzen in die LRC-Datei ein.
+   FÃ¼gt leere Zeilen nach SÃ¤tzen in die LRC-Datei ein.
 
 --lrc-para
-   Fügt leere Zeilen nach Absätzen in die LRC-Datei ein.
+   FÃ¼gt leere Zeilen nach AbsÃ¤tzen in die LRC-Datei ein.
 
 --srt-length <Zahl>
-   Bestimmt die maximale Länge der Textzeilen für die SRT-Datei (in Zeichen).
+   Bestimmt die maximale LÃ¤nge der Textzeilen fÃ¼r die SRT-Datei (in Zeichen).
 
 --srt-fname <Dateiname>
-   Bestimmt den Namen der SRT-Datei. Die Option kann nützlich sein, wenn die Option [-o] angegeben ist.
+   Bestimmt den Namen der SRT-Datei. Die Option kann nÃ¼tzlich sein, wenn die Option [-o] angegeben ist.
 
 --srt-enc <Kodierung>
-   Bestimmt die Kodierung für die SRT-Datei ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
+   Bestimmt die Kodierung fÃ¼r die SRT-Datei ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
 
 --raw
    SAPI 4: nicht verwendet.
@@ -205,14 +208,14 @@ balcon [Optionen ...]
 
 --ignore-length oder -il
    SAPI 4: nicht verwendet.
-   SAPI 5 und Microsoft Speech Platform: Ignoriert die Länge der Daten im WAV-Header. Diese Option wird zusammen mit der Option [-o] verwendet.
+   SAPI 5 und Microsoft Speech Platform: Ignoriert die LÃ¤nge der Daten im WAV-Header. Diese Option wird zusammen mit der Option [-o] verwendet.
 
 --sub-format <Textzeile>
    Legt das Format der Untertitel fest ("srt", "lrc", "ssa", "ass", "smi" oder "vtt"). Wenn diese Option nicht angegeben ist, wird das Format anhand der Dateiendung bestimmt.
 
 --sub-fit oder -sf
    SAPI 4: nicht verwendet.
-   SAPI 5 und Microsoft Speech Platform: erhöht die Geschwindigkeit automatisch, paßend zu Zeitintervallen (wenn das Programm Untertitel in eine Audio-Datei konvertiert).
+   SAPI 5 und Microsoft Speech Platform: erhÃ¶ht die Geschwindigkeit automatisch, paÃŸend zu Zeitintervallen (wenn das Programm Untertitel in eine Audio-Datei konvertiert).
 
 --sub-max <Zahl> oder -sm <Zahl>
    SAPI 4: nicht verwendet.
@@ -288,26 +291,26 @@ balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-m
 balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
 
 
-Beispiel für die Verwendung zusammen mit LAME.EXE:
+Beispiel fÃ¼r die Verwendung zusammen mit LAME.EXE:
 
 balcon -f d:\book.txt -n Klaus -o --raw | lame -r -s 22.05 -m m -h - d:\book.mp3
 
 
-Beispiel für die Verwendung zusammen mit OGGENC2.EXE:
+Beispiel fÃ¼r die Verwendung zusammen mit OGGENC2.EXE:
 
 balcon -f d:\book.txt -n Klaus -o -il | oggenc2 --ignorelength - -o d:\book.ogg
 
 
-Beispiel für die Verwendung zusammen mit WMAENCODE.EXE:
+Beispiel fÃ¼r die Verwendung zusammen mit WMAENCODE.EXE:
 
 balcon -f d:\book.txt -n Klaus -o -il | wmaencode - d:\book.wma --ignorelength
 
 
 *** Konfigurationsdatei ***
 
-Die Befehlszeilen-Optionen können als Konfigurationsdatei "balcon.cfg" im Ordner der Konsolen-Anwendung gespeichert werden. 
+Die Befehlszeilen-Optionen kÃ¶nnen als Konfigurationsdatei "balcon.cfg" im Ordner der Konsolen-Anwendung gespeichert werden. 
 
-Beispiel für eine Konfigurationsdatei:
+Beispiel fÃ¼r eine Konfigurationsdatei:
 ===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
@@ -328,7 +331,7 @@ Das Programm kann Optionen von der Konfigurationsdatei und der Kommandozeile kom
 
 *** Audio-Clips ***
 
-Das Programm ermöglicht, Links zu externen WAV- und MP3-Dateien (Audio-Clips) in Text von Dokumenten einzufügen. Ein Audio-Clip-Tag wird so außehen:
+Das Programm ermÃ¶glicht, Links zu externen WAV- und MP3-Dateien (Audio-Clips) in Text von Dokumenten einzufÃ¼gen. Ein Audio-Clip-Tag wird so auÃŸehen:
 
 {{Audio=C:\Sounds\ring.wav}}
 
@@ -338,22 +341,22 @@ Bei der Umwandlung in Audio-Dateien wird der Audio-Clip in der Audio-Datei, die 
 
 *** Voice ***
 
-Wenn eine Stimme oder ihre Eigenschaften beim Vorlesen geändert werden müßen, kann für SAPI 5 und Microsoft Speech Platform ein spezielles Tag verwendet werden (SAPI4-Stimmen ignorieren dieses Tag).
+Wenn eine Stimme oder ihre Eigenschaften beim Vorlesen geÃ¤ndert werden mÃ¼ÃŸen, kann fÃ¼r SAPI 5 und Microsoft Speech Platform ein spezielles Tag verwendet werden (SAPI4-Stimmen ignorieren dieses Tag).
 
 Das Tag-Format:
 
-{{Voice=Name;Geschwindigkeit;Tonhöhe;Lautstärke}}
+{{Voice=Name;Geschwindigkeit;TonhÃ¶he;LautstÃ¤rke}}
 
 - Name: der Name einer Stimme (ein Wort oder ein Teil eines Wortes ist ausreichend);
 - Geschwindigkeit: die Geschwindigkeit einer Stimme (Werte von -10 bis 10);
-- Tonhöhe: die Tonhöhe einer Stimme (Werte von -10 bis 10);
-- Lautstärke: die Lautstärke (Werte von 0 bis 100).
+- TonhÃ¶he: die TonhÃ¶he einer Stimme (Werte von -10 bis 10);
+- LautstÃ¤rke: die LautstÃ¤rke (Werte von 0 bis 100).
 
-Ein Tag gilt für alle nachfolgenden Texte. Die Werte werden durch Semikolon getrennt. Beispielsweise:
+Ein Tag gilt fÃ¼r alle nachfolgenden Texte. Die Werte werden durch Semikolon getrennt. Beispielsweise:
 
 Dieser Text wird von der Standardstimme von Balabolka gesprochen. {{Voice=Marlene;0;0;100}} Die Stimme 'Marlene' liest den anderen Text.
 
-Der Inhalt des Tags unterscheidet nicht zwischen Groß- und Kleinschreibung. Werte für einige Eigenschaften können weggelaßen werden:
+Der Inhalt des Tags unterscheidet nicht zwischen GroÃŸ- und Kleinschreibung. Werte fÃ¼r einige Eigenschaften kÃ¶nnen weggelaÃŸen werden:
 
 {{voice=victor;;;50}}
 
@@ -361,22 +364,22 @@ Der Inhalt des Tags unterscheidet nicht zwischen Groß- und Kleinschreibung. Wert
 
 {{Voice=Petra}}
 
-Verwenden Sie dieses Tag, um zur Standardstimme zurückzukehren:
+Verwenden Sie dieses Tag, um zur Standardstimme zurÃ¼ckzukehren:
 
 {{Voice=}}
 
-Warnung! Es ist nicht möglich, zwischen SAPI 5-Stimmen und Stimmen der Microsoft Speech Platform zu wechseln.
+Warnung! Es ist nicht mÃ¶glich, zwischen SAPI 5-Stimmen und Stimmen der Microsoft Speech Platform zu wechseln.
 
 
 *** Pause ***
 
-Eine festgelegte Anzahl von Millisekunden Stille kann in die Ausgabe-Audiodatei eingefügt werden. Beispielsweise:
+Eine festgelegte Anzahl von Millisekunden Stille kann in die Ausgabe-Audiodatei eingefÃ¼gt werden. Beispielsweise:
 
 Einhundertzwanzig Millisekunden Stille {{Pause=120}} sind gerade eingetreten.
 
 
 *** Lizenzart ***
 
-Sie können Software für nichtkommerzielle Zwecke verwenden und vertreiben. Für die kommerzielle Nutzung oder den Vertrieb benötigen Sie die Genehmigung des Urheberrechtsinhabers.
+Sie kÃ¶nnen Software fÃ¼r nichtkommerzielle Zwecke verwenden und vertreiben. FÃ¼r die kommerzielle Nutzung oder den Vertrieb benÃ¶tigen Sie die Genehmigung des Urheberrechtsinhabers.
 
 ###

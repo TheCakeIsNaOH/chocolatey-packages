@@ -1,8 +1,8 @@
-Balabolka (aplicativo de console), versão 1.81
+Balabolka (aplicativo de console), versão 1.82
 Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
-WWW: http://www.cross-plus-a.com/br/bconsole.htm
+WWW: https://www.cross-plus-a.com/br/bconsole.htm
 E-mail: crossa@list.ru
 
 Licença: Freeware
@@ -143,6 +143,9 @@ balcon [opções ...]
 
 -dp
    Display progress information in a console window.
+
+-cfg <file_name>
+   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
 
 -h
    Mostrar a descrição das opções da linha de comando.

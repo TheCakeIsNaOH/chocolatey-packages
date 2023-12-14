@@ -1,9 +1,13 @@
-Balabolka (Command Line Utility)
+﻿Balabolka (Command Line Utility)
 Copyright (c) 2013-2023 Ilya Morozov
 All Rights Reserved
 
 
 *** History ***
+
+2023-12-13     v1.82
+[+] Added the option to set the configuration file name.
+
 
 2023-08-06     v1.81
 [+] Added the option to display progress information in a console window.
