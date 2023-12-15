@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://dl.dolphin-emu.org/builds/60/02/dolphin-master-5.0-20728-x64.7z
+   x64: https://dl.dolphin-emu.org/builds/ff/f3/dolphin-master-5.0-20734-x64.7z
 
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 0594DC8F5EC9F9464BDEA4EF39013A28384406405FE5DC45B03A19C8B02A9F93
+   checksum64: 25EFDB235DE738A2C097B427B74A084B5154A872F7832749BAEDE14E0CA90920
