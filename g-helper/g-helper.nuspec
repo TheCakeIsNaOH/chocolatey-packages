@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>g-helper</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>G-Helper</title>
+    <authors>Serge</authors>
+    <projectUrl>https://seerge.github.io/g-helper/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/4c2d5b372f995829d6618722a24883698a465e31/Icons/g-helper.png</iconUrl>
+    <copyright>2023 Serge</copyright>
+    <licenseUrl>https://github.com/seerge/g-helper/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/seerge/g-helper</projectSourceUrl>
+    <docsUrl>https://seerge.github.io/g-helper/</docsUrl>
+    <bugTrackerUrl>https://github.com/seerge/g-helper/issues</bugTrackerUrl>
+    <tags>g-helper asus laptop ROG zephyrus</tags>
+    <summary>Lightweight Armoury Crate alternative for Asus laptops.</summary>
+    <description>Small and lightweight Armoury Crate alternative for Asus laptops offering almost same functionality without extra bloat and unnecessary services. Works on all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix / Scar Series, ProArt, VivoBook and many more!
+    
+## Main Advantages 
+
+1. Seamless and automatic GPU switching
+2. All performance modes can be fully customized with power limits and fan curves
+3. Lightweight. Doesn't install anything in your system. Just a single exe to run
+4. Simple and clean native UI with easy access to all settings
+5. FN-Lock and custom hotkeys
+
+### Features
+
+1. Performance modes: Silent - Balanced - Turbo (built-in, with default fan curves)
+2. GPU modes: Eco - Standard - Ultimate - Optimized
+3. Screen refresh rate control with display overdrive (OD) 
+4. Custom fan curve editor, power limits and turbo boost selection for every performance mode
+5. Anime matrix control including animated GIFs, clock and Audio visualizer
+6. Backlight animation modes and colors 
+7. Custom hotkeys (M-keys, FN+X keys)
+8. Monitor CPU / GPU temperature, fan speeds and battery status
+9. Battery charge limit to preserve battery health
+10. NVidia GPU overclocking
+11. XG Mobile Control
+12. AMD CPU Undervolting
+13. BIOS and Driver Updates
+14. Asus Mice settings
+15. Mini-led multi-zone switch
+
+### Automatic switching when on battery or plugged in
+- Performance Mode switching when on battery or plugged in
+- Optimized GPU mode - disables dGPU on battery and enables when plugged in
+- Auto Screen refresh rate (60Hz on battery and max Hz when plugged)
+- Keyboard backlight timeout on battery or when plugged in
+
+_To keep auto switching and hotkeys working the app needs to stay running in the tray. It doesn't consume any resources._</description>
+    <releaseNotes>https://github.com/seerge/g-helper/releases</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet-7.0-sdk" version="7.0.0" />
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
