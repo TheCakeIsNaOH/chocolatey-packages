@@ -10,7 +10,7 @@ branches:
 #build:
 #  verbosity: minimal
 
-image: Visual Studio 2019
+image: Visual Studio 2022
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
@@ -44,6 +44,9 @@ environment:
   # Chocolatey API key - to push updated packages
   api_key:
     secure: /ZIlP5vMoltd8ahqeM3J/uS/PilznewWI98cViyqmkQMqgD+fWaULLEZ1arOEbJ5
+    
+  choco_version: '2.2.2'
+  nupkg_cache_path: C:\packages
 
 init:
 - git config --global user.email "naoh-bot@naoh.host"
@@ -51,11 +54,22 @@ init:
 - git config --global core.safecrlf false
 
 install:
+- ps: |
+    $chocoVersion = $Env:choco_version
+    if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
+    @{
+      'chocolatey' = $chocoVersion
+      'wormies-au-helpers' = '0.4.1'
+    }.GetEnumerator() | % {
+      if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
+      if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
+      else { cinst $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
+    }
+    rm "$env:ChocolateyInstall\logs\*.log"
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
 - git --version
 - choco --version
-- ps: '[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Install-Module wormies-au-helpers -Repository PSGallery -Force'
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
@@ -118,3 +132,6 @@ notifications:
 
 #on_finish:
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+cache:
+  - '%nupkg_cache_path% -> .appveyor.yml'
