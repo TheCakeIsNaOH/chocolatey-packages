@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://get.openlp.org/3.1.0rc2/OpenLP-3.1.0rc2.msi'
-$url64                 = 'https://get.openlp.org/3.1.0rc2/OpenLP-3.1.0rc2-x64.msi'
-$checksum32            = '0862c354746348ca1b33d2a75eeb74c73dade982670e73196cafde92e0520f23'
-$checksum64            = '3ba642e4203ac4adb55e62a89854889fe87cbad7fd0acb4a28bc0d5a74a9cd17'
+$url32                 = 'https://get.openlp.org/3.1.0rc4/OpenLP-3.1.0rc4.msi'
+$url64                 = 'https://get.openlp.org/3.1.0rc4/OpenLP-3.1.0rc4-x64.msi'
+$checksum32            = '00351cfd5493191ef97448261b24f79111b954abfb544e8e3b82e9a2b3c47f2f'
+$checksum64            = 'f86c429c0144fd2d109205b28954c6a5ee91133dd9ece71c2ef261e81062499c'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
