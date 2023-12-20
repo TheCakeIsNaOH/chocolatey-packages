@@ -15,6 +15,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
+	$Latest.Filename32 = $Latest.Filename32 -replace '%20','-'
     Get-RemoteFiles -Purge -NoSuffix
 }
 
