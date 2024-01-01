@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/win-acme.v2.2.6.1571.x86.pluggable.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.validation.dns.cloudflare.v2.2.6.1571.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 34F9A671C64982001FB543E31772021ABCFE7EE464D8818135F85CC83C36C352
+   checksum32: 1C03A048EB5ABF4B588CAA3BF450B7ED8C9EF6A3D2525F1F9520833A4A9DBEB9

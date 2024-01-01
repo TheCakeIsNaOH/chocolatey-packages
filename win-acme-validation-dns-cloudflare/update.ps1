@@ -3,9 +3,6 @@ Import-Module AU
 
 function global:au_SearchReplace {
     @{
-        'win-acme-validation-dns-cloudflare.nuspec' = @{
-            "(^.+version=`")(.*)(`".+$)"   = "`$1$($Latest.Version)`$3"
-        }
         ".\tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*FileFullPath\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
         }
@@ -21,6 +18,12 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
     Get-RemoteFiles -Purge -NoSuffix
+}
+
+function global:au_AfterUpdate($Package) {
+  Update-Metadata -data @{
+    dependency = "win-acme|$($Latest.Version)"
+  }
 }
 
 function global:au_GetLatest {

@@ -4,7 +4,7 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
     destination    = $destination
-    FileFullPath   = Join-Path $toolsDir 'win-acme.v2.2.6.1571.x86.pluggable.zip'
+    FileFullPath   = Join-Path $toolsDir 'plugin.validation.dns.cloudflare.v2.2.6.1571.zip'
 }
 
 Get-ChocolateyUnzip @packageArgs
