@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
+$exepath               = (Join-Path $destination 'wacs.exe')
 
 $packageArgs = @{
     FilePath   = 'win-acme.v2.2.6.1571.x86.pluggable.zip'
@@ -8,3 +10,5 @@ $packageArgs = @{
 
 Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -ZipFileName $packageArgs.FilePath
 Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -ZipFileName $packageArgs.FilePath64
+
+Uninstall-BinFile -Name 'wacs' -Path $exepath

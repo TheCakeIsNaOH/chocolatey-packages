@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
 $destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
+$exepath               = (Join-Path $destination 'wacs.exe')
 
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
@@ -10,5 +11,7 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
+
+Install-BinFile -Name 'wacs' -Path $exepath
 
 Remove-Item -ea 0 -force -path $toolsDir\*.zip
