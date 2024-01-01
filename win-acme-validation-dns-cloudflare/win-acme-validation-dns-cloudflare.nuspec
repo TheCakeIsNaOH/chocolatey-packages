@@ -2,9 +2,9 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>win-acme</id>
-    <version>2.2.6.157101</version>
-    <title>win-acme</title>
+    <id>win-acme-validation-dns-cloudflare</id>
+    <version>2.2.5.0</version>
+    <title>Win Acme Plugin Validation DNS Cloudflare</title>
     <authors>PKISharp</authors>
     <owners>TheCakeIsNaOH</owners>
     <licenseUrl>https://github.com/win-acme/win-acme/blob/master/LICENSE</licenseUrl>
@@ -12,14 +12,17 @@
     <projectUrl>https://www.win-acme.com/</projectUrl>
     <projectSourceUrl>https://github.com/win-acme/win-acme/</projectSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This is a ACMEv2 client for Windows that aims to be very simple to start with, but powerful enough to grow into almost every scenario.</description>
-    <summary>A simple ACME client for Windows (for use with Let's Encrypt et al.)</summary>
+    <description>This is the plugin for DNS validation using Cloudflare for win-acme</description>
+    <summary>Plugin for win-acme</summary>
     <releaseNotes>https://github.com/PKISharp/win-acme/releases</releaseNotes>
     <copyright>2024 PKISharp</copyright>
     <tags>win-acme iis acme letsencrypt</tags>
-    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/win-acme</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/win-acme-validation-dns-cloudflare</packageSourceUrl>
     <bugTrackerUrl>https://github.com/win-acme/win-acme/issues</bugTrackerUrl>
     <docsUrl>https://www.win-acme.com/reference/cli</docsUrl>
+    <dependencies>
+      <dependency id="win-acme" version="2.2.5.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
