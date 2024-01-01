@@ -1,9 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+$destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
 
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
-    destination    = $toolsDir
+    destination    = $destination
     FileFullPath   = Join-Path $toolsDir 'win-acme.v2.2.6.1571.x86.pluggable.zip'
     FileFullPath64 = Join-Path $toolsDir 'win-acme.v2.2.6.1571.x64.pluggable.zip'
 }

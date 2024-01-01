@@ -7,6 +7,10 @@ function global:au_SearchReplace {
             "(?i)(^\s*FileFullPath\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
             "(?i)(^\s*FileFullPath64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
         }
+        ".\tools\chocolateyuninstall.ps1" = @{
+            "(?i)(^\s*FilePath\s*=\s*)(.*)" = "`$1'$($Latest.FileName32)'"
+            "(?i)(^\s*FilePath64\s*=\s*)(.*)" = "`$1'$($Latest.FileName64)'"
+        }
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
             "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
