@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>openssh</id>
     <version>9.2.0-beta1</version>
+    <id>openssh.install</id>
     <title>Win32 OpenSSH (MSI Installer)</title>
     <authors>Microsoft</authors>
     <owners>TheCakeIsNaOH</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/PowerShell/Win32-OpenSSH/L1/LICENCE</licenseUrl>
     <projectUrl>https://github.com/PowerShell/Win32-OpenSSH</projectUrl>
-    <iconUrl>TODO</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/425c900cca7c07cb80d144c686168239679be208/Icons/openssh.png</iconUrl>
     <description>The primary Microsoft distribution mechanism for OpenSSH is through Windows. Only prerelease versions have standalone installers distributed. 
     
     OpenSSH is a complete implementation of the SSH protocol (version 2) for secure remote login, command execution and file transfer. It includes a client ssh and server sshd, file transfer utilities scp and sftp as well as tools for key generation (ssh-keygen), run-time key storage (ssh-agent) and a number of supporting programs.
@@ -21,7 +21,7 @@ This is a port of OpenBSD's OpenSSH to most Unix-like operating systems, includi
     <copyright>Microsoft</copyright>
     <tags>openssh admin</tags>
     <projectSourceUrl>https://github.com/PowerShell/Win32-OpenSSH</projectSourceUrl>
-    <packageSourceUrl>TODO</packageSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/openssh.install</packageSourceUrl>
     <docsUrl>https://github.com/PowerShell/Win32-OpenSSH/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/PowerShell/Win32-OpenSSH/issues</bugTrackerUrl>
   </metadata>
