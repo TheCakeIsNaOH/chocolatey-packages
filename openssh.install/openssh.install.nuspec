@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <version>9.2.0-beta1</version>
+    <version>9.5.0.0-Beta</version>
     <id>openssh.install</id>
     <title>Win32 OpenSSH (MSI Installer)</title>
     <authors>Microsoft</authors>
