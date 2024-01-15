@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zfsin</id>
-    <version>0.24-eljun</version>
+    <version>0.24.1-pre</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/zfsin</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>ZFSin</title>
+    <title>[DEPRECATED] ZFSin</title>
     <authors>Jorgen Lundman</authors>
     <projectUrl>https://openzfsonwindows.org/</projectUrl>
     <copyright>2021 Jorgen Lundman</copyright>
@@ -16,18 +16,11 @@
     <docsUrl>https://openzfsonosx.org/wiki/Windows</docsUrl>
     <mailingListUrl>https://openzfsonosx.org/forum/</mailingListUrl>
     <bugTrackerUrl>https://github.com/openzfsonwindows/ZFSin/issues</bugTrackerUrl>
-    <tags>ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
+    <tags>deprecated ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
     <summary>OpenZFS on Windows port</summary>
-    <description>
-## Beta Software
-## Do not use for production systems!
-
-Currently signed by a non-EV certificate. Due to this, secure boot needs to be off for the driver to load.
-
-See https://github.com/openzfsonwindows/ZFSin/blob/master/README.md for details on usage.</description>
-    <releaseNotes>https://github.com/openzfsonwindows/ZFSin/releases</releaseNotes>
+    <description>##This package has been deprecated. It has been replaced by openzfsonwindows.</description>
+    <dependencies>
+      <dependency id="openzfsonwindows" version="2.2.0-rc5" />
+    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
