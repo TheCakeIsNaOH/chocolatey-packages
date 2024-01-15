@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>win-acme-validation-dns-azure</id>
+    <version>2.2.6.1571</version>
+    <title>Win Acme Plugin Validation DNS Azure</title>
+    <authors>PKISharp</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://github.com/win-acme/win-acme/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/d2e33db3a8339111ad0ddfe3787611668dd7b2a4/Icons/win-acme.png</iconUrl>
+    <projectUrl>https://www.win-acme.com/</projectUrl>
+    <projectSourceUrl>https://github.com/win-acme/win-acme/</projectSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is the plugin for DNS validation using Azure for win-acme</description>
+    <summary>Plugin for win-acme</summary>
+    <releaseNotes>https://github.com/PKISharp/win-acme/releases</releaseNotes>
+    <copyright>2024 PKISharp</copyright>
+    <tags>win-acme iis acme letsencrypt</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/win-acme-validation-dns-azure</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/win-acme/win-acme/issues</bugTrackerUrl>
+    <docsUrl>https://www.win-acme.com/reference/cli</docsUrl>
+    <dependencies>
+      <dependency id="win-acme" version="2.2.6.157101" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
