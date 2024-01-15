@@ -1,0 +1,18 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.validation.dns.googledns.v2.2.6.1571.zip
+   
+   to download the zip.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: 1C9618FE9AD2A07B5B540E30B221CC2672F23D829FF9D50AAB894174DDA92C6A
