@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32                 = 'https://download.anydesk.com/AnyDesk.exe'
-$checksum32            = 'ec33d8ee9c3881b8fcea18f9f862d5926d994553aec1b65081d925afd3e8b028'
+$checksum32            = '1d0d0a6c3770c390744033232a8de0bf682716849ebc2866118c65c51cf5d4d9'
 $pp                    = Get-PackageParameters
 $fileFullPath          = (Join-Path $toolsDir 'AnyDesk.exe')
 
