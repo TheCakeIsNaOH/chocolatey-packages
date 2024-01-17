@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://dl.4kdownload.com/app/4ktokkit_2.4.0.msi?source=chocolatey'
-$url64                 = 'https://dl.4kdownload.com/app/4ktokkit_2.4.0_x64.msi?source=chocolatey'
+$url32                 = 'https://dl.4kdownload.com/app/4ktokkit_2.5.0.msi?source=chocolatey'
+$url64                 = 'https://dl.4kdownload.com/app/4ktokkit_2.5.0_x64.msi?source=chocolatey'
 $pp                    = Get-PackageParameters
 $shortcutName          = '4K Tokkit.lnk'
 $shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
-$checksum32            = '78660039f0fdd29c54b39335d8f58dae01f22646031db12aa9ebdbbf41437f29'
-$checksum64            = '66ca8b68b463707fdfa85e61291688a0c941384f761a5e7c64fd3edabc156dca'
+$checksum32            = '5219962d7a10417df8d1ac261f300f8b70a56b361ad83e0141e654694bb296e4'
+$checksum64            = '97ffefc03d5afb08a500a5bde01a4c2f4f1c7307b2d06dac07ba9d4f31de9444'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
