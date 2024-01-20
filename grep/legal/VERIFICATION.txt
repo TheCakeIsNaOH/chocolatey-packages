@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com
+   x64: https://github.com/mbuilov/grep-windows/archive/refs/tags/3.11.zip
    
    to download the zip.
 
@@ -15,6 +15,6 @@ Package can be verified like this:
 
 3. Get sha256 checksums of the grep executable with utility of choice, it is also included below for convenience
 
-    ChecksumExe: 1234qwerty
+    ChecksumExe: EF730408456D620399FAB0C639D53D0EC0C619A708E2191D220AA0AD9546E77F
 
 4. Check that it matches checksums of executable included in package

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>grep</id>
-    <version>3.7</version>
+    <version>3.11</version>
     <title>GNU grep for Windows</title>
     <authors>The GNU Project</authors>
     <owners>TheCakeIsNaOH</owners>
