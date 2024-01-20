@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/openzfsonwindows/ZFSin/issues</bugTrackerUrl>
     <tags>deprecated ZFS OpenZFS OpenZFSonWindows driver filesystem</tags>
     <summary>OpenZFS on Windows port</summary>
-    <description>##This package has been deprecated. It has been replaced by openzfsonwindows.</description>
+    <description>## This package has been deprecated. It has been replaced by openzfsonwindows.</description>
     <dependencies>
       <dependency id="openzfsonwindows" version="2.2.0-rc5" />
     </dependencies>
