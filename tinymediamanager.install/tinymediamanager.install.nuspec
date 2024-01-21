@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>tinymediamanager.install</id>
+    <version>5.0.1.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>tinyMediaManager (Install)</title>
+    <projectUrl>https://www.tinymediamanager.org/</projectUrl>
+    <authors>https://gitlab.com/tinyMediaManager/tinyMediaManager/-/project_members</authors>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/ef3c4735c37977337d668544a9d11b5bea61fd38/Icons/tinyMediaManager.png</iconUrl>
+    <copyright>© 2024 Manuel Laggner</copyright>
+    <licenseUrl>https://gitlab.com/tinyMediaManager/tinyMediaManager/-/blob/devel/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://gitlab.com/tinyMediaManager/tinyMediaManager</projectSourceUrl>
+    <docsUrl>https://www.tinymediamanager.org/docs</docsUrl>
+    <mailingListUrl>https://forum.kodi.tv/forumdisplay.php?fid=204</mailingListUrl>
+    <bugTrackerUrl>https://gitlab.com/tinyMediaManager/tinyMediaManager/-/issues</bugTrackerUrl>
+    <tags>tinymediamanager media managment tinyMediaManager metadata XBOX Media Center XBMC Plex Emby Freemium</tags>
+    <summary>A multi-OS media managment tool</summary>
+    <description><![CDATA[[tinyMediaManager](https://www.tinymediamanager.org) is a media management tool written in Java/Swing. It is written to provide metadata for the XBOX Media Center (XBMC). Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and Mac OSX (and possible more OS).
+
+## Features
+
+- [All Features](https://www.tinymediamanager.org/features)
+]]></description>
+    <releaseNotes>https://www.tinymediamanager.org/changelog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
