@@ -9,7 +9,7 @@ if ($version -le (Get-ChromeCanaryVersion)) {
 
 $packageArgs = @{
   packageName            = 'googlechrome'
-  fileType               = 'MSI'
+  fileType               = 'EXE'
   url                    = 'https://dl.google.com/tag/s/appguid=%7B4EA16AC7-FD5A-47C3-875B-DBF4A2008C20%7D&usagestats=1&ap=-statsdef_1/update2/installers/ChromeSetup.exe'
   checksum               = 'f7d59fe7ce6246dbcdfbe8eac87634aab78f624846ea510dfdd0f36947c8be78'
   checksumType           = 'sha256'
