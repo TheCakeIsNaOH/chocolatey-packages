@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>google-chrome-for-enterprise</id>
+    <version>120.0.6099.225</version>
+    <title>[Deprecated] Google Chrome for Enterprise</title>
+    <authors>Google LLC.</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <projectUrl>https://www.google.com/chrome/browser/</projectUrl>
+    <licenseUrl>https://www.google.it/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>## This package is deprecated to depend on the `GoogleChrome` package, as that package now uses the enterprise installer.</description>
+    <summary>Google Chrome for Enterprise</summary>
+    <copyright>2024 Google LLC</copyright>
+    <tags>Google Chrome Browser Enterprise</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
+    <dependencies>
+      <dependency id="GoogleChrome" version="120.0.6099.225" />
+    </dependencies>
+  </metadata>
+</package>
