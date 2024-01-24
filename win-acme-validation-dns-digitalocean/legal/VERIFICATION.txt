@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.validation.dns.digitalocean.v2.2.6.1571.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.validation.dns.digitalocean.v2.2.7.1612.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: FFDA7404BCC9D634CC60779013AD28517004329AC595D2E3677E110DD6344F04
+   checksum32: 12F24F61BC8386B4580916AECA5E7EAAE7910DF35DCA81B1F7CC8CE0508DB745

@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.store.keyvault.v2.2.6.1571.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.store.keyvault.v2.2.7.1612.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: D814EE48B5F8FF652F37663B5F3DFE2FC9D8076DA1DC610299188F653815614E
+   checksum32: CE7334C282ED05166B6B785ED51128235EF2AF4E6A8649B422CC4DC41DA4CF52

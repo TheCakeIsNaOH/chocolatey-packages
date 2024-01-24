@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.store.userstore.v2.2.6.1571.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.store.userstore.v2.2.7.1612.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 8C90C8FBA3AAD9FD837D1EF52F32219758C4703E4DF3E54F32AD78F48ED70589
+   checksum32: A136231C2C23D050CD259F7B60A3E644F6FBFAC2ADC7A4B70BD816D40A52C3EF

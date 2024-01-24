@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.validation.dns.godaddy.v2.2.6.1571.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.validation.dns.godaddy.v2.2.7.1612.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 4FB9DD82079AF12EBBDDE6811D6176EBA716A3C50CB1B3C1C109AE83E91A047D
+   checksum32: 97D4A7763A523178F01B53F9A01C9EA8F7A6793F3BB5390DFDF707AA9AF1F5B3

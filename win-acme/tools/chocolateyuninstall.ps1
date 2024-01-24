@@ -4,8 +4,8 @@ $destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
 $exepath               = (Join-Path $destination 'wacs.exe')
 
 $packageArgs = @{
-    FilePath   = 'win-acme.v2.2.6.1571.x86.pluggable.zip'
-    FilePath64 = 'win-acme.v2.2.6.1571.x64.pluggable.zip'
+    FilePath   = 'win-acme.v2.2.7.1612.x86.pluggable.zip'
+    FilePath64 = 'win-acme.v2.2.7.1612.x64.pluggable.zip'
 }
 
 Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -ZipFileName $packageArgs.FilePath

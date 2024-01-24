@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.6.1571/plugin.validation.dns.rfc2136.v2.2.6.1571.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.validation.dns.rfc2136.v2.2.7.1612.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 636DB7F581C21548160C4775518DFAF40227D6F956348770CBF15EA961B59BCD
+   checksum32: 6307EA39C7C9EBA42B8866FD8428E00A1140BB99AB21DD63FC1D52BA3D169800
