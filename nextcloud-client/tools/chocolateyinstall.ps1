@@ -28,7 +28,7 @@ if ($pp['NoShell']) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  file64        = Join-Path $toolsDir 'Nextcloud-3.11.0-x64.msi'
+  file64        = Join-Path $toolsDir 'Nextcloud-3.11.1-x64.msi'
   silentArgs    = $silentArgs
   validExitCodes= @(0, 3010, 1641)
   softwareName  = 'Nextcloud*'
