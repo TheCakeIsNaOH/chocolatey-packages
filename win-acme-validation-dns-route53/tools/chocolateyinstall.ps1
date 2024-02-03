@@ -5,7 +5,7 @@ $destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
     destination    = $destination
-    FileFullPath   = Join-Path $toolsDir 'plugin.validation.dns.route53.v2.2.7.1612.zip'
+    FileFullPath   = Join-Path $toolsDir 'plugin.validation.dns.route53.v2.2.7.1621.zip'
 }
 
 Get-ChocolateyUnzip @packageArgs

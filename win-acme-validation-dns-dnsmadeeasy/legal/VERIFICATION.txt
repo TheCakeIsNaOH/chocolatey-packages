@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.validation.dns.dnsmadeeasy.v2.2.7.1612.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1621/plugin.validation.dns.dnsmadeeasy.v2.2.7.1621.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 95BA1C1ECC52F08F91D65777091C596C4E04EC9EA24F375962349D0BF7263784
+   checksum32: CA55C00623D578DB753755A445D5160179004C872573C0C7F9FF52943B0A2C9D

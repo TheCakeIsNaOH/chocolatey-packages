@@ -6,8 +6,8 @@ $exepath               = (Join-Path $destination 'wacs.exe')
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
     destination    = $destination
-    FileFullPath   = Join-Path $toolsDir 'win-acme.v2.2.7.1612.x86.pluggable.zip'
-    FileFullPath64 = Join-Path $toolsDir 'win-acme.v2.2.7.1612.x64.pluggable.zip'
+    FileFullPath   = Join-Path $toolsDir 'win-acme.v2.2.7.1621.x86.pluggable.zip'
+    FileFullPath64 = Join-Path $toolsDir 'win-acme.v2.2.7.1621.x64.pluggable.zip'
 }
 
 Get-ChocolateyUnzip @packageArgs

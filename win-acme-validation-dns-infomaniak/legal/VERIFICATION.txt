@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1612/plugin.validation.dns.infomaniak.v2.2.7.1612.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1621/plugin.validation.dns.infomaniak.v2.2.7.1621.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 253D48258C5C58471FBC075896D509D41A6BF059C232875B9C61F91ED496DC8C
+   checksum32: BA23ADAEE19C8D893B53926100A57FF508650198A181E86ABC2B82005A3877C0
