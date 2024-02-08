@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://dl.hexchat.net/hexchat/HexChat%202.16.1%20x86.exe
-   x64: https://dl.hexchat.net/hexchat/HexChat%202.16.1%20x64.exe
+   x32: https://github.com/hexchat/hexchat/releases/download/v2.16.2/HexChat.2.16.2.x86.exe
+   x64: https://github.com/hexchat/hexchat/releases/download/v2.16.2/HexChat.2.16.2.x64.exe
 
    to download the installer.
 
@@ -16,6 +16,6 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: AB6DB5C0CDD0A1DDD80DD7124430A6B56D75905859E4BAB68C973837171C6161
-   checksum64: 4B47930951EBC46E9CB8E8201856B8BDDCD7499F5510FE1059F67D65CC80BF07
+   checksum32: D5F6EF544537346AA0087FD343DB46D98AC1D287534D69035CB024E5AEEA41BF
+   checksum64: 2830899546BEB82FEA51B283CE7820B63DA2C25239C0BA0E739C95DFAF0694D3
    checksumType: sha256
