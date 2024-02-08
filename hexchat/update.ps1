@@ -28,7 +28,7 @@ function global:au_GetLatest {
     $url64         = $download_page.links | ? href -match $re64 | % href | select -first 1
     $re32 = "x86.exe"
     $url32         = $download_page.links | ? href -match $re32 | % href | select -first 1
-    $version       = ($url64 -split '%20' | select -Last 1 -Skip 1)
+    $version       = ($url64 -split '/' | Select-Object -Last 1 -Skip 1).trim("v")
     
     $useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
     

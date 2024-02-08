@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>logitech-options</id>
+    <version>10.20.11</version>
+    <owners>TheCakeIsNaOH</owners>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <title>Logitech Options (Install)</title>
+    <authors>Logitech</authors>
+    <projectUrl>https://support.logitech.com/en_us/software/options</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/e6e9a3f919945c45e33e266ef63ab8103cecf8eb/Icons/logitech-options.png</iconUrl>
+    <copyright>© Logitech. All rights reserved</copyright>
+    <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>logitech options keyboard mouse utility</tags>
+    <summary>Logitech Options software lets you customize your device settings.</summary>
+    <description>
+### Logitech Options software lets you customize your device's settings as follows:
+
+* Change function key shortcuts
+* Customize mouse buttons
+* Adjust point and scroll behavior
+* Enable and disable touchpad gestures
+* Get on-screen notifications when your device's battery runs low or when you press a lock key	
+</description>
+    <dependencies>
+      <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
