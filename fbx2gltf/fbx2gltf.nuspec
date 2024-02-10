@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fbx2gltf</id>
+    <version>0.0.1</version>
+    <title>Godot FBX2glTF</title>
+    <authors>V-Sekai contributors</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://github.com/godotengine/FBX2glTF/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/godotengine/FBX2glTF</projectUrl>
+    <projectSourceUrl>https://github.com/godotengine/FBX2glTF</projectSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+A command-line tool for the conversion of 3D model assets on the FBX file format
+to the glTF file format.
+
+Change skinning-weights to 4 with `--skinning-weights 4`, if your engine does not support the 8 bone weights feature.
+
+Change the default import of the engine to be different from 30 fps if needed, with `--anim-framerate (bake24|bake30|bake60)`.
+
+The FBX2glTF command line tool is distributed under the 3-clause BSD license.
+
+Precompiled binaries include **proprietary code** from the Autodesk FBX SDK 2020,
+which is distributed under the
+[Autodesk LICENSE AND SERVICES AGREEMENT](https://github.com/godotengine/FBX2glTF/releases/latest/download/FBX-SDK-License.rtf).
+
+**By downloading and using this tool, you agree to the terms of that Autodesk
+proprietary license.**
+</description>
+    <summary>A command-line tool for the conversion of 3D model assets on the FBX file format to the glTF file format.</summary>
+    <releaseNotes>https://github.com/godotengine/FBX2glTF/releases</releaseNotes>
+    <copyright>2023 V-Sekai contributors</copyright>
+    <tags>godot autodesk fbx modeling</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/godotengine/FBX2glTF/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.38.33135" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
