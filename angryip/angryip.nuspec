@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>angryip</id>
+    <version>3.9.1.20240209</version>
+    <title>Angry IP Scanner (Installer)</title>
+    <authors>Anton Keks</authors>
+    <copyright>Anton Keks</copyright>
+    <owners>TheCakeIsNaOH</owners>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <licenseUrl>https://raw.githubusercontent.com/angryip/ipscan/master/LICENSE</licenseUrl>
+    <projectUrl>https://angryip.org/</projectUrl>
+    <projectSourceUrl>https://github.com/angryip/ipscan</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/angryip/ipscan/issues</bugTrackerUrl>
+    <docsUrl>https://angryip.org/faq/</docsUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/d9eb53b2137d945c09616b13e1b0ee074f25303f/Icons/angryip.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has [many other features](https://angryip.org/about/).
+
+It is widely used by network administrators and just curious users around the world, including large and small enterprises, banks, and government agencies.
+
+It runs on Linux, Windows, and Mac OS X, possibly supporting other platforms as well.
+
+#### Features
+* Scans local networks as well as Internet
+* IP Range, Random or file in any format
+* Exports results into many formats
+* Extensible with many data fetchers
+* Provides command-line interface
+
+* Over [29 million](https://angryip.org/2015/03/downloads.html) downloads
+* Free and open-source
+* Works on Windows, Mac and Linux
+* Installation not required
+</description>
+    <summary>Angry IP Scanner - fast and friendly network scanner</summary>
+    <releaseNotes>https://github.com/angryip/ipscan/releases</releaseNotes>
+    <tags>angryziber angryip ipscan angry scanner network ip foss cross-platform</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
