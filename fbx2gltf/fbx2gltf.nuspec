@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fbx2gltf</id>
-    <version>0.0.1</version>
+    <version>0.13.1</version>
     <title>Godot FBX2glTF</title>
     <authors>V-Sekai contributors</authors>
     <owners>TheCakeIsNaOH</owners>
