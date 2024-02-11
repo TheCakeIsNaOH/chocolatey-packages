@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>googleearth</id>
+    <version>7.1.8.30360002</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>	
+    <owners>TheCakeIsNaOH</owners>
+    <title>Google Earth (Install)</title>
+    <authors>Google</authors>
+    <projectUrl>https://www.google.com/earth/explore/products/desktop.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/c78935aef7ba5ae8aacd94bec4ba77951ce4d1bd/Icons/googleearth.png</iconUrl>
+    <copyright>(C) Google Inc. All Rights Reserved.</copyright>
+    <licenseUrl>https://www.google.com/intl/en/policies/terms/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://support.google.com/earth/?hl=en#topic=4363013</docsUrl>
+    <bugTrackerUrl>https://support.google.com/earth/answer/40901</bugTrackerUrl>
+    <tags>googleearth google earth  maps navigation geographic mapping</tags>
+    <summary>View satellite imagery, maps, terrain, 3D buildings, galaxies far in space, and the deepest depths of the ocean.</summary>
+    <description>
+## Google Earth
+
+Use Google Earth on the desktop to travel anywhere without leaving your desk. For additional advanced tools, use Google Earth Pro for no extra charge.
+
+Explore the world with Google Earth.
+
+* Explore rich geographical content
+* Zoom from outer space to street level
+* Search for business locations
+* Visualize your GPS tracks and share with others
+* Fly around cities (or the entire world) in 3D
+* Go back in time with historical imagery
+* Dive beneath the surface of the ocean	
+	</description>
+    <releaseNotes>https://support.google.com/earth/answer/40901</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
