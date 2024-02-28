@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gpu-z</id>
+    <version>2.56.0</version>
+    <title>GPU-Z (Portable)</title>
+    <authors>TechPowerUp</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://www.techpowerup.com/gpuz/</licenseUrl>
+    <projectUrl>https://www.techpowerup.com/gpuz/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/76473405f9bd2f91c67e23610608f11d87a50fc8/Icons/gpu-z.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+GPU-Z is a lightweight utility designed to provide you with all information about your graphics card and GPU.
+
+#### Main Features
+* Supports NVIDIA, ATI and Intel graphics devices
+* Displays adapter, GPU and display information
+* Displays overclock, default clocks and 3D clocks (if available)
+* Includes a GPU load test to verify PCI-Express lane configuration
+* Validation of results
+* GPU-Z can create a backup of your graphics card BIOS
+* No installation required, optional installer is available
+* Support for Windows XP / Vista / Windows 7 / Windows 8 / Windows 10 (both 32 and 64 bit versions are supported)
+* .. and yes, the author of CPU-Z has granted us permission to use a name similar to his product. Thanks Franck.
+    </description>
+    <summary>GPU-Z - the Graphics Card Information Utility</summary>
+    <releaseNotes>https://www.techpowerup.com/download/techpowerup-gpu-z/</releaseNotes>
+    <copyright>(c) TechPowerUp</copyright>
+    <tags>techpowerup gpu gpuz gpu-z graphics card utility portable binary</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <docsUrl>https://www.techpowerup.com/gpuz/</docsUrl>
+    <mailingListUrl>https://www.techpowerup.com/forums/forums/gpu-z.53/</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

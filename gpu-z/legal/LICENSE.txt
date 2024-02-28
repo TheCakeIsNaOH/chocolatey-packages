@@ -1,0 +1,1 @@
+﻿GPU-Z's webpage at https://www.techpowerup.com/gpuz/ defines the license as "GPU-Z is free to use for personal and commercial usage. However, you may not redistribute GPU-Z as part of a commercial package."
