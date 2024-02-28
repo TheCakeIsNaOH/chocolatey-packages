@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1621/plugin.validation.dns.dreamhost.v2.2.7.1621.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.8.1635/plugin.validation.dns.dreamhost.v2.2.8.1635.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: EB4448614650FCCD7E97EA3F8BC98E616BD54DF5844D26FE175FFE13839C2C73
+   checksum32: 795584ACCAAD0261177A3BF10AE3461F8C1553A1128DE46789A35E517C06E466
