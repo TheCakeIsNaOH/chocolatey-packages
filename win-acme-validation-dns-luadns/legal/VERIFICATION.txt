@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.7.1621/plugin.validation.dns.luadns.v2.2.7.1621.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.8.1635/plugin.validation.dns.luadns.v2.2.8.1635.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C4A361D55D3166606AF01BDA6BCCC8ABC9C154B39BF2740102426112376A8711
+   checksum32: DC710E5456A2E0BA6BB23ACA15FDD5D5C649926D8A5A4746BE0B6944F47BD9AC
