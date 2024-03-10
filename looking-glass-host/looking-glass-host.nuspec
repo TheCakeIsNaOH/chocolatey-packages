@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>looking-glass-host</id>
-    <version>0.0.0.0-B7-rc1</version>
+    <id>looking-glass-host-bleeding-edge</id>
+    <version>0.0.0.0-B71-2-7a411691</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
-    <title>Looking Glass (Host)</title>
+    <title>Looking Glass (Host Bleeding-Edge)</title>
     <authors>Geoffrey McRae</authors>
     <projectUrl>https://looking-glass.io/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/looking-glass-host.png</iconUrl>
