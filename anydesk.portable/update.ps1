@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 Import-Module $([System.IO.Path]::Combine($env:ChocolateyInstall, 'helpers', 'chocolateyInstaller.psm1'))
 . $([System.IO.Path]::Combine("..", '_scripts', 'Update-OnETagChanged.ps1'))
 

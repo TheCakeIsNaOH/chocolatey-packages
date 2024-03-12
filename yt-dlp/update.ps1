@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 . $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases    = 'https://github.com/yt-dlp/yt-dlp/releases'

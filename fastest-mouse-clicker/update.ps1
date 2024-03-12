@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://windows-2048.github.io/The-Fastest-Mouse-Clicker-for-Windows/'
 

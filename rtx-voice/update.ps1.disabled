@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 Import-Module Wormies-AU-Helpers
 
 $releases = 'https://www.nvidia.com/en-us/geforce/guides/nvidia-rtx-voice-setup-guide/'

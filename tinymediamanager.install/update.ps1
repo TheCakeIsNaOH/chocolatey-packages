@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releasev4 = 'https://release.tinymediamanager.org/download_v4.html'
 $releasev5 = 'https://release.tinymediamanager.org/download_v5.html'

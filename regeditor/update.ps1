@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 Import-Module wormies-au-helpers
 
 function global:au_GetLatest {

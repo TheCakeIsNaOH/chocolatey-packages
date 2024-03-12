@@ -1,4 +1,4 @@
-﻿import-module au
+﻿Import-Module Chocolatey-AU
 . $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases = 'https://github.com/allienx/libdvdcss-dll/releases'

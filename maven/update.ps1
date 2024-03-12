@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 
 $releases = "https://downloads.apache.org/maven/maven-3/"
 #$releases = "https://archive.apache.org/dist/maven/maven-3/"

@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 
 $releases = 'https://dl.vikunja.io/desktop'
 

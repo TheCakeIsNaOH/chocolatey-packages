@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 
 function global:au_GetLatest {
 	$version_page = (Invoke-WebRequest -Uri http://www.cross-plus-a.com/changelog.txt -UseBasicParsing).content

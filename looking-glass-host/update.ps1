@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 
 function global:au_GetLatest {
     $downloads_page = Invoke-WebRequest -Uri 'https://looking-glass.io/downloads' -UseBasicParsing

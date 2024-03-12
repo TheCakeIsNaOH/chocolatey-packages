@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 . $([System.IO.Path]::Combine("..", '_scripts', 'Update-OnETagChanged.ps1'))
 
 function global:au_BeforeUpdate {

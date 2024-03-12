@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module Wormies-AU-Helpers
 . $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 

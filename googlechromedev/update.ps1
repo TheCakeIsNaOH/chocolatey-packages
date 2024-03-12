@@ -1,4 +1,4 @@
-﻿import-module au
+﻿Import-Module Chocolatey-AU
 
 $versionsApi = 'https://versionhistory.googleapis.com/v1/chrome/platforms/win/channels/dev/versions'
 

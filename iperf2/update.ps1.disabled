@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 Import-Module Wormies-AU-Helpers
 
 function global:au_SearchReplace {

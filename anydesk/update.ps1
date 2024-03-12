@@ -1,4 +1,4 @@
-﻿Import-Module AU
+﻿Import-Module Chocolatey-AU
 #uses anydesk.portable updater
 . $([System.IO.Path]::Combine($PSScriptRoot, '..', 'anydesk.portable', 'update.ps1'))
 
