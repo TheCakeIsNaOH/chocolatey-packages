@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.8.1635/plugin.http.rest.v2.2.8.1635.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.8.1635/plugin.validation.http.rest.v2.2.8.1635.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: EF0B7543E5775F0D81BAFFCEFC88F25F9AB5A8BDE0F9AA287899758F495568E9
+   checksum32: 9D38F03C3D8ABC6EA1429589EDD87DB06DE0CCE07AC34AB5CD75F07135930EAF
