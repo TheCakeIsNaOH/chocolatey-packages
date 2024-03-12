@@ -29,7 +29,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "win-acme" -Repository "win-acme"
 	
-    $match32 = "plugin.https.rest.*\.zip"
+    $match32 = "plugin.validation.http.rest.*\.zip"
     
     $url32      = 'https://github.com' + ($download_page.links | ? href -match $match32 | Select-Object -First 1 -ExpandProperty href)
     
