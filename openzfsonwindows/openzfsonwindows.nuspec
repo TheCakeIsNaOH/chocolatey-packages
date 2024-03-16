@@ -28,5 +28,6 @@ See https://github.com/openzfsonwindows/openzfs/blob/windows/module/os/windows/R
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>
