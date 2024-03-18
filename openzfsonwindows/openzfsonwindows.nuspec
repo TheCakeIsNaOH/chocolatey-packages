@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openzfsonwindows</id>
-    <version>2.2.3-rc1</version>
+    <version>2.2.3-rc2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/openzfsonwindows</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>OpenZFSOnWindows</title>
