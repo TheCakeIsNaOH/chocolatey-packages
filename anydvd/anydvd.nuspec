@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>anydvd</id>
-    <version>8.7.0.0</version>
+    <version>8.7.1.0</version>
     <title>AnyDVD, AnyDVD HD</title>
     <authors>RedFox</authors>
     <owners>TheCakeIsNaOH</owners>
