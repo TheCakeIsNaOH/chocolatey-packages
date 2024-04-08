@@ -29,10 +29,11 @@ function global:au_GetLatest {
     
     $version = (Get-Version $version).tostring()
     
-    $middleVersion = $version -split "\." | select -First 1 -Skip 1
-    if ((($middleVersion % 2) -eq 1) -and ($version -notlike "*-*")) {
-        $version += "-pre"
-    }
+    # Appears to no longer have odd middle versions be pre-release
+    #$middleVersion = $version -split "\." | select -First 1 -Skip 1
+    #if ((($middleVersion % 2) -eq 1) -and ($version -notlike "*-*")) {
+    #    $version += "-pre"
+    #}
     
     return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
 }
