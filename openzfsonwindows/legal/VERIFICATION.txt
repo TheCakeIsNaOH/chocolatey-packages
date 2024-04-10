@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/openzfsonwindows/openzfs/releases/download/zfswin-2.2.3rc2/OpenZFSOnWindows-debug-2.2.3rc2-dirty.exe
+   x64: https://github.com/openzfsonwindows/openzfs/releases/download/zfswin-2.2.3rc3/OpenZFSOnWindows-debug-2.2.3rc3.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: AB5006E9BA38D8C1CA60238AB7C8EAF2C0B13CB417FAB16C70955398EAFEE1A7
+   checksum64: 6426F8897FA4867AAC09CC19BF0C180A65BDD34A07C336A8A73CD4C24DD4DDA7
    checksumType: sha256
