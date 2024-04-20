@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iperf2</id>
-    <version>2.1.9</version>
+    <version>2.2.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/iperf2</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>iPerf2</title>
     <authors>Mark Gates,Alex Warshavsky,Ajay Tirumala,Jim Ferguson,Jon Dugan,Feng Qin,Kevin Gibbs,John Estabrook,Andrew Gallatin,Stephen Hemminger,Nathan Jones,Gerrit Renker,Robert J. McMahon,Tim Auckland</authors>
-    <copyright>2021 The Board of Trustees of the University of Illinois</copyright>
+    <copyright>2024 The Board of Trustees of the University of Illinois</copyright>
     <projectUrl>https://sourceforge.net/projects/iperf2/</projectUrl>
     <licenseUrl>https://sourceforge.net/p/iperf2/code/ci/master/tree/doc/ui_license.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -17,7 +17,7 @@
     <docsUrl>https://sourceforge.net/p/iperf2/wiki/Home/</docsUrl>
     <tags>iperf2 iperf network networking benchmarking</tags>
     <mailingListUrl>https://sourceforge.net/p/iperf2/discussion/</mailingListUrl>
-    <summary>A tool for measuring TCP and UDP network performance, based from 2.0.5</summary>
+    <summary>A tool for measuring TCP and UDP network performance</summary>
     <description>A network traffic tool for measuring TCP and UDP performance. The goals include maintaining an active iperf 2 code base (code originated from iperf 2.0.5), preserving interoperability with iperf 2.0.5 clients and servers, preserving the output for scripts (new enhanced output requires -e), adopt known 2.0.x bug fixes, maintain broad platform support, as well as add some essential feature enhancements mostly driven by WiFi testing needs. Also added python code to centralize test control.
 
 Iperf 2 vs iperf 3 major differences: Iperf 2 here has timing related stats including end/end packet latency w/histograms (clocks assumed to be synced); supports multicast including SSM; supports threaded operation; supports L2 length checks. Iperf3 is a "cleaner" code base per a rewrite; supports json output; uses a test connection; is single threaded. 
