@@ -4,29 +4,27 @@
   <metadata>
     <version>91.9.1</version>
     <id>icecat</id>
-    <title>GNU IceCat</title>
+    <title>(Unofficial) GNU IceCat</title>
     <description>
-GNU IceCat is the GNU version of the Firefox browser. It aim to be based on the the current official release of Firefox Extended Support Release (ESR) with removal of trademarked artwork and proprietary components. Important differences between Mozilla's Firefox and GNU IceCat is that IceCat has a focus on freedom and privacy.
-
-However, IceCat is not a straight fork of Firefox ESR; instead, it is a parallel effort that works closely with and re-bases in synchronization on the latest Firefox ESR as the upstream supplier, with patches merged upstream whenever possible; although it should be noted that additional security updates are customized to IceCat occasionally.
+GNUzilla is the GNU version of the Mozilla suite, and GNU IceCat is the GNU version of the Firefox browser. Its main advantage is an ethical one: it is entirely free software. While the Firefox source code from the Mozilla project is free software, they distribute and recommend nonfree software as plug-ins and addons. Also their trademark license imposes requirements for the distribution of modified versions that make it inconvenient to exercise freedom 3. 
 
 ## Notes
 
 * IceCat developers dropped support for Windows in 2016: *"Note that building binary packages for Windows and macOS currently requires non-free software, so we no longer distribute binary releases for those platforms"*.
-* This package contains an *unofficial* version of GNU IceCat installer for Windows x64 only.
+* This package contains an *unofficial* version of GNU IceCat installer by Chippy. https://codeberg.org/chippy/icecat-for-windows
 * This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <summary>A fully-free (as in freedom) fork of Mozilla Firefox ESR.</summary>
     <owners>TheCakeIsNaOH</owners>
     <authors>GNU Project</authors>
     <tags>foss cross-platform unofficial gnu icecat web browser web-browser firefox freedom privacy esr fork</tags>
-    <projectUrl>https://www.gnu.org/software/gnuzilla/</projectUrl>
+    <projectUrl>https://icecatbrowser.org/download.html</projectUrl>
     <releaseNotes>[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), [Firefox ESR](https://www.mozilla.org/en-US/firefox/91.9.1/releasenotes/)</releaseNotes>
     <projectSourceUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git</projectSourceUrl>
     <licenseUrl>https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/COPYING</licenseUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/icecat.png</iconUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
-    <bugTrackerUrl>https://bugzilla.mozilla.org/home</bugTrackerUrl>
+    <bugTrackerUrl>https://lists.gnu.org/mailman/listinfo/bug-gnuzilla</bugTrackerUrl>
     <dependencies>
       <dependency id="vcredist140" version="14.0.23026.0" />
     </dependencies>

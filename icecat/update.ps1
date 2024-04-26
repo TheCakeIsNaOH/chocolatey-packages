@@ -1,14 +1,14 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = 'https://github.com/muslayev/icecat-win64/releases'
+$releases = 'https://icecatbrowser.org/download.html'
 
 function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $url64 = $page.links | ? { $_.href -match '.exe$' } | select -expand href -First 1
-    $version = ($url64 -split '/' | select -Last 1 -Skip 1).Replace('v','')
+    $url64 = $page.links | ? { $_.href -match 'win64.installer.exe$' } | select -expand href -First 1
+    $version = ($url64 -split '/' | select -Last 1 -Skip 1)
 
     @{
-        URL64      = 'https://github.com' + $url64
+        URL64      = 'https://icecatbrowser.org/' + $url64
         Version    = $version
         ChangeLog  = '[GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git/tree/data/Changelog.IceCat), ' + '[Firefox ESR](https://www.mozilla.org/en-US/firefox/' + $version + '/releasenotes/)'
     }
