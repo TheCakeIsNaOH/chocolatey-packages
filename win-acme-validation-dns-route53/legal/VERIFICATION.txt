@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.8.1635/plugin.validation.dns.route53.v2.2.8.1635.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1680/plugin.validation.dns.route53.v2.2.9.1680.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C3EBB46B39CEBD82BA6BBA3098C94D9D45AF912F9E5735A223F3A3A5E907CE77
+   checksum32: 341494A84D4E07748FA402515669073760BF58EBC78EA70D1249D9A4551FEF5A

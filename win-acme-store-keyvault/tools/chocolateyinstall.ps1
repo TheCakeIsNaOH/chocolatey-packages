@@ -5,7 +5,7 @@ $destination           = Join-Path $(Get-ToolsLocation) 'win-acme'
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
     destination    = $destination
-    FileFullPath   = Join-Path $toolsDir 'plugin.store.keyvault.v2.2.8.1635.zip'
+    FileFullPath   = Join-Path $toolsDir 'plugin.store.keyvault.v2.2.9.1680.zip'
 }
 
 Get-ChocolateyUnzip @packageArgs
