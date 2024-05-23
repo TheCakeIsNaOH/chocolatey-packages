@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/openzfsonwindows/openzfs/releases/download/zfswin-2.2.3rc4/OpenZFSOnWindows-debug-.99-137-g4b326b9b92-dirty.exe
+   x64: https://github.com/openzfsonwindows/openzfs/releases/download/zfswin-2.2.3rc5/OpenZFSOnWindows-debug-.99-137-g4b326b9b92-dirty.exe
 
    to download the installer.
 
