@@ -4,7 +4,7 @@
   <metadata>
     <id>maven</id>
     <title>Maven</title>
-    <version>3.9.6</version>
+    <version>3.9.7</version>
     <authors>The Apache Maven team</authors>
     <owners>TheCakeIsNaOH, Michael Pereira, Anthony Accioly</owners>
     <summary>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object 
@@ -21,7 +21,7 @@ let them know the package is no longer updating correctly.</description>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/97fc87d57673255d9490a64e54bea94a3db79616/Icons/maven.svg</iconUrl>
-    <releaseNotes>https://maven.apache.org/docs/3.9.6/release-notes.html</releaseNotes>
+    <releaseNotes>https://maven.apache.org/docs/3.9.7/release-notes.html</releaseNotes>
     <docsUrl>https://maven.apache.org/guides/index.html</docsUrl>
     <bugTrackerUrl>https://issues.apache.org/jira/projects/MNG/issues</bugTrackerUrl>
     <mailingListUrl>https://maven.apache.org/mailing-lists.html</mailingListUrl>
@@ -29,7 +29,7 @@ let them know the package is no longer updating correctly.</description>
     <projectSourceUrl>https://maven.apache.org/scm.html</projectSourceUrl>
   </metadata>
   <files>
-    <file src="apache-maven-3.9.6\**" target="apache-maven-3.9.6" />
+    <file src="apache-maven-3.9.7\**" target="apache-maven-3.9.7" />
     <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
