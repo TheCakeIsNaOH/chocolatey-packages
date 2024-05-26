@@ -1,5 +1,5 @@
-﻿Balabolka (application console), version 1.82
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (application console), version 1.83
+Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
 WWW : https://www.cross-plus-a.com/fr/bconsole.htm
@@ -217,7 +217,11 @@ balcon [options ...]
 
 --sub-fit ou -sf
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : augmenter automatiquement le débit de la parole pour s'adapter aux intervalles spécifiés dans les sous-titres.
+   SAPI 5 et Microsoft Speech Platform : augmenter automatiquement le débit de la parole pour s'adapter aux intervalles spécifiés dans les sous-titres. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib ou -sfl
+   SAPI 4 : l’option n’est pas utilisée.
+   SAPI 5 et Microsoft Speech Platform : augmenter automatiquement le débit de la parole pour s'adapter aux intervalles spécifiés dans les sous-titres. The SoundTouch library will be used for changing tempo.
 
 --sub-max <nombre_intégral> ou -sm <nombre_intégral>
    SAPI 4 : l’option n’est pas utilisée.
@@ -311,7 +315,9 @@ balcon -w "d:\Sound\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of t
 
 Convertir les sous-titres en fichier audio FILM.WAV :
 
-balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-max 2
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 
 Lire à haute voix des phrases en français et en russe par des voix différentes :

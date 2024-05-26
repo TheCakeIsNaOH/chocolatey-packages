@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1680/plugin.validation.dns.linode.v2.2.9.1680.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.linode.v2.2.9.1701.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 20328A8065E75F1D02249BA5F50D6AD08573CE9A7B1627BD9BF965D0C2DC8FDF
+   checksum32: 62DB30901D8EF4FA7E6AE7885825EC9E7AD412017CAE43CBE554CCF4B59E2A07

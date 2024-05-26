@@ -1,5 +1,5 @@
-﻿Balabolka (Command Line Utility), version 1.82
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (Command Line Utility), version 1.83
+Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
 WWW: https://www.cross-plus-a.com/bconsole.htm
@@ -215,7 +215,11 @@ balcon [options ...]
 
 --sub-fit or -sf
    SAPI 4: not used.
-   SAPI 5 and Microsoft Speech Platform: automatically increases the speech rate to fit time intervals (when the program converts subtitles to audio file).
+   SAPI 5 and Microsoft Speech Platform: automatically increases the speech rate to fit time intervals (when the program converts subtitles to audio file). The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib or -sfl
+   SAPI 4: not used.
+   SAPI 5 and Microsoft Speech Platform: automatically increases the speech rate to fit time intervals (when the program converts subtitles to audio file). The SoundTouch library will be used for changing tempo.
 
 --sub-max <integer> or -sm <integer>
    SAPI 4: not used.
@@ -315,6 +319,8 @@ balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid r
 Convert subtitles to FILM.WAV:
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 
 The example of use together with LAME.EXE:

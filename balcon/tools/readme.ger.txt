@@ -1,5 +1,5 @@
-﻿Balabolka (Konsolenanwendung), Version 1.82
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (Konsolenanwendung), Version 1.83
+Copyright (c) 2013-2024 Ilya Morozov
 Alle Rechte vorbehalten
 
 WWW: https://www.cross-plus-a.com/de/bconsole.htm
@@ -145,8 +145,8 @@ balcon [Optionen ...]
 -dp
    Anzeige von Fortschrittsinformationen in einem Konsolenfenster.
 
--cfg <file_name>
-   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
+-cfg <Dateiname>
+   Legt den Namen der Konfigurationsdatei mit den Befehlszeilenoptionen fest (eine Textdatei, in der jede Zeile eine Option enthält). Wird die Option nicht angegeben, wird die Datei "balcon.cfg" verwendet, die sich im selben Ordner wie das Dienstprogramm befindet.
 
 -h
    Druckt die Liste der verfügbaren Befehlszeilen-Optionen.
@@ -215,7 +215,11 @@ balcon [Optionen ...]
 
 --sub-fit oder -sf
    SAPI 4: nicht verwendet.
-   SAPI 5 und Microsoft Speech Platform: erhöht die Geschwindigkeit automatisch, paßend zu Zeitintervallen (wenn das Programm Untertitel in eine Audio-Datei konvertiert).
+   SAPI 5 und Microsoft Speech Platform: erhöht die Geschwindigkeit automatisch, paßend zu Zeitintervallen (wenn das Programm Untertitel in eine Audio-Datei konvertiert). The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib oder -sfl
+   SAPI 4: nicht verwendet.
+   SAPI 5 und Microsoft Speech Platform: erhöht die Geschwindigkeit automatisch, paßend zu Zeitintervallen (wenn das Programm Untertitel in eine Audio-Datei konvertiert). The SoundTouch library will be used for changing tempo.
 
 --sub-max <Zahl> oder -sm <Zahl>
    SAPI 4: nicht verwendet.
@@ -286,7 +290,9 @@ balcon -k
 
 balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
 
-balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-max 2
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
 

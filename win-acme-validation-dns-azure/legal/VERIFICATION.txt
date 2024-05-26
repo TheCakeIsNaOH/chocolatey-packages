@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1680/plugin.validation.dns.azure.v2.2.9.1680.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.azure.v2.2.9.1701.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 6E7BFF8F9D3E1EEAFD7C6319C4B76B03F367566F555A7E6D8DA580AB1BFD6F30
+   checksum32: 7E0F16F5E1C35C1AFE1EEC9EECD8F9A488C5956E6E917B4215FA473518801448

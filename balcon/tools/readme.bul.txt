@@ -1,5 +1,5 @@
-﻿Balabolka (конзолно приложение), версия 1.82
-Авторски права (c) 2013-2023 Илия Морозов
+﻿Balabolka (конзолно приложение), версия 1.83
+Авторски права (c) 2013-2024 Илия Морозов
 Всички права запазени
 
 Уебсайт: https://www.cross-plus-a.com/bg/bconsole.htm
@@ -142,7 +142,7 @@ balcon [опции ...]
    Ако опцията не е указана, Ще се използва стойността по подразбиране за избрания глас.
 
 -dp
-   Display progress information in a console window.
+   Показване на информация за напредъка в конзолен прозорец.
 
 -cfg <file_name>
    Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
@@ -216,7 +216,11 @@ balcon [опции ...]
 
 --sub-fit или -sf
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл).
+   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib или -sfl
+   SAPI 4: Не се използва.
+   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). The SoundTouch library will be used for changing tempo.
 
 --sub-max <целочислена_стойност> или -sm <целочислена_стойност>
    SAPI 4: Не се използва.
@@ -315,7 +319,9 @@ balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid r
 
 Конвертиране на субтитри във FILM.WAV:
 
-balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-max 2
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 
 Пример за използване в комбинация с LAME.EXE:

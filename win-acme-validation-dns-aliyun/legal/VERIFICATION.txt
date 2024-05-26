@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1680/plugin.validation.dns.aliyun.v2.2.9.1680.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.aliyun.v2.2.9.1701.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 869D58B9D5D9B6C242D8AC5F12387692EFFE93F3DA540C796C0ED02F51D143DF
+   checksum32: 5AAFAEBF384F4AD91500F9262EA3692F591FF30158ED08C7D58F3C39E3A01EEE

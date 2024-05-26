@@ -1,5 +1,5 @@
-﻿Balabolka (aplikacja konsolowa), wersja 1.82
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (aplikacja konsolowa), wersja 1.83
+Copyright (c) 2013-2024 Ilya Morozov
 Wszystkie prawa zastrzeżone
 
 WWW: https://www.cross-plus-a.com/pl/bconsole.htm
@@ -144,7 +144,7 @@ balcon [parametry ...]
 -dp
    Display progress information in a console window.
 
--cfg <file_name>
+-cfg <nazwa_pliku>
    Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
 
 -h
@@ -215,7 +215,11 @@ balcon [parametry ...]
 
 --sub-fit lub -sf
    SAPI 4: parametr nie jest używany.
-   SAPI 5 i Microsoft Speech Platform: automatycznie zwiększać prędkość mowy aby zmieścić się w odstępy czasu określone w napisach.
+   SAPI 5 i Microsoft Speech Platform: automatycznie zwiększać prędkość mowy aby zmieścić się w odstępy czasu określone w napisach. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib lub -sfl
+   SAPI 4: parametr nie jest używany.
+   SAPI 5 i Microsoft Speech Platform: automatycznie zwiększać prędkość mowy aby zmieścić się w odstępy czasu określone w napisach. The SoundTouch library will be used for changing tempo.
 
 --sub-max <liczba> lub -sm <liczba>
    SAPI 4: parametr nie jest używany.
@@ -287,6 +291,8 @@ balcon -k
 balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n "Laura" --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
 

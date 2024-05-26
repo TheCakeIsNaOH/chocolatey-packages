@@ -1,5 +1,5 @@
-﻿Balabolka (komentorivisovellus), versio 1.82
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (komentorivisovellus), versio 1.83
+Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
 WWW: https://www.cross-plus-a.com/fi/bconsole.htm
@@ -216,7 +216,11 @@ balcon [options ...]
 
 --sub-fit tai -sf
    SAPI 4: parametria ei käytettävissä.
-   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa.
+   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib tai -sfl
+   SAPI 4: parametria ei käytettävissä.
+   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. The SoundTouch library will be used for changing tempo.
 
 --sub-max <luku> tai -sm <luku>
    SAPI 4: parametria ei käytettävissä.

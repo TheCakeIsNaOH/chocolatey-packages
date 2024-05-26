@@ -2,7 +2,7 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-    FilePath   = 'plugin.validation.http.rest.v2.2.9.1680.zip'
+    FilePath   = 'plugin.validation.http.rest.v2.2.9.1701.zip'
 }
 
 Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -ZipFileName $packageArgs.FilePath

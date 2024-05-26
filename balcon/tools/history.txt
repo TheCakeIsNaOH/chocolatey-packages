@@ -1,9 +1,15 @@
 ﻿Balabolka (Command Line Utility)
-Copyright (c) 2013-2023 Ilya Morozov
+Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
 
 *** History ***
+
+2024-05-26     v1.83
+[+] Added the option to use the SoundTouch library for subtitle converting.
+[-] Fixed the applying  of regular expressions.
+[*] Updated the Spanish translation of README file (thanks to Fernando Gregoire).
+
 
 2023-12-13     v1.82
 [+] Added the option to set the configuration file name.
@@ -24,7 +30,7 @@ All Rights Reserved
 
 2021-05-25     v1.78
 [-] Fixed the using of external audio files (audio clips).
-[*] Updated Spanish translation of README file (thanks to Fernando Gregoire).
+[*] Updated the Spanish translation of README file (thanks to Fernando Gregoire).
 
 
 2021-05-13     v1.77
@@ -253,7 +259,7 @@ All Rights Reserved
 
 2015-07-05     v1.24
 [-] Fixed small bugs.
-[*] Updated Spanish translation of README file (thanks to Fernando Gregoire).
+[*] Updated the Spanish translation of README file (thanks to Fernando Gregoire).
 
 
 2015-06-07     v1.23

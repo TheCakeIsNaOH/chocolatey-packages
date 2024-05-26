@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1680/plugin.validation.dns.dnsexit.v2.2.9.1680.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.dnsexit.v2.2.9.1701.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 6A65F75D76F9BEBBB142E03B51CE6346F21E6B891693AF184A3CE4D99D7378CC
+   checksum32: FC32486F7BACB751A93534A6889164E5E97B9FF58764F2B2C39F8E3402BF9BB6

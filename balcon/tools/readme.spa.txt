@@ -1,4 +1,4 @@
-﻿Balabolka (aplicación de consola), versión 1.82
+﻿Balabolka (aplicación de consola), versión 1.83
 Copyright (c) 2013-2023 Ilya Morozov
 Todos los derechos reservados
 
@@ -144,8 +144,8 @@ balcon [opciones ...]
 -dp
    Muestra información del progreso en una ventana de la consola.
 
--cfg <file_name>
-   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
+-cfg <nombre_de_archivo>
+   Establece el nombre del archivo de configuración con opciones de línea de comandos (un archivo de texto en que cada línea contenga una opción). Si no se especifica la opción, se empleará el archivo "balcon.cfg" en la misma carpeta que la utilidad.
 
 -h
    Muestra la lista de opciones de línea de comandos disponibles.
@@ -215,7 +215,11 @@ balcon [opciones ...]
 
 --sub-fit o -sf
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio.
+   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+
+--sub-fit-lib o -sfl
+   SAPI 4: la opción no se usa.
+   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio. The SoundTouch library will be used for changing tempo.
 
 --sub-max <entero> o -sm <entero>
    SAPI 4: la opción no se usa.
@@ -231,7 +235,7 @@ balcon [opciones ...]
   Ignorar el texto entre {llaves}.
 
 --ignore-angle-brackets o -iab
-  Ignora el texto entre <corchetes angulares>.
+  Ignorar el texto entre <corchetes angulares>.
 
 --ignore-round-brackets o -irb
    Ignorar texto entre (corchetes redondos).
@@ -286,7 +290,9 @@ balcon -k
 
 balcon -f "d:\Texto\libro.txt" -w "d:\Sonido\libro.wav" -lrc --lrc-length 80 --lrc-title "El Señor de los Anillos"
 
-balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n "Laura" --sub-fit --sub-max 2
+balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n Laura --sub-fit-lib
 
 balcon -f "d:\Texto\libro.txt" -n Diego --voice1-name Tatyana --voice1-langid ru
 
