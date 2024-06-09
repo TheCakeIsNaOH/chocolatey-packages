@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <version>0.0.1</version>
+    <id>d2</id>
+    <title>D2 Declarative Diagramming</title>
+    <authors>Terrastruct</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/terrastruct/d2/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://d2lang.com/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/41ec4572cb7df4909759dc9bfbb8c771ef32f395/Icons/d2.png</iconUrl>
+    <summary>A modern diagram scripting language that turns text to diagrams.</summary>
+    <description>Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable. D2 is the fastest and easiest way to get a mental model from your head onto the screen, then make edits with your team.
+### Feature highlight:
+- Production-ready themes: Themes by professional designers, each unique. Effortlessly ready for blogs, wikis, and presentations.
+- Sketch mode: Our take on a beautiful, hand-drawn aesthetic.
+- Animations: D2 is the only language that can produce animated diagrams from text.
+- LaTeX: Perfect for academic use and research papers.
+- Any language: Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.
+- Code snippets: Made for software diagrams. Syntax highlighted code right in the diagram.
+- Markdown: Include longform explanations with Markdown.
+- Tables: Show structured data like SQL tables.</description>
+    <releaseNotes>https://github.com/PowerShell/Win32-d2/releases</releaseNotes>
+    <copyright>Copyright 2024 Terrastruct Inc.</copyright>
+    <tags>d2 d2lang diagrams admin</tags>
+    <projectSourceUrl>https://github.com/terrastruct/d2</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/d2</packageSourceUrl>
+    <docsUrl>https://d2lang.com/tour/intro/</docsUrl>
+    <bugTrackerUrl>https://github.com/terrastruct/d2/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
