@@ -1,7 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 . $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
-$releases    = 'https://github.com/yt-dlp/yt-dlp/releases'
 $x64Filename = 'yt-dlp.exe'
 $x32Filename = 'yt-dlp_x86.exe'
 $baseDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -33,18 +32,37 @@ function global:au_BeforeUpdate() {
 
 
 function global:au_GetLatest {
-	$download_page = Get-GitHubLatestReleaseLinks -User "yt-dlp" -Repository "yt-dlp"
-	
-	$url64      = $download_page.links | ? href -match $x64Filename | % href | select -First 1
+    $download_page = Get-GitHubLatestReleaseLinks -User "yt-dlp" -Repository "yt-dlp"
+
+    $url64      = $download_page.links | ? href -match $x64Filename | % href | select -First 1
     $url32      = $download_page.links | ? href -match $x32Filename | % href | select -First 1
-	$version    = $url64 -split '/' | select -Last 1 -Skip 1
-	$modurl32   = 'https://github.com' + $url32 
+    $version    = $url64 -split '/' | select -Last 1 -Skip 1
+    $modurl32   = 'https://github.com' + $url32 
     $modurl64   = 'https://github.com' + $url64
-	
-	return @{ 
-        Version = $version; 
-        URL32   = $modurl32;
-        URL64   = $modurl64;
+
+    $nightly_download_page = Get-GitHubLatestReleaseLinks -User "yt-dlp" -Repository "yt-dlp-nightly-builds"
+
+    $nightly_url64      = $nightly_download_page.links | ? href -match $x64Filename | % href | select -First 1
+    $nightly_url32      = $nightly_download_page.links | ? href -match $x32Filename | % href | select -First 1
+    $nightly_version    = ($nightly_url64 -split '/' | select -Last 1 -Skip 1).ToString() + "-nightly"
+    $nightly_modurl32   = 'https://github.com' + $nightly_url32 
+    $nightly_modurl64   = 'https://github.com' + $nightly_url64
+
+    return @{ 
+        Streams = [ordered] @{
+            'stable' = @{ 
+                Version = $version; 
+                URL32   = $modurl32;
+                URL64   = $modurl64;
+                Title = "YT-DLP"
+                }
+            'nightly' = @{
+                Version = $nightly_version; 
+                URL32   = $nightly_modurl32;
+                URL64   = $nightly_modurl64;
+                Title = "YT-DLP (Nightly)"
+            }
+        }
     }
 }
 
