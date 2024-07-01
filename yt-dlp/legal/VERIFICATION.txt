@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.06.29.232730/yt-dlp_x86.exe
-   x64: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.06.29.232730/yt-dlp.exe
+   x32: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.06.30.232744/yt-dlp_x86.exe
+   x64: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.06.30.232744/yt-dlp.exe
 
    to download the installers.
 
@@ -16,6 +16,6 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 599D1D0EC66AD0D61FCA5C98BE899CA51A96C254C295A38F1E5CAFB3E5944BAD
-   checksum64: 2CF963A5DBECFCC06205B482B5FF827CF7763C37BFBDCD81DF99D412B254D3AB
+   checksum32: 354B78E7ADE3BCF8AC3AC2B7FFC2D28CB9B46F73DB0B41F64E7040A7B3CC6D2B
+   checksum64: ECF38E7AC6BE2D6D9E020143E89CCDAF78C2148211B93D3744B12C25D31A670F
    checksumType: sha256
