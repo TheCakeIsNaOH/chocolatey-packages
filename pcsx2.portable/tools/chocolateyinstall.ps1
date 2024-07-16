@@ -4,17 +4,13 @@ $pp                    = Get-PackageParameters
 $shortcutName          = 'PCSX2 Portable.lnk'
 $startPath             = Join-Path ([System.Environment]::GetFolderPath("CommonStartMenu")) $shortcutName
 $desktopPath           = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName
-$tempPath              = Join-Path $env:temp 'PCSX2-portable'
+$tempPath              = Join-Path $env:temp 'PCSX2-Portable'
 
 Remove-Item -Recurse -ea 0 -Path $tempPath 
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  FileFullPath  = Join-Path $toolsDir 'pcsx2-1.6.0-binaries.7z'
-  Destination   = "$tempPath"
+if ((Get-OSArchitectureWidth -compare 32) -or ($env:chocolateyForceX86 -eq $true)) {
+    Throw "32-bit builds have been dropped. Install version 1.6.0.20210414 or older for a 32 bit build"
 }
-
-Get-ChocolateyUnzip @packageArgs
 
 if ($pp['Path']) {
 	$destination = $pp['Path']
@@ -22,8 +18,20 @@ if ($pp['Path']) {
 		Throw "Bad path parameter"
 	}
 } else {
-	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2'
+	$destination = Join-Path $(Get-ToolsLocation) 'PCSX2-Portable'
 }
+
+$file64 = Join-Path $toolsDir 'pcsx2-v2.0.2-windows-x64-Qt.7z'
+
+$exePath = Join-Path "$destination" "pcsx2-qt.exe"
+
+$packageArgs = @{
+  packageName     = $env:ChocolateyPackageName
+  FileFullPath64  = $file64
+  Destination     = "$tempPath"
+}
+
+Get-ChocolateyUnzip @packageArgs
 
 $null = New-Item -ItemType Directory -Path $destination -Force
 
@@ -35,11 +43,8 @@ if (Test-Path $configFile) {
 
 Write-Host -ForegroundColor white "Copying files to $destination"
 
-$innerFolder = (Get-ChildItem -Path "$tempPath" -Filter "PCSX2*").FullName
-$fileList = Get-ChildItem -Path $innerFolder | Copy-Item -Destination $destination -Recurse -Force -PassThru
+$fileList = Get-ChildItem -Path $tempPath | Copy-Item -Destination $destination -Recurse -Force -PassThru
 $fileList | select -ExpandProperty FullName | Out-File -Force -FilePath (Join-Path $toolsDir 'install-files.txt')
-
-$exePath = Join-Path "$destination" "pcsx2.exe"
 
 if (!$pp['NoStart']) {
     Write-Host -ForegroundColor white 'Adding ' $startPath

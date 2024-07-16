@@ -1,17 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installer             = Join-Path $toolsDir 'pcsx2-1.6.0-setup.exe'
-$ahkScript             = Join-Path $toolsDir 'pcsx2-install.ahk'
 $pp                    = Get-PackageParameters
 
-Write-Output "Running Autohotkey installer"
-AutoHotkey $ahkScript "$installer"
-
-Remove-Item -Force -ea 0 -Path $toolsDir\*.exe
-
-if (!$pp['DESKTOP'] -or $pp['DesktopShortcut']) {
-	$shortcut = Get-Childitem -Path ([System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)) -Filter "PCSX2 *.lnk"
-    Remove-Item -ea 0 -Path $shortcut.fullname
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'EXE'
+  file64         = Join-Path $toolsDir 'pcsx2-v2.0.2-windows-x64-installer.exe'
+  softwareName   = 'PCSX2*'
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  validExitCodes = @(0)
 }
 
-$env:ChocolateyPackageInstallLocation = (Split-Path (Get-UninstallRegistryKey -SoftwareName "PCSX2*").UninstallString)
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item "$toolsDir\*.exe" -Force -EA SilentlyContinue | Out-Null
+
+if (!$pp['DESKTOP'] -or $pp['DesktopShortcut']) {
+    $shortcutName = "PCSX2.lnk"
+	$shortcut = ([System.IO.Path]::Combine(([System.Environment]::GetFolderPath("CommonDesktop")), $shortcutName))
+    Remove-Item -ea 0 -Path $shortcut
+}
