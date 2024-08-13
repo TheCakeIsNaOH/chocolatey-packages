@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
   softwareName  = 'Vikunja Desktop*'
-  file          = Join-Path $toolsDir 'Vikunja%20Desktop-v0.24.1.exe'
+  file          = Join-Path $toolsDir 'Vikunja%20Desktop-v0.24.2.exe'
   silentArgs    = '/S'
   validExitCodes= @(0)
 }

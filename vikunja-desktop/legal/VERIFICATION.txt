@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://dl.vikunja.io//desktop/0.24.1/Vikunja%20Desktop-v0.24.1.exe
+   x32: https://dl.vikunja.io//desktop/0.24.2/Vikunja%20Desktop-v0.24.2.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-    checksum32: 1FA0BE30C05E52EF5739BA1D0CAD16E7E01D3796A1DDDFE5F6C587F746A067F7
+    checksum32: B3FD016A86C811A02E5C1CF014FCE8AAB8EF5389D2FB093C026004404AC9E074
     checksumType32: sha256
