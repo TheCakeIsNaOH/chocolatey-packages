@@ -1,6 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = 'https://icecatbrowser.org/download.html'
+$releases = 'https://icecatbrowser.org/all_downloads.html'
 
 function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
