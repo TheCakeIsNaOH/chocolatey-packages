@@ -5,6 +5,11 @@ All Rights Reserved
 
 *** History ***
 
+2024-08-25     v1.84
+[-] Fixed the using of the PAUSE tag.
+[*] Updated the Spanish translation of README file (thanks to Fernando Gregoire).
+
+
 2024-05-26     v1.83
 [+] Added the option to use the SoundTouch library for subtitle converting.
 [-] Fixed the applying  of regular expressions.

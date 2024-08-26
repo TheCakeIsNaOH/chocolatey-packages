@@ -1,5 +1,5 @@
-﻿Balabolka (aplicación de consola), versión 1.83
-Copyright (c) 2013-2023 Ilya Morozov
+﻿Balabolka (aplicación de consola), versión 1.84
+Copyright (c) 2013-2024 Ilya Morozov
 Todos los derechos reservados
 
 WWW: https://www.cross-plus-a.com/es/bconsole.htm
@@ -162,7 +162,7 @@ balcon [opciones ...]
 --lrc-length <entero>
    Ajusta la longitud máxima de líneas para el archivo LRC (en caracteres).
 
---lrc-fname <nombre_de_fichero>
+--lrc-fname <nombre_de_archivo>
    Establece el nombre del archivo LRC. La opción puede ser útil cuando se especifica la opción [-o].
 
 --lrc-enc <codificación>
@@ -195,7 +195,7 @@ balcon [opciones ...]
 --srt-length <entero>
    Ajusta la longitud máxima de líneas para el archivo SRT (en caracteres).
 
---srt-fname <nombre_de_fichero>
+--srt-fname <nombre_de_archivo>
    Establece el nombre del archivo SRT. La opción puede ser útil cuando se especifica la opción [-o].
 
 --srt-enc <codificación>
@@ -215,11 +215,11 @@ balcon [opciones ...]
 
 --sub-fit o -sf
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que quepa en los intervalos de tiempo, al convertir subtítulos en un archivo de audio. La aplicación aumenta el valor de velocidad de la voz de a pasos y comprueba si el texto cabe o no en el intervalo de tiempo dado.
 
 --sub-fit-lib o -sfl
    SAPI 4: la opción no se usa.
-   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que se ajuste a los intervalos de tiempo, al convertir subtítulos en un archivo de audio. The SoundTouch library will be used for changing tempo.
+   SAPI 5 y Microsoft Speech Platform: aumenta automáticamente la velocidad del habla para que quepa en los intervalos de tiempo, al convertir subtítulos en un archivo de audio. Para cambiar el tempo se utilizará la biblioteca SoundTouch.
 
 --sub-max <entero> o -sm <entero>
    SAPI 4: la opción no se usa.
@@ -360,7 +360,7 @@ El formato de la etiqueta:
 
 La etiqueta se aplica a todo el texto que le siga. Los valores se separan por punto y comas. Por ejemplo:
 
-Este texto lo leerá la voz de Balabolka predeterminada. {{Voice=Esperanza;0;0;100}} El otro texto lo leerá la voz Marta.
+Este texto lo leerá la voz de Balabolka predeterminada. {{Voice=Marta;0;0;100}} El otro texto lo leerá la voz Marta.
 
 EL contenido de la etiqueta no distingue entre mayúsculas y minúsculas. Pueden omitirse los valores de algunas propiedades:
 

@@ -1,4 +1,4 @@
-﻿Balabolka (Command Line Utility), version 1.83
+﻿Balabolka (Command Line Utility), version 1.84
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -27,6 +27,7 @@ balcon [options ...]
 
 -f <file_name>
    Sets the name of the input text file. The command line may contain few options [-f].
+   If the input data is a subtitle file, the content of the file will be converted to speech based on time intervals. The subtitle format will be determined by the extension of the file name or by the option [--sub-format].
 
 -fl <file_name>
    Sets the name of the text file with the list of input files (one file name per line). The command line may contain few options [-fl].
