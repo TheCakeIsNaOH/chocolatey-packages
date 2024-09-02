@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>googlechromecanary</id>
-    <version>130.0.6691.0-canary</version>
+    <version>130.0.6693.0-canary</version>
     <title>Google Chrome Canary</title>
     <owners>TheCakeIsNaOH</owners>
     <authors>Google LLC.</authors>
