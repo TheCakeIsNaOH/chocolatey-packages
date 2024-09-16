@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: http://dl-mirror.dolphin-emu.org/5.0/dolphin-x64-5.0.exe
+   x64: https://dl.dolphin-emu.org/releases/2409/dolphin-2409-x64.7z
 
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: E1B3AE8FC890C6588E5656F77EF2747AE7DDFC90B6530B240C0C5B9D0AB3CE8C
+   checksum64: 1135b7a37e53433ea4fb3c6458804a4370f84ac56a332bcbe2a22ab60ac96f2d

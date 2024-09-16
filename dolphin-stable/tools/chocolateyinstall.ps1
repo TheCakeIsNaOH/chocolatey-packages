@@ -1,33 +1,29 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir 			       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$shortcutName          = 'Dolphin.lnk'
-$dolphinFolder         = (Join-Path ([System.Environment]::GetFolderPath("ProgramFiles")) 'Dolphin')
-$exePath               = Join-Path $dolphinFolder  'Dolphin.exe'
-$shortcut              = Join-Path ([System.Environment]::GetFolderPath("CommonDesktop")) $shortcutName
-$startFolder           = Join-Path ([System.Environment]::GetFolderPath("CommonPrograms")) 'Dolphin'
+$shortcutName          = 'Dolphin Emulator.lnk'
+$extractDir            = $(Get-ToolsLocation)
+$extractedDir          = (Join-Path $extractDir 'Dolphin-x64')
+$dolphinDir            = (Join-Path $extractDir 'Dolphin')
+$exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  fileType       = 'EXE'
-  file           = Join-Path $toolsDir 'dolphin-x64-5.0.exe'
-  softwareName   = 'Dolphin*'
-  silentArgs     = '/S'
-  validExitCodes = @(0)
+  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-2409-x64.7z'
+  FileFullPath64 = Join-Path $toolsDir 'dolphin-master-2409-x64.7z'
+  Destination    = $extractDir
+  PackageName    = $env:ChocolateyPackageName
 }
-
-Install-ChocolateyInstallPackage @packageArgs
-
-Remove-Item -Force -Path $toolsDir\*.exe
-
-Install-BinFile -Name 'Dolphin-Stable' -Path $exepath -UseStart
-
-if (!($pp['desktopicon'])) {
-    Write-Host -ForgroundColor white "Removing $shortcut"
-    Remove-Item -Force -Ea 0 -Path $shortcut 
+Get-ChocolateyUnzip @packageArgs
+if (Test-Path $dolphinDir) {
+    Remove-Process -PathFilter "$([System.Text.RegularExpressions.Regex]::escape($dolphinDir))" | Out-Null
+} else {
+    $null = New-Item -ItemType Directory -Path $dolphinDir
 }
-
-if ($pp['nostart']) {
-	Write-Host -ForegroundColor white "Removeing  $startFolder"
-	Remove-Item -Force -Ea 0 -Path $startFolder
+Get-Childitem -Path $extractedDir -Recurse -File | ForEach-Object {
+    $dest = (Join-Path $dolphinDir $_.FullName.SubString($extractedDir.Length))
+    if (!(Test-Path (Split-Path $dest))) { $null = New-Item -ItemType Directory -Path (Split-Path $dest) }
+    [System.IO.File]::Copy($_.fullname, $dest, $true)
 }
+Remove-Item -Force -Recurse -Path $extractedDir
+Remove-Item -Force -Path $toolsDir\*.7z
+Install-BinFile -Name 'Dolphin-Dev' -Path $exepath -UseStart
