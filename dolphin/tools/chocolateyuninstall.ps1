@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$dolphinDir            = (Join-Path $(Get-ToolsLocation) Dolphin-Beta)
+$dolphinDir            = (Join-Path $(Get-ToolsLocation) Dolphin)
 $exepath               = (Join-Path $dolphinDir Dolphin.exe)
-$shortcutName          = 'Dolphin Emulator (Beta).lnk'
+$shortcutName          = 'Dolphin Emulator.lnk'
 $desktopicon           = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 $starticon             = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 
@@ -21,6 +21,6 @@ if (Test-Path $starticon) {
 	Write-Host -ForegroundColor yellow 'Did not find ' $starticon 'to remove'
 }
 
-Uninstall-BinFile -Name 'Dolphin-Beta' -Path $exepath
+Uninstall-BinFile -Name 'Dolphin' -Path $exepath
 
 Write-Host -ForegroundColor red "Not removing $dolphinDir so as to not remove user data, it can be removed manually"

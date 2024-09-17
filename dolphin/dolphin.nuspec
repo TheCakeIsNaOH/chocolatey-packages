@@ -49,7 +49,7 @@ let them know the package is no longer updating correctly.	</description>
 * [Changelog](https://dolphin-emu.org/download/list/master/)
     </releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" version="14.22.27821" />
+      <dependency id="vcredist140" version="14.40.33810" />
       <dependency id="chocolatey-core.extension" version="1.3.4" />
     </dependencies>
   </metadata>

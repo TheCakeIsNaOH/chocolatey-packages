@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir 			   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$shortcutName          = 'Dolphin Emulator (Beta).lnk'
+$shortcutName          = 'Dolphin Emulator.lnk'
 $extractDir            = $(Get-ToolsLocation)
 $extractedDir          = (Join-Path $extractDir 'Dolphin-x64')
-$dolphinDir            = (Join-Path $extractDir 'Dolphin-Beta')
+$dolphinDir            = (Join-Path $extractDir 'Dolphin')
 $exepath               = (Join-Path $dolphinDir 'Dolphin.exe')
 
 $packageArgs = @{
@@ -30,18 +30,18 @@ Get-Childitem -Path $extractedDir -Recurse -File | ForEach-Object {
 Remove-Item -Force -Recurse -Path $extractedDir
 Remove-Item -Force -Path $toolsDir\*.7z
 
-Install-BinFile -Name 'Dolphin-Beta' -Path $exepath -UseStart
+Install-BinFile -Name 'Dolphin' -Path $exepath -UseStart
 
 if ($pp['desktopicon']) {
 	$desktopicon = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $desktopicon
-	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exepath  -RunAsAdmin
+	Install-ChocolateyShortcut -ShortcutFilePath $desktopicon -TargetPath $exepath
 }
 
 if (!$pp['nostart']) {
 	$starticon = (Join-Path ([System.Environment]::GetFolderPath('Programs')) $shortcutName)
 	Write-Host -ForegroundColor white 'Adding ' $starticon
-	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath  -RunAsAdmin
+	Install-ChocolateyShortcut -ShortcutFilePath $starticon -TargetPath $exepath
 }
 
 $env:ChocolateyPackageInstallLocation = $dolphinDir

@@ -18,11 +18,12 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri https://dolphin-emu.org/download/ -UseBasicParsing
-	$regex         = 'dolphin-master-.*-x64.7z'
+    #https://dl.dolphin-emu.org/releases/2409/dolphin-2409-x64.7z
+	$regex         = 'dolphin-\d+-x64.7z'
     $url64         = $download_page.links | ? href -match $regex | select -First 1 -expand href
 	
-	$verNum        = ($url64 -split '[-]' | select -Last 2 -Skip 1) -join "."
-	$version       = $verNum.ToString() + '-beta'
+	$verNum        = $url64 -split '[-]' | select -Last 1 -Skip 1
+	$version       = $verNum.ToString() + ".0.0"
 	
 	return @{ Version = $version; URL64 = $url64 }
 }
