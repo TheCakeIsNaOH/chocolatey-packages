@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-d1648dd707687c336dff1397daf8a657881c230e/rpcs3-v0.0.33-16930-d1648dd7_win64.7z
+   x64: https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-66eae05e7506c801e9f3271367f8e654a6534e53/rpcs3-v0.0.33-16931-66eae05e_win64.7z
 
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 04006725C410ABF1CBAC18FA8641430F1F422E4D22284B583DEDAA27505016EB
+   checksum64: 73724381DC44A4AD207D5724839400DBD41E354D590726017FFEF408D79A141C
