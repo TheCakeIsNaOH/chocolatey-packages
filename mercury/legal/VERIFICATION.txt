@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://
+   x64: https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury_129.0.2_win64_AVX2_installer.exe
 
    to download the installer.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 
+   checksum64: D8E1545ABC897D9D66D92B7CD973419094E2037171A98DEFCC02F865022E6AC5
