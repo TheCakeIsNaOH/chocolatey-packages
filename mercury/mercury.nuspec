@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <version>0.0.0</version>
+    <id>mercury</id>
+    <title>Mercury Browser</title>
+    <description>
+[Firefox](https://www.mozilla.org/en-US/firefox/) fork with compiler optimizations and patches from [Librewolf](https://gitlab.com/librewolf-community), [Waterfox](https://github.com/WaterfoxCo/Waterfox), [Ghostery](https://github.com/ghostery/user-agent-desktop), and [BetterFox](https://github.com/yokoffing/Betterfox).
+
+It aims to be the Firefox equivalent of [Thorium](https://github.com/Alex313031/Thorium) (a [Chromium](https://www.chromium.org/) fork).
+
+## Notes
+
+* This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+    </description>
+    <summary>Compiler optimized, private Firefox fork.</summary>
+    <owners>TheCakeIsNaOH</owners>
+    <authors>Alex313031</authors>
+    <copyright>2024 Alex313031</copyright>
+    <tags>foss cross-platform mercury web browser web-browser firefox freedom privacy fork</tags>
+    <projectUrl>https://thorium.rocks/mercury</projectUrl>
+    <releaseNotes>https://github.com/Alex313031/Mercury/releases</releaseNotes>
+    <projectSourceUrl>https://github.com/Alex313031/Mercury</projectSourceUrl>
+    <licenseUrl>https://github.com/Alex313031/Mercury/blob/main/LICENSE.md</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/361a6904eee57598d9eac402b5b4503506b45283/Icons/Mercury.png</iconUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/Alex313031/Mercury/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.0.23026.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
