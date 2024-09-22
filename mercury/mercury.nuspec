@@ -12,6 +12,7 @@ It aims to be the Firefox equivalent of [Thorium](https://github.com/Alex313031/
 
 ## Notes
 
+* The software is unsigned, and as such may get flagged by virus scanners. See this [issue reply from the developers](https://github.com/Alex313031/Mercury/issues/30#issuecomment-1629932151) for more information.
 * This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <summary>Compiler optimized, private Firefox fork.</summary>
