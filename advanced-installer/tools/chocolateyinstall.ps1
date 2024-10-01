@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url                   = 'https://www.advancedinstaller.com/downloads/22.0/advinst.msi'
-$checksum              = 'e947e90986de411e7488f4e468e6f9c2ec123066d6224a93a4c5c0812d1ab99e'
+$url                   = 'https://www.advancedinstaller.com/downloads/22.1/advinst.msi'
+$checksum              = '2a10216a1e9cd8250f7aedc7d8ac0fd184a8b60329fe8202b1bb3dbe4166c71e'
 
 $packageArgs = @{
 	packageName    = 'advanced-installer'
