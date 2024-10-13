@@ -1,11 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$pp = Get-PackageParameters
+$silentArgs = '/S'
+
+if (!$pp['PreventRebootRequired']) {
+  $pp['PreventRebootRequired'] = 'true'
+}
+
+$pp.GetEnumerator() | ForEach-Object {
+  $silentArgs += " /$($_.Name)=$($_.Value)"
+}
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   file64         = Join-Path $toolsDir 'icecat-115.17.0.Multilang.win64.installer_x64.exe'
-  silentArgs     = '-ms'
+  silentArgs     = $silentArgs
   validExitCodes = @(0)
   softwareName   = 'Icecat*'
 }
