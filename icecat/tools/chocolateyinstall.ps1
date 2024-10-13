@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   file64         = Join-Path $toolsDir 'icecat-115.16.1.en-US.win64.installer_x64.exe'
-  silentArgs     = '-ms'
+  silentArgs     = '/S /TaskbarShortcut=false /DesktopShortcut=false /PreventRebootRequired=true'
   validExitCodes = @(0)
   softwareName   = 'Icecat*'
 }
