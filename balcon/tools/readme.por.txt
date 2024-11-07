@@ -1,4 +1,4 @@
-﻿Balabolka (aplicativo de console), versão 1.84
+﻿Balabolka (aplicativo de console), versão 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -222,7 +222,7 @@ balcon [opções ...]
 
 --sub-max <número> ou -sm <número>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: especificar a velocidade máxima de fala na faixa de -10 a 10 (para converter subtítulos em ficheiros de áudio).
+   SAPI 5 e Microsoft Speech Platform: especificar a velocidade máxima de fala na faixa de -10 a 10 (para converter subtítulos em ficheiros de áudio). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file ou -df
    Eliminar um ficheiro de texto depois de ler em voz alta ou salvar o ficheiro de áudio.

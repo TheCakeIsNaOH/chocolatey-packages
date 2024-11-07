@@ -1,4 +1,4 @@
-﻿Balabolka (komentorivisovellus), versio 1.84
+﻿Balabolka (komentorivisovellus), versio 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -224,7 +224,7 @@ balcon [options ...]
 
 --sub-max <luku> tai -sm <luku>
    SAPI 4: parametria ei käytettävissä.
-   SAPI 5 ja Microsoft Speech Platform: määrittää maksimaalinen puheen nopeus äänialueella -10:stä 10:een (muuttaakseen tekstitys äänitiedostoksi).
+   SAPI 5 ja Microsoft Speech Platform: määrittää maksimaalinen puheen nopeus äänialueella -10:stä 10:een (muuttaakseen tekstitys äänitiedostoksi). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file tai -df
    Poistaa tekstitiedosto ääneen lukemisen tai äänitiedoston tallentamisen jälkeen.
