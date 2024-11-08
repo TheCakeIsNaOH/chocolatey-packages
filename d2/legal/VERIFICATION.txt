@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/terrastruct/d2/releases/download/v0.6.7/d2-v0.6.7-windows-amd64.msi
+   x64: https://github.com/terrastruct/d2/releases/download/v0.6.8/d2-v0.6.8-windows-amd64.msi
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 143AB8A793FC65295A7A46FDDD14BD4536A58D3E4D3EBF2794B44D08FDD3A843
+   checksum64: 1C16D9CF14CD642721805FCF44B4F9741CD23F823EE38D98218F853024DCC1C0
