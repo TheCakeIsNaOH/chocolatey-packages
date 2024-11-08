@@ -5,6 +5,10 @@ All Rights Reserved
 
 *** History ***
 
+2024-11-06     v1.85
+[+] Added the maximal rate value for subtitle converting (when SoundTouch library is used).
+
+
 2024-08-25     v1.84
 [-] Fixed the using of the PAUSE tag.
 [*] Updated the Spanish translation of README file (thanks to Fernando Gregoire).

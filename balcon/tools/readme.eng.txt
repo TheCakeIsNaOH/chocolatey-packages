@@ -1,4 +1,4 @@
-﻿Balabolka (Command Line Utility), version 1.84
+﻿Balabolka (Command Line Utility), version 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -224,7 +224,7 @@ balcon [options ...]
 
 --sub-max <integer> or -sm <integer>
    SAPI 4: not used.
-   SAPI 5 and Microsoft Speech Platform: sets the maximal speed of speech in a range of -10 to 10 (when the program converts subtitles to audio file).
+   SAPI 5 and Microsoft Speech Platform: sets the maximal rate of speech in a range of -10 to 10 (when the program converts subtitles to audio file). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file or -df
    Removes the text file, when job is done. The option is used together with the option [-f].

@@ -1,4 +1,4 @@
-﻿Balabolka (application console), version 1.84
+﻿Balabolka (application console), version 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -225,7 +225,7 @@ balcon [options ...]
 
 --sub-max <nombre_intégral> ou -sm <nombre_intégral>
    SAPI 4 : l’option n’est pas utilisée.
-   SAPI 5 et Microsoft Speech Platform : spécifier le débit maximal de la parole dans une gamme de -10 à 10 (pour convertir des sous-titres en fichier audio).
+   SAPI 5 et Microsoft Speech Platform : spécifier le débit maximal de la parole dans une gamme de -10 à 10 (pour convertir des sous-titres en fichier audio). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file ou -df
    Supprimer le fichier texte après la lecture à haute voix ou enregistrer le fichier audio.

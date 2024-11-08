@@ -1,4 +1,4 @@
-﻿Balabolka (aplikacja konsolowa), wersja 1.84
+﻿Balabolka (aplikacja konsolowa), wersja 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 Wszystkie prawa zastrzeżone
 
@@ -223,7 +223,7 @@ balcon [parametry ...]
 
 --sub-max <liczba> lub -sm <liczba>
    SAPI 4: parametr nie jest używany.
-   SAPI 5 i Microsoft Speech Platform: ustawić maksymalną prędkość mowy w zakresie od -10 do 10 (do konwersji napisów w pliki dźwiękowe).
+   SAPI 5 i Microsoft Speech Platform: ustawić maksymalną prędkość mowy w zakresie od -10 do 10 (do konwersji napisów w pliki dźwiękowe). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file lub -df
    Usunąć plik tekstowy po zakończeniu czytania na głos lub zapisywania pliku dźwiękowego.

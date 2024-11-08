@@ -1,4 +1,4 @@
-﻿Balabolka (Konsolenanwendung), Version 1.84
+﻿Balabolka (Konsolenanwendung), Version 1.85
 Copyright (c) 2013-2024 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -223,7 +223,7 @@ balcon [Optionen ...]
 
 --sub-max <Zahl> oder -sm <Zahl>
    SAPI 4: nicht verwendet.
-   SAPI 5 und Microsoft Speech Platform: legt die maximale Sprechgeschwindigkeit in einem Bereich von -10 bis 10 fest (wenn das Programm Untertitel in eine Audio-Datei konvertiert).
+   SAPI 5 und Microsoft Speech Platform: legt die maximale Sprechgeschwindigkeit in einem Bereich von -10 bis 10 fest (wenn das Programm Untertitel in eine Audio-Datei konvertiert). If SoundTouch library is used, the range must be from 110% to 200%.
 
 --delete-file oder -df
    Entfernt die Textdatei, wenn die Aufgabe erledigt ist. Diese Option wird zusammen mit der Option [-f] verwendet.
