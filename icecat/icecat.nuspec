@@ -6,13 +6,20 @@
     <id>icecat</id>
     <title>(Unofficial) GNU IceCat</title>
     <description>
-GNUzilla is the GNU version of the Mozilla suite, and GNU IceCat is the GNU version of the Firefox browser. Its main advantage is an ethical one: it is entirely free software. While the Firefox source code from the Mozilla project is free software, they distribute and recommend nonfree software as plug-ins and addons. Also their trademark license imposes requirements for the distribution of modified versions that make it inconvenient to exercise freedom 3. 
+GNUzilla is the GNU version of the Mozilla suite, and GNU IceCat is the GNU version of the Firefox browser. Its main advantage is an ethical one: it is entirely free software. While the Firefox source code from the Mozilla project is free software, they distribute and recommend nonfree software as plug-ins and addons. Also their trademark license imposes requirements for the distribution of modified versions that make it inconvenient to exercise freedom 3.
 
 ## Notes
 
 * IceCat developers dropped support for Windows in 2016: *"Note that building binary packages for Windows and macOS currently requires non-free software, so we no longer distribute binary releases for those platforms"*.
 * This package contains an *unofficial* version of GNU IceCat installer by Chippy. https://codeberg.org/chippy/icecat-for-windows
 * This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+#### Package Parameters
+The full list of package parameters are (documented here)[https://firefox-source-docs.mozilla.org/browser/installer/windows/installer/FullConfig.html#command-line-options].
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM=value /ITEM2=value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
     </description>
     <summary>A fully-free (as in freedom) fork of Mozilla Firefox ESR.</summary>
     <owners>TheCakeIsNaOH</owners>
