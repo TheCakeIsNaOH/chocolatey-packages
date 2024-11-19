@@ -34,6 +34,7 @@ $packageArgs = @{
 Get-ChocolateyUnzip @packageArgs
 
 $null = New-Item -ItemType Directory -Path $destination -Force
+$null = New-Item -ItemType File -Path $destination -Name "portable.ini" -Force -EA 0
 
 $configFile = [IO.Path]::Combine("$destination" , "Shaders" , "GSdx_FX_Settings.ini")
 if (Test-Path $configFile) {
