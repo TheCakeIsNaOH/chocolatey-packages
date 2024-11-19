@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>win-acme-trimmed</id>
+    <version>0.0.0</version>
+    <title>win-acme (Trimmed)</title>
+    <authors>PKISharp</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <licenseUrl>https://github.com/win-acme/win-acme/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/d2e33db3a8339111ad0ddfe3787611668dd7b2a4/Icons/win-acme.png</iconUrl>
+    <projectUrl>https://www.win-acme.com/</projectUrl>
+    <projectSourceUrl>https://github.com/win-acme/win-acme/</projectSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a ACMEv2 client for Windows that aims to be very simple to start with, but powerful enough to grow into almost every scenario.
+    The trimmed version does not support plugins.
+    
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+    * `/Location` - Set the install directory. Defaults to `$env:ChocolateyToolsLocation\win-acme-trimmed`
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+    <summary>A simple ACME client for Windows (No Plugin Support)</summary>
+    <releaseNotes>https://github.com/PKISharp/win-acme/releases</releaseNotes>
+    <copyright>2024 PKISharp</copyright>
+    <tags>win-acme iis acme letsencrypt</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/win-acme-trimmed</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/win-acme/win-acme/issues</bugTrackerUrl>
+    <docsUrl>https://www.win-acme.com/reference/cli</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
