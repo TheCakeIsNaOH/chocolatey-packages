@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-youtube-to-mp3</id>
-    <version>5.7.1</version>
+    <version>5.7.2</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-youtube-to-mp3</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K YouTube to MP3 (Install)</title>
