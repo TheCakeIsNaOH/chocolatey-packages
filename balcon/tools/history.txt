@@ -5,6 +5,11 @@ All Rights Reserved
 
 *** History ***
 
+2024-12-09     v1.86
+[+] Added detection of input text file encoding.
+[-] Fixed small bugs.
+
+
 2024-11-06     v1.85
 [+] Added the maximal rate value for subtitle converting (when SoundTouch library is used).
 

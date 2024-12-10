@@ -1,4 +1,4 @@
-﻿Balabolka (aplicativo de console), versão 1.85
+﻿Balabolka (aplicativo de console), versão 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -151,7 +151,7 @@ balcon [opções ...]
    Mostrar a descrição das opções da linha de comando.
 
 --encoding <codificação> ou -enc <codificação>
-   Codificação de texto a partir da entrada padrão ("ansi", "utf8" ou "unicode"). O valor padrão é "ansi".
+   Codificação de texto a partir da entrada padrão ("ansi", "utf8" ou "unicode"). Se a opção não for especificada, o programa detectará a codificação do texto.
 
 --silence-begin <número> ou -sb <número>
    Especificar a duração da pausa no início do ficheiro áudio (em milissegundos). O padrão é 0.

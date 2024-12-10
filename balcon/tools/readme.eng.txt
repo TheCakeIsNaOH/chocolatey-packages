@@ -1,4 +1,4 @@
-﻿Balabolka (Command Line Utility), version 1.85
+﻿Balabolka (Command Line Utility), version 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
@@ -151,7 +151,7 @@ balcon [options ...]
    Prints the list of available command line options.
 
 --encoding <encoding> or -enc <encoding>
-   Sets the input text encoding ("ansi", "utf8" or "unicode"). The default is "ansi".
+   Sets the input text encoding ("ansi", "utf8" or "unicode"). If the option is not specified, the utility will detect the text encoding.
 
 --silence-begin <integer> or -sb <integer>
    Sets the length of silence at the beginning of the audio file (in milliseconds). The default is 0.

@@ -1,4 +1,4 @@
-﻿Balabolka (aplikacja konsolowa), wersja 1.85
+﻿Balabolka (aplikacja konsolowa), wersja 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 Wszystkie prawa zastrzeżone
 
@@ -151,7 +151,7 @@ balcon [parametry ...]
    Pokazać opis parametrów wiersza poleceń.
 
 --encoding <kodowanie> lub -enc <kodowanie>
-   Kodowanie tekstu ze standardowego strumiena wejściowego ("ansi", "utf8" lub "unicode"). Wartość domyślna dorówna "ansi".
+   Kodowanie tekstu ze standardowego strumiena wejściowego ("ansi", "utf8" lub "unicode"). Jeśli opcja nie zostanie określona, program wykryje kodowanie tekstu.
 
 --silence-begin <liczba> lub -sb <liczba>
    Ustawić długość pauzy na początku pliku dźwiękowego (w milisekundach). Wartość domyślna dorówna 0.

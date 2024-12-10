@@ -1,4 +1,4 @@
-﻿Balabolka (aplicación de consola), versión 1.85
+﻿Balabolka (aplicación de consola), versión 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 Todos los derechos reservados
 
@@ -151,7 +151,7 @@ balcon [opciones ...]
    Muestra la lista de opciones de línea de comandos disponibles.
 
 --encoding <codificación> o -enc <codificación>
-   Establece la codificación del texto de entrada ("ansi", "utf8" o "unicode"). El valor predeterminado es "ansi".
+   Establece la codificación del texto de entrada ("ansi", "utf8" o "unicode"). Si no se especifica la opción, el programa detectará la codificación del texto.
 
 --silence-begin <entero> o -sb <entero>
    Ajusta la longitud del silencio al principio del archivo de audio (en milisegundos). El valor predeterminado es 0.

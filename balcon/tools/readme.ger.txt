@@ -1,4 +1,4 @@
-﻿Balabolka (Konsolenanwendung), Version 1.85
+﻿Balabolka (Konsolenanwendung), Version 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -152,7 +152,7 @@ balcon [Optionen ...]
    Druckt die Liste der verfügbaren Befehlszeilen-Optionen.
 
 --encoding <Kodierung> oder -enc <Kodierung>
-   Bestimmt die Kodierung für die Texteingabe ("ansi", "utf8" oder "unicode"). Die Standardeinstellung ist "ansi".
+   Bestimmt die Kodierung für die Texteingabe ("ansi", "utf8" oder "unicode"). Wenn die Option nicht angegeben wird, erkennt das Programm die Textkodierung.
 
 --silence-begin <Zahl> oder -sb <Zahl>
    Legt die Lönge der Stille am Anfang der Audio-Datei fest (in Millisekunden). Der Standardwert ist 0.

@@ -1,4 +1,4 @@
-﻿Balabolka (application console), version 1.85
+﻿Balabolka (application console), version 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 

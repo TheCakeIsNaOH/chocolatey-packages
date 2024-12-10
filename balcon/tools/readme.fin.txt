@@ -1,4 +1,4 @@
-﻿Balabolka (komentorivisovellus), versio 1.85
+﻿Balabolka (komentorivisovellus), versio 1.86
 Copyright (c) 2013-2024 Ilya Morozov
 All Rights Reserved
 
