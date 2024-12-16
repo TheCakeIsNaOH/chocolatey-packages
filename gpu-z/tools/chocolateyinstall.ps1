@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file        = 'GPU-Z.2.60.0.exe'
+$file        = 'GPU-Z.2.61.0.exe'
 
 Remove-Item $ENV:ChocolateyInstall\bin\gpu-z*.exe  # delete old shims
 Remove-Item $toolsDir\*.ignore                     # delete old .ignore files (2.18.0+)
