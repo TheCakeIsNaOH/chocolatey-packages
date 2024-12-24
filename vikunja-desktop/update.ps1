@@ -3,20 +3,16 @@
 $releases = 'https://dl.vikunja.io/desktop'
 
 function global:au_SearchReplace {
-    @{
-        ".\tools\chocolateyinstall.ps1" = @{
-            "(?i)(^\s*File\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
-        }
-        ".\legal\VERIFICATION.txt" = @{
-            "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
-            "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
-        }
-	}
+  @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*url\s*=\s*)('.*')" = "`$1'$($Latest.URL32)'"
+      "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+    }
+  }
 }
 
 function global:au_BeforeUpdate {
-	$Latest.Filename32 = $Latest.Filename32 -replace '%20','-'
-    Get-RemoteFiles -Purge -NoSuffix
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
 }
 
 function global:au_GetLatest {
