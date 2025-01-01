@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>tinymediamanager.install</id>
-    <version>5.0.13</version>
+    <version>5.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>tinyMediaManager (Install)</title>
