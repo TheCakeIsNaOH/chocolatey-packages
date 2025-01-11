@@ -18,7 +18,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $mainPage   = Invoke-WebRequest -Uri https://get.openlp.org/ -UseBasicParsing
-    $version    = ($mainPage.links | ? href -match "\d\.\d" | select -Last 1 -ExpandProperty href).trim('/')
+    $version    = ($mainPage.links | ? href -match "^\d\.\d" | select -Last 1 -ExpandProperty href).trim('/')
     $versionURL = 'https://get.openlp.org/' + $version + '/'
     
     $versionPage = Invoke-WebRequest -Uri ($versionURL) -UseBasicParsing
