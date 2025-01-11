@@ -58,7 +58,7 @@ install:
     $chocoVersion = $Env:choco_version
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
-      'chocolatey' = $chocoVersion
+      #'chocolatey' = $chocoVersion
       'wormies-au-helpers' = '0.4.1'
       'chocolatey-au' = '1.0.0'
     }.GetEnumerator() | % {
