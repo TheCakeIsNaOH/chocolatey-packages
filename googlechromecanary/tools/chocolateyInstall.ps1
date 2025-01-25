@@ -1,7 +1,7 @@
 ﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
-$version = '134.0.6976.0-canary'
+$version = '134.0.6978.0-canary'
 if ($version -le (Get-ChromeCanaryVersion)) {
   Write-Host "Google Chrome Canary $version is already installed."
   return
@@ -11,7 +11,7 @@ $packageArgs = @{
   packageName            = 'googlechrome'
   fileType               = 'EXE'
   url                    = 'https://dl.google.com/tag/s/appguid=%7B4EA16AC7-FD5A-47C3-875B-DBF4A2008C20%7D&usagestats=1&ap=-statsdef_1/update2/installers/ChromeSetup.exe'
-  checksum               = 'fa6addb288cda730edc99ebf0aa4d55c49b9308760dbb152757b5c6f5050e62f'
+  checksum               = '2e59fbcb5b663a996fc93168c4dfb533c90b92d1bfd58f50cc0222821aa13e7b'
   checksumType           = 'sha256'
   silentArgs             = "/silent /install"
   validExitCodes         = @(0)
