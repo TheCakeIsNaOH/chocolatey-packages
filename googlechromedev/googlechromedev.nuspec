@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>googlechromedev</id>
-    <version>134.0.6974.3-dev</version>
+    <version>134.0.6988.2-dev</version>
     <title>Google Chrome Dev</title>
     <owners>TheCakeIsNaOH</owners>
     <authors>Google LLC.</authors>
