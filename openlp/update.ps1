@@ -3,8 +3,6 @@ Import-Module Chocolatey-AU
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyinstall.ps1" = @{
-			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"          
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"          
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
@@ -23,9 +21,7 @@ function global:au_GetLatest {
     
     $versionPage = Invoke-WebRequest -Uri ($versionURL) -UseBasicParsing
     $url64end    = $versionPage.links | ? href -match "x64.msi$" | select -ExpandProperty href
-    $url32end    = $versionPage.links | ? href -match "$version.msi$" | select -ExpandProperty href 
     $url64       = $versionURL + $url64end 
-    $url32       = $versionURL + $url32end
     
     $version = (Get-Version $version).tostring()
     
@@ -35,7 +31,7 @@ function global:au_GetLatest {
     #    $version += "-pre"
     #}
     
-    return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
+    return @{ Version = $version; URL64 = $url64 }
 }
 
 Update-Package -ChecksumFor none
