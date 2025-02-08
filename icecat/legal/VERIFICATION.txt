@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://icecatbrowser.org//assets/icecat/115.19.0/icecat-115.19.0.en-US.win64.installer.exe
+   x64: https://icecatbrowser.org//assets/icecat/115.20.0/icecat-115.20.0.multilang.win64.installer.exe
 
    to download the installer.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 4D4B8F5307E8DDFDFCF64BEF69325C89067D9AC5FA94973F21C5109FA3B425D1
+   checksum64: E0210567AC51442E30A2B6D4BCF6529A4A79F5452D3A5014DAF42EFFCA34C701
