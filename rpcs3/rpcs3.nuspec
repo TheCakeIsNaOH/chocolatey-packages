@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rpcs3</id>
-    <version>0.0.35-alpha17655</version>
+    <version>0.0.35-alpha17660</version>
     <title>RPCS3</title>
     <authors>Nekotekina, kd-11, Contributors</authors>
     <owners>TheCakeIsNaOH</owners>
