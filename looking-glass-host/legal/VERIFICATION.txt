@@ -6,7 +6,7 @@ Download URL from authors site at: https://looking-glass.io/downloads
 
 1. Go to
 
-   x64: https://looking-glass.io/artifact/B7-16-7a88a49f/host
+   x64: https://looking-glass.io/artifact/B7-17-b526eb3d/host
    
    to download the installer archive
 
@@ -14,6 +14,6 @@ Download URL from authors site at: https://looking-glass.io/downloads
 
 3. Get sha256 checksum of included setup executable with utility of choice, also included below for convenience
 
-   checksum64: B4E4B7DBC5F57F8A6780C0C58F47725AE24C76D2D63AC56568E838BE2024868A
+   checksum64: 8E66CE8EDEEC379D69FDE859607CAB6BCCD3075BE8FCB6DFE6DE44048F3DA460
 
 4. Check that it matches checksum of included setup executable
