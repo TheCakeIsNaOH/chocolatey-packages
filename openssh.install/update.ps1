@@ -28,7 +28,7 @@ function global:au_GetLatest {
     $url32   = 'https://github.com' + ($download_page.links | ? href -match $match32 | Select-Object -First 1 -ExpandProperty href)
     $url64   = 'https://github.com' + ($download_page.links | ? href -match $match64 | Select-Object -First 1 -ExpandProperty href)
     
-	$version = ($url32 -split '/' | Select-Object -Last 1 -Skip 1).trim("v") -replace "p1",""
+	$version = (($url32 -split '/' | Select-Object -Last 1 -Skip 1).trim("v") -replace "p1","") -replace "p2",""
     
 	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
 }
