@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.8.2.0p2-Preview/OpenSSH-ARM64-v9.8.2.0.msi
-   x64: https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.8.2.0p2-Preview/OpenSSH-Win64-v9.8.2.0.msi
+   x32: https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.8.3.0p2-Preview/OpenSSH-ARM64-v9.8.3.0.msi
+   x64: https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.8.3.0p2-Preview/OpenSSH-Win64-v9.8.3.0.msi
    
    to download the zip.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E0EED5F4B4DE307B89A2F3BF6D7C1745FCDDD68EB8B80935BB821C2F8DC126B6
-   checksum64: 70540AC4B8C6983F7202D205EE25B4ADE509437C9BC0F5835FD230ACB7DA24AA
+   checksum32: 5CBE84935B51402BD5DE0E0E00B8F0C7A7AE605A9F1D3D3C1D0172C6343EAEBB
+   checksum64: C8A8C7E21136A099665C2FAD9ACCB41152D129466B719EA71678BAB665E03389
