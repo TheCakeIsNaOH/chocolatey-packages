@@ -1,11 +1,11 @@
-﻿Balabolka (Command Line Utility), version 1.86
-Copyright (c) 2013-2024 Ilya Morozov
+﻿Balabolka (Command Line Utility), version 1.87
+Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
 WWW: https://www.cross-plus-a.com/bconsole.htm
 E-mail: crossa@list.ru
 
-Licence: Freeware
+License: Freeware
 Operating System: Microsoft Windows XP/Vista/7/8/10/11
 Microsoft Speech API: v4.0/5.0 and above
 Microsoft Speech Platform: v11.0
@@ -413,6 +413,6 @@ One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
 
 *** Licence ***
 
-You are free to use and distribute software for noncommercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Belarus, Cuba, Iran, Nicaragua, North Korea, Syria, and the Crimea Region.
+You are free to use and distribute software for non-commercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Belarus, Cuba, Iran, Nicaragua, North Korea, Syria, and the Crimea Region.
 
 ###

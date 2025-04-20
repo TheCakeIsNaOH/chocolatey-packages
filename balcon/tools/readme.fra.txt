@@ -1,5 +1,5 @@
-﻿Balabolka (application console), version 1.86
-Copyright (c) 2013-2024 Ilya Morozov
+﻿Balabolka (application console), version 1.87
+Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
 WWW : https://www.cross-plus-a.com/fr/bconsole.htm
@@ -57,7 +57,7 @@ balcon [options ...]
 -c
    Utilise le texte du presse-papiers.
 
--t <ligne_de_texte>
+-t <texte>
    Utilise le texte de la ligne de commande. La ligne de commande peut contenir quelques options [-t].
 
 -i

@@ -1,5 +1,5 @@
-﻿Balabolka (komentorivisovellus), versio 1.86
-Copyright (c) 2013-2024 Ilya Morozov
+﻿Balabolka (komentorivisovellus), versio 1.87
+Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
 WWW: https://www.cross-plus-a.com/fi/bconsole.htm
