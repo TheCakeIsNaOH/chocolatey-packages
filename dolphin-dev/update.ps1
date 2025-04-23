@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$regex         = 'dolphin-master-.*-x64.7z'
     $url64         = $download_page.links | ? href -match $regex | select -First 1 -expand href
 	
-	$verNum        = ($url64 -split '[-]' | select -Last 2 -Skip 1) -join "."
+	$verNum        = ($url64 -split '[-]' | select -Last 2 -Skip 1) -join "." -replace "a",""
 	$version       = $verNum.ToString() + '-dev'
 	
 	return @{ Version = $version; URL64 = $url64 }
