@@ -14,16 +14,13 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
-	
-	$regex64       = '4kyoutubetomp3_.*_x64.msi'
+    $download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
+    $regex64       = '4kyoutubetomp3_.*_x64'
     $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
-	
-	$version       = $url64 -split '[_]' | select -Last 1 -Skip 1
-	
-	$modurl64      = $url64 -replace 'website', 'chocolatey'
-	
-	return @{ Version = $version; URL64 = $modurl64 }
+    $url64         = $url64 -replace "_offline.exe",".msi"
+    $version       = $url64 -split '[_]' | select -Last 1 -Skip 1
+    $modurl64      = $url64 -replace 'website', 'chocolatey'
+    return @{ Version = $version; URL64 = $modurl64 }
 }
 
 Update-Package -ChecksumFor none
