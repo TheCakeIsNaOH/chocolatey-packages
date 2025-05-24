@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.195/OpenShellSetup_4_4_195.exe
+   x32: https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.196/OpenShellSetup_4_4_196.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: DC79E3ABEBD128D7F44FA8F03A4E660B5F60B011F7BCF374B35C18A741F5818A
+   checksum32: 5A8C5AFAC76973DD0C26B423EDE8453813A01953C28F46B640549F7F2E9AE443
    checksumType: sha256
