@@ -14,7 +14,7 @@ $pp.GetEnumerator() | ForEach-Object {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  file64         = Join-Path $toolsDir 'icecat-115.23.1.en-US.win64.installer_x64.exe'
+  file64         = Join-Path $toolsDir 'icecat-115.24.0.en-US.win64.installer_x64.exe'
   silentArgs     = $silentArgs
   validExitCodes = @(0)
   softwareName   = 'Icecat*'

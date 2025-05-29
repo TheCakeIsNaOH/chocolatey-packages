@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gpu-z</id>
-    <version>2.65.1</version>
+    <version>2.66.0</version>
     <title>GPU-Z (Portable)</title>
     <authors>TechPowerUp</authors>
     <owners>TheCakeIsNaOH</owners>
