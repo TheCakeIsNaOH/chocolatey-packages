@@ -16,8 +16,9 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
     
-    $regex64       = '4ktokkit_.*_x64.msi'
+    $regex64       = '4ktokkit_.*_x64.zip'
     $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
+    $url64         = $url64 -replace ".zip", ".msi"
     
     $version       = $url64 -split '[_]' | select -Last 1 -Skip 1
     
