@@ -5,7 +5,7 @@ $exepath               = (Join-Path $destination 'kiwix-desktop.exe')
 
 $packageArgs = @{
     packageName    = "$env:chocolateyPackageName"
-    FileFullPath64 = Join-Path $toolsDir ''
+    FileFullPath64 = Join-Path $toolsDir 'kiwix-desktop_windows_x64_2.4.1.zip'
     destination    = $destination
 }
 
