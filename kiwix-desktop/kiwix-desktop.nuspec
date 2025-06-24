@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kiwix-desktop</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <title>Kwix Desktop</title>
+    <owners>TheCakeIsNaOH</owners>
+    <authors>Kiwix Association</authors>
+    <projectUrl>https://kiwix.org/en/applications/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/a79c1ef3c0cc4ded2a201c5edacebb85118b0ff6/Icons/Kiwix.png</iconUrl>
+    <copyright>2025 Kiwix Association</copyright>
+    <licenseUrl>https://github.com/kiwix/kiwix-desktop/blob/main/COPYING</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kiwix/kiwix-desktop</projectSourceUrl>
+    <docsUrl>https://github.com/kiwix/kiwix-desktop/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/kiwix/kiwix-desktop/issues</bugTrackerUrl>
+    <tags>Kiwix offline wiki wikipedia archive portable</tags>
+    <summary>Kiwix for Windows and GNU/Linux desktops </summary>
+    <description>
+Kiwix is an offline reader for Web content, primarily designed to make [Wikipedia](https://www.wikipedia.org/) available offline. It reads archives in the [ZIM](https://openzim.org) file format, a highly compressed open format with additional metadata. This is the Kiwix Desktop version - a viewer/manager of ZIM files for GNU/Linux (recent versions) and Microsoft Windows 10 and 11 OSes.
+   </description>
+    <releaseNotes>https://github.com/kiwix/kiwix-desktop/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" version="14.42.34433" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
