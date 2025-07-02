@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>flirc</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>Flirc (Install)</title>
+    <authors>Flirc.tv, Inc</authors>
+    <projectUrl>https://flirc.tv/products/flirc-usb-receiver</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/8ca6781262f5a0380d7795f64fc734bfb926f538/Icons/Flirc.png</iconUrl>
+    <copyright>2024 Flirc.tv, Inc</copyright>
+    <licenseUrl>https://flirc.tv/pages/terms-conditions</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://flirc.gitbooks.io/flirc-instructions/content/title-page.html</docsUrl>
+    <bugTrackerUrl>https://forum.flirc.tv/index.php?/forum/104-flirc-usb/</bugTrackerUrl>
+    <tags>flirc skip remote configuration IR</tags>
+    <summary>Universal remote control receiver configuration software</summary>
+    <description>
+Flirc allows you to pair any remote control with your computer or media center. Just walk through our super simple cross platform pairing application, and you're done. Use your previously paired remote with no additional software on any machine with flirc.
+
+
+The USB Flirc works anywhere with anything
+
+The Flirc can be set up to work with virtually any box that has a USB plug, from the Raspberry Pi to the Fire TV to a gigantic Windows Media Center.
+
+While its primary use is with Media Centers and Set Top boxes, you can pair it with virtually any remote control and any box/computer, which means it even works for advancing slides while giving presentations from your laptop or navigating a webpage from across the room.
+
+With a little elbow grease, you can actually use one to launch applications, start up games, and put your PC to sleep.
+Universal Remote Support
+
+If you have a universal remote, there is almost certain a USB Flirc profile available to work with. And if not, you can program a universal remote to work with the USB Flirc just like any other remote might.
+Plug n Play
+
+Once you've paired your Flirc and remote with the software, you can keep using the two across computers, laptops, and other devices, no software necessary. Just unplug the Flirc from your computer and plug it into your Shield or Pi. It will continue to "just work."
+
+    
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+	</description>
+    <releaseNotes>https://flirc.com/software/flirc-usb/GUI/release/releasenotes.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
