@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>logitech-options</id>
-    <version>10.24.3</version>
+    <version>10.26.12</version>
     <owners>TheCakeIsNaOH</owners>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <title>Logitech Options (Install)</title>
