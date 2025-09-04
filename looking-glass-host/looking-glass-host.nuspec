@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>looking-glass-host-bleeding-edge</id>
-    <version>0.0.0.0-B7-94-d5839c7e</version>
+    <version>0.0.0.0-B7-96-5f9649b4</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>Looking Glass (Host Bleeding-Edge)</title>
