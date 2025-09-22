@@ -7,8 +7,8 @@ $packageArgs = @{
   FileType      = 'EXE'
   silentArgs    = "/S"
   validExitCodes= @(0)
-  url           = 'https://flirc.com/software/flirc-usb/GUI/release/windows/Flirc-Setup-3.27.17.exe'
-  checksum      = 'b0a80de7638e21532ade10491068c9d13fba0039bd2b139298688e6d6da1a160'
+  url           = 'https://flirc.com/software/flirc-usb/GUI/release/windows/Flirc-Setup-3.27.19.exe'
+  checksum      = '3e558beb1c5f6e232ae01d8bc292b2e0332018298439fca6e2a8ce5025530e28'
   checksumType  = 'sha256'
 }
 
