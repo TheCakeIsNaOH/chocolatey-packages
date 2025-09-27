@@ -1,6 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = 'https://dl.vikunja.io/desktop'
+$releases = 'https://dl.vikunja.io/desktop/'
 
 function global:au_SearchReplace {
   @{
@@ -18,13 +18,13 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$releases_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexReleases = '\d\.\d\d'
-	$download_url  = 'https://dl.vikunja.io/' + ($releases_page.links | ? href -match $regexReleases | select -First 1 -Expand href).tostring()
+	$download_url  = 'https://dl.vikunja.io' + ($releases_page.links | ? href -match $regexReleases | select -First 1 -Expand href).tostring()
     
     $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
     $regexDownload = 'Vikunja.*exe$'
-    $url32         = 'https://dl.vikunja.io/' + ($download_page.links | ? href -match $regexDownload | Select -expand href).tostring()
+    $url32         = 'https://dl.vikunja.io' + ($download_page.links | ? href -match $regexDownload | Select -expand href).tostring()
     
-    $version       = $download_url -split "/" | select -Last 1
+    $version       = $download_url -split "/" | select -Last 1 -Skip 1
 
 	return @{ Version = $version; URL32 = $url32; }
 }
