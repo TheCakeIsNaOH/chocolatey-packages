@@ -1,4 +1,4 @@
-﻿Balabolka (конзолно приложение), версия 1.87
+﻿Balabolka (конзолно приложение), версия 1.88
 Авторски права (c) 2013-2025 Илия Морозов
 Всички права запазени
 
@@ -6,7 +6,7 @@
 Е-поща: crossa@list.ru
 
 Лиценз: Безплатен (Freeware)
-Операционни системи: Microsoft Windows XP/Vista/7/8/10/11
+Операционни системи: Microsoft Windows 7/8/10/11
 Речев ППИ: 4.0/5.0
 Microsoft Speech Platform: 11.0
 
@@ -35,7 +35,7 @@ balcon [опции ...]
    Задава името на изходния файл в WAV формат. Ако опцията е зададена, ще бъде създаден аудио файл. Иначе, текста ще бъде прочетен на глас.
 
 -n <име_на_гласа>
-   Задава кой глас ще бъде използван (името на гласа е достатъчно). Ако опцията не е зададена, ще бъде използван гласа зададен по подразбиране в Windows.
+   Задава името на гласа (достатъчно е част от името). Ако опцията не е зададена, ще бъде използван гласа зададен по подразбиране в Windows.
 
 -id <целочислена_стойност>
    Задава регионалния идентификатор (Language ID) за гласа. Регионалният идентификатор е езиковия код, зададен от Microsoft
@@ -51,16 +51,16 @@ balcon [опции ...]
    Задава изходното звуково устройство според неговия индекс. Индексът на подразбиращото се звуково устройство е 0.
 
 -r <текст>
-   Sets the audio output device by its name.
+   Задава аудио изходното устройство по неговото име.
 
 -c
-   За вход се използва текста от клипборда.
+   Текстът от клипборда се използва като входни данни.
 
 -t <текст>
-   За вход може да се използва текст от командния ред. Командния ред може да съдържа повече от една [-t] опция.
+   Взема текста от командния ред и го използва като входни данни. Командния ред може да съдържа повече от една [-t] опция.
 
 -i
-   За вход се използва текста от STDIN.
+   Получава текста от STDIN и го използва като входни данни.
 
 -o
    SAPI 4: Не се използва.
@@ -94,7 +94,7 @@ balcon [опции ...]
    Прекратява процеса на текущо зареденото в паметта на компютъра копие на конзолното приложение.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Спира или възобновява четенето на глас от активната копие на приложението. Действието е същото като за менюто "Пауза"/"Възобновяване".
 
 -q
    Добавя приложението в опашка. Конзолното приложение ще изчака докато другите копия на приложението приключат с работата си.
@@ -118,7 +118,7 @@ balcon [опции ...]
    Текстът ще бъде обработван като субтитри. Параметърът може да е полезен, когато са зададени параметрите [-i] или [-c].
 
 -tray
-   Показване на иконата на програмата в областта за уведомяване. Това ви позволява да следите напредъка на изпълняваната задача.
+   Показва иконата на програмата в областта за уведомяване. Това ви позволява да следите напредъка на изпълняваната задача.
    Командата "Спри" в контекстното меню може да се използва за спиране на процеса.
 
 -ln <целочислена_стойност>
@@ -129,23 +129,23 @@ balcon [опции ...]
 -fr <целочислена стойност>
    SAPI 4: Не се използва.
    SAPI 5 и Microsoft Speech Platform: Задава изходната звукова честота в КХц (8, 11, 12, 16, 22, 24, 32, 44, 48).
-   Ако опцията не е указана, Ще се използва стойността по подразбиране за избрания глас.
+   Ако опцията не е указана, ще се използва стойността по подразбиране за избрания глас.
 
 -bt <целочислена стойност>
    SAPI 4: Не се използва.
    SAPI 5 и Microsoft Speech Platform: Задава изходната дълбочина на звука в битове (8 или 16).
-   Ако опцията не е указана, Ще се използва стойността по подразбиране за избрания глас.
+   Ако опцията не е указана, ще се използва стойността по подразбиране за избрания глас.
 
 -ch <целочислена стойност>
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Задава броя на изходните звукови канали (1 или 2).
-   Ако опцията не е указана, Ще се използва стойността по подразбиране за избрания глас.
+   SAPI 5 и Microsoft Speech Platform: Задава броя на изходните звукови канали, моно или стерео (1 или 2).
+   Ако опцията не е указана, ще се използва стойността по подразбиране за избрания глас.
 
 -dp
-   Показване на информация за напредъка в конзолен прозорец.
+   Показва информация за напредъка в конзолен прозорец.
 
 -cfg <file_name>
-   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
+   Задава името на конфигурационния файл с опциите на командния ред (текстов файл, в който всеки ред съдържа една опция). Ако опцията не е зададена, ще се използва файлът "balcon.cfg" в същата папка като програмата.
 
 -h
    Извежда на екрана списъка с поддържаните опции за командния ред.
@@ -187,10 +187,10 @@ balcon [опции ...]
    Задава ID тага за LRC файла: създател на LRC файла.
 
 --lrc-sent
-   Inserts blank lines after sentences in the LRC file.
+   Вмъква празни редове след изреченията при създаването на LRC файла.
 
 --lrc-para
-   Inserts blank lines after paragraphs in the LRC file.
+   Вмъква празни редове след параграфите при създаването на LRC файла.
 
 --srt-length <целочислена_стойност>
    Задава максималната дължина на редовете в SRT файла (в брой знаци).
@@ -216,63 +216,63 @@ balcon [опции ...]
 
 --sub-fit или -sf
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). Приложението увеличава скоростта на говорене стъпка по стъпка, като проверява дали текстът се побира в дадения времеви интервал или не.
 
 --sub-fit-lib или -sfl
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). The SoundTouch library will be used for changing tempo.
+   SAPI 5 и Microsoft Speech Platform: Автоматично увеличава скоростта, за да съвпадне с времевите интервали на субтитрите (когато програмата конвертира субтитри в аудио файл). Библиотеката SoundTouch ще се използва за промяна на скоростта.
 
 --sub-max <целочислена_стойност> или -sm <целочислена_стойност>
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Задава максималната скорост на речта в обхвата от -10 до 10 (когато програмата конвертира субтитри в аудио файл). If SoundTouch library is used, the range must be from 110% to 200%.
+   SAPI 5 и Microsoft Speech Platform: Задава максималната скорост на речта в обхвата от -10 до 10 (когато програмата конвертира субтитри в аудио файл). Ако се използва библиотеката SoundTouch, обхватът трябва да бъде от 110% до 200%.
 
 --delete-file или -df
    Премахва текстовия файл, когато задачата бъде завършена. Този параметър се използва в комбинация с параметъра [-f].
 
 --ignore-square-brackets или -isb
-   Ignore text in [square brackets].
+   Игнорира текста в [квадратни скоби].
 
 --ignore-curly-brackets или -icb
-   Ignore text in {curly brackets}.
+   Игнорира текста в {фигурни скоби}.
 
 --ignore-angle-brackets или -iab
-   Ignore text in <angle brackets>.
+   Игнорира текста в <ъглови скоби>.
 
 --ignore-round-brackets или -irb
-   Ignore text in (round brackets).
+   Игнорира текста в (кръгли скоби).
 
 --ignore-url или -iu
-   Ignore URLs.
+   Игнорира URL адресите.
 
 --ignore-comments или -ic
-   Ignore comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
+   Игнорира коментарите в текста. Едноредовите коментари започват с // и продължават до края на реда. Многоредовите коментари започват с /* и завършват с */.
 
 --voice1-name <име_на_гласа>
    SAPI 4: Не се използва.
-   SAPI 5 и Microsoft Speech Platform: Sets the additional voice name to read foreign words in text (the part of the name will be enough).
-   The option is used together with the option [--voice1-langid]. Other voices can be set by options [--voice2-name], [--voice3-name], etc.
+   SAPI 5 и Microsoft Speech Platform: Задава допълнителното име на гласа за четене на чужди думи в текста (достатъчно е част от името).
+   Опцията се използва заедно с опцията [--voice1-langid]. Други гласове могат да се зададат с опциите [--voice2-name], [--voice3-name] и т.н.
 
 --voice1-langid <идентификатор_на_езика>
-   Sets the language ID for foreign words in text. The option is used together with the option [--voice1-name]. The command line may contain more than one option [--voice1-langid]. Also an option may contain a comma-separated list of IDs.
-   The list of supported language IDs is based on ISO 639-1 codes: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
+   Задава езиковия идентификатор за чужди думи в текста. Опцията се използва заедно с опцията [--voice1-name]. Командният ред може да съдържа повече от една опция [--voice1-langid]. Опцията може да съдържа и списък с идентификатори, разделени със запетая.
+   Списъкът с поддържаните езикови идентификатори се базира на кодовете ISO 639-1: am, ar, az, ba, bg, be, ca, cs, cu, cv, da, de, el, en, es, et, eu, fi, fil, fr, ja, he, hi, hr, hu, hy, it, gn, gu, ka, kk-Cyr, kk-Lat, kn, ko, ky, lo, lt, lv, mk, no, pl, pt, ro, ru, sk, sl, sr-Cyr, sr-Lat, sv, tg, th, tk, tr, tt, uk, zh.
 
 --voice1-rate <целочислена_стойност>
-   Sets the rate for the additional voice in a range of -10 to 10 (the default is 0).
+   Задава скоростта на допълнителния глас в диапазон от -10 до 10 (по подразбиране е 0).
 
 --voice1-pitch <целочислена_стойност>
-   Sets the pitch for the additional voice in a range of -10 to 10 (the default is 0).
+   Задава височината на допълнителния глас в диапазон от -10 до 10 (по подразбиране е 0).
 
 --voice1-volume <целочислена_стойност>
-   Sets the volume for the additional voice in a range of 0 to 100 (the default is 100).
+   Задава силата на звука за допълнителния глас в диапазон от 0 до 100 (по подразбиране е 100).
 
 --voice1-roman
-   Use the default voice to read Roman numerals in text. If text with non-Latin characters contains Roman numerals, the application will not change a voice to read them. Например: XIX век, Елизабет II.
+   Използва стандартния глас за четене на римски цифри в текста. Ако текстът с нелатински символи съдържа римски цифри, приложението няма да променя гласа за четенето им. Например: XIX век, Елизабет II.
 
 --voice1-digit
-   Use the default voice to read numbers in text.
+   Използва стандартния глас за четене на числа в текста. Ако опцията не е зададена, допълнителният глас ще чете числата в близост до чужди думи.
 
 --voice1-length <целочислена_стойност>
-   Set the minimal length of foreign text parts that will be read by the additional voice (in characters).
+   Задава минималната дължина на чуждите текстови части, които ще бъдат прочетени от допълнителния глас (в символи).
 
 
 *** Примери ***
@@ -413,6 +413,6 @@ One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
 
 *** Лиценз ***
 
-You are free to use and distribute software for noncommercial purposes. For commercial use or distribution, you need to get permission from the copyright holder.
+Можете свободно да използвате и разпространявате софтуера за некомерсиални цели. За комерсиално използване или разпространение е необходимо да получите разрешение от притежателя на авторските права.
 
 ###

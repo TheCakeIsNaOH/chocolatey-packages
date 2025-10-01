@@ -1,4 +1,4 @@
-﻿Balabolka (aplicativo de console), versão 1.87
+﻿Balabolka (aplicativo de console), versão 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/br/bconsole.htm
 E-mail: crossa@list.ru
 
 Licença: Freeware
-Sistema operacional: Microsoft Windows XP/Vista/7/8/10/11
+Sistema operacional: Microsoft Windows 7/8/10/11
 Microsoft Speech API: 4.0/5.0
 Microsoft Speech Platform: 11.0
 
@@ -29,7 +29,7 @@ balcon [opções ...]
    Abrir o arquivo de texto. A linha de comando pode conter várias opções [-f].
 
 -fl <nome_do_arquivo>
-   Sets the name of the text file with the list of input files (one file name per line). A linha de comando pode conter várias opções [-fl].
+   Definir o nome do arquivo de texto com a lista de arquivos de entrada (um nome de arquivo por linha). A linha de comando pode conter várias opções [-fl].
 
 -w <nome_do_arquivo>
    Gravar um arquivo de áudio em formato WAV. Especificando a opção, será criado o arquivo de áudio. Se a opção não é especificada, o texto será lido em voz alta.
@@ -51,7 +51,7 @@ balcon [opções ...]
    Escolher o dispositivo de áudio segundo o número na lista de dispositivos disponíveis para reprodução de áudio. O número padrão do dispositivo é 0.
 
 -r <texto>
-   Sets the audio output device by its name.
+   Definir o dispositivo de saída de áudio pelo nome.
 
 -c
    Usar o texto a partir da área de transferência.
@@ -94,7 +94,7 @@ balcon [opções ...]
    Parar o funcionamento de um aplicativo de console que está activo no momento.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Pausar ou retomar a leitura em voz alta pela cópia ativa do aplicativo. A ação é a mesma do item do menu de contexto "Pausar"/"Retomar".
 
 -q
    Adicionar o aplicativo para a fila. O aplicativo de console vai esperar até que as outras cópias do programa terminem de funcionar.
@@ -109,10 +109,10 @@ balcon [opções ...]
 
 -vs <nome_do_arquivo>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: sets the name of output text file with visemes, if the option [-w] is specified.
-   A viseme is the mouth shape that corresponds to a particular speech sound. SAPI supports the list of 21 visemes.
-   This list is based on the original Disney visemes. The application will create the audio file and then read it aloud to get visemes and their timecodes.
-   The list of visemes supported by SAPI 5: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
+   SAPI 5 e Microsoft Speech Platform: definir o nome do arquivo de texto de saída com visemas, se a opção [-w] for especificada.
+   Um visema é a forma da boca que corresponde a um determinado som da fala. O SAPI suporta a lista de 21 visemas. Essa lista é baseada nos visemas originais da Disney.
+   O aplicativo criará o arquivo de áudio e, em seguida, o lerá em voz alta para obter os visemas e seus códigos de tempo.
+   A lista de visemas suportadas pelo SAPI 5: https://msdn.microsoft.com/en-us/library/ms720881(v=vs.85).aspx
 
 -sub
    O texto representa subtítulos e deve ser convertido em um ficheiro áudio com os intervalos de tempo especificados.
@@ -122,30 +122,30 @@ balcon [opções ...]
    Isso permite que o usuário monitore o progresso da operação, bem como interromper o processo no menu de contexto, clicando em "Stop".
 
 -ln <número>
-   Selects a line from the text file by using of a line number. The line numbering starts at "1".
-   The interval of numbers can be used for selecting of more than one line (for example, "26-34").
+   Selecionar uma linha do arquivo de texto usando um número de linha. A numeração das linhas começa em "1".
+   O intervalo de números pode ser usado para selecionar mais de uma linha (por exemplo, "26-34").
    A linha de comando pode conter várias opções [-ln].
 
 -fr <número>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: sets the output audio sampling frequency in kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 e Microsoft Speech Platform: definir a frequência de amostragem do áudio de saída em kHz (8, 11, 12, 16, 22, 24, 32, 44, 48).
+   Se a opção não for especificada, será utilizado o valor padrão da voz selecionada.
 
 -bt <número>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: sets the output audio bit depth (8 ou 16).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 e Microsoft Speech Platform: definir a profundidade de bits do áudio de saída (8 ou 16).
+   Se a opção não for especificada, será utilizado o valor padrão da voz selecionada.
 
 -ch <número>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: sets the output audio channel mode (1 ou 2).
-   If the option is not specified, the default value of the selected voice will be used.
+   SAPI 5 e Microsoft Speech Platform: definir o modo do canal de áudio de saída, mono/estéreo (1 ou 2).
+   Se a opção não for especificada, será utilizado o valor padrão da voz selecionada.
 
 -dp
-   Display progress information in a console window.
+   Exibir informações de progresso em uma janela do console.
 
--cfg <file_name>
-   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
+-cfg <nome_do_arquivo>
+   Definir o nome do arquivo de configuração com as opções da linha de comando (um arquivo de texto em que cada linha contém uma opção). Se a opção não for especificada, será utilizado o arquivo "balcon.cfg" na mesma pasta do utilitário.
 
 -h
    Mostrar a descrição das opções da linha de comando.
@@ -187,10 +187,10 @@ balcon [opções ...]
    Etiqueta para ficheiro do formato LRC: criador do ficheiro.
 
 --lrc-sent
-   Inserts blank lines after sentences in the LRC file.
+   Inserir linhas em branco após as frases ao criar o arquivo LRC.
 
 --lrc-para
-   Inserts blank lines after paragraphs in the LRC file.
+   Inserir linhas em branco após os parágrafos ao criar o arquivo LRC.
 
 --srt-length <número>
    Especificar o comprimento máximo de cordas para ficheiro de formato SRT (em caracteres).
@@ -214,36 +214,36 @@ balcon [opções ...]
 
 --sub-fit ou -sf
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: aumentar automaticamente a velocidade da fala, a fim de conseguir cumprir os intervalos definidos nos subtítulos. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+   SAPI 5 e Microsoft Speech Platform: aumentar automaticamente a velocidade da fala, a fim de conseguir cumprir os intervalos definidos nos subtítulos. O aplicativo aumenta o valor da velocidade da fala passo a passo, verificando se o texto cabe no intervalo de tempo determinado ou não.
 
 --sub-fit-lib ou -sfl
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: aumentar automaticamente a velocidade da fala, a fim de conseguir cumprir os intervalos definidos nos subtítulos. The SoundTouch library will be used for changing tempo.
+   SAPI 5 e Microsoft Speech Platform: aumentar automaticamente a velocidade da fala, a fim de conseguir cumprir os intervalos definidos nos subtítulos. A biblioteca SoundTouch será usada para alterar a velocidade da fala.
 
 --sub-max <número> ou -sm <número>
    SAPI 4: a opção não é usada.
-   SAPI 5 e Microsoft Speech Platform: especificar a velocidade máxima de fala na faixa de -10 a 10 (para converter subtítulos em ficheiros de áudio). If SoundTouch library is used, the range must be from 110% to 200%.
+   SAPI 5 e Microsoft Speech Platform: especificar a velocidade máxima de fala na faixa de -10 a 10 (para converter subtítulos em ficheiros de áudio). Se for utilizada a biblioteca SoundTouch, o intervalo deve estar entre 110% e 200%.
 
 --delete-file ou -df
    Eliminar um ficheiro de texto depois de ler em voz alta ou salvar o ficheiro de áudio.
 
 --ignore-square-brackets ou -isb
-   Ignore text in [square brackets].
+   Ignorar o texto entre [colchetes].
 
 --ignore-curly-brackets ou -icb
-   Ignore text in {curly brackets}.
+   Ignorar o texto entre {chaves}.
 
 --ignore-angle-brackets ou -iab
-   Ignore text in <angle brackets>.
+   Ignorar texto entre <colchetes angulares>.
 
 --ignore-round-brackets ou -irb
-   Ignore text in (round brackets).
+   Ignorar o texto entre (parênteses).
 
 --ignore-url ou -iu
-   Ignore URLs.
+   Ignorar URLs.
 
 --ignore-comments ou -ic
-   Ignore comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
+   Ignorar comentários no texto. Comentários de linha única começam com // e continuam até o final da linha. Comentários de várias linhas começam com /* e terminam com */.
 
 --voice1-name <nome_da_voz>
    SAPI 4: a opção não é usada.
@@ -273,27 +273,53 @@ balcon [opções ...]
    Set the minimal length of foreign text parts that will be read by the additional voice (in characters).
 
 
-*** Exemplos ***
+*** Exemplos de comandos ***
 
-balcon -l
+Crie o arquivo de texto VOICE.TXT com a lista das vozes instaladas:
+
+balcon -l > voice.txt
+
+
+Veja as especificações da voz Microsoft Anna:
 
 balcon -n "Microsoft Anna" -m
 
-balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -n "Emma"
 
-balcon -n "Callie" -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic"
+Converta o texto do BOOK.TXT em voz e salve como um arquivo de áudio BOOK.WAV:
 
-balcon -n "Ricardo" -t "O texto vai ser lido devagar." -s -5 -v 70
+balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -n Catarina
+
+
+Obtenha o texto da área de transferência, aplique regras para a correção da pronúncia e leia em voz alta:
+
+balcon -n Callie -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic"
+
+
+Leia em voz alta o texto da linha de comando com velocidade e volume especificados:
+
+balcon -n Ricardo -t "O texto vai ser lido devagar." -s -5 -v 70
+
+
+Encerre outras cópias do aplicativo na memória do computador:
 
 balcon -k
 
-balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
 
-balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+Converta o texto do STDIN em voz, salve como BOOK.WAV e crie BOOK.LRC:
 
-balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
+balcon -w "d:\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
 
-balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru,be
+
+Leia em voz alta frases em português e russo com vozes diferentes:
+
+balcon -f "d:\Text\book.txt" -n Ricardo --voice1-name Maxim --voice1-langid ru
+
+
+Converter legendas para FILM.WAV (a fala será acelerada para se adequar aos intervalos de tempo definidos):
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Ines --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Ines --sub-fit-lib
 
 
 Exemplo de uso do aplicativo em conjunto com o programa utilitário LAME.EXE:
@@ -378,17 +404,13 @@ Warning! It is impossible to switch between SAPI 5 voices and voices of the Micr
 
 *** "Pause" Tag ***
 
-A specified number of milliseconds of silence can be inserted into the output audio file. For example:
+É possível inserir um número específico de milissegundos de silêncio no arquivo de áudio de saída. Por exemplo:
 
 One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
 
 
 *** Licença ***
 
-Direito ao uso não comercial do programa: 
-- para pessoas singulares: sem restrições; 
-- para pessoas jurídicas: sujeito às restrições contidas no "Contrato de licença" do software Balabolka. 
-
-O uso comercial do programa só é permitido com a autorização prévia do detentor dos direitos autorais.
+Você está livre para usar e distribuir o software para fins não comerciais. Para uso ou distribuição comercial, você precisa obter permissão do detentor dos direitos autorais.
 
 ###

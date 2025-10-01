@@ -1,4 +1,4 @@
-﻿Балаболка (консольное приложение), версия 1.87
+﻿Балаболка (консольное приложение), версия 1.88
 Copyright (с) 2013-2025 Илья Морозов
 Все права защищены
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/ru/bconsole.html
 E-mail: crossa@list.ru
 
 Тип лицензии: Freeware
-Операционная система: Microsoft Windows XP/Vista/7/8/10/11
+Операционная система: Microsoft Windows 7/8/10/11
 Microsoft Speech API: версия 4.0/5.0 и выше
 Microsoft Speech Platform: версия 11.0
 
@@ -321,9 +321,11 @@ balcon -w "d:\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of the Rin
 balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru,be
 
 
-Преобразовать субтитры в звуковой файл FILM.WAV:
+Преобразовать субтитры в звуковой файл FILM.WAV (речь будет ускоряться, чтобы уложиться в заданные интервалы времени):
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
+
+balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
 
 
 Пример использования приложения совместно с утилитой LAME.EXE:

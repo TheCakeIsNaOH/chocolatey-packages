@@ -1,4 +1,4 @@
-﻿Balabolka (Konsolenanwendung), Version 1.87
+﻿Balabolka (Konsolenanwendung), Version 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 Alle Rechte vorbehalten
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/de/bconsole.htm
 E-mail: crossa@list.ru (nur rußisch oder englisch)
 
 Lizenzart: Freeware
-Plattformen: Microsoft Windows XP/Vista/7/8/10/11
+Plattformen: Microsoft Windows 7/8/10/11
 Microsoft Speech API: 4.0/5.0 und höher
 Microsoft Speech Platform: 11.0
 
@@ -276,23 +276,49 @@ balcon [Optionen ...]
 
 *** Beispiele ***
 
-balcon -l
+Erstellen Sie die Textdatei VOICE.TXT mit der Liste der installierten Stimmen:
 
-balcon -n "Microsoft Anna" -m
+balcon -l > voice.txt
+
+
+Dies ermöglicht es, die Spezifikationen der Microsoft Stefan-Stimme anzuzeigen:
+
+balcon -n "Microsoft Stefan" -m
+
+
+Text aus BOOK.TXT in Sprache umwandeln und als BOOK.WAV speichern:
 
 balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -n "Emma"
 
-balcon -n "Callie" -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic"
 
-balcon -n "Matthias" -t "Der Text wird langsam vorgelesen." -s -5 -v 70
+Text aus der Zwischenablage abrufen, Regeln für die Aussprachekorrektur anwenden und vorlesen:
+
+balcon -n Callie -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic"
+
+
+Lesen Sie Text aus der Befehlszeile mit der angegebenen Geschwindigkeit und Lautstärke vor:
+
+balcon -n Matthias -t "Der Text wird langsam vorgelesen." -s -5 -v 70
+
+
+Beenden Sie andere Instanzen der Anwendung im Arbeitsspeicher:
 
 balcon -k
 
-balcon -f "d:\Text\book.txt" -w "d:\Sound\book.wav" -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
+
+Konvertieren Sie Text aus STDIN in Sprache, speichern Sie ihn als BOOK.WAV und erstellen Sie die Datei BOOK.LRC mit synchronisiertem Text:
+
+balcon -w "d:\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
+
+
+Untertitel in FILM.WAV konvertieren:
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit --sub-max 2
 
 balcon -f "d:\Text\film.srt" -w "d:\Sound\film.wav" -n Laura --sub-fit-lib
+
+
+Englische und russische Sätze mit verschiedenen Stimmen vorlesen:
 
 balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
 
@@ -320,7 +346,7 @@ Beispiel für eine Konfigurationsdatei:
 ===================
 -f d:\Text\book.txt
 -w d:\Sound\book.wav
--n Microsoft Anna
+-n Microsoft Stefan
 -s 2
 -p -1
 -v 95

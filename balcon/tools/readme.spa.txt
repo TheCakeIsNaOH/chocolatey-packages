@@ -1,4 +1,4 @@
-﻿Balabolka (aplicación de consola), versión 1.87
+﻿Balabolka (aplicación de consola), versión 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 Todos los derechos reservados
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/es/bconsole.htm
 Correo electrónico: crossa@list.ru
 
 Licencia: Gratuito (Freeware)
-Sistema operativo: Microsoft Windows XP/Vista/7/8/10/11
+Sistema operativo: Microsoft Windows 7/8/10/11
 Microsoft Speech API: 4.0/5.0 y superiores
 Microsoft Speech Platform: 11.0
 
@@ -276,25 +276,46 @@ balcon [opciones ...]
 
 *** Ejemplos ***
 
-balcon -l
+Cree el archivo de texto VOICE.TXT con la lista de las voces instaladas:
 
-balcon -n "Microsoft Anna" -m
+balcon -l > voice.txt
+
+
+Convertir el texto de LIBRO.TXT a voz y guardarlo como LIBRO.WAV:
 
 balcon -f "d:\Texto\libro.txt" -w "d:\Sonido\libro.wav" -n "Emma"
 
+
+Obtener texto del portapapeles, aplicar reglas para la corrección de la pronunciación y leer en voz alta:
+
 balcon -n "Callie" -c -d "d:\rex\reglas.rex" -d "d:\dic\reglas.dic"
+
+
+Leer en voz alta el texto desde la línea de comandos con la velocidad y el volumen especificados:
 
 balcon -n "Conchita" -t "El texto será leído lentamente." -s -5 -v 70
 
+
+Elimina otras copias de la aplicación en la RAM:
+
 balcon -k
 
-balcon -f "d:\Texto\libro.txt" -w "d:\Sonido\libro.wav" -lrc --lrc-length 80 --lrc-title "El Señor de los Anillos"
+
+Convertir el texto de STDIN a voz, guardar como LIBRO.WAV y crear el archivo LIBRO.LRC con el texto sincronizado:
+
+balcon -w "d:\libro.wav" -i -lrc --lrc-length 80 --lrc-title "El Señor de los Anillos"
+
+
+Leer en voz alta frases en inglés y ruso con diferentes voces:
+
+balcon -f "d:\Text\libro.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
+
+
+Convertir subtítulos a FILM.WAV:
 
 balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n Laura --sub-fit --sub-max 2
 
 balcon -f "d:\Texto\film.srt" -w "d:\Sonido\film.wav" -n Laura --sub-fit-lib
-
-balcon -f "d:\Texto\libro.txt" -n Diego --voice1-name Tatyana --voice1-langid ru
 
 
 Ejemplo de utilización de la aplicación junto con la utilidad LAME.EXE:

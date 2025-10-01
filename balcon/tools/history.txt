@@ -5,6 +5,10 @@ All Rights Reserved
 
 *** History ***
 
+2025-09-30     v1.88
+[-] Fixed converting subtitles to speech.
+ 
+
 2025-04-19     v1.87
 [-] Fixed pauses between sentences when using SAPI 5.
 

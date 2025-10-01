@@ -1,4 +1,4 @@
-﻿Balabolka (komentorivisovellus), versio 1.87
+﻿Balabolka (komentorivisovellus), versio 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/fi/bconsole.htm
 E-mail: crossa@list.ru
 
 Lisenssi: Freeware
-Käyttöjärestelmä: Microsoft Windows XP/Vista/7/8/10/11
+Käyttöjärestelmä: Microsoft Windows 7/8/10/11
 Microsoft Speech API: v4.0/5.0
 Microsoft Speech Platform: v11.0
 
@@ -216,36 +216,36 @@ balcon [options ...]
 
 --sub-fit tai -sf
    SAPI 4: parametria ei käytettävissä.
-   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. The application increments the speech rate value step by step, checking whether the text fits within the given time interval or not.
+   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. Sovellus lisää puheiden nopeutta askel askeleelta ja tarkistaa, mahtuuko teksti annetulle aikavälille.
 
 --sub-fit-lib tai -sfl
    SAPI 4: parametria ei käytettävissä.
-   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. The SoundTouch library will be used for changing tempo.
+   SAPI 5 ja Microsoft Speech Platform: lisätä automaattisesti puheen nopeutta pysyäkseen tekstityksessä annettujen väliaikojen rajoissa. SoundTouch-kirjastoa käytetään puheen nopeuden muuttamiseen.
 
 --sub-max <luku> tai -sm <luku>
    SAPI 4: parametria ei käytettävissä.
-   SAPI 5 ja Microsoft Speech Platform: määrittää maksimaalinen puheen nopeus äänialueella -10:stä 10:een (muuttaakseen tekstitys äänitiedostoksi). If SoundTouch library is used, the range must be from 110% to 200%.
+   SAPI 5 ja Microsoft Speech Platform: määrittää maksimaalinen puheen nopeus äänialueella -10:stä 10:een (muuttaakseen tekstitys äänitiedostoksi). Jos käytetään SoundTouch-kirjastoa, alueen on oltava 110-200%.
 
 --delete-file tai -df
    Poistaa tekstitiedosto ääneen lukemisen tai äänitiedoston tallentamisen jälkeen.
 
 --ignore-square-brackets tai -isb
-   Ignore text in [square brackets].
+   Ohita teksti [hakasulkeissa].
 
 --ignore-curly-brackets tai -icb
-   Ignore text in {curly brackets}.
+   Ohita teksti {aaltosulkeissa}.
 
 --ignore-angle-brackets tai -iab
-   Ignore text in <angle brackets>.
+   Ohita teksti <kulmasulkeissa>.
 
 --ignore-round-brackets tai -irb
-   Ignore text in (round brackets).
+   Ohita teksti (pyöreissä sulkeissa).
 
 --ignore-url tai -iu
-   Ignore URLs.
+   Ohita URL-osoitteet.
 
 --ignore-comments tai -ic
-   Ignore comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
+   Ohita tekstissä olevat kommentit. Yksiriviset kommentit alkavat merkillä // ja jatkuvat rivin loppuun asti. Moniriviset kommentit alkavat merkillä /* ja päättyvät merkillä */.
 
 --voice1-name <äänen_nimi>
    SAPI 4: parametria ei käytettävissä.

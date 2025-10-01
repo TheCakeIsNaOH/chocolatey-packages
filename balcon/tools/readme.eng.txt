@@ -1,4 +1,4 @@
-﻿Balabolka (Command Line Utility), version 1.87
+﻿Balabolka (Command Line Utility), version 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/bconsole.htm
 E-mail: crossa@list.ru
 
 License: Freeware
-Operating System: Microsoft Windows XP/Vista/7/8/10/11
+Operating System: Microsoft Windows 7/8/10/11
 Microsoft Speech API: v4.0/5.0 and above
 Microsoft Speech Platform: v11.0
 
@@ -94,7 +94,7 @@ balcon [options ...]
    Kills the active copy of the application in the computer's memory.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Makes pause or resumes reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
 
 -q
    Adds the application to a queue. The utility will wait until other copies of the application have finished.
@@ -118,7 +118,7 @@ balcon [options ...]
    Input text will be processed as subtitles. The option may be useful, when the options [-i] or [-c] are specified.
 
 -tray
-   Show the application's icon in the system tray. This allows to view the progress of the task.
+   Shows the application's icon in the system tray. This allows to view the progress of the task.
    The context menu item "Stop" can be used to stop the process.
 
 -ln <integer>
@@ -230,22 +230,22 @@ balcon [options ...]
    Removes the text file, when job is done. The option is used together with the option [-f].
 
 --ignore-square-brackets or -isb
-   Ignore text in [square brackets].
+   Ignores text in [square brackets].
 
 --ignore-curly-brackets or -icb
-   Ignore text in {curly brackets}.
+   Ignores text in {curly brackets}.
 
 --ignore-angle-brackets or -iab
-   Ignore text in <angle brackets>.
+   Ignores text in <angle brackets>.
 
 --ignore-round-brackets or -irb
-   Ignore text in (round brackets).
+   Ignores text in (round brackets).
 
 --ignore-url or -iu
-   Ignore URLs.
+   Ignores URLs.
 
 --ignore-comments or -ic
-   Ignore comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
+   Ignores comments in text. Single-line comments start with // and continue until the end of the line. Multiline comments start with /* and end with */.
 
 --voice1-name <voice_name>
    SAPI 4: not used.
@@ -266,13 +266,13 @@ balcon [options ...]
    Sets the volume for the additional voice in a range of 0 to 100 (the default is 100).
 
 --voice1-roman
-   Use the default voice to read Roman numerals in text. If text with non-Latin characters contains Roman numerals, the application will not change a voice to read them.
+   Uses the default voice to read Roman numerals in text. If text with non-Latin characters contains Roman numerals, the application will not change a voice to read them.
 
 --voice1-digit
-   Use the default voice to read numbers in text.
+   Uses the default voice to read numbers in text.
 
 --voice1-length <integer>
-   Set the minimal length of foreign text parts that will be read by the additional voice (in characters).
+   Sets the minimal length of foreign text parts that will be read by the additional voice (in characters).
 
 
 *** Examples ***

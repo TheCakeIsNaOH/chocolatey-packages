@@ -1,4 +1,4 @@
-﻿Balabolka (aplikacja konsolowa), wersja 1.87
+﻿Balabolka (aplikacja konsolowa), wersja 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 Wszystkie prawa zastrzeżone
 
@@ -6,7 +6,7 @@ WWW: https://www.cross-plus-a.com/pl/bconsole.htm
 E-mail: crossa@list.ru
 
 Licenzja: Freeware
-System operacyjny: Microsoft Windows XP/Vista/7/8/10/11
+System operacyjny: Microsoft Windows 7/8/10/11
 Microsoft Speech API: 4.0/5.0
 Microsoft Speech Platform: 11.0
 
@@ -91,10 +91,10 @@ balcon [parametry ...]
    Zatrzymać prace innych egzemplarzy aplikacji konsolowej uruchomionych na komputerze.
 
 -ka
-   Kills the active copy of the console application in the computer's memory.
+   Zatrzymać aktywną kopię aplikacji konsoli w pamięci komputera.
 
 -pr
-   Make pause or resume reading aloud by the active copy of the application. The action is the same as for the context menu item "Pause"/"Resume".
+   Wstrzymać lub wznowić czytanie na głos przez aktywną kopię aplikacji. Działanie jest takie samo jak w przypadku pozycji menu "Wstrzymaj"/"Wznów".
 
 -q
    Dodać aplikację do kolejki. Aplikacja konsolowa będzie czekać, aż inne egzemplarzy programu skończą pracę.
@@ -142,7 +142,7 @@ balcon [parametry ...]
    If the option is not specified, the default value of the selected voice will be used.
 
 -dp
-   Display progress information in a console window.
+   Wyświetl informacje o postępach w oknie konsoli.
 
 -cfg <nazwa_pliku>
    Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.

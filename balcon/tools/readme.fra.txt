@@ -1,4 +1,4 @@
-﻿Balabolka (application console), version 1.87
+﻿Balabolka (application console), version 1.88
 Copyright (c) 2013-2025 Ilya Morozov
 All Rights Reserved
 
@@ -6,7 +6,7 @@ WWW : https://www.cross-plus-a.com/fr/bconsole.htm
 E-mail : crossa@list.ru
 
 Licence : Freeware
-Système d'exploitation : Microsoft Windows XP/Vista/7/8/10/11
+Système d'exploitation : Microsoft Windows 7/8/10/11
 Microsoft Speech API : v4.0/5.0 and above
 Microsoft Speech Platform : v11.0
 
@@ -146,7 +146,7 @@ balcon [options ...]
    Afficher les informations sur l’avancement dans la fenêtre de console.
 
 -cfg <file_name>
-   Sets the name of the configuration file with the command line options (a text file where each line contains one option). If the option is not specified, the file "balcon.cfg" in the same folder as the utility will be used.
+   Définit le nom du fichier de configuration contenant les options de ligne de commande (un fichier texte où chaque ligne contient une option). Si l'option n'est pas spécifiée, le fichier "balcon.cfg" situé dans le même dossier que l'utilitaire sera utilisé.
 
 -h
    Affiche la liste des options de ligne de commande.
@@ -311,6 +311,11 @@ balcon -k
 Convertir le texte de STDIN en fichier audio BOOK.WAV et créer un fichier BOOK.LRC :
 
 balcon -w "d:\Sound\book.wav" -i -lrc --lrc-length 80 --lrc-title "The Lord of the Rings"
+
+
+Lisez à haute voix des phrases en anglais et en russe avec différentes voix :
+
+balcon -f "d:\Text\book.txt" -n Kimberly --voice1-name Tatyana --voice1-langid ru
 
 
 Convertir les sous-titres en fichier audio FILM.WAV :
