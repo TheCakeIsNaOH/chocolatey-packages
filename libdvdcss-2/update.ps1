@@ -35,10 +35,10 @@ function global:au_BeforeUpdate {
     Expand-Archive -Path (".\tools\" + $Latest.FileName32) -DestinationPath "tools" -Force
     Remove-Item "tools\*.zip" -Recurse
 
-    (Get-ChildItem -Directory -Recurse -Path "tools\dist" -Filter "32-bit").fullname | Move-Item -Destination ".\tools\" -Force
-    (Get-ChildItem -Directory -Recurse -Path "tools\dist" -Filter "64-bit").fullname | Move-Item -Destination ".\tools\" -Force
+    (Get-ChildItem -Directory -Recurse -Path "tools" -Filter "32-bit").fullname | Move-Item -Destination ".\tools\" -Force
+    (Get-ChildItem -Directory -Recurse -Path "tools" -Filter "64-bit").fullname | Move-Item -Destination ".\tools\" -Force
     
-    Remove-Item "tools\dist" -Recurse
+    Remove-Item "tools\libdvdcss*" -Recurse
 
     $Latest.ChecksumDLL32 = Get-Childitem -Path 'tools\32-bit' -Filter "*.dll" | Get-FileHash | Select-Object -ExpandProperty hash
     $Latest.ChecksumDLL64 = Get-Childitem -Path 'tools\64-bit' -Filter "*.dll" | Get-FileHash | Select-Object -ExpandProperty hash
