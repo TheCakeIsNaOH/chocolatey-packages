@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-tokkit</id>
-    <version>25.3.0</version>
+    <version>25.4.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K Tokkit (Install)</title>
