@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>angryip</id>
-    <version>3.9.2</version>
+    <version>3.9.3</version>
     <title>Angry IP Scanner (Installer)</title>
     <authors>Anton Keks</authors>
     <copyright>Anton Keks</copyright>

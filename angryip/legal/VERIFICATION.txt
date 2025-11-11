@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/angryip/ipscan/releases/download/3.9.2/ipscan-3.9.2-setup.exe
+   x32: https://github.com/angryip/ipscan/releases/download/3.9.3/ipscan-3.9.3-setup.exe
 
    to download the installer.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 324C97B0E1C84382C3D059AAEA39EB4DBC9CDEB9EE631A7D31C1129F983B867A
+   checksum32: 91D77C63169249E8FCDD2D912963D4D5CD143D87B65352FC62BA8113FB49F9F5
    checksumType: sha256

@@ -4,7 +4,7 @@ $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  file          = Join-Path $toolsDir 'ipscan-3.9.2-setup.exe'
+  file          = Join-Path $toolsDir 'ipscan-3.9.3-setup.exe'
   silentArgs    = '/S'
   softwareName  = 'Angry IP Scanner*' 
 }
