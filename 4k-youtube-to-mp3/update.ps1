@@ -14,7 +14,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri https://www.4kdownload.com/downloads/34 -UseBasicParsing
     $regex64       = '4kyoutubetomp3_.*_x64'
     $url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href
     $url64         = $url64 -replace "_offline.exe",".msi"
