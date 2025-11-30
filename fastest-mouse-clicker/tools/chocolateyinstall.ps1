@@ -1,15 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pp                    = Get-PackageParameters
-$shortcutName          = 'The Fastest Mouse Clicker for Windows.lnk'
+$shortcutName          = 'The Fastest Mouse Clicker for Windows version 3.lnk'
 $shortcut              = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), $shortcutName)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileType       = 'EXE'
-  file 			 = Join-Path $toolsDir 'Install_TheFastestMouseClicker_2.6.2.0.exe'
+  fileType       = 'MSI'
+  file 			 = Join-Path $toolsDir 'Installer_TheFastestMouseClickerv3_v3.0.0.0.msi'
   softwareName   = 'The Fastest Mouse Clicker for Windows*'
-  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0)
 }
 
@@ -25,3 +25,4 @@ if ($pp['noicon']) {
 }
 
 Remove-Item -Force -EA 0 -Path $toolsDir\*.exe
+Remove-Item -Force -EA 0 -Path $toolsDir\*.msi

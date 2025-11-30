@@ -3,20 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fastest-mouse-clicker</id>
-    <version>2.6.2.0</version>
+    <version>3.0.0</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/fastest-mouse-clicker</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>The Fastest Mouse Clicker for Windows</title>
     <authors>windows-2048</authors>
     <projectUrl>https://windows-2048.github.io/The-Fastest-Mouse-Clicker-for-Windows/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/441a6778d4aff6c34b123d9c832cbf07fe5e5cf5/Icons/TheFastestMouseClicker_0000.png</iconUrl>
-    <copyright>2021 windows-2048</copyright>
+    <copyright>2025 windows-2048</copyright>
     <licenseUrl>https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows</projectSourceUrl>
     <bugTrackerUrl>https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows/issues</bugTrackerUrl>
     <tags>the fastest mouse clicker for windows</tags>
-    <summary>The world's fastest auto clicker. Command line. Parameters auto-save</summary>
+    <summary>The fastest auto-clicker for Windows PC. 100000 clicks per second by arrays in Win32 SendInput() API. Command line, random clicking, sequences of clicks</summary>
     <description>Free open source mouse auto clicker emulates Windows mouse clicks EXTREMELY QUICKLY, at hardware speed limit, using modern arrayed SendInput() Win32 API. Supports command line arguments, clicking parameters auto-save and RANDOM CLICKING. The only program utilizes fine tricks in Sleep()/SendInput() with arrays of 100-1000 mouse events, making up to 100000 clicks per second.
 
 #### Package Parameters
@@ -27,7 +27,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
-    <releaseNotes>https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows/blob/master/README.md</releaseNotes>
+    <releaseNotes>https://windows-2048.github.io/The-Fastest-Mouse-Clicker-for-Windows/index.html#ChangeLog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
