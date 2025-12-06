@@ -5,8 +5,8 @@
     <id>amd-software-adrenalin-edition</id>
     <version>25.11.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
-    <owners>TheCakeIsNaAH</owners>
-    <title>AMD Software: Adrenalin Edition </title>
+    <owners>TheCakeIsNaOH</owners>
+    <title>AMD Software: Adrenalin Edition</title>
     <authors>Advanced Micro Devices, Inc</authors>
     <projectUrl>https://www.amd.com/en/products/software/adrenalin.html</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/baf5e0240b200d68175b7a21cb78a72d8ee07ea9/Icons/amd-radeon-software.png</iconUrl>
