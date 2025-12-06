@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amd-software-adrenalin-edition</id>
-    <version>0.0.0</version>
+    <version>25.11.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <owners>TheCakeIsNaAH</owners>
     <title>AMD Software: Adrenalin Edition </title>
@@ -22,6 +22,7 @@
 ### Notes
 - If not installing this driver fresh or updating an outdated version, I suggest [DDU](https://community.chocolatey.org/packages/ddu) to clean existing graphics drivers installed on the system.
 - This uses the "combined" version of the installer which appears to have the broadest model support of the installer variants available.
+- WHQL versions of the software have regular versions, optional versions are set as prerelease.
 
 #### Limitations
 - This package currently only supports installing the configuration of applications and drivers that the installer autoselects.
