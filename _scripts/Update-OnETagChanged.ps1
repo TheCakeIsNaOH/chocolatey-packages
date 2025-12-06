@@ -7,10 +7,22 @@ function Update-OnETagChanged() {
     [uri]$execUrl,
     [string]$saveFile = ".{0}info" -f [IO.Path]::DirectorySeparatorChar,
     [scriptblock]$OnETagChanged,
-    [scriptblock]$OnUpdated
+    [scriptblock]$OnUpdated,
+    $headers
   )
 
   $request = [System.Net.WebRequest]::CreateDefault($execUrl)
+  if ($headers) {
+    if ($headers.'user-agent') {
+      $request.UserAgent = $headers.'user-agent'
+    }
+    if ($headers.accept) {
+      $request.accept = $headers.accept
+    }
+    if ($headers.Referer) {
+      $request.Referer = $headers.Referer
+    }
+  }
 
   try {
     $response = $request.GetResponse()

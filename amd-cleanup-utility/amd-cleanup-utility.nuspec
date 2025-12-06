@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>amd-cleanup-utility</id>
+    <version>1.0.0.1</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>AMD Cleanup Utility</title>
+    <authors>Advanced Micro Devices, Inc</authors>
+    <projectUrl>https://www.amd.com/en/resources/support-articles/faqs/GPU-601.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/1a1ac6af06d85419a32764046db3982b92f5aa74/Icons/amd-dark-icon.png</iconUrl>
+    <copyright>2025 Advanced Micro Devices, Inc.</copyright>
+    <licenseUrl>https://www.amd.com/en/legal/eula/amd-software-eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <mailingListUrl>https://pcforum.amd.com/s/</mailingListUrl>
+    <tags>AMD Cleanup Radeon GPU Driver Graphics</tags>
+    <summary>Remove installed AMD drivers and software</summary>
+    <description>AMD Cleanup Utility is designed to remove any previously installed AMD graphics and audio drivers/software found on a system and to prepare it for new graphics software and driver installation.  
+
+AMD Cleanup Utility is a standalone application for systems running Microsoft Windows® 7 and later. This utility does not remove or modify AMD chipset drivers when used on AMD powered systems.
+
+### Notes
+- This downloads the portable executable file. Run the `amdcleanuputility.exe` to remove installed drivers and software.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
