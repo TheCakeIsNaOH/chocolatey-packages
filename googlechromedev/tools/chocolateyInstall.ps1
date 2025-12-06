@@ -1,7 +1,7 @@
 ﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
-$version = '144.0.7559.3-dev'
+$version = '145.0.7561.3-dev'
 if ($version -le (Get-ChromeDevVersion)) {
   Write-Host "Google Chrome Dev $version is already installed."
   return
