@@ -4,7 +4,7 @@ $destination           = Join-Path $(Get-ToolsLocation) 'kiwix-desktop'
 $exepath               = (Join-Path $destination 'kiwix-desktop.exe')
 
 $packageArgs = @{
-    FileFullPath64 = Join-Path $toolsDir 'kiwix-desktop_windows_x64_2.4.1.zip'
+    FileFullPath64 = Join-Path $toolsDir 'kiwix-desktop_windows_x64_2.5.1.zip'
 }
 
 Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -ZipFileName $packageArgs.FileFullPath64

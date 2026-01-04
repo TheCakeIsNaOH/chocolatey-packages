@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>partition-assistant-standard</id>
-    <version>10.9.2.20251202</version>
+    <version>10.10.0</version>
     <title>AOMEI Partition Assistant Standard (Install)</title>
     <authors>AOMEI</authors>
     <owners>TheCakeIsNaOH</owners>

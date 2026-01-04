@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.4.1.zip
+   x64: https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.5.1.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: AE6D2AF8459B823AB5391535FC69DC3E7BEA7CA668ECF4F5A24ACFD09ED1986A
+   checksum64: 56AD5B3A86010C2C74DB63A717D087CFBDCDBE71A0D7FCA0655F90EF1D80593F
