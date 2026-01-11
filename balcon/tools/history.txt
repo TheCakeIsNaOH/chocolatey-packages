@@ -1,9 +1,13 @@
 ﻿Balabolka (Command Line Utility)
-Copyright (c) 2013-2025 Ilya Morozov
+Copyright (c) 2013-2026 Ilya Morozov
 All Rights Reserved
 
 
 *** History ***
+
+2026-01-10     v1.89
+[+] Small improvements.
+
 
 2025-09-30     v1.88
 [-] Fixed converting subtitles to speech.

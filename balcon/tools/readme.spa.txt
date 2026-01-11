@@ -1,5 +1,5 @@
-﻿Balabolka (aplicación de consola), versión 1.88
-Copyright (c) 2013-2025 Ilya Morozov
+﻿Balabolka (aplicación de consola), versión 1.89
+Copyright (c) 2013-2026 Ilya Morozov
 Todos los derechos reservados
 
 WWW: https://www.cross-plus-a.com/es/bconsole.htm

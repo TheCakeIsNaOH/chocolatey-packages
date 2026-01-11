@@ -1,5 +1,5 @@
-﻿Balabolka (Command Line Utility), version 1.88
-Copyright (c) 2013-2025 Ilya Morozov
+﻿Balabolka (Command Line Utility), version 1.89
+Copyright (c) 2013-2026 Ilya Morozov
 All Rights Reserved
 
 WWW: https://www.cross-plus-a.com/bconsole.htm
