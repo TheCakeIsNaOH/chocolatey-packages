@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/PCSX2/pcsx2/releases/download/v2.6.1/PCSX2-v2.6.1-windows-x64-installer.exe
+   x64: https://github.com/PCSX2/pcsx2/releases/download/v2.6.2/PCSX2-v2.6.2-windows-x64-installer.exe
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 3A1B2F824D82AB8D0470B1300A7531BCE8D0E17836247B12F4B2CA627B9A9586
+   checksum64: CDE56966634B51BEC10FC3ACA331C3609E832582AE7DB6BB3D593151346C79EC
    checksumType: sha256
 
 
