@@ -6,7 +6,7 @@ Confirm-Win10
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     url            = 'https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe'
-    checksum       = '1b91a3f23548276555f2675453bb312380fe4443d8f0c753b4a2832625d3b967'
+    checksum       = '37265ae012e9a58b3f2ee426ff33f258551948c97210a9e6738849b737d17ac5'
     checksumType   = 'sha256'
     fileType       = 'EXE'
     silentArgs     = '/quiet /update:false'
