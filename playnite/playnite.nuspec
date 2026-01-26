@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>playnite</id>
-    <version>10.48</version>
+    <version>10.49</version>
     <releaseNotes>https://playnite.link/forum/forum-11.html</releaseNotes>
     <title>Playnite</title>
     <authors>Josef Numec</authors>
