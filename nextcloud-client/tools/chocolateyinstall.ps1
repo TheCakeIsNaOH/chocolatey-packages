@@ -28,13 +28,15 @@ if ($pp['NoShell']) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  file64        = Join-Path $toolsDir 'Nextcloud-4.0.4-x64.msi'
+  url64         = ''
+  checksum64    = ''
+  checksumType64= 'sha256'
   silentArgs    = $silentArgs
   validExitCodes= @(0, 3010, 1641)
   softwareName  = 'Nextcloud*'
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 if ($clientStarted -and (!($pp['norelaunch']))) {
     & $clientPath

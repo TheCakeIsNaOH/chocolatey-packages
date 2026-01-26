@@ -3,18 +3,15 @@
 
 function global:au_SearchReplace {
     @{
-        ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
-          "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
-        }
         ".\tools\chocolateyinstall.ps1" = @{
-            "(?i)(^\s*File64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
+            "(?i)(^\s*url64\s*=\s*)('.*')" = "`$1'$($Latest.URL64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }        
     }
 }
 
 function global:au_BeforeUpdate() {
-    Get-RemoteFiles -Purge -NoSuffix
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
 }
 
 function global:au_GetLatest {
