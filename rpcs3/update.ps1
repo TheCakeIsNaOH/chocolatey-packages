@@ -17,14 +17,24 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri "https://rpcs3.net/download" -UseBasicParsing
-	
-	$regex64       = '.*\.7z'
-	$url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href 
-	$majorVersion  = ($url64 -split '[-]' | select -Last 1 -Skip 2).trim('v')
-    $buildNumber   = $url64 -split '[-]' | select -Last 1 -Skip 1
-    
+	$OSVersion = "10.0.26200.0"
+    $OSArch = "x64"
+    $OSType = "windows"
+    $OldVersionHash = "0ee3e24b"
+    $updateAPIPage = "https://update.rpcs3.net/?api=v3&c=" + $OldVersionHash + "&os_type=" + $OSType + "&os_arch=" + $OSArch + "&os_version=" + $OSVersion
+
+    $apiResponse = Invoke-RestMethod -Method Get -UseBasicParsing -Uri $updateAPIPage
+
+    #$download_page = Invoke-WebRequest -Uri "https://rpcs3.net/download" -UseBasicParsing
+    #$regex64       = '.*\.7z'
+	#$url64         = $download_page.links | ? href -match $regex64 | select -First 1 -expand href 
+
+    $apiVersion = $apiResponse.latest_build.version
+	$majorVersion  = ($apiVersion -split '[-]' | select -Last 1 -Skip 1)
+    $buildNumber   = $apiVersion -split '[-]' | select -Last 1
 	$version       = $majorVersion + '-alpha' + $buildNumber
+    
+    $url64 = $apiResponse.latest_build.windows.download
     
 	return @{ Version = $version; URL64 = $url64; }
 }
