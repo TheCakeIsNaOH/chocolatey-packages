@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk.portable</id>
-    <version>9.6.8</version>
+    <version>9.6.9</version>
     <title>AnyDesk Exe (Portable or Install)</title>
     <authors>AnyDesk Software GmbH</authors>
     <copyright>2021 AnyDesk GmbH</copyright>
