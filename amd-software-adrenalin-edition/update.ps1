@@ -25,14 +25,17 @@ function global:au_AfterUpdate {
 
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri "https://www.amd.com/en/support/downloads/drivers.html/graphics/radeon-rx/radeon-rx-9000-series/amd-radeon-rx-9070-xt.html" -UseBasicParsing
-    $novUrl        = $download_page.Links | Where-Object href -like "*.exe" | Select-Object -ExpandProperty href -First 1
-    $combinedUrl   = $novUrl -Replace ".exe","-combined.exe"
-    $novName       = $novUrl -split '/' | Select-Object -Last 1
-    $hasWHQL       = $novName.StartsWith("whql")
-    $versionSplit  = Get-Version $novName
+    $bUrl          = $download_page.Links | Where-Object href -like "*.exe" | Where-Object href -notlike "*minimal*" | Select-Object -ExpandProperty href -First 1
+    #$combinedUrl   = $bUrl -Replace "-b.exe","-c.exe"
+    $bName         = $bUrl -split '/' | Select-Object -Last 1
+    $hasWHQL       = $bName.StartsWith("whql")
+    $versionSplit  = Get-Version $bName
     $version       = ($versionSplit).Version.ToString()
     $releaseNotesUrl = "https://www.amd.com" + ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
-
+    
+    
+    $releasenotes_page = Invoke-WebRequest -Uri $releaseNotesUrl -UseBasicParsing
+    $combinedUrl   = $releasenotes_page.Links | Where-Object href -like "*.exe" | Where-Object href -notlike "*minimal*" | Select-Object -ExpandProperty href -First 1
 
     if (!($hasWHQL)) {
         $version = $version + "-optional"
