@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amd-software-adrenalin-edition</id>
-    <version>25.11.1</version>
+    <version>26.1.1</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>AMD Software: Adrenalin Edition</title>
@@ -30,7 +30,7 @@
 - The uninstall is currently not silent. The documented silent switch in the uninstaller executable (-uninstall) does not work. Contributions welcome for a silent switch or to script uninstallation.
 
     </description>
-    <releaseNotes>https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-11-1.html</releaseNotes>
+    <releaseNotes>https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-1-1.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
