@@ -8,11 +8,11 @@ Package can be verified like this:
 1. Go to https://www.techpowerup.com/download/techpowerup-gpu-z/ and click through the download button to acquire the executable. 
    There is also a static direct link for only accessible to package managers at:
 
-   x32: https://us3-dl.techpowerup.com/files/GPU-Z.2.68.0.exe
+   x32: https://us3-dl.techpowerup.com/files/GPU-Z.2.69.0.exe
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 147D70853CC2F4BCD6092270A339EEBE7E59B92C929A386408C1A203738907E8
+   checksum32: AA6495E40A1DC3B03B03B5B0C831C5FD8F2722C9CB71254D9A059CCF4C9BA578
    checksumType: sha256
