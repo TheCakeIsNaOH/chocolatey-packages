@@ -28,8 +28,8 @@ if ($pp['NoShell']) {
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  url64         = 'https://github.com/nextcloud-releases/desktop/releases/download/v4.0.7/Nextcloud-4.0.7-x64.msi'
-  checksum64    = '93c23f43e3b180942fbb2b2ba3181bc1620470d2846fc3ea79681ec3eafdb803'
+  url64         = 'https://github.com/nextcloud-releases/desktop/releases/download/v4.0.8/Nextcloud-4.0.8-x64.msi'
+  checksum64    = 'bfca6d0c8be5a9ef083ebd6c85b92749484e2dfc580c70e8286cd0d41b5ed53f'
   checksumType64= 'sha256'
   silentArgs    = $silentArgs
   validExitCodes= @(0, 3010, 1641)
