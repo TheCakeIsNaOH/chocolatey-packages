@@ -10,7 +10,7 @@ $admin                 = "-RunAsAdmin"
 $packageArgs = @{
     PackageName  = $env:ChocolateyPackageName
     Destination  = $rpcs3Dir
-    FileFullPath64 = Join-Path $toolsDir 'rpcs3-v0.0.40-19079-a2eb4fec_win64_msvc.7z'
+    FileFullPath64 = Join-Path $toolsDir 'rpcs3-v0.0.40-19086-07f5b0aa_win64_msvc.7z'
 }
 
 Write-Host "Moving existing files from $toolsDir to rpcs3Dir"
