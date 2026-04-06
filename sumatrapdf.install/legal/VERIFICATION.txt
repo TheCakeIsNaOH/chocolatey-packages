@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://www.sumatrapdfreader.org/dl/rel/3.6/SumatraPDF-3.6-install.exe
-   x64: https://www.sumatrapdfreader.org/dl/rel/3.6/SumatraPDF-3.6-64-install.exe
+   x32: https://www.sumatrapdfreader.org/dl/rel/3.6.1/SumatraPDF-3.6.1-install.exe
+   x64: https://www.sumatrapdfreader.org/dl/rel/3.6.1/SumatraPDF-3.6.1-64-install.exe
 
    to download the installer.
 
@@ -16,6 +16,6 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E638173E0424F509FCBD2F7165CDDF1322E5FD0DC511DBBE9F51B9C4C6E220FB
-   checksum64: 810183F4F89DA182639D7C30F529242DF6C2C6444697790806DB50B0E14BEE54
+   checksum32: E232308A77E2293BAFE4AC4079DDB8EF00CA10DE43B9477CA55F17A03419770B
+   checksum64: 1EEE71CCCD2EA6E94D5BCEA54EE2F759844DA3E1A0EE2F6045035B1D17B94381
    checksumType: sha256
