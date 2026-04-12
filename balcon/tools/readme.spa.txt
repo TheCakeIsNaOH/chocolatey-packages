@@ -1,4 +1,4 @@
-﻿Balabolka (aplicación de consola), versión 1.89
+﻿Balabolka (aplicación de consola), versión 1.90
 Copyright (c) 2013-2026 Ilya Morozov
 Todos los derechos reservados
 

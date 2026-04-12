@@ -5,6 +5,10 @@ All Rights Reserved
 
 *** History ***
 
+2026-04-11     v1.90
+[-] Fixed the speech rate when switching between voices using tags.
+
+
 2026-01-10     v1.89
 [+] Small improvements.
 

@@ -1,4 +1,4 @@
-﻿Balabolka (Command Line Utility), version 1.89
+﻿Balabolka (Command Line Utility), version 1.90
 Copyright (c) 2013-2026 Ilya Morozov
 All Rights Reserved
 
@@ -413,6 +413,6 @@ One hundred twenty milliseconds of silence {{Pause=120}} just occurred.
 
 *** Licence ***
 
-You are free to use and distribute software for non-commercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Belarus, Cuba, Iran, Nicaragua, North Korea, Syria, and the Crimea Region.
+You are free to use and distribute software for non-commercial purposes. For commercial use or distribution, you need to get permission from the copyright holder. The application can not be used on the territory of Afghanistan, Belarus, Cuba, Iran, Nicaragua, North Korea, Syria, and the Crimea Region.
 
 ###
