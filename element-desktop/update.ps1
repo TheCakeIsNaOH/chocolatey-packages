@@ -1,6 +1,6 @@
 ﻿import-module chocolatey-au
 
-$releases = 'https://github.com/vector-im/riot-desktop/tags'
+$releases = 'https://github.com/element-hq/element-web/tags'
 
 function global:au_SearchReplace {
    @{
