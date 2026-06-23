@@ -24,12 +24,13 @@ function global:au_GetLatest {
 	
     
     $regex64       = 'SumatraPDF-[\.\d]+-64-install.exe'
-    $regex32       = 'SumatraPDF-[\d\.]*-install.exe'
+    #$regex32       = 'SumatraPDF-[\d\.]*-install.exe'
 	
     $url64         = 'https://www.sumatrapdfreader.org' + ($download_page.links | ? href -match $regex64 | select -First 1 -expand href)
-    $url32         = 'https://www.sumatrapdfreader.org' + ($download_page.links | ? href -match $regex32 | select -First 1 -expand href)
+    #$url32         = 'https://www.sumatrapdfreader.org' + ($download_page.links | ? href -match $regex32 | select -First 1 -expand href)
+    $url32         = $url64 -replace "-64-","-"
 	
-    $version       = $url32 -split '-' | select -Last 1 -Skip 1
+    $version       = (Get-Version $url32).version
 	
     return @{ 
         Version = $version;

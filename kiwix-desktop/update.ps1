@@ -28,7 +28,7 @@ function global:au_GetLatest {
     $releases = 'https://download.kiwix.org/release/kiwix-desktop/'
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $regex64       = 'kiwix-desktop_windows_x64_[\d\.]+.zip'
+    $regex64       = 'kiwix-desktop_windows_x64_[\d\.]+.zip$'
     $url64         = $download_page.links | ? href -match $regex64 | select -Last 1 -expand href
     $version       = ($url64 -split '[_]' | Select-Object -Last 1).trim(".zip")
     $url64         = $releases + $url64 
