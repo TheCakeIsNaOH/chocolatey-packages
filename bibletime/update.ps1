@@ -22,8 +22,15 @@ function global:au_GetLatest {
 	$download_page = Get-GitHubLatestReleaseLinks -User "bibletime" -Repository "bibletime"
 	
 	$url        = $download_page.links | ? href -match '.exe$'| % href | select -First 1
-	$version    = ($url -split '[-]' | select -First 1 -Skip 1).replace('_','-')
-	$modurl     = 'https://github.com' + $url 
+    
+    # If no windows yet for this release, report lower version to skip update silently
+    if ($null -eq $url) {
+        $version = "0.0.0"
+        $modurl  = 'https://github.com/bibletime/bibletime/releases/download/v3.1.1/BibleTime-3.1.1-win64.exe'
+    } else {
+        $version    = ($url -split '[-]' | select -First 1 -Skip 1).replace('_','-')
+        $modurl     = 'https://github.com' + $url 
+    }
 	
 	return @{ Version = $version; URL32 = $modurl; PackageName = 'bibletime'}
 }
