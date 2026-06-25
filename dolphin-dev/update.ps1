@@ -17,12 +17,16 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri https://dolphin-emu.org/download/list/master/ -UseBasicParsing
-	$regex         = 'dolphin-master-.*-x64.7z'
-    $url64         = $download_page.links | ? href -match $regex | select -First 1 -expand href
+	#$download_page = Invoke-WebRequest -Uri https://dolphin-emu.org/download/list/master/ -UseBasicParsing
+	#$regex         = 'dolphin-master-.*-x64.7z'
+    #$url64         = $download_page.links | ? href -match $regex | select -First 1 -expand href
 	
-	$verNum        = ($url64 -split '[-]' | select -Last 2 -Skip 1) -join "." -replace "a",""
-	$version       = $verNum.ToString() + '-dev'
+    $versionPage = Invoke-RestMethod -Method Get -Uri 'https://dolphin-emu.org/update/latest/dev' -UseBasicParsing
+    $url64 = $versionPage.artifacts | Where-Object system -eq "Windows x64" | Select-Object -ExpandProperty url
+    $version = (Get-Version ($versionPage.shortrev -replace "-",".") | Select-Object -ExpandProperty Version).tostring() + "-dev"
+    
+	#$verNum        = ($url64 -split '[-]' | select -Last 2 -Skip 1) -join "." -replace "a",""
+	#$version       = $verNum.ToString() + '-dev'
 	
 	return @{ Version = $version; URL64 = $url64 }
 }
