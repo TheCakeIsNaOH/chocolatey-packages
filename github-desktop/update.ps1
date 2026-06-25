@@ -1,42 +1,30 @@
-import-module chocolatey-au
-
-$releases = 'https://central.github.com/deployments/desktop/desktop/latest/win32'
+Import-Module chocolatey-au
+. $([System.IO.Path]::Combine("..", '_scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 function global:au_BeforeUpdate {
-  Get-RemoteFiles -Purge -NoSuffix 
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
 }
 
 function global:au_SearchReplace {
   @{
-    ".\legal\VERIFICATION.txt" = @{
-		  "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
-		  "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
-		  "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
-		}
+    "tools\chocolateyinstall.ps1" = @{
+        "(?i)(^\s*url64\s*=\s*)('.*')" = "`$1'$($Latest.URL64)'"
+        "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+    }
   }
 }
 
 function global:au_GetLatest {
-  $response = Invoke-WebRequest -Uri $releases -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
-  if ($response.StatusCode -ne 302) {
-    throw "HTTP $($response.StatusCode) when requesting $releases"
-  }
-  if (-not $response.Headers.Location) {
-    throw "No Location header returned when requesting $releases"
-  }
-
-  $downloadUrl = $response.Headers.Location
-  $version = $response.Headers.Location | % { $_ -split '/' | select -Last 2 }
-  $version = $version[0] | % { $_ -split '-' | select -First 1 }
-
-  return @{
-    Version = $version
-    URL64   = $downloadUrl
-  }
+    $download_page = Get-GitHubLatestReleaseLinks -User "desktop" -Repository "desktop"
+    
+    $url64         = $download_page.Links | Where-Object href -match ".*.exe$" | Select-Object -First 1 -ExpandProperty href
+    $version       = (Get-Version $url64).version.tostring()
+    $modurl        = 'https://github.com' + $url64
+    
+    return @{
+        Version = $version
+        URL64   = $modUrl
+    }
 }
 
-try {
-    update -ChecksumFor none -NoCheckUrl
-} catch  {
-    if ($_ -match '404') { Write-Host "$_"; return 'ignore' }
-}
+Update-Package -ChecksumFor none

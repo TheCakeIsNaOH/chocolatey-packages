@@ -4,15 +4,15 @@ $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   installerType  = 'exe'
-  file           = (Get-Childitem -Path $toolsDir -Filter "*.exe").fullname
   checksumType   = 'sha256'
   silentArgs     = '-s'
   validExitCodes = @(0)
   softwareName   = 'GitHub Desktop'
+  url64          = ''
+  checksum64     = ''
+  checksumType64 = 'sha256'
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 Start-Sleep -Seconds 60
-
-Remove-Item "$toolsDir\*.exe" -Force -EA SilentlyContinue | Out-Null
