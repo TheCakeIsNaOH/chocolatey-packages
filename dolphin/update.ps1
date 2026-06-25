@@ -24,7 +24,7 @@ function global:au_GetLatest {
     
     $versionPage = Invoke-RestMethod -Method Get -Uri 'https://dolphin-emu.org/update/latest/beta' -UseBasicParsing
     $url64 = $versionPage.artifacts | Where-Object system -eq "Windows x64" | Select-Object -ExpandProperty url
-    $version = (Get-Version (($versionPage.shortrev -replace "-",".") -replace "a$",".1") | Select-Object -ExpandProperty Version).tostring()
+    $version = (Get-Version ((($versionPage.shortrev -replace "-",".") -replace "a$",".1") + ".0") | Select-Object -ExpandProperty Version).tostring()
 	
 	#$verNum        = $url64 -split '[-]' | select -Last 1 -Skip 1
 	#$version       = $verNum.ToString() + ".0.0"
