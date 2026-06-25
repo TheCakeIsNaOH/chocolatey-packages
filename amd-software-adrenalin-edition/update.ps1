@@ -31,7 +31,8 @@ function global:au_GetLatest {
     $hasWHQL       = $bName.StartsWith("whql")
     $versionSplit  = Get-Version $bName
     $version       = ($versionSplit).Version.ToString()
-    $releaseNotesUrl = "https://www.amd.com" + ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
+    #$releaseNotesUrl = "https://www.amd.com" + ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
+    $releaseNotesUrl = ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
     
     
     $releasenotes_page = Invoke-WebRequest -Uri $releaseNotesUrl -UseBasicParsing
