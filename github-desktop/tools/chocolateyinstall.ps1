@@ -8,8 +8,8 @@ $packageArgs = @{
   silentArgs     = '-s'
   validExitCodes = @(0)
   softwareName   = 'GitHub Desktop'
-  url64          = 'https://github.com/desktop/desktop/releases/download/release-3.6.0/GitHubDesktopSetup-x64.exe'
-  checksum64     = '56c1b848a736f9c076fb440b29d5a968fd82986ffe6ff715cb0c761c9a52f4a7'
+  url64          = 'https://github.com/desktop/desktop/releases/download/release-3.6.1/GitHubDesktopSetup-x64.exe'
+  checksum64     = '2e0a3519ba3d4bdbb7cbdec0e2605535e78cb81f4051e3c963cf3a613af5ebca'
   checksumType64 = 'sha256'
 }
 
