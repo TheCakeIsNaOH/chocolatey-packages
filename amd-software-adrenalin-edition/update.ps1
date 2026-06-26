@@ -34,6 +34,9 @@ function global:au_GetLatest {
     #$releaseNotesUrl = "https://www.amd.com" + ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
     $releaseNotesUrl = ($download_page.Links | Where-Object href -like "*RN-RAD-WIN*" | Select-Object -ExpandProperty href -First 1)
     
+    if (!($releaseNotesUrl.StartsWith("http"))) {
+        $releaseNotesUrl = "https://www.amd.com" + $releaseNotesUrl
+    }
     
     $releasenotes_page = Invoke-WebRequest -Uri $releaseNotesUrl -UseBasicParsing
     $combinedUrl   = $releasenotes_page.Links | Where-Object href -like "*.exe" | Where-Object href -notlike "*minimal*" | Select-Object -ExpandProperty href -First 1
