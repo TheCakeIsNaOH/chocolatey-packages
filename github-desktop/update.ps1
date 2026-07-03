@@ -30,7 +30,7 @@ function global:au_GetLatest {
     
     return @{
         Version = $version
-        URL64   = $modUrl
+        URL64   = $url64
     }
 }
 
