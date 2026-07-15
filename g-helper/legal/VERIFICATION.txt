@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/seerge/g-helper/releases/download/v0.260/GHelper.zip
+   x32: https://github.com/seerge/g-helper/releases/download/v0.264/GHelper.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 493AFE1FEDB5C8A6E1440812C89EA49733C73D15E43C96A85FF710C28FEC24EE
+   checksum32: 99C7C1A270FE3740681624BC5698C9A52D38CACF7BA529BE1F31D99CA8FD804C
