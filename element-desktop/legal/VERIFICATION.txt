@@ -6,10 +6,10 @@ The installer has been downloaded from their official download link listed on <h
 and can be verified like this:
 
 1. Download the following installer:
-  64-Bit: <https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.23.exe>
+  64-Bit: <https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.24.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 084A496A8D7ACFBC667A8FD316B02201474C9AFF28BAB3EFCB0C1A97E8F4BFFE
+  checksum64: F0FDFBA95899066E4742159944E9CEC459A0B656DDA3CB55D08602107C17BD3F
