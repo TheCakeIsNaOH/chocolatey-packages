@@ -3,9 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
 1. Download software from here-
-https://dl5.oo-software.com/files/ooregeditor16/160/OORegEditor.exe?path=https%3A%2F%2Fdl5.oo-software.com%2Ffiles%2Fooregeditor16%2F160%2FOORegEditor.exe
+https://dl5.oo-software.com/files/ooregeditor16/161/OORegEditor.exe
 
 2. Get checksum of executable
 
 3. Check that checksum matches included executable
-    SHA256: 2F4732CCB7D3DD778E2789A5C9D1DF409741B1062B0AEC8E3D620ABA986279F9
+    SHA256: B30C6596438FDC845333FF55DB92107B64DAE5C546B45D2A31CBB53AB5AB3B29
