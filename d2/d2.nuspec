@@ -8,7 +8,7 @@
     <authors>Terrastruct</authors>
     <owners>TheCakeIsNaOH</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://raw.githubusercontent.com/terrastruct/d2/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/d2lang/d2/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://d2lang.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/41ec4572cb7df4909759dc9bfbb8c771ef32f395/Icons/d2.png</iconUrl>
     <summary>A modern diagram scripting language that turns text to diagrams.</summary>
@@ -25,10 +25,10 @@
     <releaseNotes>https://github.com/PowerShell/Win32-d2/releases</releaseNotes>
     <copyright>Copyright 2024 Terrastruct Inc.</copyright>
     <tags>d2 d2lang diagrams admin</tags>
-    <projectSourceUrl>https://github.com/terrastruct/d2</projectSourceUrl>
+    <projectSourceUrl>https://github.com/d2lang/d2</projectSourceUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/d2</packageSourceUrl>
     <docsUrl>https://d2lang.com/tour/intro/</docsUrl>
-    <bugTrackerUrl>https://github.com/terrastruct/d2/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/d2lang/d2/issues</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
