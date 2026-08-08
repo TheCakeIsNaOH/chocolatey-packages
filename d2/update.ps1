@@ -18,7 +18,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Get-GitHubLatestReleaseLinks -User "terrastruct" -Repository "d2"
+    $download_page = Get-GitHubLatestReleaseLinks -User "d2lang" -Repository "d2"
 	
     $match64 = "d2-.*-windows-amd64\.msi$"
     $url64   = 'https://github.com' + ($download_page.links | ? href -match $match64 | Select-Object -First 1 -ExpandProperty href)
