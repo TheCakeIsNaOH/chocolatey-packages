@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/maharmstone/btrfs/releases/download/v1.9/btrfs-1.9.zip
+   x32: https://github.com/maharmstone/btrfs/releases/download/v1.10/btrfs-1.10.zip
 
    to download the archive.
 
@@ -15,5 +15,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 673B0ECC23634D85213BA46E309BFB788AC83FCC14E4976773B324592401303A
+   checksum32: 82303494B4FD4C23AD7C6FD69A886CB1A317A0293EE6E283B7C009117133B0C3
    checksumType: sha256
