@@ -20,8 +20,8 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
     $versionData = Invoke-RestMethod -Uri "https://www.gpu-z.com/gpuz/version_v2" -UseBasicParsing
     $version     = $versionData.latest
-    $url         = 'https://us3-dl.techpowerup.com/files/GPU-Z.' + $version + '.exe'
-    $userAgent   = 'Scoop/1.0'
+    $url         = 'https://us3-dl.techpowerup.com/files/GPU-Z.' + $version + '.exe#'
+    $userAgent   = 'Scoop/1.0 (+http://scoop.sh/) PowerShell/5.1 (Windows NT 10.0; Win64; x64; Desktop)'
 
     return @{ 
         Version = $version; 
