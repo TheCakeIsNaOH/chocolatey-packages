@@ -21,7 +21,7 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
 	$download_page = Get-GitHubLatestReleaseLinks -User "JosefNemec" -Repository "Playnite"
     
-	$url        = $download_page.links | ? href -match '.exe$' | Select-Object -First 1 -ExpandProperty href
+	$url        = $download_page.links | ? href -match 'Playnite\d+.exe$' | Select-Object -First 1 -ExpandProperty href
 	$version    = ($url -split '/' | select -Last 1 -Skip 1)
 	$modurl     = 'https://github.com' + $url 
     
