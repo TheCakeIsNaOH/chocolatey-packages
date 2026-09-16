@@ -2,7 +2,7 @@
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $pp                    = Get-PackageParameters
 $silentArgs            = "/qn /norestart REBOOT=ReallySuppress /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
-$processInfo           = Get-Process -Name "nextcloud" -EA 0
+$processInfo           = Get-Process -Name "nextcloud" -EA 0 | Select-Object -First 1
 $clientStarted         = $null -ne $processInfo
 
 if ($clientStarted) {
