@@ -41,7 +41,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 * [Changelog](https://dolphin-emu.org/download/list/master/)
     </releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" version="14.0.23026.0" />
+      <dependency id="vcredist140" version="14.50.35719" />
     </dependencies>
   </metadata>
   <files>
