@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/strobejb/winspy/releases/download/v1.9.2/WinSpy_Release_x86.zip
-   x64: https://github.com/strobejb/winspy/releases/download/v1.9.2/WinSpy_Release_x64.zip
+   x32: https://github.com/strobejb/winspy/releases/download/v1.9.3/WinSpy_Release_x86.zip
+   x64: https://github.com/strobejb/winspy/releases/download/v1.9.3/WinSpy_Release_x64.zip
 
    to download the zip.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 7DD7964858EF12A57A17AD95FDFF4C8649CD736EA84A3EFA67DB7DBCDD84923B
-   checksum64: E356700D1E4E40D3E3A0D8C1FAEDC127F20CEBF9D160E9EB22BBF5C917462C19
+   checksum32: 518ADA80C8A6AF8103A965A087EADFCCD44DE2EC2D9D7C6DE8C35D7099D04483
+   checksum64: 4A23271020E31D5335EEA215630D98453A581256AF084CEAEDDEEFD545EAB4E4
