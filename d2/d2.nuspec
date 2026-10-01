@@ -22,7 +22,7 @@
 - Code snippets: Made for software diagrams. Syntax highlighted code right in the diagram.
 - Markdown: Include longform explanations with Markdown.
 - Tables: Show structured data like SQL tables.</description>
-    <releaseNotes>https://github.com/PowerShell/Win32-d2/releases</releaseNotes>
+    <releaseNotes>https://github.com/terrastruct/d2/releases</releaseNotes>
     <copyright>Copyright 2024 Terrastruct Inc.</copyright>
     <tags>d2 d2lang diagrams admin</tags>
     <projectSourceUrl>https://github.com/d2lang/d2</projectSourceUrl>

@@ -25,7 +25,7 @@ function global:au_GetLatest {
   #$download_page    = Invoke-WebRequest -Uri $downloadPage -UseBasicParsing
   #$url32            = $download_page.links | Where-Object href -match ".exe" | Select-Object -First 1
   
-  $upgradeINIUrl = "http://www2.aomeisoftware.com/download/Autoupgrade/PAaotoupgrade/PAupgrade.ini"
+  $upgradeINIUrl = "https://www2.aomeisoftware.com/download/Autoupgrade/PAaotoupgrade/PAupgrade.ini"
   $upgradeINI = ((New-Object System.Net.WebClient).DownloadString($upgradeINIUrl))
   $majorVersion = ($upgradeINI -split "\n" | Select-String "maj" | select -First 1).tostring().split("=") | Select-Object -Last 1
   $minorVersion = ($upgradeINI -split "\n" | Select-String "min" | select -First 1).tostring().split("=") | Select-Object -Last 1

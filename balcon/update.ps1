@@ -1,13 +1,13 @@
 ﻿Import-Module Chocolatey-AU
 
 function global:au_GetLatest {
-	$version_page = (Invoke-WebRequest -Uri http://www.cross-plus-a.com/balcon/changelog.txt -UseBasicParsing).content
+	$version_page = (Invoke-WebRequest -Uri https://www.cross-plus-a.com/balcon/changelog.txt -UseBasicParsing).content
 	
 	$version_string = ($version_page.Tostring() -split "[\s]" | sls "(v)(?<ver>\d*\.)" | Select-Object -First 1)
 	
 	$version_number = $version_string.ToString().substring(1)
 	
-	$url32 = 'http://www.cross-plus-a.com/balcon.zip'
+	$url32 = 'https://www.cross-plus-a.com/balcon.zip'
 	
 	return @{ Version = $version_number; URL32 = $url32 }
 }
