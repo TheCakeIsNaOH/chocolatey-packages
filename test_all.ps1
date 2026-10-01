@@ -5,6 +5,11 @@ param( [string[]] $Name, [string] $Root = "$PSScriptRoot" )
 if (Test-Path (Join-Path $PSScriptRoot 'update_vars.ps1')) { . (Join-Path $PSScriptRoot 'update_vars.ps1') }
 $global:au_root = Resolve-Path $Root
 
+# Fail the run on package errors; override with $Env:ThrowOnErrors ('true'/'false')
+$ThrowOnErrors = if ($Env:ThrowOnErrors) { $Env:ThrowOnErrors -eq 'true' } else { $true }
+# Report/gist file group label when not run in 'random N' mode
+$n = 'all'
+
 if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
     [array] $lsau = lsau
 

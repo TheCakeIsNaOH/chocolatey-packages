@@ -103,9 +103,15 @@ build_script:
                     $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
                     pushd $package_dir
-                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
-                      choco pack; Push-Package;
-                    popd
+                      try {
+                          if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                          choco pack
+                          if ($LASTEXITCODE -eq 0) { Push-Package } else { Write-Warning "choco pack failed for package '$package' (exit code $LASTEXITCODE), skipping push" }
+                      } catch {
+                          Write-Warning "Update/push failed for package '$package': $_"
+                      } finally {
+                          popd
+                      }
                 }
                 return
             }
@@ -116,7 +122,7 @@ build_script:
     
     write-host (Get-ChildItem -Recurse -Filter *.nupkg)
     
-    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+    if (Test-Path "$Env:TEMP\chocolatey\au") { 7z a au_temp.zip "$Env:TEMP\chocolatey\au\*" }
 
 artifacts:
 - path: update_info.xml
