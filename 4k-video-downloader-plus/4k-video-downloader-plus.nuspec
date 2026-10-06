@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>4k-video-downloader-plus</id>
-    <version>0.0.0</version>
+    <version>26.3.5</version>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/tree/master/4k-video-downloader-plus</packageSourceUrl>
     <owners>TheCakeIsNaOH</owners>
     <title>4K Video Downloader Plus (Install)</title>
