@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/marchaesen/vcxsrv/releases/download/21.1.10/vcxsrv-64.21.1.10.0.installer.exe
+   x64: https://github.com/marchaesen/vcxsrv/releases/download/21.1.16.1/vcxsrv-64.21.1.16.1.installer.exe
 
    to download the installer.
 
@@ -16,7 +16,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksumType: sha256
-   checksum64: F0BDC3F17A2A4C09172C7D0F9DD6B2B3F95B1FDBB2794BD8FFDA474C636CCED3
+   checksum64: DF7FED8F49665D0592528AB6BE9D07111EA73C6848283D128B77690E05B8F90B
 
 The included license have been obtained from <https://www.gnu.org/licenses/gpl.txt>
 and should be the correct license as mentioned on their github page <https://github.com/marchaesen/vcxsrv/blob/7ca654bf54c45b42638b4a77930e5de6eab2c54f/COPYING>

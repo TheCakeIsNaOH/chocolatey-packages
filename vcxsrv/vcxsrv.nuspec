@@ -4,7 +4,7 @@
   <metadata>
     <id>vcxsrv</id>
     <title>VcXsrv Windows X Server</title>
-    <version>21.1.10</version>
+    <version>21.1.16.1</version>
     <authors>marha</authors>
     <owners>TheCakeIsNaOH</owners>
     <summary>Windows X-server based on the xorg git sources.</summary>
