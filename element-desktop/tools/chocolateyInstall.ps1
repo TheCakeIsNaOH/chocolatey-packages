@@ -12,6 +12,6 @@ $packageArgs = @{
   softwareName   = 'Element' 
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 Remove-Item -ea 0 -Force -Path $toolsDir\*.exe
