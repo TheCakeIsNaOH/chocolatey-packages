@@ -4,16 +4,17 @@ $releases = 'https://github.com/element-hq/element-web/tags'
 
 function global:au_SearchReplace {
    @{
-		".\legal\VERIFICATION.txt" = @{
-		  "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
-		  "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
-		  "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
-		}
-        #".\tools\chocolateyinstall.ps1" = @{
-        #    "(?i)(^\s*File64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
-        #}
+        "tools\chocolateyInstall.ps1" = @{
+          "(?i)(^\s*url64\s*=\s*)('.*')" = "`$1'$($Latest.URL64)'"
+          "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+        }	
     }
 }
+
+function global:au_BeforeUpdate() {
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+}
+
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
@@ -26,11 +27,6 @@ function global:au_GetLatest {
         URL64          = "https://packages.element.io/desktop/install/win32/x64/Element%20Setup%20$version.exe"
     }
 }
-
-function global:au_BeforeUpdate() {
-	Get-RemoteFiles -Purge
-}
-
 
 try {
     update -checksumfor none

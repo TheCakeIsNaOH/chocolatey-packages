@@ -2,7 +2,9 @@
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  file64         = (Get-Childitem -Path $toolsDir -Filter "*.exe").fullname
+  url64			 = ''
+  checksum64     = ''
+  checksumType64 = 'sha256'
   packageName    = $env:ChocolateyPackageName
   installerType  = 'exe'
   silentArgs     = '--silent'
@@ -12,5 +14,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
-Start-Sleep -Seconds 20
 Remove-Item -ea 0 -Force -Path $toolsDir\*.exe

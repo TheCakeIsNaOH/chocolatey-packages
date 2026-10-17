@@ -3,16 +3,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>element-desktop</id>
-    <version>1.12.30</version>
+    <version>1.12.1</version>
     <title>Element (Riot) Desktop</title>
     <authors>Element</authors>
     <owners>TheCakeIsNaOH</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://github.com/vector-im/riot-desktop/blob/master/LICENSE</licenseUrl>
-	<copyright>2020 Element</copyright>
+    <licenseUrl>https://github.com/element-hq/element-web/blob/develop/LICENSE-GPL-3.0</licenseUrl>
+	<copyright>2026 Element</copyright>
     <projectUrl>https://riot.im/</projectUrl>
-    <projectSourceUrl>https://github.com/vector-im/riot-desktop</projectSourceUrl>
-	<bugTrackerUrl>https://github.com/vector-im/riot-web/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/element-hq/element-web/tree/develop/apps/desktop</projectSourceUrl>
+	<bugTrackerUrl>https://github.com/element-hq/element-web/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/TheCakeIsNaOH/Chocolatey-Packages/tree/master/</packageSourceUrl>
     <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages/775ac37179c4c8bc14ed55d62af30795eba9d3e2/Icons/element-desktop.png</iconUrl>
     <description>
@@ -32,6 +32,5 @@ Element (formerly known as Vector and Riot) is a Matrix web client built using t
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
