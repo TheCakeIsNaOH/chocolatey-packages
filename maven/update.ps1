@@ -1,76 +1,84 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = "https://downloads.apache.org/maven/maven-3/"
-#$releases = "https://archive.apache.org/dist/maven/maven-3/"
+$releases = 'https://downloads.apache.org/maven'
+$minMajor = 3
 
 function global:au_SearchReplace {
     @{
         "tools\chocolateyinstall.ps1" = @{
-			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.ActualVersion)'"
+            "(^[$]version\s*=\s*)('.*')"         = "`$1'$($Latest.ActualVersion)'"
         }
-	    "legal\VERIFICATION.txt" = @{
-			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
-		}
-		"maven.nuspec" = @{
-			"apache-maven-[\d\.]*" = "apache-maven-$($Latest.ActualVersion)"
-            "maven.apache.org/docs/[\d\.d]*" = "maven.apache.org/docs/$($Latest.ActualVersion)"
-		}
+        "legal\VERIFICATION.txt" = @{
+            "(?i)(\s+x32:).*"                    = "`${1} $($Latest.URL32)"
+        }
+        "maven.nuspec" = @{
+            "apache-maven-[\d\.\-a-z]*"          = "apache-maven-$($Latest.ActualVersion)"
+            "maven.apache.org/docs/[\d\.\-a-z]*" = "maven.apache.org/docs/$($Latest.ActualVersion)"
+        }
     }
 }
 
 function global:au_BeforeUpdate() {
-	remove-item .\apache-maven-*  -Recurse
-    Get-RemoteFiles -Purge -NoSuffix 
-    
-	Expand-Archive -Path ".\tools\*.zip" -DestinationPath ".\" -Force
+    Remove-Item .\apache-maven-* -Recurse
+    Get-RemoteFiles -Purge -NoSuffix
 
-	Remove-Item ".\tools\*.zip"
+    Expand-Archive -Path ".\tools\*.zip" -DestinationPath ".\" -Force
+
+    Remove-Item ".\tools\*.zip"
+}
+
+function Get-AvailableMajors {
+    $indexPage = Invoke-WebRequest -Uri "$releases/" -UseBasicParsing
+    return $indexPage.links |
+        Where-Object href -match '^maven-\d+/$' |
+        ForEach-Object { $_.href -replace '^maven-|/$', '' } |
+        Where-Object { [int]$_ -ge $minMajor } |
+        Sort-Object { [int]$_ }
+}
+
+function Get-StreamVersions([string[]] $majors) {
+    $versions = @()
+    foreach ($major in $majors) {
+        $indexPage = Invoke-WebRequest -Uri "$releases/maven-$major/" -UseBasicParsing
+        $versions += $indexPage.links |
+            Where-Object href -match '^\d+\.\d+\.\d+(-[0-9A-Za-z\-]+)?/?$' |
+            ForEach-Object { $_.href.Trim('/') }
+    }
+    return $versions
+}
+
+function Get-Stream([string] $branch, [string] $version) {
+    $major = $branch.Split('.')[0]
+    $binariesUrl = "$releases/maven-$major/$version/binaries/"
+    $downloadPage = Invoke-WebRequest -Uri $binariesUrl -UseBasicParsing
+    $zip = $downloadPage.links |
+        Where-Object href -match ('^apache-maven-' + [regex]::Escape($version) + '-bin\.zip$') |
+        Select-Object -First 1 -ExpandProperty href
+    if (!$zip) { return }
+
+    @{ Version = $version; URL32 = $binariesUrl + $zip; PackageName = 'maven'; ActualVersion = $version }
 }
 
 function global:au_GetLatest {
-	$version_page  = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$versionRegex  = '\d\.\d+.\d+'
-	$partUrl32     = $version_page.links | ? href -match $versionRegex | select -Last 1 -expand href 
-	$version       = $partUrl32.trim("/")
-	$prefixUrl32   = $releases + $partUrl32 + "binaries/"
-	$download_page = Invoke-WebRequest -Uri $prefixUrl32 -UseBasicParsing
-	$downloadRegex = "\.zip$"
-	$url32         = $prefixUrl32 + $($download_page.links | ? href -match $downloadRegex | select -expand href)
-	
-	return @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $version }
+    $versions = Get-StreamVersions (Get-AvailableMajors)
+
+    $latest = @{}
+    foreach ($version in $versions) {
+        $branch = ($version -split '-')[0] -replace '\.\d+$', ''
+        if (!$latest[$branch] -or (Get-Version $version) -gt (Get-Version $latest[$branch])) {
+            $latest[$branch] = $version
+        }
+    }
+
+    $streams = [ordered] @{}
+    $latest.Keys |
+        Sort-Object { Get-Version $latest[$_] } -Descending |
+        ForEach-Object {
+            $stream = Get-Stream $_ $latest[$_]
+            if ($stream) { $streams[$_] = $stream }
+        }
+
+    return @{ Streams = $streams }
 }
-
-
-<#function GetStreams() {
-  param($releaseUrls)
-  $streams = @{ }
-
-  $releaseUrls | % {
-    $actualVersion = $_.trim('/')
-    $version = $actualVersion + "." + (Get-Date -Format "yyyyMMdd")
-    
-    $downloadPageUrl = $releases + $_ + "binaries/"
-    $download_page = Invoke-WebRequest -Uri $downloadPageUrl -UseBasicParsing
-
-    $relURL = $download_page.links | Where-Object href -match "apache-maven-.*\.zip$" | select -first 1 -expand href
-    $url32 = $downloadPageUrl + $relURL
-
-    $streams.$version = @{ Version = $version; URL32 = $url32; PackageName = "maven"; ActualVersion = $actualVersion }
-  }
-
-  Write-Host $streams.Count 'streams collected'
-  $streams
-}
-
-function global:au_GetLatest {
-  $versions_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  $re = "\d\.\d\.\d/"
-  $releaseUrls = $versions_page.links | ? href -match $re | select -ExpandProperty href
-  
-
-  @{ Streams = GetStreams $releaseUrls }
-} #>
 
 Update-Package -ChecksumFor none
-
