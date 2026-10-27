@@ -2,8 +2,8 @@
 $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  url64			 = 'https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.32.exe'
-  checksum64     = '633a783365293916580fe8a589f3b0c8cad9e2311f45f65e2f527aa6dda72d5a'
+  url64			 = 'https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.33.exe'
+  checksum64     = '9ce1ba82ef244cd3b26333d0673769641676fa3c5477ea8c388ed11f42ed7c20'
   checksumType64 = 'sha256'
   packageName    = $env:ChocolateyPackageName
   installerType  = 'exe'
