@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rtss</id>
-    <version>0.0.0</version>
+    <version>7.3.7</version>
     <title>Rivatuner Statistics Server</title>
     <authors>Guru3d</authors>
     <owners>TheCakeIsNaOH</owners>
