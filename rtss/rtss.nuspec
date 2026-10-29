@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rtss</id>
+    <version>0.0.0</version>
+    <title>Rivatuner Statistics Server</title>
+    <authors>Guru3d</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages@13f01f9770d8852e5aadccb87ecf0e06d18df917/Icons/RTSS.png</iconUrl>
+    <projectUrl>https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/</projectUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages/</packageSourceUrl>
+    <bugTrackerUrl>https://forums.guru3d.com/forums/rivatuner-statistics-server-rtss-forum.54/</bugTrackerUrl>
+    <copyright>Guru3d 2026</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>fpscounter frame-rate-monitor frameratecounter framerate-displaying hardware-monitor video-capture on-screen-display rivatuner-statistics-server rivatunerstatisticsserver</tags>
+    <summary>Framerate monitoring, On-Screen Display and high-performance video capture service provider for other graphics card utilities.</summary>
+    <description>Framerate monitoring, On-Screen Display and high-performance video capture service provider for other graphics card utilities.
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
