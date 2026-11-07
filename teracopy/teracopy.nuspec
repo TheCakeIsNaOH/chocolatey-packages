@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>teracopy</id>
+    <version>3.17.0</version>
+    <title>TeraCopy</title>
+    <authors>Code Sector</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://support.codesector.com/en/articles/8789959-end-user-license-agreement</licenseUrl>
+    <projectUrl>https://blog.codesector.com/category/teracopy/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages@fe6a678afba424f60d519a039580d3012f55f729/Icons/TeraCopy.png</iconUrl>
+    <description>TeraCopy is designed to copy and move files at the maximum possible speed. It skips bad files during the copying process, and then displays them at the end of the transfer so that you can see which ones need attention. TeraCopy can automatically check the copied files for errors by calculating their CRC checksum values. It also provides a lot more information about the files being copied than its Windows counterpart. TeraCopy integrates with Windows Explorer's right-click menu and can be set as the default copy handler.</description>
+    <summary>Copy your files faster and more securely</summary>
+    <releaseNotes>https://blog.codesector.com/category/teracopy/</releaseNotes>
+    <tags>TeraCopy admin</tags>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <bugTrackerUrl>https://ideas.codesector.com/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

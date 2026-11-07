@@ -24,6 +24,7 @@ To avoid data loss or recover crashed system, you need to make images of them be
 For a complete list of features, please see http://www.aomeitech.com/ab/standard.html</description>
     <summary>The simplest free PC backup software</summary>
     <releaseNotes>http://www.backup-utility.com/changelog.html</releaseNotes>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
     <copyright>Copyright © AOMEI</copyright>
     <tags>aomei backupper backup clone restore</tags>
   </metadata>
