@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/ExpressLRS/ExpressLRS-Configurator/raw/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ExpressLRS</projectUrl>
-    <iconUrl>TODO</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/TheCakeIsNaOH/chocolatey-packages@e136cd11b380536b50092b51dc70a0ad0bc53021/Icons/aomei-backupper-logo.png</iconUrl>
     <description>ExpressLRS Configurator is a cross-platform build and configuration tool for the ExpressLRS - open source RC link for RC applications.</description>
     <summary>ExpressLRS-Configurator provided by ExpressLRS Configurator Contributors</summary>
     <releaseNotes>https://github.com/ExpressLRS/ExpressLRS-Configurator/releases</releaseNotes>
