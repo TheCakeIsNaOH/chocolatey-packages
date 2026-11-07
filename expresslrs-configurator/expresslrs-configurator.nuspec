@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>expresslrs-configurator</id>
+    <version>1.5.10</version>
+    <title>ExpressLRS Configurator</title>
+    <authors>ExpressLRS Configurator Contributors</authors>
+    <owners>TheCakeIsNaOH</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ExpressLRS/ExpressLRS-Configurator/raw/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ExpressLRS</projectUrl>
+    <iconUrl>TODO</iconUrl>
+    <description>ExpressLRS Configurator is a cross-platform build and configuration tool for the ExpressLRS - open source RC link for RC applications.</description>
+    <summary>ExpressLRS-Configurator provided by ExpressLRS Configurator Contributors</summary>
+    <releaseNotes>https://github.com/ExpressLRS/ExpressLRS-Configurator/releases</releaseNotes>
+    <copyright>© 2026 ExpressLRS Configurator Contributors</copyright>
+    <tags>expresslrs expresslrs-configurator</tags>
+    <projectSourceUrl>https://github.com/ExpressLRS</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/chocolatey-packages</packageSourceUrl>
+    <docsUrl>https://www.expresslrs.org/quick-start/getting-started/</docsUrl>
+    <bugTrackerUrl>https://github.com/ExpressLRS/ExpressLRS-Configurator/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
