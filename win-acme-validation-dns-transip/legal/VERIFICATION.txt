@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.transip.v2.2.9.1701.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.4.1/plugin.validation.dns.transip.v2.4.1.2444.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 93C0E20B3BF982930FA9F21DDC115303DF1140B1251FEE7B994B9AEDDAE68F18
+   checksum32: 0BFF478F8E82AE2635C310DE542D86F3FA9DB0503E65A035E2F5365CCF672EEF

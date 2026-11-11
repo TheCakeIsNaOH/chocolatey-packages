@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/plugin.validation.dns.hetzner.v2.2.9.1701.zip
+   x32: https://github.com/win-acme/win-acme/releases/download/v2.4.1/plugin.validation.dns.hetzner.v2.4.1.2444.zip
    
    to download the zip.
 
@@ -15,4 +15,4 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 5293789777E5596E05763959B87BE039DBBEC297C0D83907AF120762A02A1408
+   checksum32: 2C8258F67EA4E5D0260711944629C983EADD22E1CE95F37D615E735AD9D7F140
