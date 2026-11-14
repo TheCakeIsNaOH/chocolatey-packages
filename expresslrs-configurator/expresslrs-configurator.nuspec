@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>expresslrs-configurator</id>
-    <version>1.8.4</version>
+    <version>1.8.5</version>
     <title>ExpressLRS Configurator</title>
     <authors>ExpressLRS Configurator Contributors</authors>
     <owners>TheCakeIsNaOH</owners>
