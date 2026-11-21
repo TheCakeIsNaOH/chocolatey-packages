@@ -1,7 +1,7 @@
 ﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
-$version = '160.0.8173.0-canary'
+$version = '160.0.8175.1-canary'
 if ($version -le (Get-ChromeCanaryVersion)) {
   Write-Host "Google Chrome Canary $version is already installed."
   return
