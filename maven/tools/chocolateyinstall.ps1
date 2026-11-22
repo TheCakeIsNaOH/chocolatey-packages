@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$version = '3.10.1'
+$version = '3.10.2'
 $name = "apache-maven-$version"
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 $installLocation = Join-Path (Split-Path $toolsDir) $name
